@@ -1,6 +1,6 @@
 # AI Coding Tools Comprehensive Guide (2025)
 
-> **Last Updated:** January 2025
+> **Last Updated:** October 2025
 > A complete guide to AI-powered coding tools, from inference providers to IDEs, extensions, and specialized utilities.
 
 ## Introduction
@@ -72,6 +72,9 @@ When adding a new tool, please use this template to ensure consistency:
 - [Code Review & Security Tools](#code-review--security-tools)
 - [Documentation & Code Explanation](#documentation--code-explanation)
 - [Local Model Infrastructure](#local-model-infrastructure)
+- [AI/ML Libraries & Frameworks](#aiml-libraries--frameworks)
+- [Browser Extensions](#browser-extensions)
+- [Search & Research Tools](#search--research-tools)
 - [Other Tools & Infrastructure](#other-tools--infrastructure)
 
 ---
@@ -2074,6 +2077,290 @@ When adding a new tool, please use this template to ensure consistency:
 
 ---
 
+## AI/ML Libraries & Frameworks
+
+### Python Libraries
+
+#### **TensorFlow**
+- **Developer**: Google
+- **Website**: https://www.tensorflow.org
+- **Repository**: https://github.com/tensorflow/tensorflow
+- **Type**: Open-source machine learning framework
+- **Language**: Python, JavaScript (TensorFlow.js)
+- **Key Features**:
+  - Deep learning and neural networks
+  - Production deployment
+  - Mobile and edge devices (TensorFlow Lite)
+  - Extensive ecosystem (Keras, TensorFlow Hub)
+- **Use Cases**: Model training, deployment, research
+
+**Works with:**
+- Python development environments
+- Jupyter notebooks
+- Cloud platforms (GCP, AWS, Azure)
+
+---
+
+#### **PyTorch**
+- **Developer**: Meta AI
+- **Website**: https://pytorch.org
+- **Repository**: https://github.com/pytorch/pytorch
+- **Type**: Open-source machine learning framework
+- **Language**: Python
+- **Key Features**:
+  - Dynamic computational graphs
+  - Strong GPU acceleration
+  - Research-friendly API
+  - Production deployment (TorchServe)
+- **Use Cases**: Deep learning research, model development
+
+**Works with:**
+- Python development environments
+- Jupyter notebooks
+- HuggingFace Transformers
+
+---
+
+#### **LangChain**
+- **Developer**: LangChain Inc.
+- **Website**: https://www.langchain.com
+- **Repository**: https://github.com/langchain-ai/langchain
+- **Type**: Framework for developing LLM applications
+- **Language**: Python, JavaScript/TypeScript
+- **Key Features**:
+  - Chain composition for LLM workflows
+  - Memory management
+  - Agent systems
+  - Vector store integrations
+  - Document loaders and retrievers
+- **Use Cases**: RAG applications, chatbots, AI agents
+
+**Works with:**
+- OpenAI, Anthropic, Google, and other LLM providers
+- Vector databases (Pinecone, Weaviate, Chroma)
+- Document stores
+
+---
+
+#### **LlamaIndex**
+- **Developer**: LlamaIndex (formerly GPT Index)
+- **Website**: https://www.llamaindex.ai
+- **Repository**: https://github.com/run-llama/llama_index
+- **Type**: Data framework for LLM applications
+- **Language**: Python, TypeScript
+- **Key Features**:
+  - Data ingestion and indexing
+  - Query engines
+  - Chat engines
+  - Multi-document agents
+  - RAG (Retrieval-Augmented Generation)
+- **Use Cases**: Knowledge bases, document Q&A, data-augmented LLM apps
+
+**Works with:**
+- OpenAI, Anthropic, HuggingFace models
+- Vector databases
+- Document stores
+
+---
+
+#### **scikit-learn**
+- **Developer**: scikit-learn developers
+- **Website**: https://scikit-learn.org
+- **Repository**: https://github.com/scikit-learn/scikit-learn
+- **Type**: Machine learning library
+- **Language**: Python
+- **Key Features**:
+  - Classification, regression, clustering
+  - Model selection and evaluation
+  - Preprocessing and feature engineering
+  - Integration with NumPy and Pandas
+- **Use Cases**: Traditional ML, data analysis, model building
+
+**Works with:**
+- NumPy, Pandas, Matplotlib
+- Jupyter notebooks
+- Python data science stack
+
+---
+
+#### **NumPy**
+- **Developer**: NumPy developers
+- **Website**: https://numpy.org
+- **Repository**: https://github.com/numpy/numpy
+- **Type**: Numerical computing library
+- **Language**: Python
+- **Key Features**:
+  - Multi-dimensional arrays
+  - Mathematical functions
+  - Linear algebra operations
+  - Foundation for scientific computing
+- **Use Cases**: Data manipulation, scientific computing, ML preprocessing
+
+**Works with:**
+- All Python ML/AI frameworks
+- Pandas, scikit-learn, TensorFlow, PyTorch
+
+---
+
+#### **Pandas**
+- **Developer**: Pandas development team
+- **Website**: https://pandas.pydata.org
+- **Repository**: https://github.com/pandas-dev/pandas
+- **Type**: Data analysis and manipulation library
+- **Language**: Python
+- **Key Features**:
+  - DataFrames for structured data
+  - Data cleaning and preprocessing
+  - Time series analysis
+  - SQL-like operations
+- **Use Cases**: Data preprocessing for ML, data analysis, ETL
+
+**Works with:**
+- NumPy, scikit-learn
+- Jupyter notebooks
+- ML pipelines
+
+---
+
+### JavaScript/TypeScript Libraries
+
+#### **Vercel AI SDK**
+- **Developer**: Vercel
+- **Website**: https://sdk.vercel.ai
+- **Repository**: https://github.com/vercel/ai
+- **Package**: https://www.npmjs.com/package/ai
+- **Type**: TypeScript toolkit for AI applications
+- **Key Features**:
+  - Streaming AI responses
+  - React hooks for AI UI
+  - Multi-provider support
+  - Edge runtime compatible
+- **Use Cases**: Building AI-powered web applications
+
+**Works with:**
+- OpenAI, Anthropic, Google, Mistral
+- Next.js, React, Vue
+- Edge functions
+
+---
+
+#### **OpenAI Node.js SDK**
+- **Developer**: OpenAI
+- **Website**: https://platform.openai.com
+- **Package**: https://www.npmjs.com/package/openai
+- **Repository**: https://github.com/openai/openai-node
+- **Type**: Official OpenAI API client
+- **Language**: TypeScript/JavaScript
+- **Key Features**:
+  - Full API coverage
+  - TypeScript types
+  - Streaming support
+  - Error handling
+- **Use Cases**: Integrating OpenAI models in Node.js apps
+
+**Works with:**
+- Node.js applications
+- Deno (via npm compatibility)
+- Edge runtimes
+
+---
+
+#### **OpenAI Deno SDK**
+- **Developer**: Deno + OpenAI community
+- **Website**: https://deno.com/blog/openai_sdk_deno
+- **Type**: OpenAI SDK for Deno runtime
+- **Language**: TypeScript
+- **Key Features**:
+  - Native Deno compatibility
+  - Secure by default
+  - Modern TypeScript
+- **Use Cases**: Building OpenAI apps with Deno
+
+**Works with:**
+- Deno runtime
+- Deno Deploy
+- Fresh framework
+
+---
+
+## Browser Extensions
+
+### AI Assistant Extensions
+
+#### **WiseOne**
+- **Developer**: WiseOne
+- **Website**: https://wiseone.io
+- **Type**: Browser extension for reading and research
+- **Platform**: Chrome, Firefox, Edge
+- **Key Features**:
+  - AI-powered article summarization
+  - Cross-reference checking
+  - Fact verification
+  - Research assistance
+- **Use Cases**: Research, reading comprehension, fact-checking
+
+**Works with:**
+- Web browsers
+- Online articles and documents
+
+---
+
+#### **Merlin**
+- **Developer**: Merlin AI
+- **Website**: https://www.getmerlin.in
+- **Type**: AI assistant browser extension
+- **Platform**: Chrome, Firefox, Edge
+- **Key Features**:
+  - ChatGPT integration in browser
+  - Email writing assistance
+  - Content summarization
+  - Multi-platform AI access
+- **Use Cases**: Productivity, content creation, research
+
+**Works with:**
+- Web browsers
+- Gmail, Twitter, LinkedIn
+- Various websites
+
+---
+
+## Search & Research Tools
+
+### AI-Powered Search Engines
+
+#### **You.com**
+- **Developer**: You.com
+- **Website**: https://you.com
+- **Type**: AI-powered search engine
+- **Key Features**:
+  - AI-generated answers
+  - Code search capabilities
+  - Developer-friendly results
+  - Privacy-focused
+- **Use Cases**: Code search, research, development queries
+
+**Works with:**
+- Web browsers
+- Developer workflows
+
+---
+
+#### **DeepAI**
+- **Developer**: DeepAI
+- **Website**: https://deepai.org
+- **Type**: AI research and tools platform
+- **Key Features**:
+  - AI tools and APIs
+  - Research resources
+  - Model playground
+- **Use Cases**: AI experimentation, research, learning
+
+**Works with:**
+- Developer tools
+- Research workflows
+
+---
+
 ## Other Tools & Infrastructure
 
 ### Model Context Protocol (MCP)
@@ -2198,6 +2485,61 @@ When adding a new tool, please use this template to ensure consistency:
 ---
 
 ### Additional Platforms & Notes
+
+#### **Visual Copilot (Builder.io)**
+- **Developer**: Builder.io
+- **Website**: https://www.builder.io/blog/figma-to-code-visual-copilot
+- **Type**: Figma to code AI tool
+- **Key Features**:
+  - Convert Figma designs to code
+  - Multiple framework support
+  - Component generation
+  - Design system integration
+- **Use Cases**: Design-to-code workflow, rapid prototyping
+
+**Works with:**
+- Figma
+- React, Vue, Angular, HTML
+- Design systems
+
+---
+
+#### **Supabase Assistant**
+- **Developer**: Supabase
+- **Website**: https://supabase.com/blog/studio-introducing-assistant
+- **Type**: AI assistant for Supabase Studio
+- **Key Features**:
+  - SQL query generation
+  - Database schema assistance
+  - API endpoint suggestions
+  - Documentation help
+- **Use Cases**: Database development, API building
+
+**Works with:**
+- Supabase Studio
+- PostgreSQL
+- Supabase APIs
+
+---
+
+#### **Civitai**
+- **Developer**: Civitai
+- **Website**: https://civitai.com
+- **Type**: AI model sharing platform
+- **Key Features**:
+  - Model sharing and discovery
+  - Training resources
+  - Community models
+  - LoRA and checkpoint hosting
+- **Use Cases**: Model discovery, training, fine-tuning
+
+**Works with:**
+- Stable Diffusion
+- ComfyUI
+- Automatic1111
+- Training tools
+
+---
 
 #### **Eclipse Theia**
 - **Type**: VS Code-compatible (not a fork)
@@ -2360,7 +2702,7 @@ Tools with strong local model support:
 
 ---
 
-*Last Updated: January 2025*
+*Last Updated: October 2025*
 *Note: This landscape is rapidly evolving. Check official documentation for the latest features and compatibility.*
 
 ---
@@ -2382,6 +2724,31 @@ Tools with strong local model support:
 - [MCP Servers Repository](https://github.com/modelcontextprotocol/servers)
 - [Continue.dev Docs](https://docs.continue.dev/)
 - [Cline Documentation](https://docs.cline.bot/)
+- [GPT-Crawler](https://github.com/BuilderIO/gpt-crawler) - Tool for crawling websites to create custom GPT knowledge bases
+
+### Learning Resources
+
+#### Online Courses & Tracks
+- [HubSpot Academy AI Track](https://app.hubspot.com/academy/44669786/tracks/1161376/) - AI fundamentals and applications
+
+#### YouTube Tutorials
+- [Stable Diffusion Training](https://www.youtube.com/watch?v=dVjMiJsuR5o&ab_channel=koiboi) - LoRA and model training
+- [Understanding Stable Diffusion Concepts](https://youtu.be/z2QE12p3kMM?si=LluxmuZ_J7jWAKYU) - Technical deep dive
+- [freeCodeCamp AI Course](https://www.youtube.com/watch?v=UU1WVnMk4E8&t=8107s&ab_channel=freeCodeCamp.org) - Comprehensive AI introduction
+- [Machine Learning Fundamentals](https://www.youtube.com/watch?v=vDDjtwQDw2k&ab_channel=freeCodeCamp.org) - freeCodeCamp ML course
+- [Neural Networks Explained](https://www.youtube.com/watch?v=zxQyTK8quyY&t=679s&ab_channel=StatQuestwithJoshStarmer) - StatQuest series
+
+#### Technical Resources & Discussions
+- [Reddit: Stable Diffusion Training Discussion](https://www.reddit.com/r/StableDiffusion/comments/11m75qo/im_trying_to_understand_the_difference_between/) - Community discussions on training
+- [HN: AI Visualization Tools](https://news.ycombinator.com/item?id=38513953) - Hacker News discussion
+- [HN: AI Model Visualization](https://news.ycombinator.com/item?id=38505211) - Technical visualization tools
+- [HN: Web Scraping for AI](https://news.ycombinator.com/item?id=38412886) - Scraping techniques for AI data
+- [Medium: RAG Beyond Vector Search](https://medium.com/@dave-shap/beyond-vector-search-knowledge-management-with-generative-ai-6c2d10b481a0) - Advanced RAG techniques
+
+#### Tools & Utilities
+- [SD Tools](https://sdtools.org/) - Stable Diffusion tools and utilities
+- [Draw.io](https://www.drawio.com/) - Diagramming tool (useful for architecture planning)
+- [Excalidraw](https://excalidraw.com/) - Collaborative whiteboarding (useful for AI system design)
 
 ---
 
