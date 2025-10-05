@@ -588,7 +588,11 @@ When adding a new tool, please use this template to ensure consistency:
   - Multi-file edits
   - Project-wide context
   - Terminal-based operation
+  - Repo context awareness
 
+**Works with:**
+- GitHub repositories
+- Various LLM backends (community-configured)
 ---
 
 #### **Droid**
@@ -688,15 +692,6 @@ When adding a new tool, please use this template to ensure consistency:
 - Container workflows
 - Any LLM with API access
 - Cloud and local models
-
----
-
-#### **Mentat CLI (Continued)**
-  - Repo context awareness
-
-**Works with:**
-- GitHub repositories
-- Various LLM backends (community-configured)
 
 ---
 
