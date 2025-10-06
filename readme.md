@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This repository serves as a comprehensive, curated list of AI-powered coding tools available as of January 2025. Our goal is to provide developers, teams, and organizations with a detailed overview of the AI coding landscape, helping them make informed decisions about which tools best fit their needs.
+This repository serves as a comprehensive, curated list of AI-powered coding tools available as of October 2025. Our goal is to provide developers, teams, and organizations with a detailed overview of the AI coding landscape, helping them make informed decisions about which tools best fit their needs.
 
 ### Purpose
 
