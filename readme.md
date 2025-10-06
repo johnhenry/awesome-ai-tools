@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This repository serves as a comprehensive, curated list of AI-powered coding tools available as of January 2025. Our goal is to provide developers, teams, and organizations with a detailed overview of the AI coding landscape, helping them make informed decisions about which tools best fit their needs.
+This repository serves as a comprehensive, curated list of AI-powered coding tools available as of October 2025. Our goal is to provide developers, teams, and organizations with a detailed overview of the AI coding landscape, helping them make informed decisions about which tools best fit their needs.
 
 ### Purpose
 
@@ -76,6 +76,11 @@ When adding a new tool, please use this template to ensure consistency:
 - [Browser Extensions](#browser-extensions)
 - [Search & Research Tools](#search--research-tools)
 - [Other Tools & Infrastructure](#other-tools--infrastructure)
+- [Performance Comparison Context](#performance-comparison-context)
+- [Integration Matrix Summary](#integration-matrix-summary)
+- [Recommendations by Use Case](#recommendations-by-use-case)
+- [Tool Categories Summary](#tool-categories-summary)
+- [Additional Resources](#additional-resources)
 
 ---
 
@@ -1721,6 +1726,12 @@ When adding a new tool, please use this template to ensure consistency:
   - Self-hosted option
   - Open-source alternative to Cursor/Copilot
 
+**Works with:**
+- GitHub, Docker, PostgreSQL (tool integrations)
+- Self-hosted or cloud deployments
+- Enterprise development environments
+- OpenAI-compatible APIs
+
 ---
 
 #### **CodeRabbit**
@@ -2542,6 +2553,12 @@ When adding a new tool, please use this template to ensure consistency:
 - **Technology**: MCP support
 - **Note**: Architecturally independent from VS Code
 - **Status**: Worth tracking if broadening criteria
+
+**Works with:**
+- Model Context Protocol (MCP)
+- VS Code extensions (compatibility layer)
+- AI coding tools (Theia AI, Theia Coder)
+- Web-based and desktop environments
 
 ---
 
