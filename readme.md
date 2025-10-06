@@ -521,6 +521,29 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **Open Interpreter**
+- **Type**: Open-source AI code interpreter
+- **Website**: https://openinterpreter.com
+- **Repository**: https://github.com/KillianLucas/open-interpreter
+- **Models**: GPT-4, Claude, local models via Ollama, any LLM
+- **Key Features**:
+  - Natural language interface to your computer
+  - Code execution in local environment
+  - File system access
+  - Multi-language support (Python, JavaScript, Shell, etc.)
+  - Voice mode available
+  - Free and open-source
+- **Installation**: `pip install open-interpreter`
+
+**Works with:**
+- OpenAI (GPT-4, GPT-3.5)
+- Anthropic (Claude)
+- Ollama (local models)
+- Any OpenAI-compatible API
+- Local code execution environment
+
+---
+
 #### **Continue CLI**
 - **Type**: Open-source BYO-model agent
 - **Website**: https://continue.dev
@@ -2157,6 +2180,29 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **Text Generation WebUI (Oobabooga)**
+- **Type**: Web interface for local text generation models
+- **Repository**: https://github.com/oobabooga/text-generation-webui
+- **Platform**: Windows, macOS, Linux
+- **Key Features**:
+  - Gradio-based web interface
+  - Support for multiple model backends (llama.cpp, ExLlama, AutoGPTQ)
+  - Chat and notebook modes
+  - API server for model access
+  - Extensions and plugins system
+  - Model downloading and management
+  - LoRA support
+- **Use Cases**: Running local LLMs with user-friendly interface
+
+**Works with:**
+- llama.cpp, ExLlama, AutoGPTQ backends
+- HuggingFace models
+- GPTQ, AWQ, GGUF quantized models
+- API-based integrations
+- Local development workflows
+
+---
+
 ### Model Optimization & Deployment
 
 #### **LiteLLM**
@@ -2676,6 +2722,24 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **SD Tools**
+- **Website**: https://sdtools.org/
+- **Type**: Stable Diffusion tools and utilities
+- **Key Features**:
+  - Stable Diffusion model utilities
+  - Training and fine-tuning tools
+  - LoRA support
+  - Model management
+- **Use Cases**: Stable Diffusion workflow optimization, model training
+
+**Works with:**
+- Stable Diffusion
+- LoRA training
+- Model fine-tuning workflows
+- Image generation pipelines
+
+---
+
 #### **Eclipse Theia**
 - **Type**: VS Code-compatible (not a fork)
 - **Features**: Theia AI, Theia Coder
@@ -2909,7 +2973,6 @@ Tools with strong local model support:
 - [Medium: RAG Beyond Vector Search](https://medium.com/@dave-shap/beyond-vector-search-knowledge-management-with-generative-ai-6c2d10b481a0) - Advanced RAG techniques
 
 #### Tools & Utilities
-- [SD Tools](https://sdtools.org/) - Stable Diffusion tools and utilities
 - [Draw.io](https://www.drawio.com/) - Diagramming tool (useful for architecture planning)
 - [Excalidraw](https://excalidraw.com/) - Collaborative whiteboarding (useful for AI system design)
 
