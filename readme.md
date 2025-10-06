@@ -1721,6 +1721,12 @@ When adding a new tool, please use this template to ensure consistency:
   - Self-hosted option
   - Open-source alternative to Cursor/Copilot
 
+**Works with:**
+- GitHub, Docker, PostgreSQL (tool integrations)
+- Self-hosted or cloud deployments
+- Enterprise development environments
+- OpenAI-compatible APIs
+
 ---
 
 #### **CodeRabbit**
@@ -2542,6 +2548,12 @@ When adding a new tool, please use this template to ensure consistency:
 - **Technology**: MCP support
 - **Note**: Architecturally independent from VS Code
 - **Status**: Worth tracking if broadening criteria
+
+**Works with:**
+- Model Context Protocol (MCP)
+- VS Code extensions (compatibility layer)
+- AI coding tools (Theia AI, Theia Coder)
+- Web-based and desktop environments
 
 ---
 
