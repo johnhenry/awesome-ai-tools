@@ -2676,6 +2676,24 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **SD Tools**
+- **Website**: https://sdtools.org/
+- **Type**: Stable Diffusion tools and utilities
+- **Key Features**:
+  - Stable Diffusion model utilities
+  - Training and fine-tuning tools
+  - LoRA support
+  - Model management
+- **Use Cases**: Stable Diffusion workflow optimization, model training
+
+**Works with:**
+- Stable Diffusion
+- LoRA training
+- Model fine-tuning workflows
+- Image generation pipelines
+
+---
+
 #### **Eclipse Theia**
 - **Type**: VS Code-compatible (not a fork)
 - **Features**: Theia AI, Theia Coder
@@ -2909,7 +2927,6 @@ Tools with strong local model support:
 - [Medium: RAG Beyond Vector Search](https://medium.com/@dave-shap/beyond-vector-search-knowledge-management-with-generative-ai-6c2d10b481a0) - Advanced RAG techniques
 
 #### Tools & Utilities
-- [SD Tools](https://sdtools.org/) - Stable Diffusion tools and utilities
 - [Draw.io](https://www.drawio.com/) - Diagramming tool (useful for architecture planning)
 - [Excalidraw](https://excalidraw.com/) - Collaborative whiteboarding (useful for AI system design)
 
