@@ -1,4 +1,4 @@
-# Awesome AI Tools
+# Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > **Last Updated:** October 2025
 > A complete guide to AI-powered coding tools, from inference providers to IDEs, extensions, and specialized utilities.
@@ -55,6 +55,16 @@ When adding a new tool, please use this template to ensure consistency:
 
 ### Contributing Guidelines
 
+Contributions are welcome! Please ensure your pull request adheres to the following guidelines:
+
+- Search previous suggestions before making a new one, as yours may be a duplicate
+- Make an individual pull request for each suggestion
+- Use the following format: `[Tool Name](link) - Description`
+- New categories, or improvements to the existing categorization are welcome
+- Keep descriptions short and simple, but descriptive
+- Start the description with a capital and end with a full stop/period
+- Check your spelling and grammar
+- Make sure your text editor is set to remove trailing whitespace
 - Maintain objectivity and avoid promotional language
 - Include accurate, verifiable information with sources when possible
 - Follow the existing formatting and structure
@@ -62,6 +72,8 @@ When adding a new tool, please use this template to ensure consistency:
 - Update the "Last Updated" date when making significant changes
 - Add new tools to appropriate categories
 - Update the Table of Contents if adding new sections
+
+Thank you for your contributions!
 
 ## Table of Contents
 - [AI Inference Providers](#ai-inference-providers)
@@ -2902,6 +2914,18 @@ Tools with strong local model support:
 
 ## Additional Resources
 
+### Related Awesome Lists
+
+- [Awesome Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence) - A curated list of Artificial Intelligence courses, books, video lectures and papers
+- [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) - A curated list of awesome Machine Learning frameworks, libraries and software
+- [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning) - A curated list of awesome Deep Learning tutorials, projects and communities
+- [Awesome Python](https://github.com/vinta/awesome-python) - A curated list of awesome Python frameworks, libraries, software and resources
+- [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript) - A collection of awesome browser-side JavaScript libraries, resources and shiny things
+- [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs) - Delightful Node.js packages and resources
+- [Awesome GitHub](https://github.com/Kikobeats/awesome-github) - An exquisite list of awesome GitHub tools and resources
+- [Awesome VS Code](https://github.com/viatsko/awesome-vscode) - A curated list of delightful VS Code packages and resources
+- [Awesome Lists](https://github.com/sindresorhus/awesome) - The main awesome list of awesome lists
+
 ### Official Documentation Links
 - [Anthropic Claude](https://www.anthropic.com/claude)
 - [OpenAI Platform](https://platform.openai.com/)
@@ -2946,3 +2970,12 @@ Tools with strong local model support:
 ---
 
 **Contributing**: This guide is a living document. For updates, corrections, or additions, please submit via the project repository.
+
+---
+
+## License
+
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, [John Henry](https://github.com/johnhenry) has waived all copyright and related or neighboring rights to this work.
+
