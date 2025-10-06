@@ -76,6 +76,11 @@ When adding a new tool, please use this template to ensure consistency:
 - [Browser Extensions](#browser-extensions)
 - [Search & Research Tools](#search--research-tools)
 - [Other Tools & Infrastructure](#other-tools--infrastructure)
+- [Performance Comparison Context](#performance-comparison-context)
+- [Integration Matrix Summary](#integration-matrix-summary)
+- [Recommendations by Use Case](#recommendations-by-use-case)
+- [Tool Categories Summary](#tool-categories-summary)
+- [Additional Resources](#additional-resources)
 
 ---
 
