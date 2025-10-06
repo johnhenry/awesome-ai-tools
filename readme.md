@@ -1822,6 +1822,61 @@ When adding a new tool, please use this template to ensure consistency:
 
 ---
 
+#### **AI Code Reviewer**
+- **Developer**: villesau
+- **Repository**: https://github.com/villesau/ai-codereviewer
+- **Type**: GitHub Actions integration
+- **Key Features**:
+  - AI-powered code review for pull requests
+  - Uses OpenAI GPT-4 API for intelligent feedback
+  - Provides suggestions to improve code quality
+  - GitHub Actions workflow integration
+  - Automated PR analysis
+  - Saves developers time
+
+**Works with:**
+- GitHub Actions
+- OpenAI GPT-4 API
+- Pull requests workflow
+
+---
+
+#### **Claude Code Security Review**
+- **Developer**: Anthropic
+- **Repository**: https://github.com/anthropics/claude-code-security-review
+- **Type**: AI-powered security review GitHub Action
+- **Key Features**:
+  - Analyzes code changes for security vulnerabilities
+  - Uses Claude AI model
+  - Automated security scanning
+  - GitHub Actions integration
+  - Focus on security best practices
+
+**Works with:**
+- GitHub Actions
+- Claude AI (Anthropic)
+- Security workflows
+
+---
+
+#### **CodeGPT**
+- **Developer**: appleboy
+- **Repository**: https://github.com/appleboy/CodeGPT
+- **Type**: CLI tool (Go)
+- **Key Features**:
+  - Writes git commit messages using ChatGPT
+  - Code review brief generation
+  - Automatically installs git prepare-commit-msg hook
+  - Uses GPT-4.1 and GPT-4o models
+  - Command-line interface
+
+**Works with:**
+- Git hooks
+- ChatGPT API (OpenAI)
+- Command-line workflows
+
+---
+
 #### **CodeRabbit**
 - **Type**: AI code review platform
 - **Website**: https://coderabbit.ai
@@ -2776,6 +2831,9 @@ Tools with strong local model support:
 - **Code Quality**: SonarQube, Sourcery
 - **AI-Generated Code**: Snyk (40% vulnerability detection)
 - **Enterprise**: Refact.ai (self-hosted)
+- **GitHub Actions**: AI Code Reviewer, Claude Code Security Review
+- **Code Review Platform**: CodeRabbit
+- **CLI Tools**: CodeGPT (commit messages & code review)
 
 ### For Documentation
 - **API Docs**: Mintlify (OpenAPI specs)
