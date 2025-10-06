@@ -2691,6 +2691,60 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+### Design & Visualization Tools
+
+#### **SD Tools**
+- **Website**: https://sdtools.org/
+- **Type**: Stable Diffusion tools and utilities
+- **Key Features**:
+  - Utilities for Stable Diffusion workflows
+  - Tools for image generation optimization
+  - Community-driven tool collection
+- **Use Cases**: AI image generation, Stable Diffusion optimization
+
+**Works with:**
+- Stable Diffusion
+- AI image generation workflows
+- Model training pipelines
+
+---
+
+#### **Draw.io**
+- **Website**: https://www.drawio.com/
+- **Type**: Diagramming and flowchart tool
+- **Key Features**:
+  - Free, open-source diagramming
+  - Multiple export formats
+  - Integration with cloud storage
+  - Extensive shape libraries
+- **Use Cases**: Architecture planning, system design, workflow visualization
+
+**Works with:**
+- Google Drive, OneDrive, GitHub
+- Confluence, Notion
+- Desktop and web platforms
+
+---
+
+#### **Excalidraw**
+- **Website**: https://excalidraw.com/
+- **Type**: Collaborative whiteboarding tool
+- **Key Features**:
+  - Hand-drawn style diagrams
+  - Real-time collaboration
+  - End-to-end encryption
+  - Open source
+  - Export to PNG, SVG, clipboard
+- **Use Cases**: AI system design, collaborative brainstorming, technical sketching
+
+**Works with:**
+- Web browsers
+- VS Code (via extension)
+- Obsidian (via plugin)
+- Self-hosted deployments
+
+---
+
 ## Performance Comparison Context
 
 ### Fastest Inference Providers (100 tokens)
@@ -2907,11 +2961,6 @@ Tools with strong local model support:
 - [HN: AI Model Visualization](https://news.ycombinator.com/item?id=38505211) - Technical visualization tools
 - [HN: Web Scraping for AI](https://news.ycombinator.com/item?id=38412886) - Scraping techniques for AI data
 - [Medium: RAG Beyond Vector Search](https://medium.com/@dave-shap/beyond-vector-search-knowledge-management-with-generative-ai-6c2d10b481a0) - Advanced RAG techniques
-
-#### Tools & Utilities
-- [SD Tools](https://sdtools.org/) - Stable Diffusion tools and utilities
-- [Draw.io](https://www.drawio.com/) - Diagramming tool (useful for architecture planning)
-- [Excalidraw](https://excalidraw.com/) - Collaborative whiteboarding (useful for AI system design)
 
 ---
 
