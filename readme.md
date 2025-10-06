@@ -1,4 +1,4 @@
-# AI Coding Tools Comprehensive Guide (2025)
+# Awesome AI Tools
 
 > **Last Updated:** October 2025
 > A complete guide to AI-powered coding tools, from inference providers to IDEs, extensions, and specialized utilities.
