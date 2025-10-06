@@ -1,4 +1,4 @@
-# Awesome AI Tools
+# Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > **Last Updated:** October 2025
 > A complete guide to AI-powered coding tools, from inference providers to IDEs, extensions, and specialized utilities.
@@ -17,51 +17,9 @@ The AI coding tools ecosystem is rapidly evolving, with new tools, models, and i
 - **Track Evolution**: Document the fast-changing landscape of AI coding tools and their capabilities
 - **Support Decision-Making**: Provide use-case specific recommendations to guide tool selection
 
-### How to Update This Document
+### Contributing
 
-This is a living document that requires regular updates to remain accurate and valuable. Here's how you can contribute:
-
-1. **Check for Accuracy**: Verify that existing information is still current
-2. **Add New Tools**: Include newly released or discovered tools following the template below
-3. **Update Features**: Modify tool descriptions when new features are added or pricing changes
-4. **Fix Errors**: Correct any inaccuracies you find
-5. **Improve Organization**: Suggest better categorization or structure improvements
-
-### Template for Individual Tools
-
-When adding a new tool, please use this template to ensure consistency:
-
-```markdown
-#### **Tool Name**
-- **Developer**: Company/Organization name
-- **Website**: https://example.com
-- **Repository**: https://github.com/example/repo (if open source)
-- **Type**: Brief description (CLI tool, VS Code extension, IDE, etc.)
-- **Models**: Supported AI models or providers
-- **Status**: Current status (stable, beta, preview, etc.)
-- **Pricing**: Free, paid tiers, or subscription information
-- **Key Features**:
-  - Feature 1
-  - Feature 2  
-  - Feature 3
-- **Installation**: Installation method (if applicable)
-- **Special Notes**: Any important caveats or highlights
-
-**Works with:**
-- Provider/model 1
-- Provider/model 2
-- Integration details
-```
-
-### Contributing Guidelines
-
-- Maintain objectivity and avoid promotional language
-- Include accurate, verifiable information with sources when possible
-- Follow the existing formatting and structure
-- Test tools when possible before adding them
-- Update the "Last Updated" date when making significant changes
-- Add new tools to appropriate categories
-- Update the Table of Contents if adding new sections
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on how to add new tools, update existing entries, and follow our quality standards.
 
 ## Table of Contents
 - [AI Inference Providers](#ai-inference-providers)
@@ -2902,6 +2860,18 @@ Tools with strong local model support:
 
 ## Additional Resources
 
+### Related Awesome Lists
+
+- [Awesome Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence) - A curated list of Artificial Intelligence courses, books, video lectures and papers
+- [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning) - A curated list of awesome Machine Learning frameworks, libraries and software
+- [Awesome Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning) - A curated list of awesome Deep Learning tutorials, projects and communities
+- [Awesome Python](https://github.com/vinta/awesome-python) - A curated list of awesome Python frameworks, libraries, software and resources
+- [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript) - A collection of awesome browser-side JavaScript libraries, resources and shiny things
+- [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs) - Delightful Node.js packages and resources
+- [Awesome GitHub](https://github.com/Kikobeats/awesome-github) - An exquisite list of awesome GitHub tools and resources
+- [Awesome VS Code](https://github.com/viatsko/awesome-vscode) - A curated list of delightful VS Code packages and resources
+- [Awesome Lists](https://github.com/sindresorhus/awesome) - The main awesome list of awesome lists
+
 ### Official Documentation Links
 - [Anthropic Claude](https://www.anthropic.com/claude)
 - [OpenAI Platform](https://platform.openai.com/)
@@ -2946,3 +2916,12 @@ Tools with strong local model support:
 ---
 
 **Contributing**: This guide is a living document. For updates, corrections, or additions, please submit via the project repository.
+
+---
+
+## License
+
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, [John Henry](https://github.com/johnhenry) has waived all copyright and related or neighboring rights to this work.
+
