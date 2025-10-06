@@ -1143,6 +1143,50 @@ When adding a new tool, please use this template to ensure consistency:
 
 ---
 
+#### **Twinny**
+- **Developer**: Twinny Community
+- **Website**: https://twinnydotdev.github.io/twinny
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=rjmacarthy.twinny
+- **Repository**: https://github.com/twinnydotdev/twinny
+- **Type**: Free AI code completion (100% free, no paywalls)
+- **Models**: Ollama, LM Studio, Oobabooga, llama.cpp, any OpenAI API compatible provider
+- **Key Features**:
+  - FIM (Fill-In-Middle) code completion
+  - Chat interface for code assistance
+  - 100% local or API-hosted
+  - Completely free and open source
+  - Customizable provider settings
+  - Multiple model support
+
+**Works with:**
+- Ollama (local models)
+- LM Studio
+- Any OpenAI-compatible API
+- Self-hosted inference servers
+
+---
+
+#### **Flexpilot**
+- **Developer**: Flexpilot AI
+- **Website**: https://flexpilot.ai
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=flexpilot-ai.flexpilot
+- **Repository**: https://github.com/flexpilot-ai/vscode-extension
+- **Type**: Open-source, native GitHub Copilot alternative
+- **Models**: OpenAI, Anthropic, Google, Ollama, custom providers
+- **Key Features**:
+  - Native VS Code experience
+  - Free and open source
+  - Multiple provider support
+  - Chat and completion modes
+  - Privacy-focused
+
+**Works with:**
+- Major cloud providers (OpenAI, Anthropic, Google)
+- Local models (Ollama)
+- Custom API endpoints
+
+---
+
 #### **CodeGeeX**
 - **Type**: Open-source multi-language assistant
 - **Scale**: 13 billion parameters
@@ -1339,6 +1383,27 @@ When adding a new tool, please use this template to ensure consistency:
 ---
 
 ### Third-Party JetBrains Plugins
+
+#### **Auto-Dev**
+- **Developer**: Unit Mesh
+- **Repository**: https://github.com/unit-mesh/auto-dev
+- **Type**: AI-powered coding wizard for JetBrains
+- **Language Support**: Multi-language (Java, Kotlin, Python, JavaScript, etc.)
+- **Key Features**:
+  - Auto code generation 🏗️
+  - Bug-slaying assistant 🐞
+  - Auto testing & documentation
+  - Customizable prompts 🎨
+  - Agent-based development
+  - Auto Dev/Testing/Document/Agent features
+  - AIGC (AI Generated Content) integration
+
+**Works with:**
+- IntelliJ IDEA and other JetBrains IDEs
+- Multiple LLM providers
+- Supports GenAI stack
+
+---
 
 #### **GitHub Copilot for JetBrains**
 - **Developer**: GitHub/Microsoft
@@ -1643,6 +1708,29 @@ When adding a new tool, please use this template to ensure consistency:
 - Vercel ecosystem
 - React/Next.js
 - Front-end workflows
+
+---
+
+#### **Onlook**
+- **Developer**: Onlook Dev
+- **Repository**: https://github.com/onlook-dev/onlook
+- **Type**: AI-First Design Tool for React Developers
+- **Tagline**: "The Cursor for Designers"
+- **Key Features**:
+  - Visual builder for React applications
+  - AI-powered styling and editing
+  - Live preview and hot reload
+  - Component-based design
+  - Export to React code
+  - Cross-platform (Windows, macOS, Linux)
+  - Integration with AI models for design suggestions
+  - Supports Next.js, Tailwind CSS
+  
+**Works with:**
+- React and React-based frameworks
+- Next.js applications
+- Tailwind CSS
+- Modern web development stack
 
 ---
 
@@ -2492,6 +2580,34 @@ When adding a new tool, please use this template to ensure consistency:
 
 ### Additional Platforms & Notes
 
+#### **OpenSumi**
+- **Developer**: Ant Group (Alibaba)
+- **Repository**: https://github.com/opensumi/core
+- **Type**: AI Native IDE Framework
+- **Key Features**:
+  - Framework for building AI-first IDEs
+  - MCP Client support (Model Context Protocol)
+  - Electron-based architecture
+  - TypeScript development
+  - Web IDE capabilities
+  - Highly extensible and customizable
+  - Pre-built AI integration patterns
+  - Support for MCP tools via MCP server
+  
+**Works with:**
+- Model Context Protocol (MCP)
+- Multiple AI model providers
+- Electron applications
+- Web-based IDEs
+- Custom development tools
+
+**Use Cases:**
+- Building custom AI-powered IDEs
+- Internal development tools
+- Specialized coding environments
+
+---
+
 #### **Visual Copilot (Builder.io)**
 - **Developer**: Builder.io
 - **Website**: https://www.builder.io/blog/figma-to-code-visual-copilot
@@ -2670,17 +2786,21 @@ Tools with strong local model support:
 - **Browser-Based**: Replit Ghostwriter, Bolt.new
 - **GUI**: LM Studio, GPT4All, Jan
 - **Beginner-Friendly**: AskCodi, CodeGeeX (multi-language)
+- **Free Open-Source**: Twinny, Flexpilot
 
 ### For JetBrains Users
 - **Official**: JetBrains AI Assistant (with Junie agent)
 - **Third-Party**: GitHub Copilot, Kilo Code, Tabnine
+- **AI Wizard**: Auto-Dev (open-source, feature-rich)
 
 ### For Open-Source & Self-Hosted
 - **CLI**: Aider, Continue, Mentat
-- **Extensions**: Cline, Roo Code, Continue, TabbyML, FauxPilot
+- **Extensions**: Cline, Roo Code, Continue, TabbyML, FauxPilot, Twinny, Flexpilot
 - **IDEs**: Void, PearAI, Zed
 - **Local**: Ollama, LM Studio, GPT4All, Jan
 - **Agents**: Refact.ai, Sweep AI
+- **Design Tools**: Onlook (React visual builder)
+- **Frameworks**: OpenSumi (build your own AI IDE)
 
 ---
 
@@ -2701,14 +2821,17 @@ Tools with strong local model support:
 
 ### By Specialization
 - **Agentic**: Cline, Roo Code, Kilo Code, Sweep AI, Junie, Refact.ai
-- **Code Completion**: Tabnine, Supermaven, TabbyML, GitHub Copilot
+- **Code Completion**: Tabnine, Supermaven, TabbyML, GitHub Copilot, Twinny, Flexpilot
 - **Security**: Snyk DeepCode AI, SonarQube, Sourcery, Semgrep
 - **Documentation**: Mintlify, Swimm
 - **Search**: Bloop AI, Sourcegraph Cody
 - **Web Dev**: Bolt.new, v0, Lovable, Replit
+- **Design Tools**: Onlook (AI-first design for React)
+- **JetBrains**: Auto-Dev (AI wizard), JetBrains AI Assistant, GitHub Copilot
+- **IDE Frameworks**: OpenSumi (MCP-enabled framework)
 
 ### By License Type
-- **Open-Source**: Aider, Cline, Roo Code, Continue, Void, PearAI, Zed, Ollama, GPT4All, Jan, Sweep AI, Refact.ai, TabbyML, FauxPilot, CodeGeeX
+- **Open-Source**: Aider, Cline, Roo Code, Continue, Void, PearAI, Zed, Ollama, GPT4All, Jan, Sweep AI, Refact.ai, TabbyML, FauxPilot, CodeGeeX, Twinny, Flexpilot, Auto-Dev, Onlook, OpenSumi
 - **Proprietary**: Cursor, GitHub Copilot, Windsurf, Tabnine, Supermaven
 - **Freemium**: Replit, Bolt.new, JetBrains AI, Amazon Q
 
