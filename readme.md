@@ -2691,6 +2691,66 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+### Design & Visualization Tools
+
+#### **SD Tools**
+- **Website**: https://sdtools.org/
+- **Type**: Stable Diffusion tools and utilities
+- **Purpose**: Collection of tools for working with Stable Diffusion models
+- **Key Features**:
+  - Stable Diffusion utilities
+  - Model management tools
+  - Training and fine-tuning resources
+- **Use Cases**: SD model development, training, deployment
+
+**Works with:**
+- Stable Diffusion models
+- ComfyUI
+- Automatic1111
+- Training workflows
+
+---
+
+#### **Draw.io**
+- **Website**: https://www.drawio.com/
+- **Type**: Diagramming and flowchart tool
+- **Purpose**: Create diagrams, flowcharts, and system architectures
+- **Key Features**:
+  - Free and open-source
+  - Web-based and desktop versions
+  - Extensive shape libraries
+  - Export to multiple formats (PNG, SVG, PDF)
+  - Integration with storage services
+- **Use Cases**: AI architecture planning, system design, workflow visualization
+
+**Works with:**
+- Google Drive, OneDrive, Dropbox
+- GitHub (diagram storage)
+- Confluence, Notion
+- Offline desktop mode
+
+---
+
+#### **Excalidraw**
+- **Website**: https://excalidraw.com/
+- **Type**: Collaborative whiteboarding tool
+- **Purpose**: Sketch diagrams and collaborate in real-time
+- **Key Features**:
+  - Hand-drawn aesthetic
+  - Real-time collaboration
+  - Privacy-focused (end-to-end encrypted)
+  - Export to PNG, SVG, clipboard
+  - Open-source and self-hostable
+- **Use Cases**: AI system design, brainstorming, collaborative planning
+
+**Works with:**
+- Web browsers (no account required)
+- VS Code (via extension)
+- Self-hosted deployments
+- Excalidraw libraries
+
+---
+
 ## Performance Comparison Context
 
 ### Fastest Inference Providers (100 tokens)
@@ -2907,11 +2967,6 @@ Tools with strong local model support:
 - [HN: AI Model Visualization](https://news.ycombinator.com/item?id=38505211) - Technical visualization tools
 - [HN: Web Scraping for AI](https://news.ycombinator.com/item?id=38412886) - Scraping techniques for AI data
 - [Medium: RAG Beyond Vector Search](https://medium.com/@dave-shap/beyond-vector-search-knowledge-management-with-generative-ai-6c2d10b481a0) - Advanced RAG techniques
-
-#### Tools & Utilities
-- [SD Tools](https://sdtools.org/) - Stable Diffusion tools and utilities
-- [Draw.io](https://www.drawio.com/) - Diagramming tool (useful for architecture planning)
-- [Excalidraw](https://excalidraw.com/) - Collaborative whiteboarding (useful for AI system design)
 
 ---
 
