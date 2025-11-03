@@ -23,12 +23,17 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ## Table of Contents
 - [AI Inference Providers](#ai-inference-providers)
+- [MCP Providers](#mcp-providers)
 - [CLI Tools](#cli-tools)
+- [Cloud-Based Agentic Coding Services](#cloud-based-agentic-coding-services)
 - [VS Code Extensions](#vs-code-extensions)
 - [JetBrains IDE Tools](#jetbrains-ide-tools)
 - [Full IDE Tools](#full-ide-tools)
 - [Code Review & Security Tools](#code-review--security-tools)
+- [Testing & QA Tools](#testing--qa-tools)
+- [API Testing Tools](#api-testing-tools)
 - [Documentation & Code Explanation](#documentation--code-explanation)
+- [Database & SQL Tools](#database--sql-tools)
 - [Local Model Infrastructure](#local-model-infrastructure)
 - [AI/ML Libraries & Frameworks](#aiml-libraries--frameworks)
 - [Browser Extensions](#browser-extensions)
@@ -319,33 +324,95 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 ---
 
 #### **Cerebras**
+- **Type**: Hardware accelerator manufacturer and inference provider
+- **Website**: https://www.cerebras.ai
+- **Inference Platform**: https://www.cerebras.ai/inference
+- **Cloud**: https://cloud.cerebras.ai
+- **Documentation**: https://inference-docs.cerebras.ai
 - **Focus**: Custom AI chips for inference
-- **Performance**: 574ms for 100 tokens (fastest in class)
-- **Type**: Hardware accelerator manufacturer
+- **Performance**: 2,500+ tokens/second, 574ms for 100 tokens (fastest in class)
+- **Key Features**:
+  - Real-time AI responses
+  - OpenAI API compatible
+  - Pay-as-you-go or reserved capacity pricing
 
 **Works with:**
 - Cline (Cerebras provider)
 - High-performance computing applications
+- OpenAI-compatible integrations
 
 ---
 
 #### **SambaNova**
-- **Type**: Inference provider
+- **Type**: Inference provider with custom RDU hardware
+- **Website**: https://sambanova.ai
+- **Cloud**: https://cloud.sambanova.ai
+- **API**: https://sambanova.ai/fast-api
+- **Documentation**: https://docs.sambanova.ai
 - **Integration**: Hugging Face serverless
+- **Key Features**:
+  - Fastest inference APIs
+  - RDU (Reconfigurable Dataflow Units) powered
+  - OpenAI-compatible APIs
+  - SambaCloud, SambaStack, and SambaManaged options
 
 **Works with:**
 - Hugging Face platform
 - Enterprise deployments
+- OpenAI-compatible integrations
+- On-premises and cloud deployments
 
 ---
 
 #### **Fal**
-- **Type**: Inference provider
+- **Type**: Serverless inference provider
+- **Website**: https://fal.ai
+- **Hugging Face**: https://huggingface.co/fal
 - **Integration**: Hugging Face serverless
+- **Key Features**:
+  - 600+ production-ready models
+  - Generative image, video, audio, and 3D models
+  - Serverless GPUs
+  - On-demand clusters
+  - 4x faster model execution
 
 **Works with:**
 - Hugging Face platform
 - Developer applications
+- Image, video, audio AI workflows
+
+---
+
+#### **Hyperbolic**
+- **Type**: High-performance inference provider
+- **Website**: https://hyperbolic.xyz
+- **Key Features**:
+  - Up to 80% cost savings compared to traditional providers
+  - Access to top-performing models
+  - No quality compromise
+  - Cost-optimized infrastructure
+
+**Works with:**
+- Leading LLM models
+- Enterprise applications
+- Cost-conscious deployments
+
+---
+
+#### **Novita AI**
+- **Type**: Multimodal inference platform
+- **Website**: https://novita.ai
+- **Key Features**:
+  - 200+ production-ready APIs
+  - LLM, image, video, speech generation
+  - Serverless GPU endpoints
+  - Dedicated GPU instances
+  - Multi-modal capabilities
+
+**Works with:**
+- Multiple modalities (text, image, video, speech)
+- Serverless deployments
+- Dedicated GPU infrastructure
 
 ---
 
@@ -364,22 +431,301 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 ---
 
 #### **xAI**
-- **Models**: Grok, Grok Code Fast 1
-- **Provider**: xAI (Elon Musk)
+- **Developer**: xAI (Elon Musk)
+- **Website**: https://x.ai
+- **Grok**: https://x.ai/grok
+- **Models**: Grok-4, Grok Heavy, Grok Code Fast 1
+- **Key Features**:
+  - Real-time search integration
+  - Advanced reasoning and coding capabilities
+  - Visual processing
+  - Available on X, Grok.com, and Grok app
+  - Free tier with usage limits
 
 **Works with:**
 - GitHub Copilot
 - Roo Code
+- X integration
 
 ---
 
 #### **Stability AI**
-- **Focus**: Image generation, multimodal
+- **Developer**: Stability AI
+- **Website**: https://stability.ai
+- **Stable Image**: https://stability.ai/stable-image
+- **Focus**: Image generation, video, multimodal
+- **Models**: Stable Diffusion, Stable Video
 - **Integration**: Available through AWS Bedrock
+- **Key Features**:
+  - Text-to-image generation
+  - Image editing (inpainting, outpainting)
+  - Video generation
+  - Self-hosting and API options
 
 **Works with:**
 - AWS Bedrock
+- Hugging Face
 - Creative and multimodal applications
+- DreamStudio (web interface)
+
+---
+
+## MCP Providers
+
+The Model Context Protocol (MCP) is an open standard introduced by Anthropic in November 2024 to standardize how AI systems integrate with external tools and data sources. MCP servers act as data and tool providers for AI coding assistants, enabling them to access databases, cloud services, development tools, and enterprise data sources.
+
+### Official MCP Resources
+
+#### **Anthropic MCP Server Repository**
+- **Developer**: Anthropic
+- **Repository**: https://github.com/modelcontextprotocol/servers
+- **Website**: https://www.claude.com/partners/mcp
+- **Documentation**: https://docs.claude.com/en/docs/agents-and-tools/remote-mcp-servers
+- **Key Features**:
+  - Reference MCP server implementations
+  - Official Anthropic-maintained servers
+  - Enterprise integrations
+  - Open-source implementations
+
+**Official Servers include:**
+- Google Drive, Slack, GitHub, Git
+- Postgres, Puppeteer, Stripe
+- File system tools, Web content fetchers
+
+---
+
+### MCP Server Directories
+
+#### **PulseMCP**
+- **Website**: https://www.pulsemcp.com/servers
+- **Key Features**:
+  - 6,360+ MCP servers tracked
+  - Daily updates
+  - Official and community servers
+  - Usage statistics (weekly downloads)
+  - Release information
+
+---
+
+### Enterprise MCP Providers
+
+#### **Chronograph**
+- **Type**: Portfolio analytics MCP provider
+- **Developer**: Chronograph
+- **Website**: https://www.chronograph.pe/
+- **Integration**: Claude Partners MCP
+- **Key Features**:
+  - Private capital portfolio data access
+  - Private equity, venture capital, infrastructure data
+  - Natural language portfolio queries
+  - Ad-hoc analysis and research
+
+**Use Case:** Portfolio management and analytics for private capital investors
+
+---
+
+#### **Box**
+- **Type**: Enterprise content management MCP provider
+- **Developer**: Box Inc. (community server by hmk)
+- **Website**: https://www.box.com
+- **Documentation**: https://learn.microsoft.com/en-us/connectors/boxmcpserver/
+- **Integration**: Claude Partners MCP
+- **Key Features**:
+  - Secure bridge to enterprise content
+  - Document search and processing (PDF, Word)
+  - Contract, financial records, policy access
+  - Enterprise authentication and security
+
+**Use Case:** Enterprise document access and AI-powered document analysis
+
+---
+
+#### **Canva**
+- **Type**: Design automation MCP provider
+- **Developer**: Canva
+- **Website**: https://www.canva.com
+- **Integration**: Claude Partners MCP
+
+**Use Case:** Automated design workflows and template access
+
+---
+
+#### **Cloudinary**
+- **Type**: Media management MCP provider
+- **Developer**: Cloudinary
+- **Website**: https://cloudinary.com
+- **Integration**: Claude Partners MCP
+
+**Use Case:** Media asset management and optimization
+
+---
+
+#### **Figma**
+- **Type**: Design-to-code MCP provider
+- **Developer**: Figma
+- **Website**: https://www.figma.com
+- **Integration**: Claude Partners MCP
+
+**Use Case:** Design file access and design-to-code generation
+
+---
+
+#### **HubSpot**
+- **Type**: CRM data MCP provider
+- **Developer**: HubSpot
+- **Website**: https://www.hubspot.com
+- **Integration**: Claude Partners MCP
+
+**Use Case:** Customer relationship management data access and automation
+
+---
+
+#### **Intercom**
+- **Type**: Customer support MCP provider
+- **Developer**: Intercom
+- **Website**: https://www.intercom.com
+- **Integration**: Claude Partners MCP
+
+**Use Case:** Customer support data and workflow automation
+
+---
+
+### Database & Cloud MCP Providers
+
+#### **MongoDB MCP Server**
+- **Type**: Database MCP provider
+- **Developer**: MongoDB
+- **Repository**: https://github.com/mongodb-js/mongodb-mcp-server
+- **Website**: https://www.mongodb.com/company/blog/announcing-mongodb-mcp-server
+- **Key Features**:
+  - Connect to MongoDB databases and Atlas clusters
+  - List organizations, projects, and clusters
+  - Create free clusters
+  - Vector search with embedding models
+  - Supports stdio and HTTP transport
+
+**Use Case**: MongoDB database access for AI agents
+
+---
+
+#### **Azure MCP Server**
+- **Type**: Cloud services MCP provider
+- **Developer**: Microsoft
+- **Documentation**: https://learn.microsoft.com/en-us/azure/
+
+**Use Case**: Azure cloud service integration
+
+---
+
+#### **AWS MCP Server**
+- **Type**: Cloud services MCP provider
+- **Developer**: Amazon
+- **Website**: https://aws.amazon.com
+- **Documentation**: https://aws.amazon.com/blogs/machine-learning/unlocking-the-power-of-model-context-protocol-mcp-on-aws/
+
+**Use Case**: AWS service integration
+
+---
+
+#### **Cloudflare MCP Server**
+- **Type**: CDN and edge services MCP provider
+- **Developer**: Cloudflare
+- **Website**: https://www.cloudflare.com
+
+**Use Case**: Cloudflare service integration
+
+---
+
+### Development Tool MCP Providers
+
+#### **JetBrains MCP Server**
+- **Type**: IDE integration MCP provider
+- **Developer**: JetBrains
+- **Website**: https://www.jetbrains.com
+
+**Use Case**: JetBrains IDE tool access and integration
+
+---
+
+#### **GitHub MCP Server**
+- **Type**: Version control MCP provider
+- **Developer**: GitHub
+- **Repository**: https://github.com/modelcontextprotocol/servers
+- **Documentation**: Part of official Anthropic MCP servers
+
+**Use Case**: GitHub repository and API access
+
+---
+
+### Analytics & Data MCP Providers
+
+#### **Vectara MCP Server**
+- **Type**: Search and RAG MCP provider
+- **Developer**: Vectara
+- **Website**: https://vectara.com
+
+**Use Case**: Neural search and retrieval-augmented generation
+
+---
+
+#### **Chroma MCP Server**
+- **Type**: Vector database MCP provider
+- **Developer**: Chroma
+- **Website**: https://www.trychroma.com
+- **Repository**: https://github.com/chroma-core/chroma
+
+**Use Case**: Memory and RAG workflows
+
+---
+
+#### **ClickHouse MCP Server**
+- **Type**: Analytics database MCP provider
+- **Developer**: ClickHouse
+- **Website**: https://clickhouse.com
+
+**Use Case**: Real-time analytics data access
+
+---
+
+### Remote MCP Providers
+
+#### **Vercel MCP**
+- **Type**: Deployment platform MCP provider
+- **Developer**: Vercel
+- **Website**: https://vercel.com
+- **Documentation**: https://docs.claude.com/en/docs/agents-and-tools/remote-mcp-servers
+
+**Use Case:** Deployment and hosting integration
+
+---
+
+#### **Workato MCP**
+- **Type**: Integration platform MCP provider
+- **Developer**: Workato
+- **Website**: https://www.workato.com
+- **Documentation**: https://docs.claude.com/en/docs/agents-and-tools/remote-mcp-servers
+
+**Use Case:** Workflow automation and enterprise integration
+
+---
+
+#### **Zapier MCP**
+- **Type**: Automation platform MCP provider
+- **Developer**: Zapier
+- **Website**: https://zapier.com
+- **Documentation**: https://docs.claude.com/en/docs/agents-and-tools/remote-mcp-servers
+
+**Use Case:** App integration and no-code automation
+
+---
+
+### MCP Adoption (2025)
+
+As of 2025, MCP has been adopted by major AI providers including:
+- **Anthropic**: Creator and maintainer (November 2024)
+- **OpenAI**: Official adoption (March 2025) across ChatGPT, Agents SDK, and Responses API
+- **Google DeepMind**: Official adoption following announcement
+- **Industry**: 6,360+ MCP servers available as of 2025
 
 ---
 
@@ -701,7 +1047,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **DeepSeek CLI**
 - **Type**: Dedicated DeepSeek coding assistant
-- **Repository**: holasoymalva/deepseek-cli
+- **Repository**: https://github.com/holasoymalva/deepseek-cli
+- **Developer**: holasoymalva
 - **Models**: DeepSeek Coder models
 - **Key Features**: Leverages DeepSeek's coding-specific models
 
@@ -729,10 +1076,33 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **Qodo Command**
+- **Type**: Agentic AI CLI for full SDLC
+- **Developer**: Qodo (formerly Codium)
+- **Website**: https://www.qodo.ai
+- **Key Features**:
+  - Full software development lifecycle support
+  - Code generation, reviews, testing
+  - Debugging and CI/CD orchestration
+  - Deployment automation
+  - Configurable agents for different SDLC stages
+  - Built on Qodo's core agent framework
+
+**Works with:**
+- Multiple LLM providers
+- CI/CD pipelines
+- Development workflows
+- Testing frameworks
+
+---
+
 ### Amazon AI Coding Tools
 
 #### **Amazon Q Developer (formerly CodeWhisperer)**
 - **Type**: AWS generative AI coding assistant
+- **Website**: https://aws.amazon.com/q/developer/
+- **Documentation**: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html
+- **Getting Started**: https://aws.amazon.com/q/developer/getting-started/
 - **Rebranding**: CodeWhisperer capabilities now part of Q Developer (2024)
 - **Models**: Undisclosed AWS models (trained on AWS docs)
 - **Key Features**:
@@ -741,13 +1111,15 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
   - AWS service integration
   - Reference tracking for open-source code
   - Software development lifecycle automation
-- **Pricing**: Free for individuals, $19/user for Pro
+  - 50 agentic chat interactions/month (Free Tier)
+- **Pricing**: Free tier available, $19/user/month for Pro
 
 **Works with:**
 - AWS ecosystem (deep integration)
-- IDEs (VS Code, JetBrains, Visual Studio)
+- IDEs (VS Code, JetBrains, Visual Studio, Eclipse)
 - CLI environments
 - MCP tools
+- Microsoft Teams and Slack
 
 ---
 
@@ -807,6 +1179,182 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 **Works with:**
 - Terminal environments
 - Developer workflows
+
+---
+
+## Cloud-Based Agentic Coding Services
+
+Cloud-based AI coding platforms that remotely access repositories and execute development tasks on remote infrastructure. These services provide web-based interfaces for agentic AI development, allowing developers to kick off autonomous coding workflows from anywhere without local setup.
+
+### GitHub-Integrated Services
+
+#### **GitHub Copilot Workspace**
+- **Type**: Cloud-based Copilot-native development environment
+- **Developer**: GitHub/Microsoft
+- **Website**: https://githubnext.com/projects/copilot-workspace
+- **Key Features**:
+  - Brainstorm, plan, build, test, and run code in natural language
+  - Integrated with GitHub Codespaces for cloud execution
+  - Build and test code in cloud environment
+  - Regional optimization for reduced latency
+  - Asynchronous task execution
+
+**Works with:**
+- GitHub repositories
+- GitHub Codespaces
+- VS Code in the cloud
+- Copilot Individual, Business, and Enterprise subscriptions
+
+---
+
+#### **OpenAI Codex (Web)**
+- **Type**: Autonomous cloud-based coding agent
+- **Developer**: OpenAI
+- **Website**: https://chatgpt.com/codex
+- **Repository**: https://github.com/openai/codex
+- **Key Features**:
+  - Single agent across terminal, IDE, cloud, and mobile
+  - Isolated sandbox execution with repo access
+  - Based on fine-tuned OpenAI o3 model
+  - Task completion in 1-30 minutes
+  - Secure containerized cloud execution
+  - Internet access disabled during execution
+
+**Works with:**
+- ChatGPT Plus, Pro, Business, Edu, Enterprise plans
+- GitHub repositories
+- Pre-installed dependencies via setup scripts
+- Multi-platform (web, terminal, IDE, mobile)
+
+---
+
+#### **Claude Code (Web & Mobile)**
+- **Type**: Cloud-based agentic coding platform
+- **Developer**: Anthropic
+- **Website**: https://claude.ai
+- **Documentation**: https://docs.claude.com/en/docs/claude-code/github-actions
+- **Repository**: https://github.com/anthropics/claude-code
+- **Key Features**:
+  - Available on web and mobile (March 2025)
+  - Run parallel coding tasks from anywhere
+  - @claude mentions in PRs and issues
+  - Anthropic-managed instance execution
+  - GitHub Actions integration
+  - Autonomous pull request creation
+
+**Works with:**
+- GitHub repositories
+- Pull requests and issues
+- Claude.ai web app
+- Mobile devices
+- Claude API
+
+---
+
+#### **Google Jules**
+- **Type**: Asynchronous AI coding agent
+- **Developer**: Google
+- **Website**: https://jules.google
+- **Key Features**:
+  - Asynchronous operation in Google Cloud VMs
+  - Integrates with GitHub repositories
+  - Powered by Gemini 2.5 Pro
+  - Audio changelogs
+  - Up to 200 minutes of continuous execution
+  - Jules Tools CLI companion
+  - Free tier: 15 daily tasks, 3 concurrent tasks
+
+**Pricing:**
+- Free: 15 daily tasks
+- Pro ($19.99/mo): ~5x limits
+- Ultra ($124.99/mo): ~20x limits
+
+**Works with:**
+- GitHub repositories
+- Google Cloud VMs
+- Terminal (via Jules Tools)
+- Gemini 2.5 Pro
+
+---
+
+### Full-Stack Web Development Platforms
+
+#### **Replit Agent (Agent 3)**
+- **Type**: Cloud IDE with autonomous AI agent
+- **Developer**: Replit
+- **Website**: https://replit.com/agent3
+- **Key Features**:
+  - Zero-boilerplate cloud IDE
+  - Up to 200 minutes continuous execution
+  - Containerized dev environments for 50+ languages
+  - Automatic environment provisioning
+  - Remote GitHub repository management
+  - Integrated editor, terminal, and deployment
+
+**Works with:**
+- Python, Node.js, C++, Go, Rust, Java, and 50+ languages
+- GitHub repositories
+- Cloud deployment
+- Ghostwriter AI assistant
+
+---
+
+#### **Bolt.new**
+- **Type**: AI-powered web development platform
+- **Developer**: StackBlitz
+- **Website**: https://bolt.new
+- **Key Features**:
+  - Multi-agent system for UI, logic, backend, state
+  - Browser-based development
+  - Prompt-to-deployment workflow
+  - Instant app deployment
+  - Full-stack development
+
+**Works with:**
+- Web technologies
+- Browser-based workflows
+- Instant deployment
+
+---
+
+#### **Lovable**
+- **Type**: No-code AI web app builder
+- **Developer**: Lovable (formerly GPT Engineer)
+- **Website**: https://lovable.dev
+- **Key Features**:
+  - Build full-stack apps from plain English descriptions
+  - Design, code, and launch from browser
+  - No-code approach
+  - Rapid prototyping
+  - UI-focused generation
+
+**Works with:**
+- React components
+- Full-stack web applications
+- Browser-based development
+
+---
+
+#### **v0 (by Vercel)**
+- **Type**: AI-powered UI component generator
+- **Developer**: Vercel
+- **Website**: https://v0.dev
+- **Key Features**:
+  - Natural language to React components
+  - Shadcn UI and Tailwind CSS
+  - Instant component generation
+  - Browser-based workflow
+
+**Pricing:**
+- Free: $0/month
+- Premium: $20/month
+- Ultra: $200/month
+
+**Works with:**
+- React
+- Shadcn UI
+- Tailwind CSS
+- Next.js
 
 ---
 
@@ -1322,6 +1870,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **Overview**
 - **Developer**: JetBrains
+- **Website**: https://www.jetbrains.com/ai/
+- **Documentation**: https://www.jetbrains.com/help/idea/ai-assistant.html
 - **Type**: Official AI assistant for JetBrains IDEs
 - **Launch**: Major updates April 2025, August 2025
 - **IDEs**: IntelliJ IDEA, PyCharm, WebStorm, GoLand, and others
@@ -1929,6 +2479,65 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **Graphite Diamond**
+- **Type**: AI-powered PR review tool
+- **Developer**: Graphite
+- **Website**: https://graphite.dev/diamond
+- **Documentation**: https://graphite.dev/docs
+- **Key Features**:
+  - Senior engineer-level code review
+  - Analyzes PRs within seconds
+  - Logic bugs and edge case detection
+  - Performance issue identification
+  - Security vulnerability detection
+  - Contextual feedback on every pull request
+
+**Works with:**
+- GitHub pull requests
+- GitLab merge requests
+- Development workflows
+- CI/CD pipelines
+
+---
+
+#### **CodeAnt AI**
+- **Type**: Code quality and security platform
+- **Website**: https://www.codeant.ai
+- **Key Features**:
+  - Combined code quality and security
+  - Automated code reviews
+  - One platform for quality and security
+  - AI-powered analysis
+  - GitHub integration
+
+**Works with:**
+- GitHub repositories
+- CI/CD pipelines
+- Security and quality workflows
+- Development teams
+
+---
+
+#### **Codacy**
+- **Type**: Code quality and security automation
+- **Website**: https://www.codacy.com
+- **Documentation**: https://docs.codacy.com
+- **Key Features**:
+  - Developer-friendly quality and security tool
+  - Supports 40+ programming languages
+  - AI-driven code reviews
+  - Consistent coding standards
+  - Automated analysis
+  - Languages: JavaScript, Python, Java, C#, PHP, and more
+
+**Works with:**
+- 40+ programming languages
+- GitHub, GitLab, Bitbucket
+- CI/CD pipelines
+- Development workflows
+
+---
+
 #### **Semgrep**
 - **Type**: Static analysis security tool
 - **Key Features**: Pattern-based code scanning, custom rules
@@ -1957,6 +2566,212 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 **Works with:**
 - DevSecOps workflows
 - Security automation
+
+---
+
+## Testing & QA Tools
+
+AI-powered testing and quality assurance tools that automate test generation, execution, and maintenance using machine learning and generative AI.
+
+### AI Testing Platforms
+
+#### **KaneAI (LambdaTest)**
+- **Type**: GenAI native QA Agent-as-a-Service
+- **Developer**: LambdaTest
+- **Website**: https://www.lambdatest.com/kane-ai
+- **Documentation**: https://www.lambdatest.com/support/docs/kane-ai/
+- **Key Features**:
+  - End-to-end test automation with natural language
+  - Test creation, debugging, and evolution
+  - Self-healing mechanisms
+  - AI-powered test maintenance
+  - GenAI native platform
+
+**Works with:**
+- Natural language test creation
+- Multiple browsers and devices
+- CI/CD pipelines
+- LambdaTest platform
+
+---
+
+#### **TestRigor**
+- **Type**: AI-powered test automation platform
+- **Website**: https://testrigor.com
+- **Documentation**: https://testrigor.com/docs
+- **Key Features**:
+  - Write tests in plain English
+  - Generative AI for test creation
+  - Dynamic element locators with self-healing
+  - Reduces test maintenance
+  - No programming required
+
+**Works with:**
+- Plain English commands
+- Web, mobile, and API testing
+- CI/CD integration
+- Multiple platforms
+
+---
+
+#### **Functionize**
+- **Type**: AI-powered testing platform
+- **Website**: https://www.functionize.com
+- **Documentation**: https://www.functionize.com/resources
+- **Product Overview**: https://www.functionize.com/product
+- **Key Features**:
+  - Automates entire QA lifecycle
+  - Machine learning for adaptation
+  - Generative AI techniques
+  - Self-healing tests
+  - Predictive analytics
+  - AI-native with specialized agents
+
+**Works with:**
+- Web and mobile applications
+- CI/CD pipelines
+- Enterprise QA workflows
+- Cloud testing
+
+---
+
+#### **BrowserStack Test Observability**
+- **Type**: AI-powered test observability platform
+- **Website**: https://www.browserstack.com/test-observability
+- **Documentation**: https://www.browserstack.com/docs/test-observability
+- **Key Features**:
+  - AI insights for test failures
+  - Identifies product bugs vs automation issues
+  - Root cause analysis
+  - Test debugging acceleration
+
+**Works with:**
+- BrowserStack testing platform
+- CI/CD pipelines
+- Multiple test frameworks
+
+---
+
+## API Testing Tools
+
+AI-powered tools for testing, debugging, and managing APIs with intelligent test generation and automation.
+
+### Comprehensive API Testing Platforms
+
+#### **Katalon**
+- **Type**: API test automation platform
+- **Website**: https://katalon.com
+- **Documentation**: https://docs.katalon.com
+- **Key Features**:
+  - Codeless and code-driven test options
+  - API test creation, management, execution
+  - Wide integration support
+  - Multiple protocol support (REST, SOAP, GraphQL)
+  - Detailed reporting
+
+**Works with:**
+- REST, SOAP, GraphQL APIs
+- CI/CD pipelines
+- Enterprise workflows
+- Multiple test frameworks
+
+---
+
+#### **Testsigma**
+- **Type**: End-to-end API testing platform
+- **Website**: https://testsigma.com
+- **Documentation**: https://testsigma.com/docs
+- **Key Features**:
+  - No-code API testing
+  - No framework setup required
+  - AI-powered test generation
+  - Natural language test creation
+
+**Works with:**
+- REST, SOAP, GraphQL APIs
+- Web and mobile testing
+- CI/CD integration
+- Cloud and on-premise
+
+---
+
+### Lightweight & Open-Source API Tools
+
+#### **Insomnia**
+- **Type**: API testing and debugging tool
+- **Website**: https://insomnia.rest
+- **Repository**: https://github.com/Kong/insomnia
+- **Key Features**:
+  - REST, GraphQL, and gRPC support
+  - User-friendly interface
+  - Environment variables
+  - Plugin system
+  - Team collaboration
+
+**Works with:**
+- REST, GraphQL, gRPC, WebSocket
+- OpenAPI/Swagger specs
+- Plugin ecosystem
+- Kong Gateway
+
+---
+
+#### **Hoppscotch**
+- **Type**: Open-source API testing tool
+- **Website**: https://hoppscotch.io
+- **Repository**: https://github.com/hoppscotch/hoppscotch
+- **Key Features**:
+  - Web-based interface
+  - REST, GraphQL, WebSocket, SSE support
+  - Real-time collaboration
+  - Open-source
+  - Fast and lightweight
+
+**Works with:**
+- REST, GraphQL, WebSocket, SSE, MQTT
+- Browser-based workflows
+- Self-hosted deployments
+- Team collaboration
+
+---
+
+#### **Bruno**
+- **Type**: Open-source API client
+- **Website**: https://www.usebruno.com
+- **Repository**: https://github.com/usebruno/bruno
+- **Key Features**:
+  - Git-integrated API client
+  - No cloud data sync (privacy-first)
+  - Offline-first
+  - Open-source
+  - Collection versioning
+
+**Works with:**
+- REST, GraphQL APIs
+- Git version control
+- Local-first workflows
+- Team collaboration via Git
+
+---
+
+### Enterprise API Testing
+
+#### **SoapUI**
+- **Type**: API testing tool for SOAP and REST
+- **Website**: https://www.soapui.org
+- **Documentation**: https://www.soapui.org/docs/
+- **Key Features**:
+  - SOAP and REST testing
+  - Functional, regression, and load testing
+  - Security testing
+  - Automated test execution
+  - Enterprise features
+
+**Works with:**
+- SOAP and REST APIs
+- Security testing
+- Load testing
+- CI/CD integration
 
 ---
 
@@ -2002,6 +2817,71 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **Docify AI**
+- **Type**: Automated code comment and documentation generator
+- **Website**: https://docify.ai4code.io
+- **Key Features**:
+  - Automated code comment generation
+  - Improves code quality
+  - Saves development time
+  - Increases productivity
+  - AI-powered documentation
+
+**Works with:**
+- Multiple programming languages
+- Code documentation workflows
+- Development teams
+
+---
+
+#### **DocuWriter.ai**
+- **Type**: AI-powered documentation automation
+- **Website**: https://www.docuwriter.ai
+- **Key Features**:
+  - Automates code and API documentation
+  - Generates docs from source code
+  - Auto-generated documentation
+  - API documentation support
+
+**Works with:**
+- Source code files
+- API documentation
+- Multiple programming languages
+
+---
+
+#### **Bito AI Documentation Generator**
+- **Type**: Multi-language documentation tool
+- **Website**: https://bito.ai
+- **Key Features**:
+  - Supports many programming languages
+  - Documentation in 50+ spoken languages
+  - Python, JavaScript, Go, Rust, and more
+  - Multi-lingual documentation support
+
+**Works with:**
+- Python, JavaScript, Go, Rust, and more
+- 50+ spoken languages
+- Global development teams
+
+---
+
+#### **Workik**
+- **Type**: Code documentation platform
+- **Website**: https://workik.com
+- **Key Features**:
+  - Clear and comprehensive documentation
+  - Consistent formatting and style
+  - Automated documentation generation
+  - Context-driven AI assistance
+
+**Works with:**
+- Multiple programming languages
+- Enterprise documentation workflows
+- Team collaboration
+
+---
+
 #### **Pieces for Developers**
 - **Type**: AI-powered developer productivity tool
 - **Note**: Limited search results, may need further research
@@ -2029,6 +2909,88 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 - Local deployment
 - Development workflows
 - Educational contexts
+
+---
+
+## Database & SQL Tools
+
+AI-powered tools for SQL generation, query optimization, and database management using natural language processing and machine learning.
+
+### SQL Generation & Query Optimization
+
+#### **AI2SQL**
+- **Type**: AI-powered SQL generator and optimizer
+- **Website**: https://ai2sql.io
+- **Documentation**: https://ai2sql.io/docs
+- **Key Features**:
+  - Text2SQL natural language conversion
+  - Query optimization (up to 10× faster performance)
+  - SQL Bot for assistance
+  - ERD AI for database design
+  - Performance tuning
+  - Instant query analysis
+
+**Works with:**
+- SQL databases (MySQL, PostgreSQL, SQL Server)
+- NoSQL databases
+- Query optimization workflows
+- Database design
+
+---
+
+#### **Chat2DB**
+- **Type**: AI-powered SQL client
+- **Website**: https://chat2db.ai
+- **Repository**: https://github.com/chat2db/Chat2DB
+- **Key Features**:
+  - Natural language to SQL
+  - Visual database management
+  - ER diagrams and dashboards
+  - Multi-database support
+  - Optimized query generation
+  - Relational and non-relational databases
+
+**Works with:**
+- MySQL, PostgreSQL, MongoDB, Redis
+- SQL and NoSQL databases
+- Visual database tools
+- Team collaboration
+
+---
+
+#### **Text2SQL.ai**
+- **Type**: Natural language to SQL platform
+- **Website**: https://text2sql.ai
+- **Key Features**:
+  - Plain English to SQL queries
+  - Query generation, optimization, explanation
+  - Debugging assistance
+  - Supports SQL and NoSQL databases
+  - All technical levels
+  - Multiple database support
+
+**Works with:**
+- SQL databases
+- NoSQL databases
+- Query learning and debugging
+- Database optimization
+
+---
+
+#### **SQLAI.ai**
+- **Type**: Free SQL query generator
+- **Website**: https://www.sqlai.ai
+- **Key Features**:
+  - Generate SQL queries in seconds
+  - Free to use
+  - AI-powered generation
+  - Multiple database support
+  - Quick query creation
+
+**Works with:**
+- Multiple SQL databases
+- Query generation workflows
+- Free tier development
 
 ---
 
@@ -2239,6 +3201,49 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **Llamafile**
+- **Type**: Single-file LLM deployment
+- **Developer**: Mozilla
+- **Repository**: https://github.com/Mozilla-Ocho/llamafile
+- **Website**: https://llamafile.ai
+- **Platform**: Windows, macOS, Linux
+- **Key Features**:
+  - Package models into single executable files
+  - Revolutionary portability approach
+  - No installation or dependencies required
+  - Cross-platform compatibility
+  - Ideal for distribution and edge deployment
+  - Mozilla-backed project
+
+**Works with:**
+- Any platform (portable executables)
+- Edge deployment scenarios
+- Offline environments
+- Simple distribution workflows
+
+---
+
+#### **Nut Studio**
+- **Type**: GUI-based local LLM platform (Windows)
+- **Developer**: iMyFone
+- **Website**: https://nutstudio.imyfone.com
+- **Platform**: Windows
+- **Key Features**:
+  - No command line required
+  - Full visual interface
+  - No configuration needed
+  - No setup complexity
+  - Beginner-friendly alternative to Ollama
+  - Windows-optimized
+
+**Works with:**
+- Windows systems
+- Local model execution
+- Non-technical users
+- Visual workflow management
+
+---
+
 ### Model Optimization & Deployment
 
 #### **LiteLLM**
@@ -2328,6 +3333,122 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 - OpenAI, Anthropic, Google, and other LLM providers
 - Vector databases (Pinecone, Weaviate, Chroma)
 - Document stores
+
+---
+
+#### **LangGraph**
+- **Developer**: LangChain Inc.
+- **Website**: https://www.langchain.com/langgraph
+- **Repository**: https://github.com/langchain-ai/langgraph
+- **Documentation**: https://langchain-ai.github.io/langgraph/
+- **Type**: Stateful agent framework built on LangChain
+- **Language**: Python, JavaScript/TypeScript
+- **Key Features**:
+  - DAG-style workflow creation
+  - Fine-grained control over agent behavior
+  - Stateful multi-agent systems
+  - Built on top of LangChain
+  - Graph-based agent orchestration
+
+**Works with:**
+- LangChain ecosystem
+- Multiple LLM providers
+- Complex agentic workflows
+
+---
+
+#### **AutoGen**
+- **Developer**: Microsoft
+- **Website**: https://microsoft.github.io/autogen/
+- **Repository**: https://github.com/microsoft/autogen
+- **Type**: Multi-agent conversation framework
+- **Language**: Python
+- **Key Features**:
+  - Agents communicate in natural language
+  - Define multiple specialized agents (Planner, Developer, Reviewer)
+  - Collaborative multi-agent systems
+  - Autonomous agent-to-agent communication
+
+**Works with:**
+- Multiple LLM providers
+- Microsoft AI ecosystem
+- Complex multi-agent workflows
+
+---
+
+#### **CrewAI**
+- **Developer**: CrewAI Inc.
+- **Website**: https://www.crewai.com
+- **Repository**: https://github.com/joaomdmoura/crewAI
+- **Documentation**: https://docs.crewai.com
+- **Type**: Collaborative multi-agent framework
+- **Language**: Python
+- **Key Features**:
+  - Assign distinct roles, goals, and tools to agents
+  - Role-based agent collaboration
+  - Open-source framework
+  - Multi-agent orchestration
+
+**Works with:**
+- Multiple LLM providers
+- Complex collaborative tasks
+- Agent-based development
+
+---
+
+#### **OpenAI Agents SDK**
+- **Developer**: OpenAI
+- **Website**: https://platform.openai.com/docs/agents
+- **Type**: Minimalist agent framework
+- **Language**: Python, TypeScript
+- **Key Features**:
+  - Core primitives: agents, tools, handoffs, guardrails
+  - Minimalist design philosophy
+  - Structured workflows
+  - Official OpenAI implementation
+
+**Works with:**
+- OpenAI models
+- Structured agentic workflows
+- Enterprise applications
+
+---
+
+#### **Semantic Kernel**
+- **Developer**: Microsoft
+- **Website**: https://learn.microsoft.com/en-us/semantic-kernel/
+- **Repository**: https://github.com/microsoft/semantic-kernel
+- **Type**: AI integration framework
+- **Language**: C#, Python, Java
+- **Key Features**:
+  - Integrate AI into traditional software development
+  - Seamless integration with existing applications
+  - Enterprise-grade framework
+  - Multi-language support
+
+**Works with:**
+- Microsoft ecosystem
+- Enterprise applications
+- Traditional software development workflows
+
+---
+
+#### **Haystack**
+- **Developer**: deepset
+- **Website**: https://haystack.deepset.ai
+- **Repository**: https://github.com/deepset-ai/haystack
+- **Type**: Open-source LLM framework
+- **Language**: Python
+- **Key Features**:
+  - Production-ready NLP pipelines
+  - RAG and search applications
+  - Modular architecture
+  - Document processing
+
+**Works with:**
+- Multiple LLM providers
+- Vector databases
+- Search and RAG applications
 
 ---
 
@@ -2510,6 +3631,65 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 - Web browsers
 - Gmail, Twitter, LinkedIn
 - Various websites
+
+---
+
+#### **Qodo Merge AI**
+- **Developer**: Qodo (formerly Codium)
+- **Website**: https://www.qodo.ai/qodo-merge
+- **Type**: AI code review browser extension for GitHub
+- **Platform**: Chrome, Firefox, Edge
+- **Key Features**:
+  - AI code reviews inside GitHub PRs
+  - PR chat functionality
+  - No need to switch tools
+  - Works directly in GitHub interface
+  - Best for GitHub PR reviews
+
+**Works with:**
+- GitHub pull requests
+- Browser-based workflows
+- Code review processes
+
+---
+
+#### **Octotree**
+- **Developer**: Octotree
+- **Website**: https://www.octotree.io
+- **Repository**: https://github.com/ovity/octotree
+- **Type**: GitHub enhancement extension
+- **Platform**: Chrome, Firefox, Edge, Safari
+- **Key Features**:
+  - IDE-like code tree in browser
+  - Fast file exploration
+  - Quick search functionality
+  - PR review enhancement
+  - Code bookmarking
+  - No need to leave GitHub interface
+
+**Works with:**
+- GitHub repositories
+- GitLab repositories
+- Browser-based development
+
+---
+
+#### **daily.dev**
+- **Developer**: daily.dev
+- **Website**: https://daily.dev
+- **Type**: Developer news aggregator
+- **Platform**: Chrome, Firefox, Edge
+- **Key Features**:
+  - Personalized tech news feed
+  - New tab replacement
+  - 1,300+ developer-focused sources
+  - Tech articles and discussions
+  - Developer community content
+
+**Works with:**
+- Browser new tab
+- Tech news sources
+- Developer communities
 
 ---
 
