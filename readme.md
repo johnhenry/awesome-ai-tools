@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> **Last Updated:** October 2025
+> **Last Updated:** November 2025
 > A complete guide to AI-powered coding tools, from inference providers to IDEs, extensions, and specialized utilities.
 
 ## Introduction
@@ -487,6 +487,24 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **Goose**
+- **Type**: AI-powered developer agent CLI
+- **Developer**: Block (formerly Square)
+- **Repository**: https://github.com/block/goose
+- **Documentation**: https://block.github.io/goose/docs/quickstart/
+- **Key Features**:
+  - Terminal-based AI coding assistant
+  - Developer workflow automation
+  - Agentic task execution
+  - Open-source
+
+**Works with:**
+- Multiple LLM providers
+- Developer workflows
+- Terminal environments
+
+---
+
 #### **Jules Tools CLI**
 - **Type**: Google's coding agent CLI
 - **Website**: https://jules.google
@@ -690,6 +708,24 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 **Works with:**
 - DeepSeek API (native)
 - DeepSeek Coder models
+
+---
+
+#### **DeepAgents CLI**
+- **Type**: AI coding agent CLI
+- **Developer**: LangChain AI
+- **Repository**: https://github.com/langchain-ai/deepagents
+- **Website**: https://blog.langchain.com/introducing-deepagents-cli/
+- **Key Features**:
+  - Terminal-based AI coding agent
+  - Powered by LangChain framework
+  - Agent-based development workflows
+  - Integration with LangChain ecosystem
+
+**Works with:**
+- LangChain framework
+- Multiple LLM providers
+- AI agent workflows
 
 ---
 
@@ -2917,7 +2953,7 @@ Tools with strong local model support:
 
 ---
 
-*Last Updated: October 2025*
+*Last Updated: November 2025*
 *Note: This landscape is rapidly evolving. Check official documentation for the latest features and compatibility.*
 
 ---
