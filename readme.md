@@ -737,6 +737,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Open-source AI pair programmer
 - **Website**: https://aider.chat
 - **Repository**: https://github.com/paul-gauthier/aider
+- **Installation**: `python -m pip install aider-install && aider-install`
 - **Models**: GPT-4o, Claude 3.5 Sonnet (recommended), any LLM
 - **Key Features**:
   - Multi-file edits
@@ -803,6 +804,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Official Microsoft/GitHub terminal tool
 - **Website**: https://githubnext.com/projects/copilot-cli
 - **Documentation**: https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line
+- **Installation**: `gh extension install github/gh-copilot` or `npm install -g @github/copilot`
 - **Status**: Public preview (September 2025)
 - **Models**: GPT-4.1 (default), GPT-5-Codex, GPT-5, Claude Sonnet 4.5, Gemini 2.5 Pro, xAI Grok
 - **Key Features**:
@@ -824,7 +826,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Anthropic's official coding CLI
 - **Website**: https://claude.ai/code
 - **Documentation**: https://docs.anthropic.com/claude/docs/claude-code
-- **Installation**: NPM-installable, Node.js based
+- **Installation**: `npm install -g @anthropic-ai/claude-code` or `curl -fsSL https://claude.ai/install.sh | bash`
 - **Models**: Claude 4, Claude 3.5 Sonnet (native)
 - **Key Features**:
   - Agentic coding in terminal
@@ -863,6 +865,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Developer**: Block (formerly Square)
 - **Repository**: https://github.com/block/goose
 - **Documentation**: https://block.github.io/goose/docs/quickstart/
+- **Installation**: `curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | bash`
 - **Key Features**:
   - Terminal-based AI coding assistant
   - Developer workflow automation
@@ -894,6 +897,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: All-Hands AI coding agent
 - **Website**: https://www.all-hands.dev
 - **Repository**: https://github.com/All-Hands-AI/OpenHands
+- **Installation**: `uvx --python 3.12 openhands`
 - **Models**: Multiple LLM support via LiteLLM
 - **Status**: Recent CLI release (2025)
 - **Key Features**:
@@ -937,6 +941,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Open-source BYO-model agent
 - **Website**: https://continue.dev
 - **Repository**: https://github.com/continuedev/continue
+- **Installation**: `npm i -g @continuedev/cli`
 - **Models**: Any model (OpenAI, Anthropic, Ollama, etc.)
 - **Key Features**:
   - Custom agent rules
@@ -959,6 +964,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Community/OSS GitHub-native agent
 - **Repository**: https://github.com/AbanteAI/mentat
 - **Website**: https://www.mentat.ai
+- **Installation**: `pip install git+https://github.com/AbanteAI/mentat.git` or `brew install mentat`
 - **Key Features**:
   - Multi-file edits
   - Project-wide context
@@ -994,6 +1000,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: AI boilerplate/scaffolding generator
 - **Website**: https://tryboil.com
 - **Repository**: https://github.com/santiagomed/boil
+- **Installation**: `brew tap santiagomed/tap && brew install boil`
 - **Key Features**:
   - Generates custom boilerplate from plain English
   - Natural language project setup
@@ -1010,6 +1017,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 #### **ForgeCode (Forge)**
 - **Type**: Terminal AI coding assistant
 - **Website**: https://forgecode.dev
+- **Installation**: `npx forgecode@latest`
 - **Models**: 300+ models supported (Claude, GPT, Grok, Deepseek, Gemini)
 - **Key Features**:
   - LSP (Language Server Protocol) integration
@@ -1031,6 +1039,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Stakeholder**: Charm (charmbracelet)
 - **Website**: https://charm.sh
 - **Repository**: https://github.com/charmbracelet/crush
+- **Installation**: `brew install charmbracelet/tap/crush` or `npm install -g @charmland/crush`
 - **Former Name**: OpenCode (renamed to Crush)
 - **Key Features**:
   - LSP (Language Server Protocol) integration
@@ -1052,6 +1061,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Provider-agnostic coding CLI
 - **Website**: https://opencode.ai
 - **Stakeholder**: SST.dev
+- **Installation**: `curl -fsSL https://opencode.ai/install | bash`
 - **Key Features**:
   - Provider-agnostic architecture
   - 75+ AI providers supported
@@ -1074,6 +1084,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Dedicated DeepSeek coding assistant
 - **Repository**: https://github.com/holasoymalva/deepseek-cli
 - **Developer**: holasoymalva
+- **Installation**: `npm install -g run-deepseek-cli`
 - **Models**: DeepSeek Coder models
 - **Key Features**: Leverages DeepSeek's coding-specific models
 
@@ -1088,6 +1099,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Developer**: LangChain AI
 - **Repository**: https://github.com/langchain-ai/deepagents
 - **Website**: https://blog.langchain.com/introducing-deepagents-cli/
+- **Installation**: `pip install deepagents`
 - **Key Features**:
   - Terminal-based AI coding agent
   - Powered by LangChain framework
@@ -1155,6 +1167,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Developer**: Builder.io (OSS)
 - **Repository**: https://github.com/BuilderIO/ai-shell
 - **Website**: https://www.builder.io/blog/ai-shell
+- **Installation**: `npm install -g @builder.io/ai-shell`
 - **Use Case**: Command-level assistance (not project editing)
 
 **Works with:**
@@ -1167,6 +1180,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: GPT-powered shell assistant
 - **Repository**: https://github.com/TheR1D/shell_gpt
 - **Website**: https://github.com/TheR1D/shell_gpt#readme
+- **Installation**: `pip install shell-gpt`
 - **Variants**: Multiple community forks
 - **Commands**: `sgpt "explain X"`, `sgpt "command for..."`
 - **Use Case**: Command generation, explanations
@@ -1182,6 +1196,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Source**: OSS community
 - **Repository**: https://github.com/Nutlope/aicommits
 - **Website**: https://github.com/Nutlope/aicommits#readme
+- **Installation**: `npm install -g aicommits`
 - **Use Case**: Automated commit messages from diffs
 
 **Works with:**
