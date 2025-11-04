@@ -753,6 +753,31 @@ As of 2025, MCP has been adopted by major AI providers including:
 
 ---
 
+#### **Augment CLI (Auggie)**
+- **Type**: AI-powered agentic CLI tool
+- **Developer**: Augment
+- **Website**: https://augmentcode.com
+- **Documentation**: https://docs.augmentcode.com/cli/overview
+- **Repository**: https://github.com/augmentcode/auggie
+- **Installation**: `npm install -g @augmentcode/auggie` (requires Node 22+)
+- **Key Features**:
+  - Interactive agentic terminal with real-time streaming responses
+  - Code analysis and modification capabilities
+  - Tool execution within terminal environments
+  - CI/CD pipeline and workflow automation integration
+  - Advanced context engine for codebase understanding
+  - PR feedback and build insights
+  - Compatible with zsh, bash, and fish shells
+
+**Works with:**
+- Multiple LLM providers (via Augment's platform)
+- VS Code, JetBrains IDEs, Vim, Neovim (via Augment extensions)
+- 100+ external tools via MCP (Model Context Protocol)
+- GitHub workflows and automation frameworks
+- Enterprise codebases (clients include Webflow, Uber, Snyk, Spotify, MongoDB, Vercel)
+
+---
+
 #### **OpenAI Codex CLI**
 - **Type**: Official OpenAI coding agent
 - **Website**: https://openai.com/codex
