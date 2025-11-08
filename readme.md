@@ -1155,17 +1155,11 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 #### **aichat**
 - **Type**: All-in-one LLM CLI tool with shell assistance
-- **Developer**: Open Source
 - **Repository**: https://github.com/sigoden/aichat
 - **Installation**: `cargo install aichat`, `brew install aichat`, or package managers
+- **Source**: OSS community
 - **Models**: 20+ providers including OpenAI, Claude, Gemini, Ollama, Groq, Azure-OpenAI
-- **Key Features**:
-  - CMD mode for AI-assisted shell commands
-  - REPL mode with interactive chat
-  - RAG (Retrieval-Augmented Generation)
-  - Function calling and AI agents
-  - Session management
-  - Built-in HTTP server with API endpoints
+- **Special Features**: CMD mode, REPL mode with interactive chat, RAG, function calling, AI agents, session management, built-in HTTP server
 **Works with:**
 - 20+ LLM providers
 - Shell environments
@@ -1192,12 +1186,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Repository**: https://github.com/kagisearch/ask
 - **Installation**: Clone repo, make executable, copy to PATH
 - **Models**: Mercury Coder (default), Gemini 2.5 Flash, Claude Sonnet 4, Qwen3 235B, via OpenRouter
-- **Key Features**:
-  - Multiple AI model support with shorthand flags
-  - Provider routing with fallback
-  - Streaming mode
-  - Pipe input support
-  - Performance metrics display
+- **Special Features**: Multiple AI model support with shorthand flags, provider routing with fallback, streaming mode, pipe input support, performance metrics display
 **Works with:**
 - OpenRouter API
 - Various LLM models
@@ -1210,12 +1199,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: pmarreck (personal dotfiles)
 - **Repository**: https://github.com/pmarreck/dotfiles/blob/master/bin/ask
 - **Models**: OpenAI ChatGPT API
-- **Key Features**:
-  - Conversation history persistence
-  - Tool calling capabilities
-  - Weather tools integration
-  - Follow-up question support
-  - Markdown output via glow
+- **Special Features**: Conversation history persistence, tool calling capabilities, weather tools integration, follow-up question support, markdown output via glow
 **Works with:**
 - OpenAI API
 - OpenWeatherMap API
@@ -1228,11 +1212,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: pmarreck (personal dotfiles)
 - **Repository**: https://github.com/pmarreck/dotfiles/blob/master/bin/ask_local
 - **Models**: Ollama-compatible local models (default: gpt-oss:20b)
-- **Key Features**:
-  - Offline AI assistance
-  - Local-first design
-  - Configurable model selection
-  - Extended timeout for local processing
+- **Special Features**: Offline AI assistance, local-first design, configurable model selection, extended timeout for local processing
 **Works with:**
 - Ollama (localhost:11434)
 - Local LLM models
@@ -1242,17 +1222,11 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 #### **clai**
 - **Type**: Command Line AI with Unix pipeline integration
-- **Developer**: Open Source
 - **Repository**: https://github.com/baalimago/clai
 - **Installation**: `go install github.com/baalimago/clai@latest`
+- **Source**: OSS community
 - **Models**: OpenAI, Anthropic, Mistral, Deepseek, Ollama, xAi, Google Gemini, Novita AI
-- **Key Features**:
-  - MCP client support
-  - Vendor-agnostic LLM compatibility
-  - Conversation management
-  - Automatic summarization for rate limit handling
-  - Pre-prompted profiles
-  - Unix philosophy alignment
+- **Special Features**: MCP client support, vendor-agnostic LLM compatibility, conversation management, automatic summarization for rate limit handling, pre-prompted profiles, Unix philosophy alignment
 **Works with:**
 - Multiple LLM vendors
 - Unix pipelines
@@ -1265,12 +1239,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: rbitr (GitHub gist)
 - **Repository**: https://gist.github.com/rbitr/bfbc43b806ac62a5230555582d63d4f7
 - **Models**: Claude Sonnet 4.5
-- **Key Features**:
-  - Multi-turn conversations with session persistence
-  - Local conversation caching (~/.chat/)
-  - Customizable system prompts and temperature
-  - SHA256-hashed session identifiers
-  - 16,384 token maximum
+- **Special Features**: Multi-turn conversations with session persistence, local conversation caching (~/.chat/), customizable system prompts and temperature, SHA256-hashed session identifiers, 16,384 token maximum
 **Works with:**
 - Anthropic Claude API
 - Terminal environments
@@ -1279,14 +1248,10 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 #### **FRIDAY**
 - **Type**: Natural language Linux command assistant
-- **Developer**: Open Source
 - **Repository**: https://github.com/Jotalea/FRIDAY
 - **Installation**: Clone from GitHub
-- **Key Features**:
-  - Natural language to command translation
-  - Command explanation before execution
-  - Safety-first with default Cancel
-  - Interactive approval workflow
+- **Source**: OSS community
+- **Special Features**: Natural language to command translation, command explanation before execution, safety-first with default Cancel, interactive approval workflow
 **Works with:**
 - Linux systems
 - Command-line environments
@@ -1298,12 +1263,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: pmarreck (personal dotfiles)
 - **Repository**: https://github.com/pmarreck/dotfiles/blob/master/bin/git_commit_ai
 - **Models**: OpenAI gpt-5-mini (default), local models via localhost
-- **Key Features**:
-  - Generates commit messages from git diffs
-  - Supports both remote and local LLMs
-  - Automatic clipboard copying
-  - Customizable model, temperature, timeout
-  - Companion git_commit_ai_local for offline use
+- **Special Features**: Generates commit messages from git diffs, supports both remote and local LLMs, automatic clipboard copying, customizable model/temperature/timeout, companion git_commit_ai_local for offline use
 **Works with:**
 - OpenAI API
 - Local LLMs (qwen2.5-coder:32b, etc.)
@@ -1318,13 +1278,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Repository**: https://github.com/simonw/llm
 - **Installation**: `pip install llm`, `brew install llm`, or `pipx install llm`
 - **Models**: OpenAI GPT, Anthropic Claude, Google Gemini, Meta Llama, Ollama, OpenAI-compatible
-- **Key Features**:
-  - SQLite database for interaction storage
-  - Embedding generation and management
-  - Structured data extraction
-  - Tool execution capabilities
-  - Template system for reusable prompts
-  - Multi-modal support (images, audio, video)
+- **Special Features**: SQLite database for interaction storage, embedding generation and management, structured data extraction, tool execution capabilities, template system for reusable prompts, multi-modal support (images, audio, video)
 **Works with:**
 - OpenAI, Anthropic, Google, Meta
 - Local models via Ollama plugin
@@ -1334,16 +1288,11 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 #### **llm-cmd-comp**
 - **Type**: LLM-powered shell completion tool
-- **Developer**: Open Source
 - **Repository**: https://github.com/CGamesPlay/llm-cmd-comp
 - **Installation**: `llm install llm-cmd-comp` + shell config
+- **Source**: OSS community
 - **Models**: Works with LLM framework backends
-- **Key Features**:
-  - Multi-shell support (Fish, Zsh, Bash)
-  - Interactive feedback loop for refinement
-  - Natural language to command conversion
-  - Comment-based instruction enhancement
-  - Alt-Backslash keybinding
+- **Special Features**: Multi-shell support (Fish, Zsh, Bash), interactive feedback loop for refinement, natural language to command conversion, comment-based instruction enhancement, Alt-Backslash keybinding
 **Works with:**
 - Simon Willison's llm framework
 - Fish, Zsh, Bash shells
@@ -1355,11 +1304,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: Part of claude-code-tools
 - **Repository**: https://github.com/pchalasani/claude-code-tools
 - **Installation**: `uv tool install claude-code-tools`
-- **Key Features**:
-  - Translates plain English to shell commands
-  - Rust-based for fast startup (<1ms)
-  - Edit commands before execution
-  - Integration with Claude Code CLI
+- **Special Features**: Translates plain English to shell commands, Rust-based for fast startup (<1ms), edit commands before execution, integration with Claude Code CLI
 **Works with:**
 - Claude Code CLI (required)
 - Terminal environments
@@ -1371,13 +1316,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: pmarreck (personal dotfiles)
 - **Repository**: https://github.com/pmarreck/dotfiles/blob/master/bin/please
 - **Models**: LLM via API (configurable)
-- **Key Features**:
-  - Natural language to shell command translation
-  - Platform-aware command generation (OS detection)
-  - Interactive execution menu (run/copy/cancel)
-  - Automatic shell history integration
-  - Visual feedback via gum spinner
-  - Clipboard copying support
+- **Special Features**: Natural language to shell command translation, platform-aware command generation (OS detection), interactive execution menu (run/copy/cancel), automatic shell history integration, visual feedback via gum spinner, clipboard copying support
 **Works with:**
 - LLM APIs (via curl)
 - Unix/Linux/macOS shells
@@ -1387,17 +1326,11 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 #### **qqqa**
 - **Type**: Fast stateless LLM shell assistant
-- **Developer**: Open Source
 - **Repository**: https://github.com/matisojka/qqqa
 - **Installation**: `brew tap iagooar/qqqa && brew install qqqa` (macOS) or download binaries
+- **Source**: OSS community
 - **Models**: OpenRouter, OpenAI, Groq, Ollama, Anthropic
-- **Key Features**:
-  - Two tools: qq (questions) and qa (agent tasks)
-  - Stateless single-shot workflow
-  - Pipe and script compatible
-  - Built-in safety rails for files and commands
-  - Auto-copy to clipboard
-  - Terminal history integration
+- **Special Features**: Two tools: qq (questions) and qa (agent tasks), stateless single-shot workflow, pipe and script compatible, built-in safety rails for files and commands, auto-copy to clipboard, terminal history integration
 **Works with:**
 - OpenRouter (default)
 - OpenAI, Groq, Ollama, Anthropic
