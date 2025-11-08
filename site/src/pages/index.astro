@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import CategoryNav from '../components/CategoryNav.astro';
 import ToolCard from '../components/ToolCard.astro';
 import PurposeList from '../components/PurposeList.astro';
 import type { ToolsData, Category, Subcategory } from '../types';
@@ -10,12 +9,7 @@ const { meta, categories } = toolsData as ToolsData;
 ---
 
 <BaseLayout title={meta.title} description={meta.subtitle}>
-  <div class="page-layout">
-    <aside class="sidebar">
-      <CategoryNav categories={categories} />
-    </aside>
-
-    <article class="main-content">
+  <article class="main-content">
     <section class="intro">
       <h2>Overview</h2>
       <p>{meta.introduction.overview}</p>
@@ -61,38 +55,12 @@ const { meta, categories } = toolsData as ToolsData;
       ))}
     </section>
   </article>
-  </div>
 
   <style>
-    .page-layout {
-      display: grid;
-      grid-template-columns: 260px 1fr;
-      gap: 1.5rem;
-      align-items: start;
-    }
-
-    .sidebar {
-      position: sticky;
-      top: 5rem;
-      max-height: calc(100vh - 6rem);
-      overflow-y: auto;
-    }
-
     .main-content {
-      min-width: 0;
-    }
-
-    @media (max-width: 1024px) {
-      .page-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .sidebar {
-        position: relative;
-        top: 0;
-        max-height: none;
-        overflow-y: visible;
-      }
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
     }
 
     .intro {

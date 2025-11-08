@@ -9,14 +9,14 @@ const { categories } = Astro.props;
 ---
 
 <div class="category-nav">
-  <button popovertarget="nav-menu" class="nav-toggle">
+  <button popovertarget="nav-menu" class="nav-toggle" id="nav-toggle-btn">
     <span>Quick Navigation</span>
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
       <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </button>
 
-  <nav id="nav-menu" popover="auto" class="nav-popover">
+  <nav id="nav-menu" popover="auto" class="nav-dropdown" anchor="nav-toggle-btn">
     <ul class="nav-list">
       {categories.map((category: Category) => (
         <li>
@@ -29,22 +29,79 @@ const { categories } = Astro.props;
 
 <style>
   .category-nav {
+    position: relative;
+  }
+
+  .nav-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
     padding: 1rem;
     background: var(--color-hover);
     border: 1px solid var(--color-border);
     border-radius: 6px;
-  }
-
-  .category-nav h3 {
-    margin-bottom: 0.75rem;
     color: var(--color-primary);
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    anchor-name: --nav-anchor;
+  }
+
+  .nav-toggle:hover {
+    background: var(--color-bg);
+  }
+
+  .nav-toggle svg {
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+
+  .nav-toggle:hover svg {
+    transform: translateY(2px);
+  }
+
+  .nav-toggle[popovertargetstate="showing"] svg {
+    transform: rotate(180deg);
+  }
+
+  .nav-dropdown {
+    position: absolute;
+    position-anchor: --nav-anchor;
+    position-area: block-end;
+    margin: 0.5rem 0 0 0;
+    padding: 0.75rem;
+    background: var(--color-hover);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-height: 70vh;
+    overflow-y: auto;
+    width: anchor-size(width);
+  }
+
+  /* Fallback for browsers without anchor positioning */
+  @supports not (anchor-name: --nav-anchor) {
+    .nav-dropdown {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: min(90vw, 400px);
+    }
+  }
+
+  .nav-dropdown::backdrop {
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .nav-list {
     list-style: none;
     padding: 0;
+    margin: 0;
+    min-width: 240px;
   }
 
   .nav-list > li {
@@ -55,11 +112,21 @@ const { categories } = Astro.props;
     font-weight: 600;
     color: var(--color-text);
     display: block;
-    padding: 0.25rem 0;
+    padding: 0.5rem 0.75rem;
     font-size: 0.9rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
   }
 
   .nav-list a:hover {
+    background: var(--color-bg);
     color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  @media (min-width: 1025px) {
+    .nav-dropdown {
+      width: 300px;
+    }
   }
 </style>

@@ -2037,7 +2037,8 @@
               "worksWith": [
                 "Codeium/Windsurf infrastructure",
                 "Windsurf IDE (companion to full IDE)"
-              ]
+              ],
+              "website": "https://windsurf.com/"
             },
             {
               "name": "Genie AI (ChatGPT in VS Code)",
@@ -2048,7 +2049,8 @@
               "worksWith": [
                 "OpenAI GPT models",
                 "VS Code command palette"
-              ]
+              ],
+              "website": "https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode"
             },
             {
               "name": "AskCodi",
@@ -2133,7 +2135,8 @@
                 "NVIDIA GPU systems",
                 "Privacy-critical environments",
                 "Local infrastructure"
-              ]
+              ],
+              "repository": "https://github.com/fauxpilot/fauxpilot"
             },
             {
               "name": "Twinny",
@@ -2195,7 +2198,8 @@
                 "VS Code, JetBrains",
                 "Multi-language projects",
                 "Translation workflows"
-              ]
+              ],
+              "website": "https://codegeex.cn/"
             },
             {
               "name": "Droid (VS Code Extension)",
@@ -2214,7 +2218,8 @@
                 "VS Code IDE",
                 "Terminal workflows",
                 "CI/CD automation"
-              ]
+              ],
+              "website": "https://marketplace.visualstudio.com/items?itemName=Factory.factory-vscode-extension"
             }
           ]
         },
@@ -2300,7 +2305,8 @@
               "worksWith": [
                 "Coq proof systems",
                 "Formal verification workflows"
-              ]
+              ],
+              "repository": "https://github.com/JetBrains-Research/coqpilot"
             }
           ]
         }
@@ -2388,7 +2394,8 @@
                 "End-to-end task execution",
                 "IDE integration",
                 "Autonomous coding assistance"
-              ]
+              ],
+              "website": "https://www.jetbrains.com/junie/"
             },
             {
               "name": "Licensing & Pricing",
@@ -2441,7 +2448,8 @@
               "worksWith": [
                 "GitHub ecosystem",
                 "JetBrains IDEs (all major)"
-              ]
+              ],
+              "website": "https://plugins.jetbrains.com/plugin/17718-github-copilot"
             },
             {
               "name": "Kilo Code for JetBrains",
@@ -2452,7 +2460,8 @@
                 "JetBrains IDEs",
                 "400+ AI models",
                 "MCP servers"
-              ]
+              ],
+              "website": "https://kilocode.ai/"
             },
             {
               "name": "Tabnine for JetBrains",
@@ -2461,7 +2470,8 @@
               "worksWith": [
                 "JetBrains IDEs",
                 "Proprietary and third-party models"
-              ]
+              ],
+              "website": "https://www.tabnine.com/"
             }
           ]
         }
@@ -2657,7 +2667,8 @@
               "worksWith": [
                 "ByteDance infrastructure",
                 "AI features (details limited)"
-              ]
+              ],
+              "website": "https://www.trae.ai/"
             }
           ]
         },
@@ -2843,7 +2854,8 @@
                 "Multiple languages",
                 "Enterprise security workflows",
                 "Developer productivity tools"
-              ]
+              ],
+              "website": "https://snyk.io/platform/deepcode-ai/"
             },
             {
               "name": "SonarQube",
@@ -2863,7 +2875,8 @@
                 "Multiple languages",
                 "Enterprise workflows",
                 "Large-scale projects"
-              ]
+              ],
+              "website": "https://www.sonarsource.com/products/sonarqube/"
             },
             {
               "name": "Sourcery",
@@ -2885,7 +2898,8 @@
                 "VS Code, JetBrains IDEs",
                 "Python projects (primary focus)",
                 "30+ programming languages"
-              ]
+              ],
+              "website": "https://sourcery.ai/"
             },
             {
               "name": "Refact.ai",
@@ -2905,7 +2919,8 @@
                 "Self-hosted or cloud deployments",
                 "Enterprise development environments",
                 "OpenAI-compatible APIs"
-              ]
+              ],
+              "website": "https://refact.ai/"
             },
             {
               "name": "AI Code Reviewer",
@@ -3055,7 +3070,8 @@
               "worksWith": [
                 "AI-generated code analysis",
                 "Security workflows"
-              ]
+              ],
+              "website": "https://semgrep.dev/"
             },
             {
               "name": "CodeQL",
@@ -3065,7 +3081,8 @@
               "worksWith": [
                 "GitHub Advanced Security",
                 "AI-generated code analysis"
-              ]
+              ],
+              "website": "https://codeql.github.com/"
             },
             {
               "name": "Aikido Security",
@@ -3074,7 +3091,8 @@
               "worksWith": [
                 "DevSecOps workflows",
                 "Security automation"
-              ]
+              ],
+              "website": "https://www.aikido.dev/"
             }
           ]
         }
@@ -3337,7 +3355,8 @@
                 "GitHub (PR integration)",
                 "Slack",
                 "Developer workflows"
-              ]
+              ],
+              "website": "https://www.mintlify.com/"
             },
             {
               "name": "Swimm",
@@ -3356,7 +3375,8 @@
                 "Team knowledge sharing",
                 "Legacy code understanding",
                 "Documentation workflows"
-              ]
+              ],
+              "website": "https://swimm.io/"
             },
             {
               "name": "Docify AI",
@@ -3429,7 +3449,8 @@
               "note": "Limited search results, may need further research",
               "worksWith": [
                 "Developer workflows (likely)"
-              ]
+              ],
+              "website": "https://pieces.app/"
             }
           ]
         },
@@ -3454,7 +3475,8 @@
                 "Local deployment",
                 "Development workflows",
                 "Educational contexts"
-              ]
+              ],
+              "website": "https://www.llama.com/code-llama/"
             }
           ]
         }
@@ -3591,7 +3613,8 @@
                 "Jan (can use as remote server)",
                 "Any tool with OpenAI-compatible API support",
                 "Local development without CLI"
-              ]
+              ],
+              "website": "https://lmstudio.ai/"
             },
             {
               "name": "vLLM",
@@ -3604,7 +3627,8 @@
                 "Void Editor (advanced local setup option)",
                 "Custom production deployments",
                 "Research applications"
-              ]
+              ],
+              "repository": "https://github.com/vllm-project/vllm"
             },
             {
               "name": "GPT4All",
@@ -3626,7 +3650,8 @@
                 "Offline environments",
                 "Privacy-focused workflows",
                 "Consumer hardware"
-              ]
+              ],
+              "website": "https://www.nomic.ai/gpt4all"
             },
             {
               "name": "Jan (Jan.ai)",
@@ -3645,7 +3670,8 @@
                 "LM Studio (remote server integration)",
                 "Local model deployment",
                 "Privacy-critical workflows"
-              ]
+              ],
+              "website": "https://www.jan.ai/"
             },
             {
               "name": "LocalAI",
@@ -3657,7 +3683,8 @@
               ],
               "worksWith": [
                 "Developer applications"
-              ]
+              ],
+              "website": "https://localai.io/"
             },
             {
               "name": "oLLM",
@@ -3820,7 +3847,8 @@
                 "OpenHands CLI",
                 "Roo Code",
                 "Any tool needing multi-provider support"
-              ]
+              ],
+              "website": "https://www.litellm.ai/"
             },
             {
               "name": "Transformers (Hugging Face)",
@@ -3832,7 +3860,8 @@
               "worksWith": [
                 "Custom development",
                 "Research applications"
-              ]
+              ],
+              "documentation": "https://huggingface.co/docs/transformers/"
             }
           ]
         }
@@ -4445,7 +4474,8 @@
                 "Claude Code CLI",
                 "OpenRouter (model access)",
                 "Any OpenRouter-supported model"
-              ]
+              ],
+              "repository": "https://github.com/musistudio/claude-code-router"
             }
           ]
         },
@@ -4463,7 +4493,8 @@
                 "Playwright automation framework",
                 "LLM-driven testing",
                 "Browser automation"
-              ]
+              ],
+              "repository": "https://github.com/microsoft/playwright-mcp"
             },
             {
               "name": "Selenium & Appium MCP",
@@ -4474,7 +4505,8 @@
                 "Selenium (web testing)",
                 "Appium (mobile testing)",
                 "AI-powered test generation"
-              ]
+              ],
+              "repository": "https://github.com/angiejones/mcp-selenium"
             }
           ]
         },
@@ -4600,7 +4632,8 @@
                 "VS Code extensions (compatibility layer)",
                 "AI coding tools (Theia AI, Theia Coder)",
                 "Web-based and desktop environments"
-              ]
+              ],
+              "website": "https://theia-ide.org/"
             }
           ]
         }
