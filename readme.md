@@ -1205,7 +1205,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 ---
 
-#### **ask & please**
+#### **ask (pmarreck)**
 - **Type**: Personal shell command assistant with memory
 - **Developer**: pmarreck (personal dotfiles)
 - **Repository**: https://github.com/pmarreck/dotfiles/blob/master/bin/ask

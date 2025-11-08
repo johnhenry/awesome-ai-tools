@@ -1383,7 +1383,7 @@
               ]
             },
             {
-              "name": "ask & please",
+              "name": "ask (pmarreck)",
               "type": "Personal shell command assistant with memory",
               "developer": "pmarreck (personal dotfiles)",
               "repository": "https://github.com/pmarreck/dotfiles/blob/master/bin/ask",
