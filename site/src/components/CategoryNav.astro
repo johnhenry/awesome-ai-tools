@@ -1,0 +1,90 @@
+---
+interface Props {
+  categories: any[];
+}
+
+const { categories } = Astro.props;
+---
+
+<nav class="category-nav">
+  <h3>Quick Navigation</h3>
+  <ul class="nav-list">
+    {categories.map((category: any) => (
+      <li>
+        <a href={`#${category.id}`}>{category.name}</a>
+        {category.subcategories && category.subcategories.length > 0 && (
+          <ul class="subnav-list">
+            {category.subcategories.map((subcategory: any) => (
+              <li>
+                <a href={`#${subcategory.id}`}>{subcategory.name}</a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  .category-nav {
+    position: sticky;
+    top: 2rem;
+    padding: 1.5rem;
+    background: var(--color-hover);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .category-nav h3 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-list > li {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-list > li > a {
+    font-weight: 600;
+    color: var(--color-text);
+    display: block;
+    padding: 0.25rem 0;
+  }
+
+  .subnav-list {
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  .subnav-list li {
+    margin-bottom: 0.25rem;
+  }
+
+  .subnav-list a {
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    display: block;
+    padding: 0.15rem 0;
+  }
+
+  .nav-list a:hover,
+  .subnav-list a:hover {
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 768px) {
+    .category-nav {
+      position: relative;
+      top: 0;
+    }
+  }
+</style>
