@@ -37,6 +37,51 @@ This document provides an exhaustive feature-by-feature comparison of all CLI to
 
 ## Core Capabilities Matrix
 
+### Column Definitions
+
+**Tool**
+: The name of the CLI tool being evaluated
+
+**Type**
+: Primary classification of the tool's purpose
+  - *Project Agent*: Autonomous agent for multi-file project-level work
+  - *Command Helper*: Assists with generating/executing shell commands
+  - *Universal CLI*: General-purpose LLM interface supporting multiple use cases
+  - *Git Tool*: Specialized for Git workflow automation
+  - *Query Tool*: Simple query/response interface
+  - *Scaffolding*: Project initialization and boilerplate generation
+  - *Full SDLC*: Covers entire software development lifecycle
+  - *Terminal*: Full terminal application with AI features built-in
+
+**Multi-File Editing**
+: Ability to read, analyze, and modify multiple files simultaneously across a project. Essential for refactoring, feature development, and complex code changes that span multiple modules.
+
+**Code Generation**
+: Capability to generate new code from natural language descriptions, including functions, classes, modules, and complete files. Ranges from snippets to entire codebases.
+
+**Shell Commands**
+: Support for generating, explaining, or executing shell/terminal commands from natural language input. Includes OS-specific command awareness.
+
+**Chat/REPL Mode**
+: Interactive conversational interface (REPL = Read-Eval-Print Loop) allowing back-and-forth dialogue with the AI. Maintains context across multiple interactions within a session.
+
+**Project-Level Agent**
+: Autonomous agent capable of understanding entire project context, planning multi-step tasks, and executing complex workflows without constant human intervention.
+
+**Command-Level Helper**
+: Focused on single-command assistance - translating natural language to shell commands, explaining commands, or helping with one-off tasks rather than project-wide work.
+
+**Git Integration**
+: Integration with Git version control including automated commits, PR creation, diff analysis, commit message generation, and repository understanding.
+
+**MCP Support**
+: Support for Model Context Protocol - a standardized way for LLMs to interact with external tools and data sources. Enables extensibility through plugins and integrations.
+
+**LSP Support**
+: Language Server Protocol integration providing deep code understanding through language-specific analysis, including syntax, semantics, references, and refactoring capabilities.
+
+---
+
 | Tool | Type | Multi-File Editing | Code Generation | Shell Commands | Chat/REPL Mode | Project-Level Agent | Command-Level Helper | Git Integration | MCP Support | LSP Support |
 |------|------|-------------------|-----------------|----------------|----------------|---------------------|---------------------|-----------------|-------------|-------------|
 | **Aider** | Project Agent | ✅ | ✅ | 🟡 | ✅ | ✅ | ❌ | ✅ Auto commits | ❌ | ❌ |
@@ -81,6 +126,50 @@ This document provides an exhaustive feature-by-feature comparison of all CLI to
 ---
 
 ## Model Support Matrix
+
+### Column Definitions
+
+**OpenAI**
+: Support for OpenAI models including GPT-4, GPT-4o, GPT-5, o1, o3, and others. May include specific model versions and capabilities.
+
+**Anthropic Claude**
+: Support for Anthropic's Claude models including Claude 3.5 Sonnet, Claude 4, and other variants. Note whether support is native or requires proxies.
+
+**Google Gemini**
+: Support for Google's Gemini models (Gemini 1.5, 2.0, 2.5, Pro, Flash variants). Includes both API and Vertex AI access methods.
+
+**DeepSeek**
+: Support for DeepSeek models including DeepSeek-Coder, DeepSeek-R1, DeepSeek-V3, and chat variants. Popular for cost-effective high-quality inference.
+
+**Ollama (Local)**
+: Ability to run models locally via Ollama, enabling offline development and privacy-focused workflows. Supports Llama, Mistral, Qwen, and other open models.
+
+**Azure**
+: Integration with Microsoft Azure AI services including Azure OpenAI Service, Azure AI Foundry, and other Azure-hosted models.
+
+**Groq**
+: Support for Groq's ultra-fast inference API featuring accelerated versions of Llama, Mixtral, and other open models.
+
+**Other Providers**
+: Additional LLM providers supported including:
+  - *OpenRouter*: Multi-provider gateway
+  - *Mistral AI*: Mistral, Mixtral models
+  - *Together AI*: Open model hosting
+  - *Replicate*: Cloud model hosting
+  - *Perplexity*: Perplexity models
+  - *Amazon Bedrock*: AWS-managed model marketplace
+  - *Cohere*: Cohere models
+  - *AI21*: Jurassic models
+  - *xAI*: Grok models
+  - And many others
+
+**Provider Count**
+: Total number of LLM providers/platforms supported. Higher numbers indicate more flexibility and vendor independence.
+
+**BYOK Support**
+: Bring Your Own Key - whether you can use your own API keys for LLM providers rather than being locked into a platform's billing. Enables cost control and direct provider relationships.
+
+---
 
 | Tool | OpenAI | Anthropic Claude | Google Gemini | DeepSeek | Ollama (Local) | Azure | Groq | Other Providers | Provider Count | BYOK Support |
 |------|--------|------------------|---------------|----------|----------------|-------|------|-----------------|----------------|--------------|
@@ -127,6 +216,37 @@ This document provides an exhaustive feature-by-feature comparison of all CLI to
 
 ## Agentic Capabilities Matrix
 
+### Column Definitions
+
+**Autonomous Execution**
+: Ability of the agent to execute tasks independently with minimal human intervention. Fully autonomous agents can plan, execute, and iterate without step-by-step approval.
+
+**Task Planning**
+: Capability to break down complex requests into actionable subtasks, create execution plans, and organize work strategically before implementation.
+
+**Multi-Step Workflows**
+: Support for executing sequences of dependent operations where later steps rely on results from earlier ones. Essential for complex features or refactoring.
+
+**Tool Calling**
+: Ability to invoke external tools, APIs, or system functions to extend capabilities beyond pure text generation. Enables integration with databases, APIs, file systems, etc.
+
+**Function Execution**
+: Direct execution of code or system commands, including running scripts, compiling code, executing tests, or performing file operations. Higher privilege than simple tool calling.
+
+**Self-Correction**
+: Ability to detect errors or suboptimal outputs and automatically retry or refine approaches without explicit user feedback. Includes learning from failed attempts.
+
+**Delegation**
+: Capability to spawn sub-agents or distribute work across multiple specialized agents. Advanced agentic feature for handling complex multi-domain tasks.
+
+**CI/CD Integration**
+: Integration with Continuous Integration/Continuous Deployment pipelines including GitHub Actions, GitLab CI, Jenkins, CircleCI, and similar automation platforms.
+
+**Testing Automation**
+: Automatic generation, execution, or verification of tests including unit tests, integration tests, and test-driven development workflows.
+
+---
+
 | Tool | Autonomous Execution | Task Planning | Multi-Step Workflows | Tool Calling | Function Execution | Self-Correction | Delegation | CI/CD Integration | Testing Automation |
 |------|---------------------|---------------|---------------------|--------------|-------------------|-----------------|------------|-------------------|-------------------|
 | **Aider** | 🟡 Semi-autonomous | 🟡 | ✅ | ❌ | ❌ | 🟡 Via iteration | ❌ | 🟡 | ✅ Auto lint/test |
@@ -171,6 +291,40 @@ This document provides an exhaustive feature-by-feature comparison of all CLI to
 ---
 
 ## Development Integration Matrix
+
+### Column Definitions
+
+**IDE Integration**
+: Level of integration with Integrated Development Environments. Includes extensions, plugins, file watchers, and bidirectional communication between IDE and CLI tool.
+
+**VS Code**
+: Specific support for Microsoft Visual Studio Code including extensions, workspace integration, and terminal integration.
+
+**JetBrains**
+: Support for JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, etc.) via plugins or native integration.
+
+**Vim/Neovim**
+: Integration with Vim or Neovim text editors, including plugins, LSP support, and terminal integration.
+
+**Cursor**
+: Support for Cursor IDE (AI-first fork of VS Code). Important for developers using multiple AI coding tools together.
+
+**File Watching**
+: Automatic detection of file changes to trigger re-analysis or re-indexing. Essential for keeping context fresh as code evolves.
+
+**Hot Reload**
+: Ability to update running processes or sessions without restart when configuration or code changes. Improves development iteration speed.
+
+**Remote Dev**
+: Support for remote development scenarios including SSH connections, cloud workspaces, and distributed teams.
+
+**Docker/SSH**
+: Specific support for containerized development (Docker) and SSH-based remote server development. Critical for modern cloud-native workflows.
+
+**Language Support**
+: Programming languages supported including syntax understanding, language-specific features, and specialized tooling.
+
+---
 
 | Tool | IDE Integration | VS Code | JetBrains | Vim/Neovim | Cursor | File Watching | Hot Reload | Remote Dev | Docker/SSH | Language Support |
 |------|----------------|---------|-----------|------------|--------|---------------|------------|------------|------------|------------------|
@@ -217,6 +371,37 @@ This document provides an exhaustive feature-by-feature comparison of all CLI to
 
 ## Context & Memory Matrix
 
+### Column Definitions
+
+**Conversation History**
+: Ability to maintain and reference previous interactions within a session. Enables the AI to remember earlier parts of the conversation and build on them.
+
+**Session Persistence**
+: Storage of conversation sessions to disk for retrieval in future sessions. Allows resuming work across tool restarts or days later.
+
+**Repo Mapping**
+: Automatic analysis and indexing of repository structure, dependencies, and relationships. Creates a comprehensive understanding of codebase architecture.
+
+**Multi-Turn Chat**
+: Support for conversational exchanges where each message builds on previous context. Essential for iterative development and refinement.
+
+**Context Window**
+: Maximum amount of text (measured in tokens) that can be considered simultaneously. Larger windows enable understanding more code at once. Examples: 4K, 8K, 32K, 128K, 200K, 2M tokens.
+
+**Embedding Support**
+: Ability to generate and use vector embeddings for semantic search and similarity matching. Enables finding relevant code by meaning rather than exact keywords.
+
+**RAG Support**
+: Retrieval-Augmented Generation - combining embeddings and knowledge bases to pull relevant context into prompts dynamically. Extends effective context beyond window limits.
+
+**Knowledge Base**
+: Persistent storage of project-specific or domain-specific information that can be referenced across sessions. May include documentation, patterns, or custom rules.
+
+**Conversation Export**
+: Ability to export chat history, interactions, or sessions to external formats (JSON, markdown, database) for archiving, sharing, or analysis.
+
+---
+
 | Tool | Conversation History | Session Persistence | Repo Mapping | Multi-Turn Chat | Context Window | Embedding Support | RAG Support | Knowledge Base | Conversation Export |
 |------|---------------------|--------------------|--------------|-----------------| ---------------|-------------------|-------------|----------------|---------------------|
 | **Aider** | ✅ | ✅ | ✅ Auto mapping | ✅ | Large | ❌ | ❌ | ❌ | ✅ |
@@ -261,6 +446,37 @@ This document provides an exhaustive feature-by-feature comparison of all CLI to
 ---
 
 ## Execution & Safety Matrix
+
+### Column Definitions
+
+**Interactive Approval**
+: Requirement for user confirmation before executing changes or commands. Provides human-in-the-loop control over AI actions.
+
+**Auto-Execution**
+: Ability to automatically execute generated code, commands, or changes without explicit approval for each action. Useful for trusted workflows but requires caution.
+
+**Sandbox Mode**
+: Isolated execution environment that prevents the AI from affecting the real system. Uses containers, VMs, or restricted permissions for safety.
+
+**Permission System**
+: Granular control over what actions the tool can perform, including file access, command execution, network access, and system modifications.
+
+**Undo/Rollback**
+: Ability to reverse changes made by the AI, including Git revert, file restoration, or transaction rollback. Critical safety feature for autonomous agents.
+
+**Safety Rails**
+: Built-in protections against dangerous operations including destructive commands, sensitive file access, or security vulnerabilities. May include hardcoded restrictions or learned patterns.
+
+**Code Review**
+: Features for reviewing generated code before application, including diffs, syntax highlighting, security analysis, and explanation of changes.
+
+**Security Scanning**
+: Automated detection of security vulnerabilities, exposed secrets, insecure dependencies, or dangerous code patterns in generated or modified code.
+
+**Approval Workflow**
+: Multi-step process for reviewing and approving AI-generated changes, potentially including peer review, automated checks, or staged rollouts.
+
+---
 
 | Tool | Interactive Approval | Auto-Execution | Sandbox Mode | Permission System | Undo/Rollback | Safety Rails | Code Review | Security Scanning | Approval Workflow |
 |------|---------------------|----------------|--------------|-------------------|---------------|--------------|-------------|-------------------|-------------------|
@@ -307,6 +523,46 @@ This document provides an exhaustive feature-by-feature comparison of all CLI to
 
 ## Platform & Installation Matrix
 
+### Column Definitions
+
+**macOS**
+: Support for Apple macOS operating system including installation methods, native performance, and Apple Silicon compatibility.
+
+**Linux**
+: Support for Linux distributions including Ubuntu, Debian, Fedora, Arch, and others. Most CLI tools have strongest support here.
+
+**Windows**
+: Native Windows support (not through WSL). Important for enterprise environments and Windows-first development teams.
+
+**WSL**
+: Windows Subsystem for Linux support - running Linux tools on Windows through Microsoft's compatibility layer. Common hybrid solution.
+
+**BSD**
+: Support for BSD operating systems (FreeBSD, OpenBSD, NetBSD). Important for certain server and security-focused environments.
+
+**Installation Method**
+: Primary way to install the tool. Examples: npm, pip, cargo, brew, curl script, binary download, git clone, or package manager.
+
+**Package Manager**
+: Which package managers support the tool, enabling easy installation and updates. Examples: npm, pip, cargo, brew, apt, yum, pacman.
+
+**Binary Size**
+: Approximate disk space required for installation. Ranges from tiny (< 1MB scripts) to large (100MB+ with dependencies).
+
+**Dependencies**
+: External software required for the tool to function. May include runtimes, libraries, or other CLI tools.
+
+**Node.js Req**
+: Whether Node.js runtime is required and minimum version. Many modern CLI tools are built with Node/TypeScript.
+
+**Python Req**
+: Whether Python is required and minimum version (e.g., Python 3.8+, 3.10+, 3.12+). Many AI tools use Python ecosystems.
+
+**Rust Req**
+: Whether Rust toolchain is required for installation or runtime. Rust-based tools are often fast and have minimal runtime dependencies.
+
+---
+
 | Tool | macOS | Linux | Windows | WSL | BSD | Installation Method | Package Manager | Binary Size | Dependencies | Node.js Req | Python Req | Rust Req |
 |------|-------|-------|---------|-----|-----|-------------------|-----------------|-------------|--------------|-------------|-----------|----------|
 | **Aider** | ✅ | ✅ | ✅ | ✅ | 🟡 | pip | pip | Small | Python | ❌ | ✅ 3.8+ | ❌ |
@@ -352,6 +608,47 @@ This document provides an exhaustive feature-by-feature comparison of all CLI to
 
 ## Pricing & Licensing Matrix
 
+### Column Definitions
+
+**Open Source**
+: Whether the tool's source code is publicly available and modifiable. Open source tools offer transparency, community contributions, and avoid vendor lock-in.
+
+**License**
+: Software license governing usage, modification, and distribution. Common licenses:
+  - *MIT*: Very permissive, allows commercial use
+  - *Apache 2.0*: Permissive with patent protection
+  - *GPL*: Copyleft, requires derivatives to be open source
+  - *Proprietary*: Closed source, vendor-controlled
+  - *Personal/Public Gist*: Informal sharing, varies by author
+
+**Pricing Model**
+: How the tool charges users or generates revenue:
+  - *BYOK*: Bring Your Own Key - free software, pay LLM providers directly
+  - *Subscription*: Monthly/annual fees for service access
+  - *Freemium*: Free tier with paid upgrades
+  - *Platform Service*: Managed service with platform costs
+  - *Free*: Completely free with no costs
+
+**Free Tier**
+: Availability of free usage including limitations. May be limited by requests, features, or time period. "Free software" means no cost for tool itself.
+
+**Paid Tier**
+: Commercial offerings with extended features, higher limits, or SLA guarantees. May include team features, priority support, or advanced capabilities.
+
+**API Costs**
+: Whether you pay for LLM API calls separately from the tool. BYOK tools have API costs; subscription tools may include them.
+
+**Subscription**
+: Recurring payment required for tool access. Common in enterprise and commercial tools to fund ongoing development and support.
+
+**Enterprise**
+: Enterprise-grade offerings including SSO, compliance, SLAs, dedicated support, on-premises deployment, or custom contracts.
+
+**Approximate Monthly Cost**
+: Estimated monthly expense for moderate usage. Highly variable based on usage patterns, models chosen, and API pricing. "API-dependent" means cost depends entirely on LLM provider usage.
+
+---
+
 | Tool | Open Source | License | Pricing Model | Free Tier | Paid Tier | API Costs | Subscription | Enterprise | Approximate Monthly Cost |
 |------|------------|---------|---------------|-----------|-----------|-----------|--------------|------------|--------------------------|
 | **Aider** | ✅ | Apache 2.0 | BYOK (API costs) | ✅ Free software | N/A | ✅ LLM API only | ❌ | ❌ | $10-20 (API) |
@@ -396,6 +693,40 @@ This document provides an exhaustive feature-by-feature comparison of all CLI to
 ---
 
 ## Multimodal & Advanced Features Matrix
+
+### Column Definitions
+
+**Voice Input**
+: Ability to accept voice commands or speech-to-text input. Enables hands-free coding and accessibility for users who prefer verbal communication.
+
+**Voice Output**
+: Text-to-speech capability for AI responses. Useful for accessibility, multitasking, or learning contexts where audio output is preferred.
+
+**Image Input**
+: Ability to process images as part of prompts including screenshots, diagrams, mockups, or photos. Enables visual context for code generation or understanding UI requirements.
+
+**Image Generation**
+: Creation of images, diagrams, or visual assets through AI. May include charts, architecture diagrams, or UI mockups.
+
+**Video Input**
+: Processing of video files as input for analysis, transcription, or understanding dynamic visual content.
+
+**Audio Input**
+: Processing of audio files beyond voice input, including music, podcasts, or recorded content for analysis or transcription.
+
+**PDF Support**
+: Ability to read, parse, and understand PDF documents including documentation, specifications, or research papers. Important for context gathering from existing docs.
+
+**Web Scraping**
+: Fetching and processing content from URLs or web pages to incorporate external information into context. Enables research and documentation reference.
+
+**Streaming Responses**
+: Real-time display of AI output as it's generated rather than waiting for complete response. Improves perceived responsiveness and allows early feedback.
+
+**Markdown Output**
+: Formatting of responses using Markdown for better readability including code blocks, headings, lists, and emphasis. Standard for technical documentation.
+
+---
 
 | Tool | Voice Input | Voice Output | Image Input | Image Generation | Video Input | Audio Input | PDF Support | Web Scraping | Streaming Responses | Markdown Output |
 |------|------------|--------------|-------------|------------------|-------------|-------------|-------------|--------------|-------------------|----------------|
