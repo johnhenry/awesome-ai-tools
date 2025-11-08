@@ -1,0 +1,24 @@
+{
+  "name": "awesome-ai-tools",
+  "version": "1.0.0",
+  "description": "A curated list of AI-powered coding tools",
+  "scripts": {
+    "build": "node scripts/generate-readme.js",
+    "parse": "node scripts/parse-readme.js",
+    "validate": "node -e \"JSON.parse(require('fs').readFileSync('data/tools.json', 'utf-8'))\"",
+    "rebuild": "npm run parse && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnhenry/awesome-ai-tools"
+  },
+  "keywords": [
+    "ai",
+    "tools",
+    "coding",
+    "awesome",
+    "list"
+  ],
+  "author": "John Henry",
+  "license": "CC0-1.0"
+}

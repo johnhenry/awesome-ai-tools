@@ -29,21 +29,22 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 - [VS Code Extensions](#vs-code-extensions)
 - [JetBrains IDE Tools](#jetbrains-ide-tools)
 - [Full IDE Tools](#full-ide-tools)
-- [Code Review & Security Tools](#code-review--security-tools)
-- [Testing & QA Tools](#testing--qa-tools)
+- [Code Review & Security Tools](#code-review-security-tools)
+- [Testing & QA Tools](#testing-qa-tools)
 - [API Testing Tools](#api-testing-tools)
-- [Documentation & Code Explanation](#documentation--code-explanation)
-- [Database & SQL Tools](#database--sql-tools)
+- [Documentation & Code Explanation](#documentation-code-explanation)
+- [Database & SQL Tools](#database-sql-tools)
 - [Local Model Infrastructure](#local-model-infrastructure)
-- [AI/ML Libraries & Frameworks](#aiml-libraries--frameworks)
+- [AI/ML Libraries & Frameworks](#ai-ml-libraries-frameworks)
 - [Browser Extensions](#browser-extensions)
-- [Search & Research Tools](#search--research-tools)
-- [Other Tools & Infrastructure](#other-tools--infrastructure)
+- [Search & Research Tools](#search-research-tools)
+- [Other Tools & Infrastructure](#other-tools-infrastructure)
 - [Performance Comparison Context](#performance-comparison-context)
 - [Integration Matrix Summary](#integration-matrix-summary)
 - [Recommendations by Use Case](#recommendations-by-use-case)
 - [Tool Categories Summary](#tool-categories-summary)
 - [Additional Resources](#additional-resources)
+- [License](#license)
 
 ---
 
@@ -53,13 +54,12 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **Anthropic**
 - **Website**: https://www.anthropic.com
-- **API Console**: https://console.anthropic.com
 - **Documentation**: https://docs.anthropic.com
+- **API Console**: https://console.anthropic.com
 - **Models**: Claude 4 (Opus, Sonnet), Claude 3.5 Sonnet, Claude 3.7 Sonnet
 - **API**: Direct API access via api.anthropic.com
 - **Pricing**: Varies by model, competitive with OpenAI
 - **Integration**: Native support in most coding tools
-
 **Works with:**
 - Claude Code CLI (native)
 - Cline, Roo Code, Kilo Code (VS Code extensions)
@@ -71,13 +71,12 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **OpenAI**
 - **Website**: https://openai.com
-- **API Platform**: https://platform.openai.com
 - **Documentation**: https://platform.openai.com/docs
+- **API Platform**: https://platform.openai.com
 - **Models**: GPT-5, GPT-5-mini, GPT-4.1, o3, o4-mini, GPT-5-Codex
 - **API**: OpenAI-compatible API format (industry standard)
 - **Pricing**: Premium pricing, various tiers
 - **Special Features**: Reasoning models (o-series), specialized coding (Codex)
-
 **Works with:**
 - OpenAI Codex CLI (native)
 - GitHub Copilot (native integration)
@@ -89,14 +88,13 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **Google**
 - **Website**: https://ai.google.dev
+- **Documentation**: https://ai.google.dev/docs
 - **AI Studio**: https://aistudio.google.com
 - **Vertex AI**: https://cloud.google.com/vertex-ai
-- **Documentation**: https://ai.google.dev/docs
-- **Models**: Gemini 2.5 Pro, Gemini 2.0 Flash, PaLM, Gemma
 - **Platforms**: Google AI Studio, Vertex AI, DeepMind
+- **Models**: Gemini 2.5 Pro, Gemini 2.0 Flash, PaLM, Gemma
 - **API**: Google Cloud Platform integration
 - **Special Features**: MCP support announced for Gemini (April 2025, Demis Hassabis)
-
 **Works with:**
 - Gemini CLI (native)
 - Jules Tools CLI (native)
@@ -113,7 +111,6 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 - **Pricing**: Ultra-competitive (~$0.28-$0.70/M input tokens)
 - **Special Features**: 671B parameters, 37B active, open-source with reasoning tokens
 - **Performance**: Comparable to OpenAI o1
-
 **Works with:**
 - DeepSeek CLI (dedicated)
 - OpenRouter (aggregation platform)
@@ -127,7 +124,6 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 - **Models**: Qwen3 series, Qwen2.5-Coder
 - **Special Features**: Large context windows, multilingual support
 - **Integration**: Available through OpenRouter and direct API
-
 **Works with:**
 - Continue.dev + Ollama (local deployment)
 - OpenRouter (cloud access)
@@ -138,12 +134,11 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **Mistral AI**
 - **Website**: https://mistral.ai
-- **Platform**: https://console.mistral.ai (La Plateforme)
 - **Documentation**: https://docs.mistral.ai
+- **Platform**: https://console.mistral.ai (La Plateforme)
 - **Models**: Mistral Large, Mistral Small, Ministral 3B, Mistral-OCR-2503, Magistral (reasoning)
 - **Pricing**: Pay-as-you-go token-based billing
 - **Special Features**: Magistral reasoning models (June 2025) for multi-step logic
-
 **Works with:**
 - Azure AI Foundry (serverless API)
 - Tabnine (third-party chat model)
@@ -154,9 +149,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **Cohere**
 - **Models**: Command, Embed, Rerank families
-- **Focus**: Enterprise, multilingual, robust security
 - **Special Features**: Top-tier multilingual models, full deployment control
-
+- **Focus**: Enterprise, multilingual, robust security
 **Works with:**
 - AWS Bedrock
 - Enterprise deployments requiring data control
@@ -166,9 +160,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **AI21 Labs**
 - **Models**: Jamba family (Mamba-Transformer hybrid)
-- **Architecture**: Hybrid Mamba-Transformer for production use
 - **Focus**: Commercial reliability, quality, performance
-
+- **Architecture**: Hybrid Mamba-Transformer for production use
 **Works with:**
 - AWS Bedrock
 - Azure AI Foundry
@@ -179,9 +172,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 #### **Perplexity**
 - **Type**: AI search/Q&A with developer API
 - **Models**: State-of-the-art open-source (Llama, Mistral)
-- **Special Features**: Real-time internet data access, rapid model integration
 - **Pricing**: Usage-based; Pro users get $5/month pplx-api credit
-
+- **Special Features**: Real-time internet data access, rapid model integration
 **Works with:**
 - Applications requiring live data (news, finance, trends)
 - REST API integrations
@@ -194,14 +186,13 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 #### **OpenRouter**
 - **Type**: Unified API gateway
 - **Models**: 300-400+ models from multiple providers
-- **Providers**: Anthropic, OpenAI, Google, Meta, Mistral, DeepSeek, and more
 - **Key Features**:
   - Single OpenAI-compatible endpoint
   - Automatic failover and routing
   - Cost/latency/performance optimization
   - Prompt caching
   - Unified billing
-
+- **Providers**: Anthropic, OpenAI, Google, Meta, Mistral, DeepSeek, and more
 **Works with:**
 - Cline (direct integration with auto-updating model list)
 - Cursor, Windsurf (custom API endpoint support)
@@ -212,11 +203,10 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **Hugging Face Inference**
 - **Type**: Multi-provider serverless inference
-- **Providers**: Fal, Replicate, SambaNova, Together AI
 - **Models**: Hundreds of ML models
 - **API**: Unified, consistent API across providers
 - **Pricing**: Standard provider API rates
-
+- **Providers**: Fal, Replicate, SambaNova, Together AI
 **Works with:**
 - LiteLLM
 - Developer applications
@@ -226,9 +216,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **Replicate**
 - **Type**: Hosted open-source model inference
-- **Features**: Fine-tuning, quick testing, no infrastructure setup
 - **Use Case**: Rapid model integration and testing
-
+- **Features**: Fine-tuning, quick testing, no infrastructure setup
 **Works with:**
 - Hugging Face platform
 - API integrations
@@ -241,9 +230,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 #### **AWS Bedrock**
 - **Type**: Multi-vendor AI service platform
 - **Models**: Claude (Anthropic), Titan (Amazon), Llama (Meta), Cohere, AI21, Mistral, Stability AI, OpenAI (open weight)
-- **Integration**: Deep AWS ecosystem (Lambda, S3, CloudWatch)
 - **Special Features**: Serverless, fully managed, OpenAI-compatible API (August 2025)
-
+- **Integration**: Deep AWS ecosystem (Lambda, S3, CloudWatch)
 **Works with:**
 - Cline, Continue, Roo Code (native Bedrock support)
 - Sourcegraph Cody (BYOM)
@@ -255,9 +243,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 #### **Azure AI Foundry (Azure OpenAI)**
 - **Type**: Microsoft's AI platform
 - **Models**: Exclusive GPT-4/GPT-5 access, Mistral, Cohere, AI21, other models
-- **Integration**: Deep Microsoft ecosystem (365, Active Directory, Cognitive Services)
 - **Special Features**: Enterprise-grade security, compliance
-
+- **Integration**: Deep Microsoft ecosystem (365, Active Directory, Cognitive Services)
 **Works with:**
 - Microsoft Copilot (native)
 - GitHub Copilot (Microsoft integration)
@@ -269,9 +256,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 #### **Google Vertex AI**
 - **Type**: Unified ML/AI platform
 - **Models**: Gemini family, PaLM, Model Garden (Llama, Gemma, BERT, 3rd party)
-- **Integration**: Google Cloud tools (BigQuery, Dataflow)
 - **Special Features**: Data-driven MLOps, analytics focus
-
+- **Integration**: Google Cloud tools (BigQuery, Dataflow)
 **Works with:**
 - Cline, Continue, Roo Code (GCP Vertex provider)
 - Google's native tools (Gemini CLI, Jules Tools)
@@ -282,12 +268,11 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 ### High-Performance Inference Providers
 
 #### **Together AI**
-- **Focus**: High-performance open-source LLMs
-- **Models**: 200+ open-source models
-- **Performance**: Sub-100ms latency, 4x faster than Bedrock, 2x faster than Azure
-- **Pricing**: Up to 11x more affordable than GPT-4
 - **Release**: Together Inference Engine 2.0 with Turbo and Lite endpoints
-
+- **Models**: 200+ open-source models
+- **Pricing**: Up to 11x more affordable than GPT-4
+- **Focus**: High-performance open-source LLMs
+- **Performance**: Sub-100ms latency, 4x faster than Bedrock, 2x faster than Azure
 **Works with:**
 - Hugging Face (serverless integration)
 - Any tool with custom API endpoint support
@@ -297,11 +282,10 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **Fireworks AI**
 - **Focus**: Fastest model APIs
-- **Technology**: Proprietary FireAttention engine
 - **Performance**: 4x lower latency than vLLM
+- **Technology**: Proprietary FireAttention engine
 - **Compliance**: HIPAA, SOC2
 - **Modalities**: Text, image, audio
-
 **Works with:**
 - Hugging Face platform
 - Custom integrations via API
@@ -311,11 +295,10 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 #### **Groq**
 - **Focus**: Hardware-optimized inference
-- **Technology**: Language Processing Unit (LPU) chip
 - **Performance**: 18x faster than traditional GPUs, <1 second for 100 tokens
+- **Technology**: Language Processing Unit (LPU) chip
 - **Deployment**: Cloud and on-premises
 - **Slogan**: "Fast, low cost inference"
-
 **Works with:**
 - Cline, Continue (Groq provider support)
 - Low-latency applications
@@ -326,16 +309,15 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 #### **Cerebras**
 - **Type**: Hardware accelerator manufacturer and inference provider
 - **Website**: https://www.cerebras.ai
-- **Inference Platform**: https://www.cerebras.ai/inference
-- **Cloud**: https://cloud.cerebras.ai
 - **Documentation**: https://inference-docs.cerebras.ai
-- **Focus**: Custom AI chips for inference
-- **Performance**: 2,500+ tokens/second, 574ms for 100 tokens (fastest in class)
 - **Key Features**:
   - Real-time AI responses
   - OpenAI API compatible
   - Pay-as-you-go or reserved capacity pricing
-
+- **Focus**: Custom AI chips for inference
+- **Performance**: 2,500+ tokens/second, 574ms for 100 tokens (fastest in class)
+- **Inference Platform**: https://www.cerebras.ai/inference
+- **Cloud**: https://cloud.cerebras.ai
 **Works with:**
 - Cline (Cerebras provider)
 - High-performance computing applications
@@ -346,16 +328,15 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 #### **SambaNova**
 - **Type**: Inference provider with custom RDU hardware
 - **Website**: https://sambanova.ai
-- **Cloud**: https://cloud.sambanova.ai
-- **API**: https://sambanova.ai/fast-api
 - **Documentation**: https://docs.sambanova.ai
-- **Integration**: Hugging Face serverless
+- **API**: https://sambanova.ai/fast-api
 - **Key Features**:
   - Fastest inference APIs
   - RDU (Reconfigurable Dataflow Units) powered
   - OpenAI-compatible APIs
   - SambaCloud, SambaStack, and SambaManaged options
-
+- **Cloud**: https://cloud.sambanova.ai
+- **Integration**: Hugging Face serverless
 **Works with:**
 - Hugging Face platform
 - Enterprise deployments
@@ -367,15 +348,14 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 #### **Fal**
 - **Type**: Serverless inference provider
 - **Website**: https://fal.ai
-- **Hugging Face**: https://huggingface.co/fal
-- **Integration**: Hugging Face serverless
 - **Key Features**:
   - 600+ production-ready models
   - Generative image, video, audio, and 3D models
   - Serverless GPUs
   - On-demand clusters
   - 4x faster model execution
-
+- **Hugging Face**: https://huggingface.co/fal
+- **Integration**: Hugging Face serverless
 **Works with:**
 - Hugging Face platform
 - Developer applications
@@ -391,7 +371,6 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
   - Access to top-performing models
   - No quality compromise
   - Cost-optimized infrastructure
-
 **Works with:**
 - Leading LLM models
 - Enterprise applications
@@ -408,7 +387,6 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
   - Serverless GPU endpoints
   - Dedicated GPU instances
   - Multi-modal capabilities
-
 **Works with:**
 - Multiple modalities (text, image, video, speech)
 - Serverless deployments
@@ -419,10 +397,9 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 ### Additional Model Providers
 
 #### **Meta**
-- **Models**: Llama 3, Llama family, Code Llama
 - **Type**: Open-source foundation models
+- **Models**: Llama 3, Llama family, Code Llama
 - **Special Features**: Code Llama built on Llama 2, free for research and commercial use
-
 **Works with:**
 - AWS Bedrock, Azure, Google Vertex AI
 - Ollama, LM Studio (local deployment)
@@ -441,7 +418,6 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
   - Visual processing
   - Available on X, Grok.com, and Grok app
   - Free tier with usage limits
-
 **Works with:**
 - GitHub Copilot
 - Roo Code
@@ -453,15 +429,14 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 - **Developer**: Stability AI
 - **Website**: https://stability.ai
 - **Stable Image**: https://stability.ai/stable-image
-- **Focus**: Image generation, video, multimodal
 - **Models**: Stable Diffusion, Stable Video
-- **Integration**: Available through AWS Bedrock
 - **Key Features**:
   - Text-to-image generation
   - Image editing (inpainting, outpainting)
   - Video generation
   - Self-hosting and API options
-
+- **Focus**: Image generation, video, multimodal
+- **Integration**: Available through AWS Bedrock
 **Works with:**
 - AWS Bedrock
 - Hugging Face
@@ -478,8 +453,8 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 #### **Anthropic MCP Server Repository**
 - **Developer**: Anthropic
-- **Repository**: https://github.com/modelcontextprotocol/servers
 - **Website**: https://www.claude.com/partners/mcp
+- **Repository**: https://github.com/modelcontextprotocol/servers
 - **Documentation**: https://docs.claude.com/en/docs/agents-and-tools/remote-mcp-servers
 - **Key Features**:
   - Reference MCP server implementations
@@ -487,7 +462,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
   - Enterprise integrations
   - Open-source implementations
 
-**Official Servers include:**
+**Official Servers include**:
 - Google Drive, Slack, GitHub, Git
 - Postgres, Puppeteer, Stripe
 - File system tools, Web content fetchers
@@ -504,7 +479,6 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
   - Official and community servers
   - Usage statistics (weekly downloads)
   - Release information
-
 ---
 
 ### Enterprise MCP Providers
@@ -513,12 +487,12 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Type**: Portfolio analytics MCP provider
 - **Developer**: Chronograph
 - **Website**: https://www.chronograph.pe/
-- **Integration**: Claude Partners MCP
 - **Key Features**:
   - Private capital portfolio data access
   - Private equity, venture capital, infrastructure data
   - Natural language portfolio queries
   - Ad-hoc analysis and research
+- **Integration**: Claude Partners MCP
 
 **Use Case:** Portfolio management and analytics for private capital investors
 
@@ -529,12 +503,12 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: Box Inc. (community server by hmk)
 - **Website**: https://www.box.com
 - **Documentation**: https://learn.microsoft.com/en-us/connectors/boxmcpserver/
-- **Integration**: Claude Partners MCP
 - **Key Features**:
   - Secure bridge to enterprise content
   - Document search and processing (PDF, Word)
   - Contract, financial records, policy access
   - Enterprise authentication and security
+- **Integration**: Claude Partners MCP
 
 **Use Case:** Enterprise document access and AI-powered document analysis
 
@@ -595,8 +569,8 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 #### **MongoDB MCP Server**
 - **Type**: Database MCP provider
 - **Developer**: MongoDB
-- **Repository**: https://github.com/mongodb-js/mongodb-mcp-server
 - **Website**: https://www.mongodb.com/company/blog/announcing-mongodb-mcp-server
+- **Repository**: https://github.com/mongodb-js/mongodb-mcp-server
 - **Key Features**:
   - Connect to MongoDB databases and Atlas clusters
   - List organizations, projects, and clusters
@@ -604,7 +578,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
   - Vector search with embedding models
   - Supports stdio and HTTP transport
 
-**Use Case**: MongoDB database access for AI agents
+**Use Case:** MongoDB database access for AI agents
 
 ---
 
@@ -613,7 +587,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: Microsoft
 - **Documentation**: https://learn.microsoft.com/en-us/azure/
 
-**Use Case**: Azure cloud service integration
+**Use Case:** Azure cloud service integration
 
 ---
 
@@ -623,7 +597,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Website**: https://aws.amazon.com
 - **Documentation**: https://aws.amazon.com/blogs/machine-learning/unlocking-the-power-of-model-context-protocol-mcp-on-aws/
 
-**Use Case**: AWS service integration
+**Use Case:** AWS service integration
 
 ---
 
@@ -632,7 +606,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: Cloudflare
 - **Website**: https://www.cloudflare.com
 
-**Use Case**: Cloudflare service integration
+**Use Case:** Cloudflare service integration
 
 ---
 
@@ -643,7 +617,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: JetBrains
 - **Website**: https://www.jetbrains.com
 
-**Use Case**: JetBrains IDE tool access and integration
+**Use Case:** JetBrains IDE tool access and integration
 
 ---
 
@@ -653,7 +627,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Repository**: https://github.com/modelcontextprotocol/servers
 - **Documentation**: Part of official Anthropic MCP servers
 
-**Use Case**: GitHub repository and API access
+**Use Case:** GitHub repository and API access
 
 ---
 
@@ -664,7 +638,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: Vectara
 - **Website**: https://vectara.com
 
-**Use Case**: Neural search and retrieval-augmented generation
+**Use Case:** Neural search and retrieval-augmented generation
 
 ---
 
@@ -674,7 +648,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Website**: https://www.trychroma.com
 - **Repository**: https://github.com/chroma-core/chroma
 
-**Use Case**: Memory and RAG workflows
+**Use Case:** Memory and RAG workflows
 
 ---
 
@@ -683,7 +657,7 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 - **Developer**: ClickHouse
 - **Website**: https://clickhouse.com
 
-**Use Case**: Real-time analytics data access
+**Use Case:** Real-time analytics data access
 
 ---
 
@@ -721,14 +695,6 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 ### MCP Adoption (2025)
 
-As of 2025, MCP has been adopted by major AI providers including:
-- **Anthropic**: Creator and maintainer (November 2024)
-- **OpenAI**: Official adoption (March 2025) across ChatGPT, Agents SDK, and Responses API
-- **Google DeepMind**: Official adoption following announcement
-- **Industry**: 6,360+ MCP servers available as of 2025
-
----
-
 ## CLI Tools
 
 ### Full Agentic Project-Level CLIs
@@ -739,13 +705,12 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Repository**: https://github.com/paul-gauthier/aider
 - **Installation**: `python -m pip install aider-install && aider-install`
 - **Models**: GPT-4o, Claude 3.5 Sonnet (recommended), any LLM
+- **Pricing**: $10-20/month for moderate use (LLM API costs)
 - **Key Features**:
   - Multi-file edits
   - Git integration (automated commits & diffs)
   - Conversation history
   - Free and open-source (API costs only)
-- **Pricing**: $10-20/month for moderate use (LLM API costs)
-
 **Works with:**
 - OpenAI, Anthropic APIs (primary)
 - Any LLM provider (flexible integration)
@@ -758,8 +723,8 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: AI-powered agentic CLI tool
 - **Developer**: Augment
 - **Website**: https://augmentcode.com
-- **Documentation**: https://docs.augmentcode.com/cli/overview
 - **Repository**: https://github.com/augmentcode/auggie
+- **Documentation**: https://docs.augmentcode.com/cli/overview
 - **Installation**: `npm install -g @augmentcode/auggie` (requires Node 22+)
 - **Key Features**:
   - Interactive agentic terminal with real-time streaming responses
@@ -769,7 +734,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Advanced context engine for codebase understanding
   - PR feedback and build insights
   - Compatible with zsh, bash, and fish shells
-
 **Works with:**
 - Multiple LLM providers (via Augment's platform)
 - VS Code, JetBrains IDEs, Vim, Neovim (via Augment extensions)
@@ -791,7 +755,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Open-source
   - IDE integration (VSCode, Cursor)
   - Project editing, code generation
-
 **Works with:**
 - OpenAI models (native)
 - DeepSeek (integration guide available)
@@ -812,7 +775,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Enhanced image support (October 2025)
   - Streamlined UI
   - GitHub workflow integration
-
 **Works with:**
 - OpenAI (hosted by GitHub/Azure)
 - Anthropic (hosted by Anthropic/GCP)
@@ -833,7 +795,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Large context handling
   - Agent delegation
   - Lives in your terminal
-
 **Works with:**
 - Anthropic Claude models (native)
 - OpenRouter (via Claude Code Router proxy)
@@ -846,13 +807,12 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Google's official agent CLI
 - **Website**: https://ai.google.dev/gemini-api/docs/cli
 - **Documentation**: https://cloud.google.com/sdk/gcloud/reference/ai/gemini
-- **Models**: Gemini 2.5, Gemini models
 - **Release**: Open-sourced 2025
+- **Models**: Gemini 2.5, Gemini models
 - **Key Features**:
   - Terminal workflows
   - Python-friendly
   - Model Context Protocol integration
-
 **Works with:**
 - Google Gemini models (native)
 - Google Cloud Platform
@@ -871,7 +831,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Developer workflow automation
   - Agentic task execution
   - Open-source
-
 **Works with:**
 - Multiple LLM providers
 - Developer workflows
@@ -883,10 +842,9 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Google's coding agent CLI
 - **Website**: https://jules.google
 - **Documentation**: https://developers.google.com/jules
-- **Models**: Jules agent models
 - **Status**: Announced update 2025, entering developer toolchains
+- **Models**: Jules agent models
 - **Key Features**: Terminal-based coding agent, competition with Cursor/Claude
-
 **Works with:**
 - Google AI infrastructure
 - Gemini ecosystem
@@ -898,14 +856,13 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Website**: https://www.all-hands.dev
 - **Repository**: https://github.com/All-Hands-AI/OpenHands
 - **Installation**: `uvx --python 3.12 openhands`
-- **Models**: Multiple LLM support via LiteLLM
 - **Status**: Recent CLI release (2025)
+- **Models**: Multiple LLM support via LiteLLM
 - **Key Features**:
   - Full dev agent from shell
   - Model switching
   - Custom pipelines
 - **Requirements**: Powerful models (local/OSS models struggle)
-
 **Works with:**
 - LiteLLM-supported models
 - DeepSeek (integration in progress, limited success with R1)
@@ -918,6 +875,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Type**: Open-source AI code interpreter
 - **Website**: https://openinterpreter.com
 - **Repository**: https://github.com/KillianLucas/open-interpreter
+- **Installation**: `pip install open-interpreter`
 - **Models**: GPT-4, Claude, local models via Ollama, any LLM
 - **Key Features**:
   - Natural language interface to your computer
@@ -926,8 +884,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Multi-language support (Python, JavaScript, Shell, etc.)
   - Voice mode available
   - Free and open-source
-- **Installation**: `pip install open-interpreter`
-
 **Works with:**
 - OpenAI (GPT-4, GPT-3.5)
 - Anthropic (Claude)
@@ -948,7 +904,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - MCP tools support
   - Highly configurable
   - Works with CLI version of VS Code extension
-
 **Works with:**
 - OpenAI, Anthropic (cloud providers)
 - Ollama (local models)
@@ -962,32 +917,31 @@ As of 2025, MCP has been adopted by major AI providers including:
 
 #### **Mentat CLI**
 - **Type**: Community/OSS GitHub-native agent
-- **Repository**: https://github.com/AbanteAI/mentat
 - **Website**: https://www.mentat.ai
+- **Repository**: https://github.com/AbanteAI/mentat
 - **Installation**: `pip install git+https://github.com/AbanteAI/mentat.git` or `brew install mentat`
 - **Key Features**:
   - Multi-file edits
   - Project-wide context
   - Terminal-based operation
   - Repo context awareness
-
 **Works with:**
 - GitHub repositories
 - Various LLM backends (community-configured)
+
 ---
 
 #### **Droid**
 - **Type**: Factory AI's coding agent
 - **Developer**: Factory AI
 - **Website**: https://factory.ai
-- **Performance**: #1 on Terminal-Bench (58.75% accuracy)
-- **Benchmark**: Beats Claude Code CLI (43.2%), Codex CLI (42.8%)
+- **Status**: Available as CLI and VS Code extension
 - **Key Features**:
   - Model-agnostic (works with any LLM)
   - Multi-interface support (CLI, IDE, CI/CD)
   - Terminal, IDE integration, automation pipelines
-- **Status**: Available as CLI and VS Code extension
-
+- **Performance**: #1 on Terminal-Bench (58.75% accuracy)
+- **Benchmark**: Beats Claude Code CLI (43.2%), Codex CLI (42.8%)
 **Works with:**
 - Any LLM provider (model-agnostic)
 - VS Code (via extension)
@@ -1006,7 +960,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Natural language project setup
   - CLI-based scaffolding tool
 - **Use Case**: Rapid project initialization
-
 **Works with:**
 - Command line interface
 - Any development environment
@@ -1025,7 +978,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Enterprise control features
   - Multi-model support
   - Terminal-native workflow
-
 **Works with:**
 - Claude, GPT, Grok, Deepseek, Gemini
 - 300+ additional models
@@ -1048,7 +1000,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Session management
   - Cross-platform (macOS/Linux/Windows/BSD)
   - Beautiful terminal UI (Charm aesthetic)
-
 **Works with:**
 - Multiple LLM providers
 - LSP servers (language-specific tooling)
@@ -1059,8 +1010,8 @@ As of 2025, MCP has been adopted by major AI providers including:
 
 #### **SST/OpenCode**
 - **Type**: Provider-agnostic coding CLI
-- **Website**: https://opencode.ai
 - **Stakeholder**: SST.dev
+- **Website**: https://opencode.ai
 - **Installation**: `curl -fsSL https://opencode.ai/install | bash`
 - **Key Features**:
   - Provider-agnostic architecture
@@ -1070,7 +1021,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - SSH/Docker compatibility
   - BYOK (Bring Your Own Key) support
   - Copilot-powered AI
-
 **Works with:**
 - 75+ AI providers
 - SSH/Docker environments
@@ -1082,12 +1032,11 @@ As of 2025, MCP has been adopted by major AI providers including:
 
 #### **DeepSeek CLI**
 - **Type**: Dedicated DeepSeek coding assistant
-- **Repository**: https://github.com/holasoymalva/deepseek-cli
 - **Developer**: holasoymalva
+- **Repository**: https://github.com/holasoymalva/deepseek-cli
 - **Installation**: `npm install -g run-deepseek-cli`
 - **Models**: DeepSeek Coder models
 - **Key Features**: Leverages DeepSeek's coding-specific models
-
 **Works with:**
 - DeepSeek API (native)
 - DeepSeek Coder models
@@ -1097,15 +1046,14 @@ As of 2025, MCP has been adopted by major AI providers including:
 #### **DeepAgents CLI**
 - **Type**: AI coding agent CLI
 - **Developer**: LangChain AI
-- **Repository**: https://github.com/langchain-ai/deepagents
 - **Website**: https://blog.langchain.com/introducing-deepagents-cli/
+- **Repository**: https://github.com/langchain-ai/deepagents
 - **Installation**: `pip install deepagents`
 - **Key Features**:
   - Terminal-based AI coding agent
   - Powered by LangChain framework
   - Agent-based development workflows
   - Integration with LangChain ecosystem
-
 **Works with:**
 - LangChain framework
 - Multiple LLM providers
@@ -1124,7 +1072,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Deployment automation
   - Configurable agents for different SDLC stages
   - Built on Qodo's core agent framework
-
 **Works with:**
 - Multiple LLM providers
 - CI/CD pipelines
@@ -1142,6 +1089,7 @@ As of 2025, MCP has been adopted by major AI providers including:
 - **Getting Started**: https://aws.amazon.com/q/developer/getting-started/
 - **Rebranding**: CodeWhisperer capabilities now part of Q Developer (2024)
 - **Models**: Undisclosed AWS models (trained on AWS docs)
+- **Pricing**: Free tier available, $19/user/month for Pro
 - **Key Features**:
   - Agentic capabilities (autonomous feature implementation, testing, refactoring)
   - Security scanning
@@ -1149,8 +1097,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Reference tracking for open-source code
   - Software development lifecycle automation
   - 50 agentic chat interactions/month (Free Tier)
-- **Pricing**: Free tier available, $19/user/month for Pro
-
 **Works with:**
 - AWS ecosystem (deep integration)
 - IDEs (VS Code, JetBrains, Visual Studio, Eclipse)
@@ -1165,11 +1111,10 @@ As of 2025, MCP has been adopted by major AI providers including:
 #### **ai-shell**
 - **Type**: Natural language → shell command translator
 - **Developer**: Builder.io (OSS)
-- **Repository**: https://github.com/BuilderIO/ai-shell
 - **Website**: https://www.builder.io/blog/ai-shell
+- **Repository**: https://github.com/BuilderIO/ai-shell
 - **Installation**: `npm install -g @builder.io/ai-shell`
 - **Use Case**: Command-level assistance (not project editing)
-
 **Works with:**
 - Various LLM backends
 - Terminal command workflows
@@ -1178,13 +1123,12 @@ As of 2025, MCP has been adopted by major AI providers including:
 
 #### **ShellGPT**
 - **Type**: GPT-powered shell assistant
-- **Repository**: https://github.com/TheR1D/shell_gpt
 - **Website**: https://github.com/TheR1D/shell_gpt#readme
+- **Repository**: https://github.com/TheR1D/shell_gpt
 - **Installation**: `pip install shell-gpt`
-- **Variants**: Multiple community forks
 - **Commands**: `sgpt "explain X"`, `sgpt "command for..."`
+- **Variants**: Multiple community forks
 - **Use Case**: Command generation, explanations
-
 **Works with:**
 - OpenAI GPT models (primary)
 - Terminal workflows
@@ -1193,12 +1137,11 @@ As of 2025, MCP has been adopted by major AI providers including:
 
 #### **AICommits**
 - **Type**: Git commit message generator
-- **Source**: OSS community
-- **Repository**: https://github.com/Nutlope/aicommits
 - **Website**: https://github.com/Nutlope/aicommits#readme
+- **Repository**: https://github.com/Nutlope/aicommits
 - **Installation**: `npm install -g aicommits`
+- **Source**: OSS community
 - **Use Case**: Automated commit messages from diffs
-
 **Works with:**
 - Git workflows
 - Various LLM providers
@@ -1215,7 +1158,6 @@ As of 2025, MCP has been adopted by major AI providers including:
   - Agent mode (`warp ai` command)
   - Agentic workflows
   - Can be scripted as standalone workflows
-
 **Works with:**
 - Terminal environments
 - Developer workflows
@@ -1238,7 +1180,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Build and test code in cloud environment
   - Regional optimization for reduced latency
   - Asynchronous task execution
-
 **Works with:**
 - GitHub repositories
 - GitHub Codespaces
@@ -1259,7 +1200,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Task completion in 1-30 minutes
   - Secure containerized cloud execution
   - Internet access disabled during execution
-
 **Works with:**
 - ChatGPT Plus, Pro, Business, Edu, Enterprise plans
 - GitHub repositories
@@ -1272,8 +1212,8 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 - **Type**: Cloud-based agentic coding platform
 - **Developer**: Anthropic
 - **Website**: https://claude.ai
-- **Documentation**: https://docs.claude.com/en/docs/claude-code/github-actions
 - **Repository**: https://github.com/anthropics/claude-code
+- **Documentation**: https://docs.claude.com/en/docs/claude-code/github-actions
 - **Key Features**:
   - Available on web and mobile (March 2025)
   - Run parallel coding tasks from anywhere
@@ -1281,7 +1221,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Anthropic-managed instance execution
   - GitHub Actions integration
   - Autonomous pull request creation
-
 **Works with:**
 - GitHub repositories
 - Pull requests and issues
@@ -1304,7 +1243,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Jules Tools CLI companion
   - Free tier: 15 daily tasks, 3 concurrent tasks
 
-**Pricing:**
+**Pricing**:
 - Free: 15 daily tasks
 - Pro ($19.99/mo): ~5x limits
 - Ultra ($124.99/mo): ~20x limits
@@ -1330,7 +1269,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Automatic environment provisioning
   - Remote GitHub repository management
   - Integrated editor, terminal, and deployment
-
 **Works with:**
 - Python, Node.js, C++, Go, Rust, Java, and 50+ languages
 - GitHub repositories
@@ -1349,7 +1287,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Prompt-to-deployment workflow
   - Instant app deployment
   - Full-stack development
-
 **Works with:**
 - Web technologies
 - Browser-based workflows
@@ -1367,7 +1304,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - No-code approach
   - Rapid prototyping
   - UI-focused generation
-
 **Works with:**
 - React components
 - Full-stack web applications
@@ -1385,7 +1321,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Instant component generation
   - Browser-based workflow
 
-**Pricing:**
+**Pricing**:
 - Free: $0/month
 - Premium: $20/month
 - Ultra: $200/month
@@ -1405,9 +1341,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 #### **Cline**
 - **Developer**: Open-source community (cline repo)
 - **Website**: https://cline.bot
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev
 - **Repository**: https://github.com/cline/cline
-- **Installs**: Millions
 - **Models**: OpenRouter, Anthropic, OpenAI, Google Gemini, AWS Bedrock, Azure, GCP Vertex, Cerebras, Groq, LM Studio, Ollama
 - **Key Features**:
   - Autonomous file creation/editing
@@ -1417,6 +1351,8 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Cost tracking (tokens & API usage)
   - MCP Marketplace (Feb 2025, v3.4)
   - Experimental Claude 4 support (v3.17.9)
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev
+- **Installs**: Millions
 
 **OpenRouter Integration**:
 - Fetches latest model list automatically
@@ -1437,11 +1373,8 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 #### **Roo Code**
 - **Developer**: Roo Code (OSS)
 - **Website**: https://roocode.com
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline
 - **Repository**: https://github.com/RooVetGit/Roo-Code
 - **Status**: Successor/fork lineage from Roo/Cline
-- **GitHub Stars**: 18k+
-- **Marketplace Installs**: 750k+
 - **Models**: Anthropic, Claude Code, AWS Bedrock, DeepSeek, Google Gemini, Groq, Hugging Face, LiteLLM, Mistral AI, Ollama, OpenAI, OpenRouter, Requesty, xAI (Grok)
 - **Key Features**:
   - Agentic assistant
@@ -1450,7 +1383,9 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Modes: Code, Debug, Architect, Ask, Custom
   - BYOK (Bring Your Own Keys)
   - MCP integration
-
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline
+- **Git Hub Stars**: 18k+
+- **Marketplace Installs**: 750k+
 **Works with:**
 - OpenAI-compatible or custom models/APIs
 - MCP servers
@@ -1462,9 +1397,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 #### **Kilo Code**
 - **Developer**: Kilo Code (OSS)
 - **Website**: https://kilocode.ai
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=kilocode.kilocode
 - **Repository**: https://github.com/kilocode/kilo
-- **Relationship**: Fork of Roo Code with enhancements
 - **Models**: 400+ models (Gemini 2.5 Pro, Claude 4 Sonnet/Opus, GPT-5)
 - **Key Features**:
   - Task orchestration
@@ -1473,7 +1406,8 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Model-agnostic (many LLMs)
   - MCP Server Marketplace
   - Transparent pricing (matches provider rates)
-
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=kilocode.kilocode
+- **Relationship**: Fork of Roo Code with enhancements
 **Works with:**
 - All major model providers
 - MCP servers (databases, APIs, custom tools)
@@ -1483,17 +1417,17 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Continue**
+- **Type**: Agentic coding extension
 - **Developer**: Continue.dev (OSS)
 - **Website**: https://continue.dev
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=Continue.continue
 - **Repository**: https://github.com/continuedev/continue
-- **Type**: Agentic coding extension
 - **Models**: Anthropic, OpenAI, Azure AI Foundry, Amazon Bedrock, Google AI Studio, DeepSeek, Mistral, Ollama
 - **Key Features**:
   - Custom agent rules
   - Model integration flexibility
   - Works alongside CLI version
   - Real-time code suggestions
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=Continue.continue
 - **2025 Models**: Codestral v2 (Jan 2025), DeepSeek-R1
 
 **Ollama Integration**:
@@ -1511,18 +1445,17 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **GitHub Copilot**
+- **Type**: First-party VS Code extension
 - **Developer**: GitHub (Microsoft)
 - **Website**: https://github.com/features/copilot
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
 - **Documentation**: https://docs.github.com/copilot
-- **Type**: First-party VS Code extension
-- **Models**: GPT-4.1 (default), GPT-5-Codex, GPT-5, Claude 4 Sonnet/Opus, Gemini 2.5 Pro/2.0 Flash, xAI Grok
 - **Status**: Now includes Agent Mode
+- **Models**: GPT-4.1 (default), GPT-5-Codex, GPT-5, Claude 4 Sonnet/Opus, Gemini 2.5 Pro/2.0 Flash, xAI Grok
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
 - **Hosting**:
   - OpenAI models: GitHub/Azure tenant
   - Anthropic: Anthropic PBC + GCP
   - Google: GCP
-
 **Works with:**
 - Pre-selected models only (no custom models)
 - GitHub repositories (deep integration)
@@ -1533,10 +1466,9 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ### Code Completion & Assistance
 
 #### **Tabnine**
+- **Type**: Proprietary + third-party models
 - **Developer**: Tabnine
 - **Website**: https://www.tabnine.com
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode
-- **Type**: Proprietary + third-party models
 - **Models**:
   - Proprietary (code completions, private/protected)
   - Third-party chat: Mistral, GPT-4o, o1-preview, o1-mini, Claude Sonnet 3.5, Codestral
@@ -1544,8 +1476,8 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Code completions
   - AI chat
   - Enterprise/self-hosted options
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode
 - **Integration**: VS Code, JetBrains
-
 **Works with:**
 - Tabnine's private models (completions)
 - Major LLM providers (chat)
@@ -1554,16 +1486,15 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Supermaven**
+- **Type**: Fast copilot with longest context
 - **Developer**: Supermaven (creator of original TabNine 2018)
 - **Website**: https://supermaven.com
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=supermaven.supermaven
-- **Type**: Fast copilot with longest context
 - **Key Features**:
   - 300,000-token context window
   - Fastest code completion
   - Sub-100ms latency
 - **Focus**: Speed and context depth
-
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=supermaven.supermaven
 **Works with:**
 - VS Code
 - Proprietary infrastructure
@@ -1571,10 +1502,9 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Qodo Gen (formerly Codium)**
+- **Type**: Comprehensive AI coding platform
 - **Developer**: Qodo
 - **Website**: https://www.qodo.ai
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=Codium.codium
-- **Type**: Comprehensive AI coding platform
 - **Key Features**:
   - Real-time code suggestions
   - Automated test generation
@@ -1582,7 +1512,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Code review support
   - Agentic tools (MCPs)
   - Extension mode + chat mode
-
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=Codium.codium
 **Works with:**
 - Advanced AI models (unspecified providers)
 - MCP tools
@@ -1594,12 +1524,11 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ### Enterprise & Codebase-Aware
 
 #### **Sourcegraph Cody**
+- **Type**: Codebase-aware AI assistant
 - **Developer**: Sourcegraph
 - **Website**: https://sourcegraph.com/cody
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai
 - **Documentation**: https://docs.sourcegraph.com/cody
 - **Models**: Claude 3.5, GPT-4o, Gemini 1.5, Mixtral-8x7B, custom via Bedrock/Azure OpenAI
-- **Type**: Codebase-aware AI assistant
 - **Key Features**:
   - Search, chat, ask about code
   - Agentic interactions
@@ -1607,7 +1536,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Context from entire codebase
   - Model switching
   - Local models via Ollama
-
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai
 **Works with:**
 - Multiple LLM providers (Anthropic, OpenAI, Mistral, Meta)
 - Amazon Bedrock (BYOM)
@@ -1620,7 +1549,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 #### **Amazon Q Developer**
 - **Developer**: AWS
 - **Website**: https://aws.amazon.com/q/developer
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.amazon-q-vscode
 - **Documentation**: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/
 - **Models**: Undisclosed AWS models (trained on AWS docs)
 - **Pricing**:
@@ -1631,8 +1559,8 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - MCP tools support
   - Codebase customizations (8 total, 2 active max)
   - No model choice
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.amazon-q-vscode
 - **Security Note**: Security incident July 2025 (keep updated)
-
 **Works with:**
 - AWS proprietary models only
 - AWS ecosystem (tight integration)
@@ -1644,14 +1572,13 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ### Chat & General Assistance
 
 #### **Windsurf Plugin (formerly Codeium)**
-- **Developer**: Codeium/Windsurf
 - **Type**: Autocomplete, chat, search
-- **Marketplace**: Official listing
+- **Developer**: Codeium/Windsurf
 - **Key Features**:
   - Code completion
   - AI chat
   - Code search
-
+- **Marketplace**: Official listing
 **Works with:**
 - Codeium/Windsurf infrastructure
 - Windsurf IDE (companion to full IDE)
@@ -1659,11 +1586,10 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Genie AI (ChatGPT in VS Code)**
-- **Developer**: Genie AI
 - **Type**: Chat/commands integration
+- **Developer**: Genie AI
 - **Models**: OpenAI models
 - **Key Features**: ChatGPT interface in VS Code
-
 **Works with:**
 - OpenAI GPT models
 - VS Code command palette
@@ -1671,11 +1597,10 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **AskCodi**
-- **Developer**: AskCodi
 - **Type**: Assistant extension
-- **Integration**: Documented with Roo Code integration
+- **Developer**: AskCodi
 - **Key Features**: General coding assistance
-
+- **Integration**: Documented with Roo Code integration
 **Works with:**
 - Various LLM providers
 - Roo Code (documented integration)
@@ -1683,15 +1608,14 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **CodeGPT: Chat & AI Agents**
-- **Developer**: DanielSanMedium / community
 - **Type**: Chat-style AI assistance
+- **Developer**: DanielSanMedium / community
 - **Key Features**:
   - Auto-completion
   - Code explanation
   - Error checking
   - Multi-model support
 - **Note**: More assistive than fully autonomous
-
 **Works with:**
 - Multiple LLM providers
 - General assistance workflows
@@ -1699,14 +1623,13 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Gemini Code Assist**
-- **Developer**: Google
 - **Type**: Gemini-powered coding assistance
+- **Developer**: Google
 - **Key Features**:
   - Code suggestions
   - Context-aware responses
   - Automated review capabilities
 - **Note**: More assistive than fully autonomous
-
 **Works with:**
 - Google Gemini models
 - Google Cloud Platform
@@ -1717,14 +1640,13 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **TabbyML**
 - **Type**: Self-hosted Copilot alternative
-- **License**: 100% free, open-source
-- **Language**: Rust (performance-focused)
 - **Key Features**:
   - Full function and code block suggestions
   - Self-hosted (data never leaves environment)
   - Reads code and comments for context
   - Ideal for organizations with strict data policies
-
+- **License**: 100% free, open-source
+- **Language**: Rust (performance-focused)
 **Works with:**
 - Local deployment
 - Enterprise environments requiring data control
@@ -1734,13 +1656,12 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **FauxPilot**
 - **Type**: Self-hosted Copilot alternative
-- **Technology**: SalesForce CodeGen models, NVIDIA Triton Inference Server, FasterTransformer
-- **Hardware**: NVIDIA GPUs required
 - **Key Features**:
   - Complete data privacy
   - Local server deployment
   - Full control over data
-
+- **Technology**: SalesForce CodeGen models, NVIDIA Triton Inference Server, FasterTransformer
+- **Hardware**: NVIDIA GPUs required
 **Works with:**
 - NVIDIA GPU systems
 - Privacy-critical environments
@@ -1749,11 +1670,10 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Twinny**
+- **Type**: Free AI code completion (100% free, no paywalls)
 - **Developer**: Twinny Community
 - **Website**: https://twinnydotdev.github.io/twinny
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=rjmacarthy.twinny
 - **Repository**: https://github.com/twinnydotdev/twinny
-- **Type**: Free AI code completion (100% free, no paywalls)
 - **Models**: Ollama, LM Studio, Oobabooga, llama.cpp, any OpenAI API compatible provider
 - **Key Features**:
   - FIM (Fill-In-Middle) code completion
@@ -1762,7 +1682,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Completely free and open source
   - Customizable provider settings
   - Multiple model support
-
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=rjmacarthy.twinny
 **Works with:**
 - Ollama (local models)
 - LM Studio
@@ -1772,11 +1692,10 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Flexpilot**
+- **Type**: Open-source, native GitHub Copilot alternative
 - **Developer**: Flexpilot AI
 - **Website**: https://flexpilot.ai
-- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=flexpilot-ai.flexpilot
 - **Repository**: https://github.com/flexpilot-ai/vscode-extension
-- **Type**: Open-source, native GitHub Copilot alternative
 - **Models**: OpenAI, Anthropic, Google, Ollama, custom providers
 - **Key Features**:
   - Native VS Code experience
@@ -1784,7 +1703,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Multiple provider support
   - Chat and completion modes
   - Privacy-focused
-
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=flexpilot-ai.flexpilot
 **Works with:**
 - Major cloud providers (OpenAI, Anthropic, Google)
 - Local models (Ollama)
@@ -1794,15 +1713,14 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **CodeGeeX**
 - **Type**: Open-source multi-language assistant
-- **Scale**: 13 billion parameters
-- **Languages**: 20+ programming languages
 - **Key Features**:
   - Code generation
   - Code translation between languages
   - Code explanations
   - Code summaries
   - Multilingual code corpus trained
-
+- **Scale**: 13 billion parameters
+- **Languages**: 20+ programming languages
 **Works with:**
 - VS Code, JetBrains
 - Multi-language projects
@@ -1812,15 +1730,14 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **Droid (VS Code Extension)**
 - **Type**: Factory AI coding agent extension
-- **Performance**: #1 on Terminal-Bench (58.75%)
 - **Models**: Model-agnostic (works with any LLM)
 - **Key Features**:
   - Autonomous coding agent in VS Code
   - Terminal integration
   - CI/CD pipeline support
   - Beats Claude Code and Codex CLI benchmarks
+- **Performance**: #1 on Terminal-Bench (58.75%)
 - **Also Available**: CLI, CI/CD integrations
-
 **Works with:**
 - Any LLM provider (model-agnostic)
 - VS Code IDE
@@ -1834,15 +1751,14 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 #### **Sweep AI**
 - **Type**: Intelligent open-source AI assistant
 - **Platform**: GitHub
-- **Languages**: Python, JS/TS, Java, Go, C#, C++, Rust
 - **Key Features**:
   - Reads codebase
   - Understands tickets/feature requests
   - Plans edits
   - Generates pull requests automatically
   - Handles end-to-end workflows (not line-by-line like Copilot)
+- **Languages**: Python, JS/TS, Java, Go, C#, C++, Rust
 - **Deployment**: Hosted service or self-hosted
-
 **Works with:**
 - GitHub (native integration)
 - "Sweep:" issues → automated PRs
@@ -1852,13 +1768,12 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **Bloop AI**
 - **Type**: AI-powered code search & comprehension
-- **Technology**: Semantic code search
 - **Key Features**:
   - Understands meaning and structure of code
   - Natural language search
   - Large codebase navigation
   - Onboarding tool for new team members
-
+- **Technology**: Semantic code search
 **Works with:**
 - Large, complex codebases
 - Team onboarding
@@ -1868,7 +1783,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **Blackbox AI**
 - **Type**: Context-aware AI coding assistant
-- **Integration**: IDEs and browsers
 - **Key Features**:
   - Real-time code completion
   - AI chat
@@ -1879,7 +1793,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Extract code from images/videos
   - Deep web search
   - Code context protocols
-
+- **Integration**: IDEs and browsers
 **Works with:**
 - VS Code (marketplace)
 - Browser integration
@@ -1890,14 +1804,13 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ### Specialized
 
 #### **CoqPilot**
-- **Developer**: JetBrains-Research / community
 - **Type**: Theorem-proof assistant
-- **Domain**: Coq proof development
+- **Developer**: JetBrains-Research / community
 - **Key Features**:
   - Fills "holes" in proofs (admit)
   - Verifies generated proofs
+- **Domain**: Coq proof development
 - **Note**: Domain-specific example of agentic extension
-
 **Works with:**
 - Coq proof systems
 - Formal verification workflows
@@ -1909,48 +1822,47 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ### JetBrains AI Assistant
 
 #### **Overview**
+- **Type**: Official AI assistant for JetBrains IDEs
 - **Developer**: JetBrains
 - **Website**: https://www.jetbrains.com/ai/
 - **Documentation**: https://www.jetbrains.com/help/idea/ai-assistant.html
-- **Type**: Official AI assistant for JetBrains IDEs
 - **Launch**: Major updates April 2025, August 2025
-- **IDEs**: IntelliJ IDEA, PyCharm, WebStorm, GoLand, and others
+- **I D Es**: IntelliJ IDEA, PyCharm, WebStorm, GoLand, and others
 - **Plugin**: Not bundled by default, requires installation
-
 ---
 
 #### **Models & Providers**
-- **Models (2025)**:
+- **Models2025**:
   - Claude 3.7 Sonnet
   - Google Gemini 2.5 Pro
   - Latest OpenAI models
   - Local models (Qwen2.5-Coder, DeepSeek-Coder 1.3B, CodeStral)
 - **Integration**: Improved local model support
-
 ---
 
 #### **Key Features**
+- **Context Understanding**:
+  - Paste images for error fixes
+  - Code generation from screenshots
 
-**Code Assistance:**
+**Code Assistance**:
 - AI-powered code completion (single lines, functions, blocks)
 - Real-time suggestions
 - Code generation with prompts
 - Prompt Library support
 
-**Development Tools:**
+**Development Tools**:
 - Commit message generation
 - Documentation creation
 - File conversion
 - Test generation
 
-**Context & Understanding:**
+**Context & Understanding**:
 - Improved Mellum model with smarter context collection
 - Expanded file type support: SQL, YAML, JSON, Text, Markdown
 - Image attachment in chat (Anthropic, OpenAI models)
-  - Paste images for error fixes
-  - Code generation from screenshots
 
-**Local Capabilities:**
+**Local Capabilities**:
 - Local code completion with multiline suggestions (Java, C++)
 - Connect local models (Qwen2.5-Coder, DeepSeek-Coder 1.3B, CodeStral)
 - Offline functionality
@@ -1959,43 +1871,31 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **Junie - Coding Agent**
 - **Type**: Autonomous coding agent
-- **Availability**: April 2025
-- **Compatible IDEs**: IntelliJ IDEA Ultimate, PyCharm Pro, WebStorm, GoLand
 - **Key Features**:
   - End-to-end task execution
   - IDE integration
   - Autonomous coding assistance
-
+- **Availability**: April 2025
+- **Compatible I D Es**: IntelliJ IDEA Ultimate, PyCharm Pro, WebStorm, GoLand
 ---
 
 #### **Licensing & Pricing**
-- **Free Tier**: Included with IDE licenses (2025.1+)
-  - Unlimited code completion
-  - Local AI models
-  - Credit-based cloud AI assistance
-- **Pro/Ultimate Tiers**: Different monthly credit quotas
 - **Requirements**:
   - JetBrains AI Service license
   - Explicit ToS consent
-
+- **Free Tier**: Included with IDE licenses (2025.1+)
+- **Pro Ultimate Tiers**: Different monthly credit quotas
 ---
 
 #### **Works with:**
-- Claude (Anthropic)
-- GPT models (OpenAI)
-- Gemini (Google)
-- Qwen, DeepSeek, CodeStral (local models)
-- JetBrains IDE ecosystem
-
 ---
 
 ### Third-Party JetBrains Plugins
 
 #### **Auto-Dev**
+- **Type**: AI-powered coding wizard for JetBrains
 - **Developer**: Unit Mesh
 - **Repository**: https://github.com/unit-mesh/auto-dev
-- **Type**: AI-powered coding wizard for JetBrains
-- **Language Support**: Multi-language (Java, Kotlin, Python, JavaScript, etc.)
 - **Key Features**:
   - Auto code generation 🏗️
   - Bug-slaying assistant 🐞
@@ -2004,7 +1904,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Agent-based development
   - Auto Dev/Testing/Document/Agent features
   - AIGC (AI Generated Content) integration
-
+- **Language Support**: Multi-language (Java, Kotlin, Python, JavaScript, etc.)
 **Works with:**
 - IntelliJ IDEA and other JetBrains IDEs
 - Multiple LLM providers
@@ -2019,7 +1919,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Code completion
   - AI chat
   - Agent mode
-
 **Works with:**
 - GitHub ecosystem
 - JetBrains IDEs (all major)
@@ -2027,10 +1926,9 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Kilo Code for JetBrains**
-- **Developer**: Kilo Code
 - **Type**: AI coding agent
+- **Developer**: Kilo Code
 - **Key Features**: Same as VS Code version
-
 **Works with:**
 - JetBrains IDEs
 - 400+ AI models
@@ -2039,9 +1937,8 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Tabnine for JetBrains**
-- **Developer**: Tabnine
 - **Type**: Code completion + chat
-
+- **Developer**: Tabnine
 **Works with:**
 - JetBrains IDEs
 - Proprietary and third-party models
@@ -2056,7 +1953,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 - **Developer**: Anysphere
 - **Website**: https://cursor.com
 - **Download**: https://cursor.com/download
-- **Base**: VS Code fork (explicitly stated - Wikipedia)
 - **Models**:
   - Via Cursor subscription: Proprietary specialized models
   - BYOK: OpenAI (standard GPT models only, no o1/o3), Anthropic (all Claude models), Google
@@ -2069,13 +1965,12 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Agent mode
   - BYO model options (limited)
   - Codebase indexing with embeddings
+- **Base**: VS Code fork (explicitly stated - Wikipedia)
 
 **API Configuration**:
 - OpenAI: Override base URL for proxies/enterprise
 - Anthropic: Custom URL prefix (default: https://api.anthropic.com/v1)
 - OpenAI-compatible providers (e.g., OpenRouter)
-
-**Recommended Models** (BYOK):
 - Claude 3.5 Sonnet, Claude 3 Opus (coding tasks)
 - GPT-4 series (standard models)
 
@@ -2096,7 +1991,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 - **Developer**: Codeium
 - **Website**: https://codeium.com/windsurf
 - **Download**: https://codeium.com/windsurf/download
-- **Base**: VS Code fork (widely reported - IEEE Spectrum, Builder.io, CodeAnt, Prismetric)
 - **Key Features**:
   - AI-native editor
   - Cascade (agentic IDE)
@@ -2105,6 +1999,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Preview servers
   - MCP integration
   - Also ships VS Code plugin
+- **Base**: VS Code fork (widely reported - IEEE Spectrum, Builder.io, CodeAnt, Prismetric)
 
 **Models**:
 - SWE-1 (in-house frontier model, Claude 3.5-level at fraction of cost)
@@ -2130,12 +2025,12 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 - **Website**: https://trypear.ai
 - **Repository**: https://github.com/trypear/pearai-app
 - **Download**: https://trypear.ai/download
-- **Base**: VS Code fork (repo: "This is our fork of VSCode")
 - **Key Features**:
   - Open-source AI editor
   - Continue-style agents
   - Prompt→product workflows
   - Built-in models + custom
+- **Base**: VS Code fork (repo: "This is our fork of VSCode")
 
 **Custom Models**:
 - Can add your own models/API keys
@@ -2153,7 +2048,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 - **Website**: https://voideditor.com
 - **Repository**: https://github.com/voideditor/void
 - **Download**: https://voideditor.com/download
-- **Base**: VS Code fork (official: "open-source Cursor alternative")
 - **Models**: Any LLM (local or cloud)
 - **Key Features**:
   - Privacy-first AI code editor
@@ -2162,10 +2056,11 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Checkpoints
   - Visualize changes
   - Agent runs on codebase
+- **Base**: VS Code fork (official: "open-source Cursor alternative")
+- **Local Selfhosted**: Ollama (auto-detection), vLLM, LM Studio, LiteLLM
+- **Cloud**: Azure OpenAI, Google Vertex AI, AWS Bedrock, plus others (Claude, DeepSeek, OpenAI)
 
 **Supported Providers**:
-- **Local/Self-hosted**: Ollama (auto-detection), vLLM, LM Studio, LiteLLM
-- **Cloud**: Azure OpenAI, Google Vertex AI, AWS Bedrock, plus others (Claude, DeepSeek, OpenAI)
 
 **Ollama Integration**:
 - Auto-detects locally running models
@@ -2181,15 +2076,14 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Kiro**
+- **Type**: Agentic AI IDE
 - **Developer**: Amazon Web Services
 - **Website**: https://aws.amazon.com/kiro (limited public info)
-- **Base**: Code OSS ("Based on Code OSS ... import VS Code settings/plugins")
-- **Type**: Agentic AI IDE
+- **Status**: Early coverage, details evolving (2025)
 - **Key Features**:
   - Spec-driven agent workflows
   - VS Code settings/plugin compatibility
-- **Status**: Early coverage, details evolving (2025)
-
+- **Base**: Code OSS ("Based on Code OSS ... import VS Code settings/plugins")
 **Works with:**
 - AWS infrastructure (likely)
 - VS Code ecosystem (settings, plugins)
@@ -2201,7 +2095,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 - **Base**: VS Code fork ("ByteDance's customized fork" - community research)
 - **Note**: Scrutiny over telemetry
 - **Features**: AI features added to VS Code base
-
 **Works with:**
 - ByteDance infrastructure
 - AI features (details limited)
@@ -2211,11 +2104,11 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ### Standalone AI IDEs & Editors
 
 #### **Zed**
+- **Type**: High-performance, multiplayer code editor
 - **Developer**: Creators of Atom and Tree-sitter
 - **Website**: https://zed.dev
-- **Download**: https://zed.dev/download
 - **Repository**: https://github.com/zed-industries/zed
-- **Type**: High-performance, multiplayer code editor
+- **Download**: https://zed.dev/download
 - **Status**: World's fastest AI code editor (2025)
 - **Key Features**:
   - Open-source (including AI features)
@@ -2223,7 +2116,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Inline assistant
   - AI generation, transformation, analysis
   - MCP integration (working with protocol)
-
 **Works with:**
 - Multiple AI providers
 - MCP servers
@@ -2234,8 +2126,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 #### **Replit (with Ghostwriter)**
 - **Type**: Browser-based IDE with AI
 - **Website**: https://replit.com
-- **AI Website**: https://replit.com/ai
-- **AI**: Ghostwriter AI assistant
 - **Key Features**:
   - Real-time assistance
   - Inline completions (Complete Code)
@@ -2245,7 +2135,8 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Browser-based (no local setup)
   - Collaboration features
 - **Use Case**: Beginners, rapid prototyping, learning
-
+- **Ai Website**: https://replit.com/ai
+- **Ai**: Ghostwriter AI assistant
 **Works with:**
 - Cloud infrastructure
 - Real-time collaboration
@@ -2255,9 +2146,8 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **Bolt.new (by StackBlitz)**
 - **Type**: AI-powered web app builder
-- **Website**: https://bolt.new
 - **Developer**: StackBlitz
-- **Technology**: StackBlitz WebContainer (Node.js in browser)
+- **Website**: https://bolt.new
 - **Models**: Anthropic Claude 3.5 Sonnet
 - **Key Features**:
   - Natural language → functional code
@@ -2266,13 +2156,14 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Automated package management
   - Test and deploy web applications
   - Modern framework support
+- **Technology**: StackBlitz WebContainer (Node.js in browser)
 
 **Pricing**:
 - Free tier (basic features, limited AI)
 - Pro: $20/month (10M tokens)
 - Pro 50: $50/month (teamwork + deployment tools)
 
-**Use Case**: Fast prototyping, full-stack developers
+**Use Case:** Fast prototyping, full-stack developers
 
 **Works with:**
 - StackBlitz infrastructure
@@ -2292,7 +2183,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Instant undo
   - Live collaboration
   - One-click deployment
-
 **Works with:**
 - Web development workflows
 - Team collaboration
@@ -2303,14 +2193,13 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **v0 (by Vercel)**
 - **Type**: Rapid UI component generator
-- **Website**: https://v0.dev
 - **Developer**: Vercel
-- **Focus**: Front-end development
+- **Website**: https://v0.dev
 - **Key Features**:
   - Text prompts → UI components
   - Fast design iteration
   - Component library generation
-
+- **Focus**: Front-end development
 **Works with:**
 - Vercel ecosystem
 - React/Next.js
@@ -2319,10 +2208,9 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Onlook**
+- **Type**: AI-First Design Tool for React Developers
 - **Developer**: Onlook Dev
 - **Repository**: https://github.com/onlook-dev/onlook
-- **Type**: AI-First Design Tool for React Developers
-- **Tagline**: "The Cursor for Designers"
 - **Key Features**:
   - Visual builder for React applications
   - AI-powered styling and editing
@@ -2332,7 +2220,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Cross-platform (Windows, macOS, Linux)
   - Integration with AI models for design suggestions
   - Supports Next.js, Tailwind CSS
-  
+- **Tagline**: "The Cursor for Designers"
 **Works with:**
 - React and React-based frameworks
 - Next.js applications
@@ -2347,7 +2235,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **Snyk (DeepCode AI)**
 - **Type**: AI-powered security platform
-- **Technology**: DeepCode AI (symbolic + generative AI)
 - **Key Features**:
   - Code autofix solution
   - Self-hosted (data privacy)
@@ -2358,7 +2245,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Manages tech debt
   - No hallucinations (ML + security researchers)
 - **Performance**: 84%+ reduction in MTTR (mean time to remediate)
-
+- **Technology**: DeepCode AI (symbolic + generative AI)
 **Works with:**
 - CI/CD pipelines
 - Multiple languages
@@ -2377,8 +2264,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Customizable dashboards
   - Detailed reporting
   - Clean Code AI integration (2025)
-- **Clean Code AI**: Suggests specific remediation approaches
-
+- **Clean Code A I**: Suggests specific remediation approaches
 **Works with:**
 - CI/CD systems
 - Multiple languages
@@ -2389,8 +2275,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **Sourcery**
 - **Type**: AI-powered code review tool
-- **Focus**: Python developers (primary)
-- **Integration**: GitHub, GitLab, VS Code, JetBrains
 - **Key Features**:
   - Analyzes pull requests
   - Catches bugs
@@ -2399,8 +2283,9 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Real-time code improvement
   - Refactoring suggestions
   - Quality enhancement
-- **CLI**: sourcery-analytics (static analysis tool)
-
+- **Focus**: Python developers (primary)
+- **Integration**: GitHub, GitLab, VS Code, JetBrains
+- **C L I**: sourcery-analytics (static analysis tool)
 **Works with:**
 - GitHub/GitLab (PR analysis)
 - VS Code, JetBrains IDEs
@@ -2411,7 +2296,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 
 #### **Refact.ai**
 - **Type**: AI coding agent for enterprise
-- **Deployment**: On-premise or cloud
 - **Status**: #1 open-source AI Agent in SWE-bench verified
 - **Key Features**:
   - End-to-end task handling
@@ -2420,7 +2304,7 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Automates complex, multi-step tasks
   - Self-hosted option
   - Open-source alternative to Cursor/Copilot
-
+- **Deployment**: On-premise or cloud
 **Works with:**
 - GitHub, Docker, PostgreSQL (tool integrations)
 - Self-hosted or cloud deployments
@@ -2430,9 +2314,9 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **AI Code Reviewer**
+- **Type**: GitHub Actions integration
 - **Developer**: villesau
 - **Repository**: https://github.com/villesau/ai-codereviewer
-- **Type**: GitHub Actions integration
 - **Key Features**:
   - AI-powered code review for pull requests
   - Uses OpenAI GPT-4 API for intelligent feedback
@@ -2440,7 +2324,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - GitHub Actions workflow integration
   - Automated PR analysis
   - Saves developers time
-
 **Works with:**
 - GitHub Actions
 - OpenAI GPT-4 API
@@ -2449,16 +2332,15 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **Claude Code Security Review**
+- **Type**: AI-powered security review GitHub Action
 - **Developer**: Anthropic
 - **Repository**: https://github.com/anthropics/claude-code-security-review
-- **Type**: AI-powered security review GitHub Action
 - **Key Features**:
   - Analyzes code changes for security vulnerabilities
   - Uses Claude AI model
   - Automated security scanning
   - GitHub Actions integration
   - Focus on security best practices
-
 **Works with:**
 - GitHub Actions
 - Claude AI (Anthropic)
@@ -2467,16 +2349,15 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 ---
 
 #### **CodeGPT**
+- **Type**: CLI tool (Go)
 - **Developer**: appleboy
 - **Repository**: https://github.com/appleboy/CodeGPT
-- **Type**: CLI tool (Go)
 - **Key Features**:
   - Writes git commit messages using ChatGPT
   - Code review brief generation
   - Automatically installs git prepare-commit-msg hook
   - Uses GPT-4.1 and GPT-4o models
   - Command-line interface
-
 **Works with:**
 - Git hooks
 - ChatGPT API (OpenAI)
@@ -2487,9 +2368,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 #### **CodeRabbit**
 - **Type**: AI code review platform
 - **Website**: https://coderabbit.ai
-- **CLI Tool**: https://coderabbit.ai/cli
-- **VS Code Extension**: https://coderabbit.ai/ide
-- **Funding**: $60M Series B (September 2025)
 - **Pricing**: Free tier, Lite ($12/month), Pro ($24/month)
 - **Key Features**:
   - Context-aware code reviews
@@ -2501,16 +2379,10 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Zero retention (in-memory only)
   - SOC 2 & GDPR compliant
 - **Architecture**: Google Cloud Run infrastructure
-- **CLI**: coderabbit (AI code reviews in terminal)
-
-**Works with:**
-- GitHub, GitLab, Azure DevOps
-- VS Code, Cursor, Windsurf (via extension)
-- AI coding agents (Claude Code, Cursor CLI, Gemini)
-- CI/CD pipelines
-- Static analyzers and linters
-- Google Cloud Platform
-
+- **C L I Tool**: https://coderabbit.ai/cli
+- **V S Code Extension**: https://coderabbit.ai/ide
+- **Funding**: $60M Series B (September 2025)
+- **C L I**: coderabbit (AI code reviews in terminal)
 **Works with:**
 - Company codebases
 - GitHub, Docker, PostgreSQL
@@ -2531,7 +2403,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Performance issue identification
   - Security vulnerability detection
   - Contextual feedback on every pull request
-
 **Works with:**
 - GitHub pull requests
 - GitLab merge requests
@@ -2549,7 +2420,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - One platform for quality and security
   - AI-powered analysis
   - GitHub integration
-
 **Works with:**
 - GitHub repositories
 - CI/CD pipelines
@@ -2569,7 +2439,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
   - Consistent coding standards
   - Automated analysis
   - Languages: JavaScript, Python, Java, C#, PHP, and more
-
 **Works with:**
 - 40+ programming languages
 - GitHub, GitLab, Bitbucket
@@ -2581,7 +2450,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 #### **Semgrep**
 - **Type**: Static analysis security tool
 - **Key Features**: Pattern-based code scanning, custom rules
-
 **Works with:**
 - AI-generated code analysis
 - Security workflows
@@ -2592,7 +2460,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 - **Type**: Semantic code analysis
 - **Developer**: GitHub
 - **Key Features**: Custom queries, security scanning
-
 **Works with:**
 - GitHub Advanced Security
 - AI-generated code analysis
@@ -2602,7 +2469,6 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 #### **Aikido Security**
 - **Type**: AI-powered DevSecOps
 - **Use Case**: Vulnerability remediation
-
 **Works with:**
 - DevSecOps workflows
 - Security automation
@@ -2626,7 +2492,6 @@ AI-powered testing and quality assurance tools that automate test generation, ex
   - Self-healing mechanisms
   - AI-powered test maintenance
   - GenAI native platform
-
 **Works with:**
 - Natural language test creation
 - Multiple browsers and devices
@@ -2645,7 +2510,6 @@ AI-powered testing and quality assurance tools that automate test generation, ex
   - Dynamic element locators with self-healing
   - Reduces test maintenance
   - No programming required
-
 **Works with:**
 - Plain English commands
 - Web, mobile, and API testing
@@ -2658,7 +2522,6 @@ AI-powered testing and quality assurance tools that automate test generation, ex
 - **Type**: AI-powered testing platform
 - **Website**: https://www.functionize.com
 - **Documentation**: https://www.functionize.com/resources
-- **Product Overview**: https://www.functionize.com/product
 - **Key Features**:
   - Automates entire QA lifecycle
   - Machine learning for adaptation
@@ -2666,7 +2529,7 @@ AI-powered testing and quality assurance tools that automate test generation, ex
   - Self-healing tests
   - Predictive analytics
   - AI-native with specialized agents
-
+- **Product Overview**: https://www.functionize.com/product
 **Works with:**
 - Web and mobile applications
 - CI/CD pipelines
@@ -2684,7 +2547,6 @@ AI-powered testing and quality assurance tools that automate test generation, ex
   - Identifies product bugs vs automation issues
   - Root cause analysis
   - Test debugging acceleration
-
 **Works with:**
 - BrowserStack testing platform
 - CI/CD pipelines
@@ -2708,7 +2570,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Wide integration support
   - Multiple protocol support (REST, SOAP, GraphQL)
   - Detailed reporting
-
 **Works with:**
 - REST, SOAP, GraphQL APIs
 - CI/CD pipelines
@@ -2726,7 +2587,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - No framework setup required
   - AI-powered test generation
   - Natural language test creation
-
 **Works with:**
 - REST, SOAP, GraphQL APIs
 - Web and mobile testing
@@ -2747,7 +2607,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Environment variables
   - Plugin system
   - Team collaboration
-
 **Works with:**
 - REST, GraphQL, gRPC, WebSocket
 - OpenAPI/Swagger specs
@@ -2766,7 +2625,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Real-time collaboration
   - Open-source
   - Fast and lightweight
-
 **Works with:**
 - REST, GraphQL, WebSocket, SSE, MQTT
 - Browser-based workflows
@@ -2785,7 +2643,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Offline-first
   - Open-source
   - Collection versioning
-
 **Works with:**
 - REST, GraphQL APIs
 - Git version control
@@ -2806,7 +2663,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Security testing
   - Automated test execution
   - Enterprise features
-
 **Works with:**
 - SOAP and REST APIs
 - Security testing
@@ -2821,7 +2677,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
 
 #### **Mintlify**
 - **Type**: AI-native documentation platform
-- **Tagline**: "Beautiful out-of-the-box, built for developers"
 - **Key Features**:
   - Context-aware agent (drafts, edits, maintains content)
   - AI assistant (guided conversations, context-aware)
@@ -2829,7 +2684,7 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - API documentation (OpenAPI specs → human-readable)
   - AI-powered content generation
 - **Performance**: Part of 70% time savings in documentation (2025)
-
+- **Tagline**: "Beautiful out-of-the-box, built for developers"
 **Works with:**
 - OpenAPI specifications
 - GitHub (PR integration)
@@ -2840,7 +2695,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
 
 #### **Swimm**
 - **Type**: AI-powered documentation platform
-- **Technology**: AI-powered static analysis
 - **Key Features**:
   - Builds knowledge base from code
   - Reveals architecture, patterns, hidden logic
@@ -2848,7 +2702,7 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Captures knowledge to fill documentation gaps
   - Auto-updates documentation when code changes
   - Eliminates "stale docs" problem
-
+- **Technology**: AI-powered static analysis
 **Works with:**
 - Large codebases
 - Team knowledge sharing
@@ -2866,7 +2720,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Saves development time
   - Increases productivity
   - AI-powered documentation
-
 **Works with:**
 - Multiple programming languages
 - Code documentation workflows
@@ -2882,7 +2735,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Generates docs from source code
   - Auto-generated documentation
   - API documentation support
-
 **Works with:**
 - Source code files
 - API documentation
@@ -2898,7 +2750,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Documentation in 50+ spoken languages
   - Python, JavaScript, Go, Rust, and more
   - Multi-lingual documentation support
-
 **Works with:**
 - Python, JavaScript, Go, Rust, and more
 - 50+ spoken languages
@@ -2914,7 +2765,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
   - Consistent formatting and style
   - Automated documentation generation
   - Context-driven AI assistance
-
 **Works with:**
 - Multiple programming languages
 - Enterprise documentation workflows
@@ -2925,7 +2775,6 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
 #### **Pieces for Developers**
 - **Type**: AI-powered developer productivity tool
 - **Note**: Limited search results, may need further research
-
 **Works with:**
 - Developer workflows (likely)
 
@@ -2936,15 +2785,14 @@ AI-powered tools for testing, debugging, and managing APIs with intelligent test
 #### **Code Llama**
 - **Type**: Advanced language model for code
 - **Developer**: Meta
-- **Base**: Built on Llama 2 architecture
-- **License**: Free for research and commercial use
 - **Key Features**:
   - Code generation from text prompts
   - Leading publicly available coding model
   - Streamlines workflows
   - Aids beginners in learning
 - **Use Case**: Code generation, learning assistance
-
+- **Base**: Built on Llama 2 architecture
+- **License**: Free for research and commercial use
 **Works with:**
 - Local deployment
 - Development workflows
@@ -2969,7 +2817,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - ERD AI for database design
   - Performance tuning
   - Instant query analysis
-
 **Works with:**
 - SQL databases (MySQL, PostgreSQL, SQL Server)
 - NoSQL databases
@@ -2989,7 +2836,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Multi-database support
   - Optimized query generation
   - Relational and non-relational databases
-
 **Works with:**
 - MySQL, PostgreSQL, MongoDB, Redis
 - SQL and NoSQL databases
@@ -3008,7 +2854,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Supports SQL and NoSQL databases
   - All technical levels
   - Multiple database support
-
 **Works with:**
 - SQL databases
 - NoSQL databases
@@ -3026,7 +2871,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - AI-powered generation
   - Multiple database support
   - Quick query creation
-
 **Works with:**
 - Multiple SQL databases
 - Query generation workflows
@@ -3041,13 +2885,12 @@ AI-powered tools for SQL generation, query optimization, and database management
 #### **Ollama**
 - **Type**: Local LLM runtime
 - **Website**: https://ollama.com
-- **Download**: https://ollama.com/download
 - **Documentation**: https://github.com/ollama/ollama/blob/main/README.md
+- **Download**: https://ollama.com/download
 - **Platform**: CLI tool (Windows, macOS, Linux)
 - **Installation**: `curl https://ollama.ai/install.sh | sh`
 - **Models**: Run any open-source model locally
 - **API**: OpenAI-compatible endpoint (http://127.0.0.1:11434/v1)
-
 **Works with:**
 - Continue.dev (official guide)
 - Cline (OpenAI-compatible provider)
@@ -3062,9 +2905,8 @@ AI-powered tools for SQL generation, query optimization, and database management
 #### **LM Studio**
 - **Type**: GUI-based local LLM platform
 - **Platform**: Windows, macOS, Linux
-- **Features**: Model discovery, download, chat interface, OpenAI-like local server
 - **Use Case**: Beginner-friendly, non-technical users
-
+- **Features**: Model discovery, download, chat interface, OpenAI-like local server
 **Works with:**
 - Cline (LM Studio provider)
 - Jan (can use as remote server)
@@ -3075,11 +2917,10 @@ AI-powered tools for SQL generation, query optimization, and database management
 
 #### **vLLM**
 - **Type**: High-performance inference engine
+- **Installation**: Python virtual environment + pip
 - **Focus**: Production deployments, batch processing
 - **Performance**: High throughput, low latency, GPU-optimized
-- **Installation**: Python virtual environment + pip
 - **Use Case**: Research labs, startups, production apps
-
 **Works with:**
 - Void Editor (advanced local setup option)
 - Custom production deployments
@@ -3088,10 +2929,9 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **GPT4All**
-- **Developer**: Nomic AI
 - **Type**: Private AI chatbot for local LLMs
+- **Developer**: Nomic AI
 - **Platform**: Desktop (Mac M Series, AMD, NVIDIA)
-- **Users**: 250,000 monthly active users
 - **Key Features**:
   - Runs on everyday desktops & laptops
   - No API calls or GPUs required
@@ -3099,8 +2939,8 @@ AI-powered tools for SQL generation, query optimization, and database management
   - No internet connection needed (offline)
   - LocalDocs (chat with your data privately)
   - Runs on standard consumer hardware
+- **Users**: 250,000 monthly active users
 - **License**: Free, open-source, commercial use
-
 **Works with:**
 - Local deployment
 - Offline environments
@@ -3112,14 +2952,13 @@ AI-powered tools for SQL generation, query optimization, and database management
 #### **Jan (Jan.ai)**
 - **Type**: Open-source ChatGPT alternative (offline)
 - **Platform**: Mac, Windows, Linux
-- **GPU Support**: NVIDIA (CUDA), AMD (Vulkan), Intel Arc
 - **Models**: Llama 3, Gemma, Mistral (run on your own computer)
 - **Key Features**:
   - Completely offline
   - Free and open-source
   - Can integrate with Ollama and LM Studio (as remote servers)
   - Full privacy control
-
+- **G P U Support**: NVIDIA (CUDA), AMD (Vulkan), Intel Arc
 **Works with:**
 - Ollama (remote server integration)
 - LM Studio (remote server integration)
@@ -3134,7 +2973,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - API compatibility
   - Application integration
   - Most versatile for developers
-
 **Works with:**
 - Developer applications
 
@@ -3143,9 +2981,7 @@ AI-powered tools for SQL generation, query optimization, and database management
 #### **oLLM**
 - **Type**: Large-context LLM inference library
 - **Repository**: https://github.com/Mega4alik/ollm
-- **Technology**: Python library built on HuggingFace Transformers + PyTorch
 - **Release**: 2025
-- **Hardware**: Runs on $200 consumer GPU (8GB VRAM)
 - **Key Features**:
   - 100K context on 8GB consumer GPU
   - Supports 8B-80B parameter models (GPT-OSS-20B, Qwen3-Next-80B, Llama-3.1-8B)
@@ -3155,8 +2991,9 @@ AI-powered tools for SQL generation, query optimization, and database management
   - NVMe-class storage optimization
   - GPUDirect Storage (KvikIO/cuFile) support
 - **Performance**: ~100-200 GB storage, sub-1 tok/s for large models
+- **Technology**: Python library built on HuggingFace Transformers + PyTorch
+- **Hardware**: Runs on $200 consumer GPU (8GB VRAM)
 - **Use Cases**: Offline document analysis, compliance review, large-context summarization
-
 **Works with:**
 - Consumer GPUs (8GB VRAM minimum)
 - NVMe SSDs (high-speed storage required)
@@ -3180,7 +3017,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - No data leaves user machine
   - No subscriptions or complex setup
 - **Supported Models**: OpenAI, Deepseek, Claude, Ollama, Hugging Face
-
 **Works with:**
 - OpenAI, Anthropic, Deepseek (cloud providers)
 - Ollama (local models)
@@ -3194,6 +3030,7 @@ AI-powered tools for SQL generation, query optimization, and database management
 - **Type**: Private local AI character chat platform
 - **Website**: https://backyard.ai
 - **Platform**: Desktop (Mac, Windows, Linux), iOS, Android
+- **Pricing**: Free tier + paid cloud plans
 - **Key Features**:
   - 100% local processing (zero external servers)
   - 12+ top-tier AI models
@@ -3204,9 +3041,7 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Character Hub (thousands of AI characters)
   - Mobile tethering (access home models remotely)
   - Lore books, author's note, background images
-- **Pricing**: Free tier + paid cloud plans
 - **Use Cases**: Role-play, creative writing, AI chat without restrictions
-
 **Works with:**
 - Local LLM models (12+ supported)
 - Offline environments
@@ -3231,7 +3066,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Model downloading and management
   - LoRA support
 - **Use Cases**: Running local LLMs with user-friendly interface
-
 **Works with:**
 - llama.cpp, ExLlama, AutoGPTQ backends
 - HuggingFace models
@@ -3244,8 +3078,8 @@ AI-powered tools for SQL generation, query optimization, and database management
 #### **Llamafile**
 - **Type**: Single-file LLM deployment
 - **Developer**: Mozilla
-- **Repository**: https://github.com/Mozilla-Ocho/llamafile
 - **Website**: https://llamafile.ai
+- **Repository**: https://github.com/Mozilla-Ocho/llamafile
 - **Platform**: Windows, macOS, Linux
 - **Key Features**:
   - Package models into single executable files
@@ -3254,7 +3088,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Cross-platform compatibility
   - Ideal for distribution and edge deployment
   - Mozilla-backed project
-
 **Works with:**
 - Any platform (portable executables)
 - Edge deployment scenarios
@@ -3275,7 +3108,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - No setup complexity
   - Beginner-friendly alternative to Ollama
   - Windows-optimized
-
 **Works with:**
 - Windows systems
 - Local model execution
@@ -3291,7 +3123,6 @@ AI-powered tools for SQL generation, query optimization, and database management
 - **Key Features**:
   - Unified API for 100+ LLMs
   - Provider abstraction layer
-
 **Works with:**
 - OpenHands CLI
 - Roo Code
@@ -3304,7 +3135,6 @@ AI-powered tools for SQL generation, query optimization, and database management
 - **Key Features**:
   - Research and coding flexibility
   - Direct model access
-
 **Works with:**
 - Custom development
 - Research applications
@@ -3316,18 +3146,17 @@ AI-powered tools for SQL generation, query optimization, and database management
 ### Python Libraries
 
 #### **TensorFlow**
+- **Type**: Open-source machine learning framework
 - **Developer**: Google
 - **Website**: https://www.tensorflow.org
 - **Repository**: https://github.com/tensorflow/tensorflow
-- **Type**: Open-source machine learning framework
-- **Language**: Python, JavaScript (TensorFlow.js)
 - **Key Features**:
   - Deep learning and neural networks
   - Production deployment
   - Mobile and edge devices (TensorFlow Lite)
   - Extensive ecosystem (Keras, TensorFlow Hub)
+- **Language**: Python, JavaScript (TensorFlow.js)
 - **Use Cases**: Model training, deployment, research
-
 **Works with:**
 - Python development environments
 - Jupyter notebooks
@@ -3336,18 +3165,17 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **PyTorch**
+- **Type**: Open-source machine learning framework
 - **Developer**: Meta AI
 - **Website**: https://pytorch.org
 - **Repository**: https://github.com/pytorch/pytorch
-- **Type**: Open-source machine learning framework
-- **Language**: Python
 - **Key Features**:
   - Dynamic computational graphs
   - Strong GPU acceleration
   - Research-friendly API
   - Production deployment (TorchServe)
+- **Language**: Python
 - **Use Cases**: Deep learning research, model development
-
 **Works with:**
 - Python development environments
 - Jupyter notebooks
@@ -3356,19 +3184,18 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **LangChain**
+- **Type**: Framework for developing LLM applications
 - **Developer**: LangChain Inc.
 - **Website**: https://www.langchain.com
 - **Repository**: https://github.com/langchain-ai/langchain
-- **Type**: Framework for developing LLM applications
-- **Language**: Python, JavaScript/TypeScript
 - **Key Features**:
   - Chain composition for LLM workflows
   - Memory management
   - Agent systems
   - Vector store integrations
   - Document loaders and retrievers
+- **Language**: Python, JavaScript/TypeScript
 - **Use Cases**: RAG applications, chatbots, AI agents
-
 **Works with:**
 - OpenAI, Anthropic, Google, and other LLM providers
 - Vector databases (Pinecone, Weaviate, Chroma)
@@ -3377,19 +3204,18 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **LangGraph**
+- **Type**: Stateful agent framework built on LangChain
 - **Developer**: LangChain Inc.
 - **Website**: https://www.langchain.com/langgraph
 - **Repository**: https://github.com/langchain-ai/langgraph
 - **Documentation**: https://langchain-ai.github.io/langgraph/
-- **Type**: Stateful agent framework built on LangChain
-- **Language**: Python, JavaScript/TypeScript
 - **Key Features**:
   - DAG-style workflow creation
   - Fine-grained control over agent behavior
   - Stateful multi-agent systems
   - Built on top of LangChain
   - Graph-based agent orchestration
-
+- **Language**: Python, JavaScript/TypeScript
 **Works with:**
 - LangChain ecosystem
 - Multiple LLM providers
@@ -3398,17 +3224,16 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **AutoGen**
+- **Type**: Multi-agent conversation framework
 - **Developer**: Microsoft
 - **Website**: https://microsoft.github.io/autogen/
 - **Repository**: https://github.com/microsoft/autogen
-- **Type**: Multi-agent conversation framework
-- **Language**: Python
 - **Key Features**:
   - Agents communicate in natural language
   - Define multiple specialized agents (Planner, Developer, Reviewer)
   - Collaborative multi-agent systems
   - Autonomous agent-to-agent communication
-
+- **Language**: Python
 **Works with:**
 - Multiple LLM providers
 - Microsoft AI ecosystem
@@ -3417,18 +3242,17 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **CrewAI**
+- **Type**: Collaborative multi-agent framework
 - **Developer**: CrewAI Inc.
 - **Website**: https://www.crewai.com
 - **Repository**: https://github.com/joaomdmoura/crewAI
 - **Documentation**: https://docs.crewai.com
-- **Type**: Collaborative multi-agent framework
-- **Language**: Python
 - **Key Features**:
   - Assign distinct roles, goals, and tools to agents
   - Role-based agent collaboration
   - Open-source framework
   - Multi-agent orchestration
-
+- **Language**: Python
 **Works with:**
 - Multiple LLM providers
 - Complex collaborative tasks
@@ -3437,16 +3261,15 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **OpenAI Agents SDK**
+- **Type**: Minimalist agent framework
 - **Developer**: OpenAI
 - **Website**: https://platform.openai.com/docs/agents
-- **Type**: Minimalist agent framework
-- **Language**: Python, TypeScript
 - **Key Features**:
   - Core primitives: agents, tools, handoffs, guardrails
   - Minimalist design philosophy
   - Structured workflows
   - Official OpenAI implementation
-
+- **Language**: Python, TypeScript
 **Works with:**
 - OpenAI models
 - Structured agentic workflows
@@ -3455,17 +3278,16 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **Semantic Kernel**
+- **Type**: AI integration framework
 - **Developer**: Microsoft
 - **Website**: https://learn.microsoft.com/en-us/semantic-kernel/
 - **Repository**: https://github.com/microsoft/semantic-kernel
-- **Type**: AI integration framework
-- **Language**: C#, Python, Java
 - **Key Features**:
   - Integrate AI into traditional software development
   - Seamless integration with existing applications
   - Enterprise-grade framework
   - Multi-language support
-
+- **Language**: C#, Python, Java
 **Works with:**
 - Microsoft ecosystem
 - Enterprise applications
@@ -3474,17 +3296,16 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **Haystack**
+- **Type**: Open-source LLM framework
 - **Developer**: deepset
 - **Website**: https://haystack.deepset.ai
 - **Repository**: https://github.com/deepset-ai/haystack
-- **Type**: Open-source LLM framework
-- **Language**: Python
 - **Key Features**:
   - Production-ready NLP pipelines
   - RAG and search applications
   - Modular architecture
   - Document processing
-
+- **Language**: Python
 **Works with:**
 - Multiple LLM providers
 - Vector databases
@@ -3493,19 +3314,18 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **LlamaIndex**
+- **Type**: Data framework for LLM applications
 - **Developer**: LlamaIndex (formerly GPT Index)
 - **Website**: https://www.llamaindex.ai
 - **Repository**: https://github.com/run-llama/llama_index
-- **Type**: Data framework for LLM applications
-- **Language**: Python, TypeScript
 - **Key Features**:
   - Data ingestion and indexing
   - Query engines
   - Chat engines
   - Multi-document agents
   - RAG (Retrieval-Augmented Generation)
+- **Language**: Python, TypeScript
 - **Use Cases**: Knowledge bases, document Q&A, data-augmented LLM apps
-
 **Works with:**
 - OpenAI, Anthropic, HuggingFace models
 - Vector databases
@@ -3514,18 +3334,17 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **scikit-learn**
+- **Type**: Machine learning library
 - **Developer**: scikit-learn developers
 - **Website**: https://scikit-learn.org
 - **Repository**: https://github.com/scikit-learn/scikit-learn
-- **Type**: Machine learning library
-- **Language**: Python
 - **Key Features**:
   - Classification, regression, clustering
   - Model selection and evaluation
   - Preprocessing and feature engineering
   - Integration with NumPy and Pandas
+- **Language**: Python
 - **Use Cases**: Traditional ML, data analysis, model building
-
 **Works with:**
 - NumPy, Pandas, Matplotlib
 - Jupyter notebooks
@@ -3534,18 +3353,17 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **NumPy**
+- **Type**: Numerical computing library
 - **Developer**: NumPy developers
 - **Website**: https://numpy.org
 - **Repository**: https://github.com/numpy/numpy
-- **Type**: Numerical computing library
-- **Language**: Python
 - **Key Features**:
   - Multi-dimensional arrays
   - Mathematical functions
   - Linear algebra operations
   - Foundation for scientific computing
+- **Language**: Python
 - **Use Cases**: Data manipulation, scientific computing, ML preprocessing
-
 **Works with:**
 - All Python ML/AI frameworks
 - Pandas, scikit-learn, TensorFlow, PyTorch
@@ -3553,18 +3371,17 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **Pandas**
+- **Type**: Data analysis and manipulation library
 - **Developer**: Pandas development team
 - **Website**: https://pandas.pydata.org
 - **Repository**: https://github.com/pandas-dev/pandas
-- **Type**: Data analysis and manipulation library
-- **Language**: Python
 - **Key Features**:
   - DataFrames for structured data
   - Data cleaning and preprocessing
   - Time series analysis
   - SQL-like operations
+- **Language**: Python
 - **Use Cases**: Data preprocessing for ML, data analysis, ETL
-
 **Works with:**
 - NumPy, scikit-learn
 - Jupyter notebooks
@@ -3575,18 +3392,17 @@ AI-powered tools for SQL generation, query optimization, and database management
 ### JavaScript/TypeScript Libraries
 
 #### **Vercel AI SDK**
+- **Type**: TypeScript toolkit for AI applications
 - **Developer**: Vercel
 - **Website**: https://sdk.vercel.ai
 - **Repository**: https://github.com/vercel/ai
-- **Package**: https://www.npmjs.com/package/ai
-- **Type**: TypeScript toolkit for AI applications
 - **Key Features**:
   - Streaming AI responses
   - React hooks for AI UI
   - Multi-provider support
   - Edge runtime compatible
+- **Package**: https://www.npmjs.com/package/ai
 - **Use Cases**: Building AI-powered web applications
-
 **Works with:**
 - OpenAI, Anthropic, Google, Mistral
 - Next.js, React, Vue
@@ -3595,19 +3411,18 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **OpenAI Node.js SDK**
+- **Type**: Official OpenAI API client
 - **Developer**: OpenAI
 - **Website**: https://platform.openai.com
-- **Package**: https://www.npmjs.com/package/openai
 - **Repository**: https://github.com/openai/openai-node
-- **Type**: Official OpenAI API client
-- **Language**: TypeScript/JavaScript
 - **Key Features**:
   - Full API coverage
   - TypeScript types
   - Streaming support
   - Error handling
+- **Package**: https://www.npmjs.com/package/openai
+- **Language**: TypeScript/JavaScript
 - **Use Cases**: Integrating OpenAI models in Node.js apps
-
 **Works with:**
 - Node.js applications
 - Deno (via npm compatibility)
@@ -3616,16 +3431,15 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **OpenAI Deno SDK**
+- **Type**: OpenAI SDK for Deno runtime
 - **Developer**: Deno + OpenAI community
 - **Website**: https://deno.com/blog/openai_sdk_deno
-- **Type**: OpenAI SDK for Deno runtime
-- **Language**: TypeScript
 - **Key Features**:
   - Native Deno compatibility
   - Secure by default
   - Modern TypeScript
+- **Language**: TypeScript
 - **Use Cases**: Building OpenAI apps with Deno
-
 **Works with:**
 - Deno runtime
 - Deno Deploy
@@ -3638,9 +3452,9 @@ AI-powered tools for SQL generation, query optimization, and database management
 ### AI Assistant Extensions
 
 #### **WiseOne**
+- **Type**: Browser extension for reading and research
 - **Developer**: WiseOne
 - **Website**: https://wiseone.io
-- **Type**: Browser extension for reading and research
 - **Platform**: Chrome, Firefox, Edge
 - **Key Features**:
   - AI-powered article summarization
@@ -3648,7 +3462,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Fact verification
   - Research assistance
 - **Use Cases**: Research, reading comprehension, fact-checking
-
 **Works with:**
 - Web browsers
 - Online articles and documents
@@ -3656,9 +3469,9 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **Merlin**
+- **Type**: AI assistant browser extension
 - **Developer**: Merlin AI
 - **Website**: https://www.getmerlin.in
-- **Type**: AI assistant browser extension
 - **Platform**: Chrome, Firefox, Edge
 - **Key Features**:
   - ChatGPT integration in browser
@@ -3666,7 +3479,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Content summarization
   - Multi-platform AI access
 - **Use Cases**: Productivity, content creation, research
-
 **Works with:**
 - Web browsers
 - Gmail, Twitter, LinkedIn
@@ -3675,9 +3487,9 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **Qodo Merge AI**
+- **Type**: AI code review browser extension for GitHub
 - **Developer**: Qodo (formerly Codium)
 - **Website**: https://www.qodo.ai/qodo-merge
-- **Type**: AI code review browser extension for GitHub
 - **Platform**: Chrome, Firefox, Edge
 - **Key Features**:
   - AI code reviews inside GitHub PRs
@@ -3685,7 +3497,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - No need to switch tools
   - Works directly in GitHub interface
   - Best for GitHub PR reviews
-
 **Works with:**
 - GitHub pull requests
 - Browser-based workflows
@@ -3694,10 +3505,10 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **Octotree**
+- **Type**: GitHub enhancement extension
 - **Developer**: Octotree
 - **Website**: https://www.octotree.io
 - **Repository**: https://github.com/ovity/octotree
-- **Type**: GitHub enhancement extension
 - **Platform**: Chrome, Firefox, Edge, Safari
 - **Key Features**:
   - IDE-like code tree in browser
@@ -3706,7 +3517,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - PR review enhancement
   - Code bookmarking
   - No need to leave GitHub interface
-
 **Works with:**
 - GitHub repositories
 - GitLab repositories
@@ -3715,9 +3525,9 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **daily.dev**
+- **Type**: Developer news aggregator
 - **Developer**: daily.dev
 - **Website**: https://daily.dev
-- **Type**: Developer news aggregator
 - **Platform**: Chrome, Firefox, Edge
 - **Key Features**:
   - Personalized tech news feed
@@ -3725,7 +3535,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - 1,300+ developer-focused sources
   - Tech articles and discussions
   - Developer community content
-
 **Works with:**
 - Browser new tab
 - Tech news sources
@@ -3738,16 +3547,15 @@ AI-powered tools for SQL generation, query optimization, and database management
 ### AI-Powered Search Engines
 
 #### **You.com**
+- **Type**: AI-powered search engine
 - **Developer**: You.com
 - **Website**: https://you.com
-- **Type**: AI-powered search engine
 - **Key Features**:
   - AI-generated answers
   - Code search capabilities
   - Developer-friendly results
   - Privacy-focused
 - **Use Cases**: Code search, research, development queries
-
 **Works with:**
 - Web browsers
 - Developer workflows
@@ -3755,15 +3563,14 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **DeepAI**
+- **Type**: AI research and tools platform
 - **Developer**: DeepAI
 - **Website**: https://deepai.org
-- **Type**: AI research and tools platform
 - **Key Features**:
   - AI tools and APIs
   - Research resources
   - Model playground
 - **Use Cases**: AI experimentation, research, learning
-
 **Works with:**
 - Developer tools
 - Research workflows
@@ -3775,8 +3582,8 @@ AI-powered tools for SQL generation, query optimization, and database management
 ### Model Context Protocol (MCP)
 
 #### **Overview**
-- **Developer**: Anthropic (November 2024)
 - **Type**: Open-source standard for AI-data integration
+- **Developer**: Anthropic (November 2024)
 - **Purpose**: Standardize how AI systems integrate with external tools and data sources
 
 **Architecture**:
@@ -3785,7 +3592,7 @@ AI-powered tools for SQL generation, query optimization, and database management
 - Re-uses Language Server Protocol (LSP) concepts
 - Real-time context provision to LLMs
 
-**SDKs**: Python, TypeScript, C# (Microsoft collaboration), Java, Kotlin
+**SDKs:** Python, TypeScript, C# (Microsoft collaboration), Java, Kotlin
 
 ---
 
@@ -3802,7 +3609,6 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Azure DevOps
   - Databricks
   - Many others (community contributions)
-
 **Works with:**
 - Claude Code (native)
 - Cline (MCP Marketplace, v3.4+)
@@ -3815,10 +3621,9 @@ AI-powered tools for SQL generation, query optimization, and database management
 
 #### **Industry Adoption (2025)**
 - **Early Adopters**: Anthropic, OpenAI, Google DeepMind
-- **IDEs**: Zed, Replit, Codeium, Sourcegraph
-- **Google DeepMind**: Confirmed MCP support in Gemini models (April 2025, Demis Hassabis)
+- **I D Es**: Zed, Replit, Codeium, Sourcegraph
+- **Google Deep Mind**: Confirmed MCP support in Gemini models (April 2025, Demis Hassabis)
 - **Automation**: Microsoft Playwright MCP, Selenium, Appium integrations
-
 ---
 
 ### Generative UI & Frontend Infrastructure
@@ -3826,10 +3631,7 @@ AI-powered tools for SQL generation, query optimization, and database management
 #### **Thesys (C1 Generative UI API)**
 - **Type**: Generative UI API for AI applications
 - **Website**: https://thesys.dev
-- **Product**: C1 Generative UI API
 - **Documentation**: https://docs.thesys.dev
-- **Launch**: 2025 (Product Hunt launch)
-- **Adoption**: 300+ teams using in production
 - **Key Features**:
   - Real-time UI generation (charts, forms, cards, interactive components)
   - Augments LLMs to respond with interactive UI instead of text
@@ -3841,7 +3643,9 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Custom design system support
   - Tool call integration (databases, documents, APIs)
 - **Use Case**: Building adaptive AI interfaces that generate during runtime (vs pre-deployment mockups)
-
+- **Product**: C1 Generative UI API
+- **Launch**: 2025 (Product Hunt launch)
+- **Adoption**: 300+ teams using in production
 **Works with:**
 - All leading LLMs (Anthropic, OpenAI, etc.)
 - Any framework (React, Vue, etc.)
@@ -3855,10 +3659,9 @@ AI-powered tools for SQL generation, query optimization, and database management
 ### Proxy & Router Solutions
 
 #### **Claude Code Router**
-- **Purpose**: Use Claude Code CLI with any model via OpenRouter
 - **Use Case**: Beyond Anthropic - access to 300+ models
+- **Purpose**: Use Claude Code CLI with any model via OpenRouter
 - **Integration**: Proxy layer between Claude Code and OpenRouter
-
 **Works with:**
 - Claude Code CLI
 - OpenRouter (model access)
@@ -3870,10 +3673,9 @@ AI-powered tools for SQL generation, query optimization, and database management
 
 #### **Microsoft Playwright MCP**
 - **Type**: Server-side enhancement to Playwright
-- **Purpose**: Structured browser interactions for LLMs
-- **Use Case**: Automated testing with AI
 - **Release**: Recent integration (2025)
-
+- **Use Case**: Automated testing with AI
+- **Purpose**: Structured browser interactions for LLMs
 **Works with:**
 - Playwright automation framework
 - LLM-driven testing
@@ -3883,9 +3685,8 @@ AI-powered tools for SQL generation, query optimization, and database management
 
 #### **Selenium & Appium MCP**
 - **Type**: MCP integrations for testing frameworks
-- **Purpose**: AI-driven test automation
 - **Use Case**: Mobile and web testing
-
+- **Purpose**: AI-driven test automation
 **Works with:**
 - Selenium (web testing)
 - Appium (mobile testing)
@@ -3896,9 +3697,9 @@ AI-powered tools for SQL generation, query optimization, and database management
 ### Additional Platforms & Notes
 
 #### **OpenSumi**
+- **Type**: AI Native IDE Framework
 - **Developer**: Ant Group (Alibaba)
 - **Repository**: https://github.com/opensumi/core
-- **Type**: AI Native IDE Framework
 - **Key Features**:
   - Framework for building AI-first IDEs
   - MCP Client support (Model Context Protocol)
@@ -3908,7 +3709,12 @@ AI-powered tools for SQL generation, query optimization, and database management
   - Highly extensible and customizable
   - Pre-built AI integration patterns
   - Support for MCP tools via MCP server
-  
+
+**Use Cases**:
+- Building custom AI-powered IDEs
+- Internal development tools
+- Specialized coding environments
+
 **Works with:**
 - Model Context Protocol (MCP)
 - Multiple AI model providers
@@ -3916,24 +3722,18 @@ AI-powered tools for SQL generation, query optimization, and database management
 - Web-based IDEs
 - Custom development tools
 
-**Use Cases:**
-- Building custom AI-powered IDEs
-- Internal development tools
-- Specialized coding environments
-
 ---
 
 #### **Visual Copilot (Builder.io)**
+- **Type**: Figma to code AI tool
 - **Developer**: Builder.io
 - **Website**: https://www.builder.io/blog/figma-to-code-visual-copilot
-- **Type**: Figma to code AI tool
 - **Key Features**:
   - Convert Figma designs to code
   - Multiple framework support
   - Component generation
   - Design system integration
 - **Use Cases**: Design-to-code workflow, rapid prototyping
-
 **Works with:**
 - Figma
 - React, Vue, Angular, HTML
@@ -3942,16 +3742,15 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **Supabase Assistant**
+- **Type**: AI assistant for Supabase Studio
 - **Developer**: Supabase
 - **Website**: https://supabase.com/blog/studio-introducing-assistant
-- **Type**: AI assistant for Supabase Studio
 - **Key Features**:
   - SQL query generation
   - Database schema assistance
   - API endpoint suggestions
   - Documentation help
 - **Use Cases**: Database development, API building
-
 **Works with:**
 - Supabase Studio
 - PostgreSQL
@@ -3960,16 +3759,15 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **Civitai**
+- **Type**: AI model sharing platform
 - **Developer**: Civitai
 - **Website**: https://civitai.com
-- **Type**: AI model sharing platform
 - **Key Features**:
   - Model sharing and discovery
   - Training resources
   - Community models
   - LoRA and checkpoint hosting
 - **Use Cases**: Model discovery, training, fine-tuning
-
 **Works with:**
 - Stable Diffusion
 - ComfyUI
@@ -3979,15 +3777,14 @@ AI-powered tools for SQL generation, query optimization, and database management
 ---
 
 #### **SD Tools**
-- **Website**: https://sdtools.org/
 - **Type**: Stable Diffusion tools and utilities
+- **Website**: https://sdtools.org/
 - **Key Features**:
   - Stable Diffusion model utilities
   - Training and fine-tuning tools
   - LoRA support
   - Model management
 - **Use Cases**: Stable Diffusion workflow optimization, model training
-
 **Works with:**
 - Stable Diffusion
 - LoRA training
@@ -3998,11 +3795,10 @@ AI-powered tools for SQL generation, query optimization, and database management
 
 #### **Eclipse Theia**
 - **Type**: VS Code-compatible (not a fork)
+- **Status**: Worth tracking if broadening criteria
 - **Features**: Theia AI, Theia Coder
 - **Technology**: MCP support
 - **Note**: Architecturally independent from VS Code
-- **Status**: Worth tracking if broadening criteria
-
 **Works with:**
 - Model Context Protocol (MCP)
 - VS Code extensions (compatibility layer)
@@ -4010,6 +3806,85 @@ AI-powered tools for SQL generation, query optimization, and database management
 - Web-based and desktop environments
 
 ---
+
+## Performance Comparison Context
+
+### Fastest Inference Providers (100 tokens)
+
+### Cost Leaders
+
+## Integration Matrix Summary
+
+### Universal Compatibility (OpenAI API)
+
+### MCP Ecosystem
+
+### Cloud Platform Integration
+
+### Local-First Options
+
+## Recommendations by Use Case
+
+### For Maximum Model Flexibility
+
+### For Enterprise/Cloud Integration
+
+### For Privacy/Local Development
+
+### For Cost Optimization
+
+### For Performance
+
+### For Agentic Workflows
+
+### For Web Development
+
+### For Security & Code Review
+
+### For Documentation
+
+### For Learning & Beginners
+
+### For JetBrains Users
+
+### For Open-Source & Self-Hosted
+
+## Tool Categories Summary
+
+### By Deployment Type
+
+### By IDE Platform
+
+### By Specialization
+
+### By License Type
+
+## Additional Resources
+
+### Related Awesome Lists
+
+### Official Documentation Links
+
+### Community Resources
+
+### Learning Resources
+
+#### **Online Courses & Tracks**
+---
+
+#### **YouTube Tutorials**
+---
+
+#### **Technical Resources & Discussions**
+---
+
+#### **Tools & Utilities**
+---
+
+## License
+
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
 
 ## Performance Comparison Context
 

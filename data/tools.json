@@ -1,0 +1,4587 @@
+{
+  "meta": {
+    "title": "Awesome AI Tools",
+    "lastUpdated": "November 2025",
+    "subtitle": "A complete guide to AI-powered coding tools, from inference providers to IDEs, extensions, and specialized utilities.",
+    "introduction": {
+      "overview": "This repository serves as a comprehensive, curated list of AI-powered coding tools available as of October 2025. Our goal is to provide developers, teams, and organizations with a detailed overview of the AI coding landscape, helping them make informed decisions about which tools best fit their needs.",
+      "purpose": [
+        "**Centralize Information**: Consolidate scattered information about AI coding tools in one accessible location",
+        "**Provide Context**: Offer detailed descriptions, features, and compatibility information for each tool",
+        "**Enable Comparison**: Help users compare tools based on their specific requirements (privacy, cost, performance, etc.)",
+        "**Track Evolution**: Document the fast-changing landscape of AI coding tools and their capabilities",
+        "**Support Decision-Making**: Provide use-case specific recommendations to guide tool selection"
+      ],
+      "contributing": "Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on how to add new tools, update existing entries, and follow our quality standards."
+    }
+  },
+  "categories": [
+    {
+      "id": "ai-inference-providers",
+      "name": "AI Inference Providers",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "major-cloud-providers",
+          "name": "Major Cloud Providers",
+          "tools": [
+            {
+              "name": "Anthropic",
+              "website": "https://www.anthropic.com",
+              "apiConsole": "https://console.anthropic.com",
+              "documentation": "https://docs.anthropic.com",
+              "models": "Claude 4 (Opus, Sonnet), Claude 3.5 Sonnet, Claude 3.7 Sonnet",
+              "api": "Direct API access via api.anthropic.com",
+              "pricing": "Varies by model, competitive with OpenAI",
+              "integration": "Native support in most coding tools",
+              "worksWith": [
+                "Claude Code CLI (native)",
+                "Cline, Roo Code, Kilo Code (VS Code extensions)",
+                "Cursor, Windsurf, Void, PearAI (IDEs)",
+                "AWS Bedrock, Azure AI Foundry (cloud platforms)",
+                "JetBrains AI Assistant"
+              ]
+            },
+            {
+              "name": "OpenAI",
+              "website": "https://openai.com",
+              "apiPlatform": "https://platform.openai.com",
+              "documentation": "https://platform.openai.com/docs",
+              "models": "GPT-5, GPT-5-mini, GPT-4.1, o3, o4-mini, GPT-5-Codex",
+              "api": "OpenAI-compatible API format (industry standard)",
+              "pricing": "Premium pricing, various tiers",
+              "specialFeatures": "Reasoning models (o-series), specialized coding (Codex)",
+              "worksWith": [
+                "OpenAI Codex CLI (native)",
+                "GitHub Copilot (native integration)",
+                "All major coding tools (universal OpenAI API support)",
+                "AWS Bedrock (open weight models now available)",
+                "Azure OpenAI Service (exclusive partnership)"
+              ]
+            },
+            {
+              "name": "Google",
+              "website": "https://ai.google.dev",
+              "aiStudio": "https://aistudio.google.com",
+              "vertexAI": "https://cloud.google.com/vertex-ai",
+              "documentation": "https://ai.google.dev/docs",
+              "models": "Gemini 2.5 Pro, Gemini 2.0 Flash, PaLM, Gemma",
+              "platforms": "Google AI Studio, Vertex AI, DeepMind",
+              "api": "Google Cloud Platform integration",
+              "specialFeatures": "MCP support announced for Gemini (April 2025, Demis Hassabis)",
+              "worksWith": [
+                "Gemini CLI (native)",
+                "Jules Tools CLI (native)",
+                "GitHub Copilot, Cline, Kilo Code (multi-model support)",
+                "Google Vertex AI (cloud platform)",
+                "JetBrains AI Assistant"
+              ]
+            },
+            {
+              "name": "DeepSeek",
+              "website": "https://www.deepseek.com",
+              "apiPlatform": "https://platform.deepseek.com",
+              "models": "DeepSeek R1, DeepSeek V3, DeepSeek Coder",
+              "pricing": "Ultra-competitive (~$0.28-$0.70/M input tokens)",
+              "specialFeatures": "671B parameters, 37B active, open-source with reasoning tokens",
+              "performance": "Comparable to OpenAI o1",
+              "worksWith": [
+                "DeepSeek CLI (dedicated)",
+                "OpenRouter (aggregation platform)",
+                "Codex CLI (integration guide available)",
+                "Continue, Cline, Roo Code (OpenAI-compatible API)",
+                "JetBrains AI Assistant (local models)"
+              ]
+            },
+            {
+              "name": "Qwen (Alibaba)",
+              "models": "Qwen3 series, Qwen2.5-Coder",
+              "specialFeatures": "Large context windows, multilingual support",
+              "integration": "Available through OpenRouter and direct API",
+              "worksWith": [
+                "Continue.dev + Ollama (local deployment)",
+                "OpenRouter (cloud access)",
+                "Various CLI tools via OpenAI-compatible endpoints",
+                "JetBrains AI Assistant (local models)"
+              ]
+            },
+            {
+              "name": "Mistral AI",
+              "website": "https://mistral.ai",
+              "platform": "https://console.mistral.ai (La Plateforme)",
+              "documentation": "https://docs.mistral.ai",
+              "models": "Mistral Large, Mistral Small, Ministral 3B, Mistral-OCR-2503, Magistral (reasoning)",
+              "pricing": "Pay-as-you-go token-based billing",
+              "specialFeatures": "Magistral reasoning models (June 2025) for multi-step logic",
+              "worksWith": [
+                "Azure AI Foundry (serverless API)",
+                "Tabnine (third-party chat model)",
+                "Continue.dev, Cline",
+                "OpenRouter"
+              ]
+            },
+            {
+              "name": "Cohere",
+              "models": "Command, Embed, Rerank families",
+              "focus": "Enterprise, multilingual, robust security",
+              "specialFeatures": "Top-tier multilingual models, full deployment control",
+              "worksWith": [
+                "AWS Bedrock",
+                "Enterprise deployments requiring data control",
+                "Multi-language applications"
+              ]
+            },
+            {
+              "name": "AI21 Labs",
+              "models": "Jamba family (Mamba-Transformer hybrid)",
+              "architecture": "Hybrid Mamba-Transformer for production use",
+              "focus": "Commercial reliability, quality, performance",
+              "worksWith": [
+                "AWS Bedrock",
+                "Azure AI Foundry",
+                "Enterprise applications"
+              ]
+            },
+            {
+              "name": "Perplexity",
+              "type": "AI search/Q&A with developer API",
+              "models": "State-of-the-art open-source (Llama, Mistral)",
+              "specialFeatures": "Real-time internet data access, rapid model integration",
+              "pricing": "Usage-based; Pro users get $5/month pplx-api credit",
+              "worksWith": [
+                "Applications requiring live data (news, finance, trends)",
+                "REST API integrations",
+                "Research and Q&A systems"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "unified-routing-aggregation-platforms",
+          "name": "Unified Routing & Aggregation Platforms",
+          "tools": [
+            {
+              "name": "OpenRouter",
+              "type": "Unified API gateway",
+              "models": "300-400+ models from multiple providers",
+              "providers": "Anthropic, OpenAI, Google, Meta, Mistral, DeepSeek, and more",
+              "keyFeatures": [
+                "Single OpenAI-compatible endpoint",
+                "Automatic failover and routing",
+                "Cost/latency/performance optimization",
+                "Prompt caching",
+                "Unified billing"
+              ],
+              "worksWith": [
+                "Cline (direct integration with auto-updating model list)",
+                "Cursor, Windsurf (custom API endpoint support)",
+                "Continue.dev, Roo Code, Kilo Code",
+                "Claude Code Router (proxy for Claude Code)"
+              ]
+            },
+            {
+              "name": "Hugging Face Inference",
+              "type": "Multi-provider serverless inference",
+              "providers": "Fal, Replicate, SambaNova, Together AI",
+              "models": "Hundreds of ML models",
+              "api": "Unified, consistent API across providers",
+              "pricing": "Standard provider API rates",
+              "worksWith": [
+                "LiteLLM",
+                "Developer applications",
+                "Fine-tuning workflows (with Together AI, Replicate)"
+              ]
+            },
+            {
+              "name": "Replicate",
+              "type": "Hosted open-source model inference",
+              "features": "Fine-tuning, quick testing, no infrastructure setup",
+              "useCase": "Rapid model integration and testing",
+              "worksWith": [
+                "Hugging Face platform",
+                "API integrations",
+                "Development and prototyping"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cloud-platform-ai-services",
+          "name": "Cloud Platform AI Services",
+          "tools": [
+            {
+              "name": "AWS Bedrock",
+              "type": "Multi-vendor AI service platform",
+              "models": "Claude (Anthropic), Titan (Amazon), Llama (Meta), Cohere, AI21, Mistral, Stability AI, OpenAI (open weight)",
+              "integration": "Deep AWS ecosystem (Lambda, S3, CloudWatch)",
+              "specialFeatures": "Serverless, fully managed, OpenAI-compatible API (August 2025)",
+              "worksWith": [
+                "Cline, Continue, Roo Code (native Bedrock support)",
+                "Sourcegraph Cody (BYOM)",
+                "Any tool with AWS authentication",
+                "OpenAI SDK (via compatibility layer)"
+              ]
+            },
+            {
+              "name": "Azure AI Foundry (Azure OpenAI)",
+              "type": "Microsoft's AI platform",
+              "models": "Exclusive GPT-4/GPT-5 access, Mistral, Cohere, AI21, other models",
+              "integration": "Deep Microsoft ecosystem (365, Active Directory, Cognitive Services)",
+              "specialFeatures": "Enterprise-grade security, compliance",
+              "worksWith": [
+                "Microsoft Copilot (native)",
+                "GitHub Copilot (Microsoft integration)",
+                "Continue.dev (Azure provider support)",
+                "Any OpenAI-compatible tool (with Azure endpoints)"
+              ]
+            },
+            {
+              "name": "Google Vertex AI",
+              "type": "Unified ML/AI platform",
+              "models": "Gemini family, PaLM, Model Garden (Llama, Gemma, BERT, 3rd party)",
+              "integration": "Google Cloud tools (BigQuery, Dataflow)",
+              "specialFeatures": "Data-driven MLOps, analytics focus",
+              "worksWith": [
+                "Cline, Continue, Roo Code (GCP Vertex provider)",
+                "Google's native tools (Gemini CLI, Jules Tools)",
+                "Enterprise tools requiring Google Cloud integration"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "high-performance-inference-providers",
+          "name": "High-Performance Inference Providers",
+          "tools": [
+            {
+              "name": "Together AI",
+              "focus": "High-performance open-source LLMs",
+              "models": "200+ open-source models",
+              "performance": "Sub-100ms latency, 4x faster than Bedrock, 2x faster than Azure",
+              "pricing": "Up to 11x more affordable than GPT-4",
+              "release": "Together Inference Engine 2.0 with Turbo and Lite endpoints",
+              "worksWith": [
+                "Hugging Face (serverless integration)",
+                "Any tool with custom API endpoint support",
+                "Developer-focused applications requiring speed"
+              ]
+            },
+            {
+              "name": "Fireworks AI",
+              "focus": "Fastest model APIs",
+              "technology": "Proprietary FireAttention engine",
+              "performance": "4x lower latency than vLLM",
+              "compliance": "HIPAA, SOC2",
+              "modalities": "Text, image, audio",
+              "worksWith": [
+                "Hugging Face platform",
+                "Custom integrations via API",
+                "Performance-critical applications"
+              ]
+            },
+            {
+              "name": "Groq",
+              "focus": "Hardware-optimized inference",
+              "technology": "Language Processing Unit (LPU) chip",
+              "performance": "18x faster than traditional GPUs, <1 second for 100 tokens",
+              "deployment": "Cloud and on-premises",
+              "slogan": "\"Fast, low cost inference\"",
+              "worksWith": [
+                "Cline, Continue (Groq provider support)",
+                "Low-latency applications",
+                "Enterprise on-prem deployments"
+              ]
+            },
+            {
+              "name": "Cerebras",
+              "type": "Hardware accelerator manufacturer and inference provider",
+              "website": "https://www.cerebras.ai",
+              "inferencePlatform": "https://www.cerebras.ai/inference",
+              "cloud": "https://cloud.cerebras.ai",
+              "documentation": "https://inference-docs.cerebras.ai",
+              "focus": "Custom AI chips for inference",
+              "performance": "2,500+ tokens/second, 574ms for 100 tokens (fastest in class)",
+              "keyFeatures": [
+                "Real-time AI responses",
+                "OpenAI API compatible",
+                "Pay-as-you-go or reserved capacity pricing"
+              ],
+              "worksWith": [
+                "Cline (Cerebras provider)",
+                "High-performance computing applications",
+                "OpenAI-compatible integrations"
+              ]
+            },
+            {
+              "name": "SambaNova",
+              "type": "Inference provider with custom RDU hardware",
+              "website": "https://sambanova.ai",
+              "cloud": "https://cloud.sambanova.ai",
+              "api": "https://sambanova.ai/fast-api",
+              "documentation": "https://docs.sambanova.ai",
+              "integration": "Hugging Face serverless",
+              "keyFeatures": [
+                "Fastest inference APIs",
+                "RDU (Reconfigurable Dataflow Units) powered",
+                "OpenAI-compatible APIs",
+                "SambaCloud, SambaStack, and SambaManaged options"
+              ],
+              "worksWith": [
+                "Hugging Face platform",
+                "Enterprise deployments",
+                "OpenAI-compatible integrations",
+                "On-premises and cloud deployments"
+              ]
+            },
+            {
+              "name": "Fal",
+              "type": "Serverless inference provider",
+              "website": "https://fal.ai",
+              "huggingFace": "https://huggingface.co/fal",
+              "integration": "Hugging Face serverless",
+              "keyFeatures": [
+                "600+ production-ready models",
+                "Generative image, video, audio, and 3D models",
+                "Serverless GPUs",
+                "On-demand clusters",
+                "4x faster model execution"
+              ],
+              "worksWith": [
+                "Hugging Face platform",
+                "Developer applications",
+                "Image, video, audio AI workflows"
+              ]
+            },
+            {
+              "name": "Hyperbolic",
+              "type": "High-performance inference provider",
+              "website": "https://hyperbolic.xyz",
+              "keyFeatures": [
+                "Up to 80% cost savings compared to traditional providers",
+                "Access to top-performing models",
+                "No quality compromise",
+                "Cost-optimized infrastructure"
+              ],
+              "worksWith": [
+                "Leading LLM models",
+                "Enterprise applications",
+                "Cost-conscious deployments"
+              ]
+            },
+            {
+              "name": "Novita AI",
+              "type": "Multimodal inference platform",
+              "website": "https://novita.ai",
+              "keyFeatures": [
+                "200+ production-ready APIs",
+                "LLM, image, video, speech generation",
+                "Serverless GPU endpoints",
+                "Dedicated GPU instances",
+                "Multi-modal capabilities"
+              ],
+              "worksWith": [
+                "Multiple modalities (text, image, video, speech)",
+                "Serverless deployments",
+                "Dedicated GPU infrastructure"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "additional-model-providers",
+          "name": "Additional Model Providers",
+          "tools": [
+            {
+              "name": "Meta",
+              "models": "Llama 3, Llama family, Code Llama",
+              "type": "Open-source foundation models",
+              "specialFeatures": "Code Llama built on Llama 2, free for research and commercial use",
+              "worksWith": [
+                "AWS Bedrock, Azure, Google Vertex AI",
+                "Ollama, LM Studio (local deployment)",
+                "Most AI coding tools (open model access)"
+              ]
+            },
+            {
+              "name": "xAI",
+              "developer": "xAI (Elon Musk)",
+              "website": "https://x.ai",
+              "grok": "https://x.ai/grok",
+              "models": "Grok-4, Grok Heavy, Grok Code Fast 1",
+              "keyFeatures": [
+                "Real-time search integration",
+                "Advanced reasoning and coding capabilities",
+                "Visual processing",
+                "Available on X, Grok.com, and Grok app",
+                "Free tier with usage limits"
+              ],
+              "worksWith": [
+                "GitHub Copilot",
+                "Roo Code",
+                "X integration"
+              ]
+            },
+            {
+              "name": "Stability AI",
+              "developer": "Stability AI",
+              "website": "https://stability.ai",
+              "stableImage": "https://stability.ai/stable-image",
+              "focus": "Image generation, video, multimodal",
+              "models": "Stable Diffusion, Stable Video",
+              "integration": "Available through AWS Bedrock",
+              "keyFeatures": [
+                "Text-to-image generation",
+                "Image editing (inpainting, outpainting)",
+                "Video generation",
+                "Self-hosting and API options"
+              ],
+              "worksWith": [
+                "AWS Bedrock",
+                "Hugging Face",
+                "Creative and multimodal applications",
+                "DreamStudio (web interface)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mcp-providers",
+      "name": "MCP Providers",
+      "description": "The Model Context Protocol (MCP) is an open standard introduced by Anthropic in November 2024 to standardize how AI systems integrate with external tools and data sources. MCP servers act as data and tool providers for AI coding assistants, enabling them to access databases, cloud services, development tools, and enterprise data sources.",
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "official-mcp-resources",
+          "name": "Official MCP Resources",
+          "tools": [
+            {
+              "name": "Anthropic MCP Server Repository",
+              "developer": "Anthropic",
+              "repository": "https://github.com/modelcontextprotocol/servers",
+              "website": "https://www.claude.com/partners/mcp",
+              "documentation": "https://docs.claude.com/en/docs/agents-and-tools/remote-mcp-servers",
+              "keyFeatures": [
+                "Reference MCP server implementations",
+                "Official Anthropic-maintained servers",
+                "Enterprise integrations",
+                "Open-source implementations"
+              ],
+              "subsections": {
+                "officialServersInclude": {
+                  "title": "Official Servers include",
+                  "content": [
+                    "Google Drive, Slack, GitHub, Git",
+                    "Postgres, Puppeteer, Stripe",
+                    "File system tools, Web content fetchers"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "mcp-server-directories",
+          "name": "MCP Server Directories",
+          "tools": [
+            {
+              "name": "PulseMCP",
+              "website": "https://www.pulsemcp.com/servers",
+              "keyFeatures": [
+                "6,360+ MCP servers tracked",
+                "Daily updates",
+                "Official and community servers",
+                "Usage statistics (weekly downloads)",
+                "Release information"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "enterprise-mcp-providers",
+          "name": "Enterprise MCP Providers",
+          "tools": [
+            {
+              "name": "Chronograph",
+              "type": "Portfolio analytics MCP provider",
+              "developer": "Chronograph",
+              "website": "https://www.chronograph.pe/",
+              "integration": "Claude Partners MCP",
+              "keyFeatures": [
+                "Private capital portfolio data access",
+                "Private equity, venture capital, infrastructure data",
+                "Natural language portfolio queries",
+                "Ad-hoc analysis and research"
+              ],
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Portfolio management and analytics for private capital investors"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Box",
+              "type": "Enterprise content management MCP provider",
+              "developer": "Box Inc. (community server by hmk)",
+              "website": "https://www.box.com",
+              "documentation": "https://learn.microsoft.com/en-us/connectors/boxmcpserver/",
+              "integration": "Claude Partners MCP",
+              "keyFeatures": [
+                "Secure bridge to enterprise content",
+                "Document search and processing (PDF, Word)",
+                "Contract, financial records, policy access",
+                "Enterprise authentication and security"
+              ],
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Enterprise document access and AI-powered document analysis"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Canva",
+              "type": "Design automation MCP provider",
+              "developer": "Canva",
+              "website": "https://www.canva.com",
+              "integration": "Claude Partners MCP",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Automated design workflows and template access"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Cloudinary",
+              "type": "Media management MCP provider",
+              "developer": "Cloudinary",
+              "website": "https://cloudinary.com",
+              "integration": "Claude Partners MCP",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Media asset management and optimization"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Figma",
+              "type": "Design-to-code MCP provider",
+              "developer": "Figma",
+              "website": "https://www.figma.com",
+              "integration": "Claude Partners MCP",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Design file access and design-to-code generation"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "HubSpot",
+              "type": "CRM data MCP provider",
+              "developer": "HubSpot",
+              "website": "https://www.hubspot.com",
+              "integration": "Claude Partners MCP",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Customer relationship management data access and automation"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Intercom",
+              "type": "Customer support MCP provider",
+              "developer": "Intercom",
+              "website": "https://www.intercom.com",
+              "integration": "Claude Partners MCP",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Customer support data and workflow automation"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "database-cloud-mcp-providers",
+          "name": "Database & Cloud MCP Providers",
+          "tools": [
+            {
+              "name": "MongoDB MCP Server",
+              "type": "Database MCP provider",
+              "developer": "MongoDB",
+              "repository": "https://github.com/mongodb-js/mongodb-mcp-server",
+              "website": "https://www.mongodb.com/company/blog/announcing-mongodb-mcp-server",
+              "keyFeatures": [
+                "Connect to MongoDB databases and Atlas clusters",
+                "List organizations, projects, and clusters",
+                "Create free clusters",
+                "Vector search with embedding models",
+                "Supports stdio and HTTP transport"
+              ],
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "MongoDB database access for AI agents"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Azure MCP Server",
+              "type": "Cloud services MCP provider",
+              "developer": "Microsoft",
+              "documentation": "https://learn.microsoft.com/en-us/azure/",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Azure cloud service integration"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "AWS MCP Server",
+              "type": "Cloud services MCP provider",
+              "developer": "Amazon",
+              "website": "https://aws.amazon.com",
+              "documentation": "https://aws.amazon.com/blogs/machine-learning/unlocking-the-power-of-model-context-protocol-mcp-on-aws/",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "AWS service integration"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Cloudflare MCP Server",
+              "type": "CDN and edge services MCP provider",
+              "developer": "Cloudflare",
+              "website": "https://www.cloudflare.com",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Cloudflare service integration"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "development-tool-mcp-providers",
+          "name": "Development Tool MCP Providers",
+          "tools": [
+            {
+              "name": "JetBrains MCP Server",
+              "type": "IDE integration MCP provider",
+              "developer": "JetBrains",
+              "website": "https://www.jetbrains.com",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "JetBrains IDE tool access and integration"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "GitHub MCP Server",
+              "type": "Version control MCP provider",
+              "developer": "GitHub",
+              "repository": "https://github.com/modelcontextprotocol/servers",
+              "documentation": "Part of official Anthropic MCP servers",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "GitHub repository and API access"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "analytics-data-mcp-providers",
+          "name": "Analytics & Data MCP Providers",
+          "tools": [
+            {
+              "name": "Vectara MCP Server",
+              "type": "Search and RAG MCP provider",
+              "developer": "Vectara",
+              "website": "https://vectara.com",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Neural search and retrieval-augmented generation"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Chroma MCP Server",
+              "type": "Vector database MCP provider",
+              "developer": "Chroma",
+              "website": "https://www.trychroma.com",
+              "repository": "https://github.com/chroma-core/chroma",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Memory and RAG workflows"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "ClickHouse MCP Server",
+              "type": "Analytics database MCP provider",
+              "developer": "ClickHouse",
+              "website": "https://clickhouse.com",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Real-time analytics data access"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "remote-mcp-providers",
+          "name": "Remote MCP Providers",
+          "tools": [
+            {
+              "name": "Vercel MCP",
+              "type": "Deployment platform MCP provider",
+              "developer": "Vercel",
+              "website": "https://vercel.com",
+              "documentation": "https://docs.claude.com/en/docs/agents-and-tools/remote-mcp-servers",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Deployment and hosting integration"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Workato MCP",
+              "type": "Integration platform MCP provider",
+              "developer": "Workato",
+              "website": "https://www.workato.com",
+              "documentation": "https://docs.claude.com/en/docs/agents-and-tools/remote-mcp-servers",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Workflow automation and enterprise integration"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Zapier MCP",
+              "type": "Automation platform MCP provider",
+              "developer": "Zapier",
+              "website": "https://zapier.com",
+              "documentation": "https://docs.claude.com/en/docs/agents-and-tools/remote-mcp-servers",
+              "subsections": {
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "App integration and no-code automation"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "mcp-adoption-2025-",
+          "name": "MCP Adoption (2025)",
+          "tools": []
+        }
+      ]
+    },
+    {
+      "id": "cli-tools",
+      "name": "CLI Tools",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "full-agentic-project-level-clis",
+          "name": "Full Agentic Project-Level CLIs",
+          "tools": [
+            {
+              "name": "Aider",
+              "type": "Open-source AI pair programmer",
+              "website": "https://aider.chat",
+              "repository": "https://github.com/paul-gauthier/aider",
+              "installation": "`python -m pip install aider-install && aider-install`",
+              "models": "GPT-4o, Claude 3.5 Sonnet (recommended), any LLM",
+              "keyFeatures": [
+                "Multi-file edits",
+                "Git integration (automated commits & diffs)",
+                "Conversation history",
+                "Free and open-source (API costs only)"
+              ],
+              "pricing": "$10-20/month for moderate use (LLM API costs)",
+              "worksWith": [
+                "OpenAI, Anthropic APIs (primary)",
+                "Any LLM provider (flexible integration)",
+                "Git repositories (required)",
+                "Meta, Mistral (free models to avoid API costs)"
+              ]
+            },
+            {
+              "name": "Augment CLI (Auggie)",
+              "type": "AI-powered agentic CLI tool",
+              "developer": "Augment",
+              "website": "https://augmentcode.com",
+              "documentation": "https://docs.augmentcode.com/cli/overview",
+              "repository": "https://github.com/augmentcode/auggie",
+              "installation": "`npm install -g @augmentcode/auggie` (requires Node 22+)",
+              "keyFeatures": [
+                "Interactive agentic terminal with real-time streaming responses",
+                "Code analysis and modification capabilities",
+                "Tool execution within terminal environments",
+                "CI/CD pipeline and workflow automation integration",
+                "Advanced context engine for codebase understanding",
+                "PR feedback and build insights",
+                "Compatible with zsh, bash, and fish shells"
+              ],
+              "worksWith": [
+                "Multiple LLM providers (via Augment's platform)",
+                "VS Code, JetBrains IDEs, Vim, Neovim (via Augment extensions)",
+                "100+ external tools via MCP (Model Context Protocol)",
+                "GitHub workflows and automation frameworks",
+                "Enterprise codebases (clients include Webflow, Uber, Snyk, Spotify, MongoDB, Vercel)"
+              ]
+            },
+            {
+              "name": "OpenAI Codex CLI",
+              "type": "Official OpenAI coding agent",
+              "website": "https://openai.com/codex",
+              "repository": "https://github.com/openai/codex",
+              "documentation": "https://platform.openai.com/docs/guides/codex",
+              "installation": "`npm i -g @openai/codex` or `brew install codex`",
+              "models": "GPT-5-Codex, GPT-5, o3/o4",
+              "keyFeatures": [
+                "Lightweight, runs locally",
+                "Open-source",
+                "IDE integration (VSCode, Cursor)",
+                "Project editing, code generation"
+              ],
+              "worksWith": [
+                "OpenAI models (native)",
+                "DeepSeek (integration guide available)",
+                "VSCode, Cursor (seamless integration)",
+                "Any OpenAI-compatible provider (experimental)"
+              ]
+            },
+            {
+              "name": "GitHub Copilot CLI",
+              "type": "Official Microsoft/GitHub terminal tool",
+              "website": "https://githubnext.com/projects/copilot-cli",
+              "documentation": "https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line",
+              "installation": "`gh extension install github/gh-copilot` or `npm install -g @github/copilot`",
+              "status": "Public preview (September 2025)",
+              "models": "GPT-4.1 (default), GPT-5-Codex, GPT-5, Claude Sonnet 4.5, Gemini 2.5 Pro, xAI Grok",
+              "keyFeatures": [
+                "`/model` command for quick model switching",
+                "Enhanced image support (October 2025)",
+                "Streamlined UI",
+                "GitHub workflow integration"
+              ],
+              "worksWith": [
+                "OpenAI (hosted by GitHub/Azure)",
+                "Anthropic (hosted by Anthropic/GCP)",
+                "Google (hosted on GCP)",
+                "GitHub repositories (native integration)",
+                "No custom model support (pre-selected models only)"
+              ]
+            },
+            {
+              "name": "Claude Code CLI",
+              "type": "Anthropic's official coding CLI",
+              "website": "https://claude.ai/code",
+              "documentation": "https://docs.anthropic.com/claude/docs/claude-code",
+              "installation": "`npm install -g @anthropic-ai/claude-code` or `curl -fsSL https://claude.ai/install.sh | bash`",
+              "models": "Claude 4, Claude 3.5 Sonnet (native)",
+              "keyFeatures": [
+                "Agentic coding in terminal",
+                "Large context handling",
+                "Agent delegation",
+                "Lives in your terminal"
+              ],
+              "worksWith": [
+                "Anthropic Claude models (native)",
+                "OpenRouter (via Claude Code Router proxy)",
+                "VS Code extension (linked operation)",
+                "Any model via proxy (community solutions)"
+              ]
+            },
+            {
+              "name": "Gemini CLI",
+              "type": "Google's official agent CLI",
+              "website": "https://ai.google.dev/gemini-api/docs/cli",
+              "documentation": "https://cloud.google.com/sdk/gcloud/reference/ai/gemini",
+              "models": "Gemini 2.5, Gemini models",
+              "release": "Open-sourced 2025",
+              "keyFeatures": [
+                "Terminal workflows",
+                "Python-friendly",
+                "Model Context Protocol integration"
+              ],
+              "worksWith": [
+                "Google Gemini models (native)",
+                "Google Cloud Platform",
+                "MCP servers"
+              ]
+            },
+            {
+              "name": "Goose",
+              "type": "AI-powered developer agent CLI",
+              "developer": "Block (formerly Square)",
+              "repository": "https://github.com/block/goose",
+              "documentation": "https://block.github.io/goose/docs/quickstart/",
+              "installation": "`curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | bash`",
+              "keyFeatures": [
+                "Terminal-based AI coding assistant",
+                "Developer workflow automation",
+                "Agentic task execution",
+                "Open-source"
+              ],
+              "worksWith": [
+                "Multiple LLM providers",
+                "Developer workflows",
+                "Terminal environments"
+              ]
+            },
+            {
+              "name": "Jules Tools CLI",
+              "type": "Google's coding agent CLI",
+              "website": "https://jules.google",
+              "documentation": "https://developers.google.com/jules",
+              "models": "Jules agent models",
+              "status": "Announced update 2025, entering developer toolchains",
+              "keyFeatures": "Terminal-based coding agent, competition with Cursor/Claude",
+              "worksWith": [
+                "Google AI infrastructure",
+                "Gemini ecosystem"
+              ]
+            },
+            {
+              "name": "OpenHands CLI",
+              "type": "All-Hands AI coding agent",
+              "website": "https://www.all-hands.dev",
+              "repository": "https://github.com/All-Hands-AI/OpenHands",
+              "installation": "`uvx --python 3.12 openhands`",
+              "models": "Multiple LLM support via LiteLLM",
+              "status": "Recent CLI release (2025)",
+              "keyFeatures": [
+                "Full dev agent from shell",
+                "Model switching",
+                "Custom pipelines"
+              ],
+              "requirements": "Powerful models (local/OSS models struggle)",
+              "worksWith": [
+                "LiteLLM-supported models",
+                "DeepSeek (integration in progress, limited success with R1)",
+                "Cloud LLM providers",
+                "Note: Local models (Ollama DeepSeek) currently unsuccessful"
+              ]
+            },
+            {
+              "name": "Open Interpreter",
+              "type": "Open-source AI code interpreter",
+              "website": "https://openinterpreter.com",
+              "repository": "https://github.com/KillianLucas/open-interpreter",
+              "models": "GPT-4, Claude, local models via Ollama, any LLM",
+              "keyFeatures": [
+                "Natural language interface to your computer",
+                "Code execution in local environment",
+                "File system access",
+                "Multi-language support (Python, JavaScript, Shell, etc.)",
+                "Voice mode available",
+                "Free and open-source"
+              ],
+              "installation": "`pip install open-interpreter`",
+              "worksWith": [
+                "OpenAI (GPT-4, GPT-3.5)",
+                "Anthropic (Claude)",
+                "Ollama (local models)",
+                "Any OpenAI-compatible API",
+                "Local code execution environment"
+              ]
+            },
+            {
+              "name": "Continue CLI",
+              "type": "Open-source BYO-model agent",
+              "website": "https://continue.dev",
+              "repository": "https://github.com/continuedev/continue",
+              "installation": "`npm i -g @continuedev/cli`",
+              "models": "Any model (OpenAI, Anthropic, Ollama, etc.)",
+              "keyFeatures": [
+                "Custom agent rules",
+                "MCP tools support",
+                "Highly configurable",
+                "Works with CLI version of VS Code extension"
+              ],
+              "worksWith": [
+                "OpenAI, Anthropic (cloud providers)",
+                "Ollama (local models)",
+                "Qwen3 (local via Ollama)",
+                "DeepSeek-R1, Codestral v2 (early 2025 support)",
+                "Azure AI Foundry, Google AI Studio, Amazon Bedrock",
+                "Mistral, DeepSeek APIs",
+                "Any OpenAI-compatible API"
+              ]
+            },
+            {
+              "name": "Mentat CLI",
+              "type": "Community/OSS GitHub-native agent",
+              "repository": "https://github.com/AbanteAI/mentat",
+              "website": "https://www.mentat.ai",
+              "installation": "`pip install git+https://github.com/AbanteAI/mentat.git` or `brew install mentat`",
+              "keyFeatures": [
+                "Multi-file edits",
+                "Project-wide context",
+                "Terminal-based operation",
+                "Repo context awareness"
+              ],
+              "worksWith": [
+                "GitHub repositories",
+                "Various LLM backends (community-configured)"
+              ]
+            },
+            {
+              "name": "Droid",
+              "type": "Factory AI's coding agent",
+              "developer": "Factory AI",
+              "website": "https://factory.ai",
+              "performance": "#1 on Terminal-Bench (58.75% accuracy)",
+              "benchmark": "Beats Claude Code CLI (43.2%), Codex CLI (42.8%)",
+              "keyFeatures": [
+                "Model-agnostic (works with any LLM)",
+                "Multi-interface support (CLI, IDE, CI/CD)",
+                "Terminal, IDE integration, automation pipelines"
+              ],
+              "status": "Available as CLI and VS Code extension",
+              "worksWith": [
+                "Any LLM provider (model-agnostic)",
+                "VS Code (via extension)",
+                "CI/CD pipelines",
+                "Terminal workflows"
+              ]
+            },
+            {
+              "name": "Boil",
+              "type": "AI boilerplate/scaffolding generator",
+              "website": "https://tryboil.com",
+              "repository": "https://github.com/santiagomed/boil",
+              "installation": "`brew tap santiagomed/tap && brew install boil`",
+              "keyFeatures": [
+                "Generates custom boilerplate from plain English",
+                "Natural language project setup",
+                "CLI-based scaffolding tool"
+              ],
+              "useCase": "Rapid project initialization",
+              "worksWith": [
+                "Command line interface",
+                "Any development environment",
+                "Project templates and frameworks"
+              ]
+            },
+            {
+              "name": "ForgeCode (Forge)",
+              "type": "Terminal AI coding assistant",
+              "website": "https://forgecode.dev",
+              "installation": "`npx forgecode@latest`",
+              "models": "300+ models supported (Claude, GPT, Grok, Deepseek, Gemini)",
+              "keyFeatures": [
+                "LSP (Language Server Protocol) integration",
+                "Custom agents",
+                "Enterprise control features",
+                "Multi-model support",
+                "Terminal-native workflow"
+              ],
+              "worksWith": [
+                "Claude, GPT, Grok, Deepseek, Gemini",
+                "300+ additional models",
+                "Language Server Protocol",
+                "Enterprise development workflows"
+              ]
+            },
+            {
+              "name": "Crush (Charm)",
+              "type": "Glamorous AI coding CLI",
+              "stakeholder": "Charm (charmbracelet)",
+              "website": "https://charm.sh",
+              "repository": "https://github.com/charmbracelet/crush",
+              "installation": "`brew install charmbracelet/tap/crush` or `npm install -g @charmland/crush`",
+              "formerName": "OpenCode (renamed to Crush)",
+              "keyFeatures": [
+                "LSP (Language Server Protocol) integration",
+                "MCP (Model Context Protocol) support",
+                "Multi-model support",
+                "Session management",
+                "Cross-platform (macOS/Linux/Windows/BSD)",
+                "Beautiful terminal UI (Charm aesthetic)"
+              ],
+              "worksWith": [
+                "Multiple LLM providers",
+                "LSP servers (language-specific tooling)",
+                "MCP servers (tool integration)",
+                "All major operating systems"
+              ]
+            },
+            {
+              "name": "SST/OpenCode",
+              "type": "Provider-agnostic coding CLI",
+              "website": "https://opencode.ai",
+              "stakeholder": "SST.dev",
+              "installation": "`curl -fsSL https://opencode.ai/install | bash`",
+              "keyFeatures": [
+                "Provider-agnostic architecture",
+                "75+ AI providers supported",
+                "Plan mode for code suggestions",
+                "Client/server architecture",
+                "SSH/Docker compatibility",
+                "BYOK (Bring Your Own Key) support",
+                "Copilot-powered AI"
+              ],
+              "worksWith": [
+                "75+ AI providers",
+                "SSH/Docker environments",
+                "Container workflows",
+                "Any LLM with API access",
+                "Cloud and local models"
+              ]
+            },
+            {
+              "name": "DeepSeek CLI",
+              "type": "Dedicated DeepSeek coding assistant",
+              "repository": "https://github.com/holasoymalva/deepseek-cli",
+              "developer": "holasoymalva",
+              "installation": "`npm install -g run-deepseek-cli`",
+              "models": "DeepSeek Coder models",
+              "keyFeatures": "Leverages DeepSeek's coding-specific models",
+              "worksWith": [
+                "DeepSeek API (native)",
+                "DeepSeek Coder models"
+              ]
+            },
+            {
+              "name": "DeepAgents CLI",
+              "type": "AI coding agent CLI",
+              "developer": "LangChain AI",
+              "repository": "https://github.com/langchain-ai/deepagents",
+              "website": "https://blog.langchain.com/introducing-deepagents-cli/",
+              "installation": "`pip install deepagents`",
+              "keyFeatures": [
+                "Terminal-based AI coding agent",
+                "Powered by LangChain framework",
+                "Agent-based development workflows",
+                "Integration with LangChain ecosystem"
+              ],
+              "worksWith": [
+                "LangChain framework",
+                "Multiple LLM providers",
+                "AI agent workflows"
+              ]
+            },
+            {
+              "name": "Qodo Command",
+              "type": "Agentic AI CLI for full SDLC",
+              "developer": "Qodo (formerly Codium)",
+              "website": "https://www.qodo.ai",
+              "keyFeatures": [
+                "Full software development lifecycle support",
+                "Code generation, reviews, testing",
+                "Debugging and CI/CD orchestration",
+                "Deployment automation",
+                "Configurable agents for different SDLC stages",
+                "Built on Qodo's core agent framework"
+              ],
+              "worksWith": [
+                "Multiple LLM providers",
+                "CI/CD pipelines",
+                "Development workflows",
+                "Testing frameworks"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "amazon-ai-coding-tools",
+          "name": "Amazon AI Coding Tools",
+          "tools": [
+            {
+              "name": "Amazon Q Developer (formerly CodeWhisperer)",
+              "type": "AWS generative AI coding assistant",
+              "website": "https://aws.amazon.com/q/developer/",
+              "documentation": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html",
+              "gettingStarted": "https://aws.amazon.com/q/developer/getting-started/",
+              "rebranding": "CodeWhisperer capabilities now part of Q Developer (2024)",
+              "models": "Undisclosed AWS models (trained on AWS docs)",
+              "keyFeatures": [
+                "Agentic capabilities (autonomous feature implementation, testing, refactoring)",
+                "Security scanning",
+                "AWS service integration",
+                "Reference tracking for open-source code",
+                "Software development lifecycle automation",
+                "50 agentic chat interactions/month (Free Tier)"
+              ],
+              "pricing": "Free tier available, $19/user/month for Pro",
+              "worksWith": [
+                "AWS ecosystem (deep integration)",
+                "IDEs (VS Code, JetBrains, Visual Studio, Eclipse)",
+                "CLI environments",
+                "MCP tools",
+                "Microsoft Teams and Slack"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "command-level-assistants",
+          "name": "Command-Level Assistants",
+          "tools": [
+            {
+              "name": "ai-shell",
+              "type": "Natural language → shell command translator",
+              "developer": "Builder.io (OSS)",
+              "repository": "https://github.com/BuilderIO/ai-shell",
+              "website": "https://www.builder.io/blog/ai-shell",
+              "installation": "`npm install -g @builder.io/ai-shell`",
+              "useCase": "Command-level assistance (not project editing)",
+              "worksWith": [
+                "Various LLM backends",
+                "Terminal command workflows"
+              ]
+            },
+            {
+              "name": "ShellGPT",
+              "type": "GPT-powered shell assistant",
+              "repository": "https://github.com/TheR1D/shell_gpt",
+              "website": "https://github.com/TheR1D/shell_gpt#readme",
+              "installation": "`pip install shell-gpt`",
+              "variants": "Multiple community forks",
+              "commands": "`sgpt \"explain X\"`, `sgpt \"command for...\"`",
+              "useCase": "Command generation, explanations",
+              "worksWith": [
+                "OpenAI GPT models (primary)",
+                "Terminal workflows"
+              ]
+            },
+            {
+              "name": "AICommits",
+              "type": "Git commit message generator",
+              "source": "OSS community",
+              "repository": "https://github.com/Nutlope/aicommits",
+              "website": "https://github.com/Nutlope/aicommits#readme",
+              "installation": "`npm install -g aicommits`",
+              "useCase": "Automated commit messages from diffs",
+              "worksWith": [
+                "Git workflows",
+                "Various LLM providers"
+              ]
+            },
+            {
+              "name": "Warp Terminal",
+              "type": "AI-powered terminal",
+              "website": "https://www.warp.dev",
+              "download": "https://www.warp.dev/download",
+              "keyFeatures": [
+                "Built-in AI commands",
+                "Code suggestions",
+                "Agent mode (`warp ai` command)",
+                "Agentic workflows",
+                "Can be scripted as standalone workflows"
+              ],
+              "worksWith": [
+                "Terminal environments",
+                "Developer workflows"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cloud-based-agentic-coding-services",
+      "name": "Cloud-Based Agentic Coding Services",
+      "description": "Cloud-based AI coding platforms that remotely access repositories and execute development tasks on remote infrastructure. These services provide web-based interfaces for agentic AI development, allowing developers to kick off autonomous coding workflows from anywhere without local setup.",
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "github-integrated-services",
+          "name": "GitHub-Integrated Services",
+          "tools": [
+            {
+              "name": "GitHub Copilot Workspace",
+              "type": "Cloud-based Copilot-native development environment",
+              "developer": "GitHub/Microsoft",
+              "website": "https://githubnext.com/projects/copilot-workspace",
+              "keyFeatures": [
+                "Brainstorm, plan, build, test, and run code in natural language",
+                "Integrated with GitHub Codespaces for cloud execution",
+                "Build and test code in cloud environment",
+                "Regional optimization for reduced latency",
+                "Asynchronous task execution"
+              ],
+              "worksWith": [
+                "GitHub repositories",
+                "GitHub Codespaces",
+                "VS Code in the cloud",
+                "Copilot Individual, Business, and Enterprise subscriptions"
+              ]
+            },
+            {
+              "name": "OpenAI Codex (Web)",
+              "type": "Autonomous cloud-based coding agent",
+              "developer": "OpenAI",
+              "website": "https://chatgpt.com/codex",
+              "repository": "https://github.com/openai/codex",
+              "keyFeatures": [
+                "Single agent across terminal, IDE, cloud, and mobile",
+                "Isolated sandbox execution with repo access",
+                "Based on fine-tuned OpenAI o3 model",
+                "Task completion in 1-30 minutes",
+                "Secure containerized cloud execution",
+                "Internet access disabled during execution"
+              ],
+              "worksWith": [
+                "ChatGPT Plus, Pro, Business, Edu, Enterprise plans",
+                "GitHub repositories",
+                "Pre-installed dependencies via setup scripts",
+                "Multi-platform (web, terminal, IDE, mobile)"
+              ]
+            },
+            {
+              "name": "Claude Code (Web & Mobile)",
+              "type": "Cloud-based agentic coding platform",
+              "developer": "Anthropic",
+              "website": "https://claude.ai",
+              "documentation": "https://docs.claude.com/en/docs/claude-code/github-actions",
+              "repository": "https://github.com/anthropics/claude-code",
+              "keyFeatures": [
+                "Available on web and mobile (March 2025)",
+                "Run parallel coding tasks from anywhere",
+                "@claude mentions in PRs and issues",
+                "Anthropic-managed instance execution",
+                "GitHub Actions integration",
+                "Autonomous pull request creation"
+              ],
+              "worksWith": [
+                "GitHub repositories",
+                "Pull requests and issues",
+                "Claude.ai web app",
+                "Mobile devices",
+                "Claude API"
+              ]
+            },
+            {
+              "name": "Google Jules",
+              "type": "Asynchronous AI coding agent",
+              "developer": "Google",
+              "website": "https://jules.google",
+              "keyFeatures": [
+                "Asynchronous operation in Google Cloud VMs",
+                "Integrates with GitHub repositories",
+                "Powered by Gemini 2.5 Pro",
+                "Audio changelogs",
+                "Up to 200 minutes of continuous execution",
+                "Jules Tools CLI companion",
+                "Free tier: 15 daily tasks, 3 concurrent tasks"
+              ],
+              "subsections": {
+                "pricing": {
+                  "title": "Pricing",
+                  "content": [
+                    "Free: 15 daily tasks",
+                    "Pro ($19.99/mo): ~5x limits",
+                    "Ultra ($124.99/mo): ~20x limits"
+                  ]
+                }
+              },
+              "worksWith": [
+                "GitHub repositories",
+                "Google Cloud VMs",
+                "Terminal (via Jules Tools)",
+                "Gemini 2.5 Pro"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "full-stack-web-development-platforms",
+          "name": "Full-Stack Web Development Platforms",
+          "tools": [
+            {
+              "name": "Replit Agent (Agent 3)",
+              "type": "Cloud IDE with autonomous AI agent",
+              "developer": "Replit",
+              "website": "https://replit.com/agent3",
+              "keyFeatures": [
+                "Zero-boilerplate cloud IDE",
+                "Up to 200 minutes continuous execution",
+                "Containerized dev environments for 50+ languages",
+                "Automatic environment provisioning",
+                "Remote GitHub repository management",
+                "Integrated editor, terminal, and deployment"
+              ],
+              "worksWith": [
+                "Python, Node.js, C++, Go, Rust, Java, and 50+ languages",
+                "GitHub repositories",
+                "Cloud deployment",
+                "Ghostwriter AI assistant"
+              ]
+            },
+            {
+              "name": "Bolt.new",
+              "type": "AI-powered web development platform",
+              "developer": "StackBlitz",
+              "website": "https://bolt.new",
+              "keyFeatures": [
+                "Multi-agent system for UI, logic, backend, state",
+                "Browser-based development",
+                "Prompt-to-deployment workflow",
+                "Instant app deployment",
+                "Full-stack development"
+              ],
+              "worksWith": [
+                "Web technologies",
+                "Browser-based workflows",
+                "Instant deployment"
+              ]
+            },
+            {
+              "name": "Lovable",
+              "type": "No-code AI web app builder",
+              "developer": "Lovable (formerly GPT Engineer)",
+              "website": "https://lovable.dev",
+              "keyFeatures": [
+                "Build full-stack apps from plain English descriptions",
+                "Design, code, and launch from browser",
+                "No-code approach",
+                "Rapid prototyping",
+                "UI-focused generation"
+              ],
+              "worksWith": [
+                "React components",
+                "Full-stack web applications",
+                "Browser-based development"
+              ]
+            },
+            {
+              "name": "v0 (by Vercel)",
+              "type": "AI-powered UI component generator",
+              "developer": "Vercel",
+              "website": "https://v0.dev",
+              "keyFeatures": [
+                "Natural language to React components",
+                "Shadcn UI and Tailwind CSS",
+                "Instant component generation",
+                "Browser-based workflow"
+              ],
+              "subsections": {
+                "pricing": {
+                  "title": "Pricing",
+                  "content": [
+                    "Free: $0/month",
+                    "Premium: $20/month",
+                    "Ultra: $200/month"
+                  ]
+                }
+              },
+              "worksWith": [
+                "React",
+                "Shadcn UI",
+                "Tailwind CSS",
+                "Next.js"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vs-code-extensions",
+      "name": "VS Code Extensions",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "autonomous-coding-agents",
+          "name": "Autonomous Coding Agents",
+          "tools": [
+            {
+              "name": "Cline",
+              "developer": "Open-source community (cline repo)",
+              "website": "https://cline.bot",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev",
+              "repository": "https://github.com/cline/cline",
+              "installs": "Millions",
+              "models": "OpenRouter, Anthropic, OpenAI, Google Gemini, AWS Bedrock, Azure, GCP Vertex, Cerebras, Groq, LM Studio, Ollama",
+              "keyFeatures": [
+                "Autonomous file creation/editing",
+                "Shell command execution",
+                "Browser integration",
+                "Human-in-the-loop approvals",
+                "Cost tracking (tokens & API usage)",
+                "MCP Marketplace (Feb 2025, v3.4)",
+                "Experimental Claude 4 support (v3.17.9)"
+              ],
+              "subsections": {
+                "openRouterIntegration": {
+                  "title": "OpenRouter Integration",
+                  "content": [
+                    "Fetches latest model list automatically",
+                    "Immediate access to new models"
+                  ]
+                },
+                "ollamaConfiguration": {
+                  "title": "Ollama Configuration",
+                  "content": [
+                    "Base URL: http://127.0.0.1:11434/v1",
+                    "Any placeholder API key (no verification needed)"
+                  ]
+                }
+              },
+              "worksWith": [
+                "All major LLM providers",
+                "MCP servers (custom tools)",
+                "Local models (Ollama, LM Studio)",
+                "Any OpenAI-compatible API"
+              ]
+            },
+            {
+              "name": "Roo Code",
+              "developer": "Roo Code (OSS)",
+              "website": "https://roocode.com",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline",
+              "repository": "https://github.com/RooVetGit/Roo-Code",
+              "status": "Successor/fork lineage from Roo/Cline",
+              "gitHubStars": "18k+",
+              "marketplaceInstalls": "750k+",
+              "models": "Anthropic, Claude Code, AWS Bedrock, DeepSeek, Google Gemini, Groq, Hugging Face, LiteLLM, Mistral AI, Ollama, OpenAI, OpenRouter, Requesty, xAI (Grok)",
+              "keyFeatures": [
+                "Agentic assistant",
+                "Multi-file edits",
+                "Task/command execution",
+                "Modes: Code, Debug, Architect, Ask, Custom",
+                "BYOK (Bring Your Own Keys)",
+                "MCP integration"
+              ],
+              "worksWith": [
+                "OpenAI-compatible or custom models/APIs",
+                "MCP servers",
+                "Web MCP (Bright Data integration)",
+                "Wide range of LLM providers"
+              ]
+            },
+            {
+              "name": "Kilo Code",
+              "developer": "Kilo Code (OSS)",
+              "website": "https://kilocode.ai",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=kilocode.kilocode",
+              "repository": "https://github.com/kilocode/kilo",
+              "relationship": "Fork of Roo Code with enhancements",
+              "models": "400+ models (Gemini 2.5 Pro, Claude 4 Sonnet/Opus, GPT-5)",
+              "keyFeatures": [
+                "Task orchestration",
+                "Error detection",
+                "Automated subtasks",
+                "Model-agnostic (many LLMs)",
+                "MCP Server Marketplace",
+                "Transparent pricing (matches provider rates)"
+              ],
+              "worksWith": [
+                "All major model providers",
+                "MCP servers (databases, APIs, custom tools)",
+                "Extends Roo Code capabilities",
+                "JetBrains (in addition to VS Code)"
+              ]
+            },
+            {
+              "name": "Continue",
+              "developer": "Continue.dev (OSS)",
+              "website": "https://continue.dev",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=Continue.continue",
+              "repository": "https://github.com/continuedev/continue",
+              "type": "Agentic coding extension",
+              "models": "Anthropic, OpenAI, Azure AI Foundry, Amazon Bedrock, Google AI Studio, DeepSeek, Mistral, Ollama",
+              "keyFeatures": [
+                "Custom agent rules",
+                "Model integration flexibility",
+                "Works alongside CLI version",
+                "Real-time code suggestions"
+              ],
+              "2025Models": "Codestral v2 (Jan 2025), DeepSeek-R1",
+              "subsections": {
+                "ollamaIntegration": {
+                  "title": "Ollama Integration",
+                  "content": [
+                    "Official guide available",
+                    "Local model support (Qwen3, Gemma 3, others)",
+                    "No subscription costs",
+                    "Privacy-focused"
+                  ]
+                }
+              },
+              "worksWith": [
+                "Cloud providers (OpenAI, Anthropic, etc.)",
+                "Local models (Ollama)",
+                "Azure, AWS, Google cloud services",
+                "Any OpenAI-compatible provider"
+              ]
+            },
+            {
+              "name": "GitHub Copilot",
+              "developer": "GitHub (Microsoft)",
+              "website": "https://github.com/features/copilot",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot",
+              "documentation": "https://docs.github.com/copilot",
+              "type": "First-party VS Code extension",
+              "models": "GPT-4.1 (default), GPT-5-Codex, GPT-5, Claude 4 Sonnet/Opus, Gemini 2.5 Pro/2.0 Flash, xAI Grok",
+              "status": "Now includes Agent Mode",
+              "hosting": [
+                "OpenAI models: GitHub/Azure tenant",
+                "Anthropic: Anthropic PBC + GCP",
+                "Google: GCP"
+              ],
+              "worksWith": [
+                "Pre-selected models only (no custom models)",
+                "GitHub repositories (deep integration)",
+                "Microsoft ecosystem"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "code-completion-assistance",
+          "name": "Code Completion & Assistance",
+          "tools": [
+            {
+              "name": "Tabnine",
+              "developer": "Tabnine",
+              "website": "https://www.tabnine.com",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode",
+              "type": "Proprietary + third-party models",
+              "models": [
+                "Proprietary (code completions, private/protected)",
+                "Third-party chat: Mistral, GPT-4o, o1-preview, o1-mini, Claude Sonnet 3.5, Codestral"
+              ],
+              "keyFeatures": [
+                "Code completions",
+                "AI chat",
+                "Enterprise/self-hosted options"
+              ],
+              "integration": "VS Code, JetBrains",
+              "worksWith": [
+                "Tabnine's private models (completions)",
+                "Major LLM providers (chat)",
+                "Enterprise deployments"
+              ]
+            },
+            {
+              "name": "Supermaven",
+              "developer": "Supermaven (creator of original TabNine 2018)",
+              "website": "https://supermaven.com",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=supermaven.supermaven",
+              "type": "Fast copilot with longest context",
+              "keyFeatures": [
+                "300,000-token context window",
+                "Fastest code completion",
+                "Sub-100ms latency"
+              ],
+              "focus": "Speed and context depth",
+              "worksWith": [
+                "VS Code",
+                "Proprietary infrastructure"
+              ]
+            },
+            {
+              "name": "Qodo Gen (formerly Codium)",
+              "developer": "Qodo",
+              "website": "https://www.qodo.ai",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=Codium.codium",
+              "type": "Comprehensive AI coding platform",
+              "keyFeatures": [
+                "Real-time code suggestions",
+                "Automated test generation",
+                "Collaborative AI chat",
+                "Code review support",
+                "Agentic tools (MCPs)",
+                "Extension mode + chat mode"
+              ],
+              "worksWith": [
+                "Advanced AI models (unspecified providers)",
+                "MCP tools",
+                "VS Code workflows",
+                "Focus on code quality and integrity"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "enterprise-codebase-aware",
+          "name": "Enterprise & Codebase-Aware",
+          "tools": [
+            {
+              "name": "Sourcegraph Cody",
+              "developer": "Sourcegraph",
+              "website": "https://sourcegraph.com/cody",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai",
+              "documentation": "https://docs.sourcegraph.com/cody",
+              "models": "Claude 3.5, GPT-4o, Gemini 1.5, Mixtral-8x7B, custom via Bedrock/Azure OpenAI",
+              "type": "Codebase-aware AI assistant",
+              "keyFeatures": [
+                "Search, chat, ask about code",
+                "Agentic interactions",
+                "Enterprise focus",
+                "Context from entire codebase",
+                "Model switching",
+                "Local models via Ollama"
+              ],
+              "worksWith": [
+                "Multiple LLM providers (Anthropic, OpenAI, Mistral, Meta)",
+                "Amazon Bedrock (BYOM)",
+                "Azure OpenAI (BYOM)",
+                "Self-hosted/local models",
+                "Enterprise codebases"
+              ]
+            },
+            {
+              "name": "Amazon Q Developer",
+              "developer": "AWS",
+              "website": "https://aws.amazon.com/q/developer",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.amazon-q-vscode",
+              "documentation": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/",
+              "models": "Undisclosed AWS models (trained on AWS docs)",
+              "pricing": [
+                "Free tier (AWS Builder ID)",
+                "Pro: $19/user"
+              ],
+              "keyFeatures": [
+                "Agentic extension",
+                "MCP tools support",
+                "Codebase customizations (8 total, 2 active max)",
+                "No model choice"
+              ],
+              "securityNote": "Security incident July 2025 (keep updated)",
+              "worksWith": [
+                "AWS proprietary models only",
+                "AWS ecosystem (tight integration)",
+                "MCP tools",
+                "No third-party model support"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chat-general-assistance",
+          "name": "Chat & General Assistance",
+          "tools": [
+            {
+              "name": "Windsurf Plugin (formerly Codeium)",
+              "developer": "Codeium/Windsurf",
+              "type": "Autocomplete, chat, search",
+              "marketplace": "Official listing",
+              "keyFeatures": [
+                "Code completion",
+                "AI chat",
+                "Code search"
+              ],
+              "worksWith": [
+                "Codeium/Windsurf infrastructure",
+                "Windsurf IDE (companion to full IDE)"
+              ]
+            },
+            {
+              "name": "Genie AI (ChatGPT in VS Code)",
+              "developer": "Genie AI",
+              "type": "Chat/commands integration",
+              "models": "OpenAI models",
+              "keyFeatures": "ChatGPT interface in VS Code",
+              "worksWith": [
+                "OpenAI GPT models",
+                "VS Code command palette"
+              ]
+            },
+            {
+              "name": "AskCodi",
+              "developer": "AskCodi",
+              "type": "Assistant extension",
+              "integration": "Documented with Roo Code integration",
+              "keyFeatures": "General coding assistance",
+              "worksWith": [
+                "Various LLM providers",
+                "Roo Code (documented integration)"
+              ]
+            },
+            {
+              "name": "CodeGPT: Chat & AI Agents",
+              "developer": "DanielSanMedium / community",
+              "type": "Chat-style AI assistance",
+              "keyFeatures": [
+                "Auto-completion",
+                "Code explanation",
+                "Error checking",
+                "Multi-model support"
+              ],
+              "note": "More assistive than fully autonomous",
+              "worksWith": [
+                "Multiple LLM providers",
+                "General assistance workflows"
+              ]
+            },
+            {
+              "name": "Gemini Code Assist",
+              "developer": "Google",
+              "type": "Gemini-powered coding assistance",
+              "keyFeatures": [
+                "Code suggestions",
+                "Context-aware responses",
+                "Automated review capabilities"
+              ],
+              "note": "More assistive than fully autonomous",
+              "worksWith": [
+                "Google Gemini models",
+                "Google Cloud Platform"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "open-source-copilot-alternatives",
+          "name": "Open-Source Copilot Alternatives",
+          "tools": [
+            {
+              "name": "TabbyML",
+              "type": "Self-hosted Copilot alternative",
+              "license": "100% free, open-source",
+              "language": "Rust (performance-focused)",
+              "keyFeatures": [
+                "Full function and code block suggestions",
+                "Self-hosted (data never leaves environment)",
+                "Reads code and comments for context",
+                "Ideal for organizations with strict data policies"
+              ],
+              "worksWith": [
+                "Local deployment",
+                "Enterprise environments requiring data control",
+                "Privacy-focused workflows"
+              ]
+            },
+            {
+              "name": "FauxPilot",
+              "type": "Self-hosted Copilot alternative",
+              "technology": "SalesForce CodeGen models, NVIDIA Triton Inference Server, FasterTransformer",
+              "hardware": "NVIDIA GPUs required",
+              "keyFeatures": [
+                "Complete data privacy",
+                "Local server deployment",
+                "Full control over data"
+              ],
+              "worksWith": [
+                "NVIDIA GPU systems",
+                "Privacy-critical environments",
+                "Local infrastructure"
+              ]
+            },
+            {
+              "name": "Twinny",
+              "developer": "Twinny Community",
+              "website": "https://twinnydotdev.github.io/twinny",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=rjmacarthy.twinny",
+              "repository": "https://github.com/twinnydotdev/twinny",
+              "type": "Free AI code completion (100% free, no paywalls)",
+              "models": "Ollama, LM Studio, Oobabooga, llama.cpp, any OpenAI API compatible provider",
+              "keyFeatures": [
+                "FIM (Fill-In-Middle) code completion",
+                "Chat interface for code assistance",
+                "100% local or API-hosted",
+                "Completely free and open source",
+                "Customizable provider settings",
+                "Multiple model support"
+              ],
+              "worksWith": [
+                "Ollama (local models)",
+                "LM Studio",
+                "Any OpenAI-compatible API",
+                "Self-hosted inference servers"
+              ]
+            },
+            {
+              "name": "Flexpilot",
+              "developer": "Flexpilot AI",
+              "website": "https://flexpilot.ai",
+              "marketplace": "https://marketplace.visualstudio.com/items?itemName=flexpilot-ai.flexpilot",
+              "repository": "https://github.com/flexpilot-ai/vscode-extension",
+              "type": "Open-source, native GitHub Copilot alternative",
+              "models": "OpenAI, Anthropic, Google, Ollama, custom providers",
+              "keyFeatures": [
+                "Native VS Code experience",
+                "Free and open source",
+                "Multiple provider support",
+                "Chat and completion modes",
+                "Privacy-focused"
+              ],
+              "worksWith": [
+                "Major cloud providers (OpenAI, Anthropic, Google)",
+                "Local models (Ollama)",
+                "Custom API endpoints"
+              ]
+            },
+            {
+              "name": "CodeGeeX",
+              "type": "Open-source multi-language assistant",
+              "scale": "13 billion parameters",
+              "languages": "20+ programming languages",
+              "keyFeatures": [
+                "Code generation",
+                "Code translation between languages",
+                "Code explanations",
+                "Code summaries",
+                "Multilingual code corpus trained"
+              ],
+              "worksWith": [
+                "VS Code, JetBrains",
+                "Multi-language projects",
+                "Translation workflows"
+              ]
+            },
+            {
+              "name": "Droid (VS Code Extension)",
+              "type": "Factory AI coding agent extension",
+              "performance": "#1 on Terminal-Bench (58.75%)",
+              "models": "Model-agnostic (works with any LLM)",
+              "keyFeatures": [
+                "Autonomous coding agent in VS Code",
+                "Terminal integration",
+                "CI/CD pipeline support",
+                "Beats Claude Code and Codex CLI benchmarks"
+              ],
+              "alsoAvailable": "CLI, CI/CD integrations",
+              "worksWith": [
+                "Any LLM provider (model-agnostic)",
+                "VS Code IDE",
+                "Terminal workflows",
+                "CI/CD automation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ai-powered-tools",
+          "name": "AI-Powered Tools",
+          "tools": [
+            {
+              "name": "Sweep AI",
+              "type": "Intelligent open-source AI assistant",
+              "platform": "GitHub",
+              "languages": "Python, JS/TS, Java, Go, C#, C++, Rust",
+              "keyFeatures": [
+                "Reads codebase",
+                "Understands tickets/feature requests",
+                "Plans edits",
+                "Generates pull requests automatically",
+                "Handles end-to-end workflows (not line-by-line like Copilot)"
+              ],
+              "deployment": "Hosted service or self-hosted",
+              "worksWith": [
+                "GitHub (native integration)",
+                "\"Sweep:\" issues → automated PRs",
+                "Follow-up from issue comments"
+              ]
+            },
+            {
+              "name": "Bloop AI",
+              "type": "AI-powered code search & comprehension",
+              "technology": "Semantic code search",
+              "keyFeatures": [
+                "Understands meaning and structure of code",
+                "Natural language search",
+                "Large codebase navigation",
+                "Onboarding tool for new team members"
+              ],
+              "worksWith": [
+                "Large, complex codebases",
+                "Team onboarding",
+                "Code exploration workflows"
+              ]
+            },
+            {
+              "name": "Blackbox AI",
+              "type": "Context-aware AI coding assistant",
+              "integration": "IDEs and browsers",
+              "keyFeatures": [
+                "Real-time code completion",
+                "AI chat",
+                "Image-to-code conversion",
+                "Smart diffs",
+                "Automated README generation",
+                "Commit message generation",
+                "Extract code from images/videos",
+                "Deep web search",
+                "Code context protocols"
+              ],
+              "worksWith": [
+                "VS Code (marketplace)",
+                "Browser integration",
+                "Multiple IDEs"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "specialized",
+          "name": "Specialized",
+          "tools": [
+            {
+              "name": "CoqPilot",
+              "developer": "JetBrains-Research / community",
+              "type": "Theorem-proof assistant",
+              "domain": "Coq proof development",
+              "keyFeatures": [
+                "Fills \"holes\" in proofs (admit)",
+                "Verifies generated proofs"
+              ],
+              "note": "Domain-specific example of agentic extension",
+              "worksWith": [
+                "Coq proof systems",
+                "Formal verification workflows"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jetbrains-ide-tools",
+      "name": "JetBrains IDE Tools",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "jetbrains-ai-assistant",
+          "name": "JetBrains AI Assistant",
+          "tools": [
+            {
+              "name": "Overview",
+              "developer": "JetBrains",
+              "website": "https://www.jetbrains.com/ai/",
+              "documentation": "https://www.jetbrains.com/help/idea/ai-assistant.html",
+              "type": "Official AI assistant for JetBrains IDEs",
+              "launch": "Major updates April 2025, August 2025",
+              "iDEs": "IntelliJ IDEA, PyCharm, WebStorm, GoLand, and others",
+              "plugin": "Not bundled by default, requires installation"
+            },
+            {
+              "name": "Models & Providers",
+              "models2025": [
+                "Claude 3.7 Sonnet",
+                "Google Gemini 2.5 Pro",
+                "Latest OpenAI models",
+                "Local models (Qwen2.5-Coder, DeepSeek-Coder 1.3B, CodeStral)"
+              ],
+              "integration": "Improved local model support"
+            },
+            {
+              "name": "Key Features",
+              "subsections": {
+                "codeAssistance": {
+                  "title": "Code Assistance",
+                  "content": [
+                    "AI-powered code completion (single lines, functions, blocks)",
+                    "Real-time suggestions",
+                    "Code generation with prompts",
+                    "Prompt Library support"
+                  ]
+                },
+                "developmentTools": {
+                  "title": "Development Tools",
+                  "content": [
+                    "Commit message generation",
+                    "Documentation creation",
+                    "File conversion",
+                    "Test generation"
+                  ]
+                },
+                "contextUnderstanding": {
+                  "title": "Context & Understanding",
+                  "content": [
+                    "Improved Mellum model with smarter context collection",
+                    "Expanded file type support: SQL, YAML, JSON, Text, Markdown",
+                    "Image attachment in chat (Anthropic, OpenAI models)"
+                  ]
+                },
+                "localCapabilities": {
+                  "title": "Local Capabilities",
+                  "content": [
+                    "Local code completion with multiline suggestions (Java, C++)",
+                    "Connect local models (Qwen2.5-Coder, DeepSeek-Coder 1.3B, CodeStral)",
+                    "Offline functionality"
+                  ]
+                }
+              },
+              "contextUnderstanding": [
+                "Paste images for error fixes",
+                "Code generation from screenshots"
+              ]
+            },
+            {
+              "name": "Junie - Coding Agent",
+              "type": "Autonomous coding agent",
+              "availability": "April 2025",
+              "compatibleIDEs": "IntelliJ IDEA Ultimate, PyCharm Pro, WebStorm, GoLand",
+              "keyFeatures": [
+                "End-to-end task execution",
+                "IDE integration",
+                "Autonomous coding assistance"
+              ]
+            },
+            {
+              "name": "Licensing & Pricing",
+              "freeTier": "Included with IDE licenses (2025.1+)",
+              "proUltimateTiers": "Different monthly credit quotas",
+              "requirements": [
+                "JetBrains AI Service license",
+                "Explicit ToS consent"
+              ]
+            },
+            {
+              "name": "Works with:"
+            }
+          ]
+        },
+        {
+          "id": "third-party-jetbrains-plugins",
+          "name": "Third-Party JetBrains Plugins",
+          "tools": [
+            {
+              "name": "Auto-Dev",
+              "developer": "Unit Mesh",
+              "repository": "https://github.com/unit-mesh/auto-dev",
+              "type": "AI-powered coding wizard for JetBrains",
+              "languageSupport": "Multi-language (Java, Kotlin, Python, JavaScript, etc.)",
+              "keyFeatures": [
+                "Auto code generation 🏗️",
+                "Bug-slaying assistant 🐞",
+                "Auto testing & documentation",
+                "Customizable prompts 🎨",
+                "Agent-based development",
+                "Auto Dev/Testing/Document/Agent features",
+                "AIGC (AI Generated Content) integration"
+              ],
+              "worksWith": [
+                "IntelliJ IDEA and other JetBrains IDEs",
+                "Multiple LLM providers",
+                "Supports GenAI stack"
+              ]
+            },
+            {
+              "name": "GitHub Copilot for JetBrains",
+              "developer": "GitHub/Microsoft",
+              "models": "GPT-4o Copilot code completion model (Feb 2025)",
+              "keyFeatures": [
+                "Code completion",
+                "AI chat",
+                "Agent mode"
+              ],
+              "worksWith": [
+                "GitHub ecosystem",
+                "JetBrains IDEs (all major)"
+              ]
+            },
+            {
+              "name": "Kilo Code for JetBrains",
+              "developer": "Kilo Code",
+              "type": "AI coding agent",
+              "keyFeatures": "Same as VS Code version",
+              "worksWith": [
+                "JetBrains IDEs",
+                "400+ AI models",
+                "MCP servers"
+              ]
+            },
+            {
+              "name": "Tabnine for JetBrains",
+              "developer": "Tabnine",
+              "type": "Code completion + chat",
+              "worksWith": [
+                "JetBrains IDEs",
+                "Proprietary and third-party models"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "full-ide-tools",
+      "name": "Full IDE Tools",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "vs-code-based-ai-ides",
+          "name": "VS Code-Based AI IDEs",
+          "tools": [
+            {
+              "name": "Cursor",
+              "developer": "Anysphere",
+              "website": "https://cursor.com",
+              "download": "https://cursor.com/download",
+              "base": "VS Code fork (explicitly stated - Wikipedia)",
+              "models": [
+                "Via Cursor subscription: Proprietary specialized models",
+                "BYOK: OpenAI (standard GPT models only, no o1/o3), Anthropic (all Claude models), Google",
+                "Limitations: Tab completion, Apply from Chat, Composer require subscription (not BYOK)"
+              ],
+              "keyFeatures": [
+                "AI-native IDE",
+                "Chat interface",
+                "Smart rewrites",
+                "Codebase queries",
+                "Agent mode",
+                "BYO model options (limited)",
+                "Codebase indexing with embeddings"
+              ],
+              "subsections": {
+                "apiConfiguration": {
+                  "title": "API Configuration",
+                  "content": [
+                    "OpenAI: Override base URL for proxies/enterprise",
+                    "Anthropic: Custom URL prefix (default: https://api.anthropic.com/v1)",
+                    "OpenAI-compatible providers (e.g., OpenRouter)",
+                    "Claude 3.5 Sonnet, Claude 3 Opus (coding tasks)",
+                    "GPT-4 series (standard models)"
+                  ]
+                },
+                "limitations": {
+                  "title": "Limitations",
+                  "content": [
+                    "No reasoning models via BYOK (o1, o1-mini, o3-mini)",
+                    "Some features require paid subscription + specialized models",
+                    "Recent \"BYOK ban\" for certain features"
+                  ]
+                }
+              },
+              "worksWith": [
+                "OpenAI, Anthropic, Google (custom API keys)",
+                "OpenRouter (OpenAI-compatible)",
+                "AWS Bedrock (with AWS keys)",
+                "Cursor subscription (specialized models)"
+              ]
+            },
+            {
+              "name": "Windsurf",
+              "developer": "Codeium",
+              "website": "https://codeium.com/windsurf",
+              "download": "https://codeium.com/windsurf/download",
+              "base": "VS Code fork (widely reported - IEEE Spectrum, Builder.io, CodeAnt, Prismetric)",
+              "keyFeatures": [
+                "AI-native editor",
+                "Cascade (agentic IDE)",
+                "Rules/flows",
+                "Agentic edits",
+                "Preview servers",
+                "MCP integration",
+                "Also ships VS Code plugin"
+              ],
+              "subsections": {
+                "models": {
+                  "title": "Models",
+                  "content": [
+                    "SWE-1 (in-house frontier model, Claude 3.5-level at fraction of cost)",
+                    "Claude Sonnet 4",
+                    "BYOK support (labeled in dropdown)"
+                  ]
+                },
+                "openRouterIntegration": {
+                  "title": "OpenRouter Integration",
+                  "content": [
+                    "Not explicitly documented",
+                    "Community guides available",
+                    "Similar interface to other editors",
+                    "Custom API configuration possible via BYOK"
+                  ]
+                }
+              },
+              "worksWith": [
+                "Windsurf's SWE-1 model",
+                "Major LLM providers (BYOK)",
+                "OpenRouter (via custom API setup)",
+                "MCP servers"
+              ]
+            },
+            {
+              "name": "PearAI",
+              "developer": "PearAI (YC-backed, OSS)",
+              "website": "https://trypear.ai",
+              "repository": "https://github.com/trypear/pearai-app",
+              "download": "https://trypear.ai/download",
+              "base": "VS Code fork (repo: \"This is our fork of VSCode\")",
+              "keyFeatures": [
+                "Open-source AI editor",
+                "Continue-style agents",
+                "Prompt→product workflows",
+                "Built-in models + custom"
+              ],
+              "subsections": {
+                "customModels": {
+                  "title": "Custom Models",
+                  "content": [
+                    "Can add your own models/API keys",
+                    "Documentation for model addition"
+                  ]
+                }
+              },
+              "worksWith": [
+                "Built-in PearAI models",
+                "Custom API integrations",
+                "Continue-derived AI layer"
+              ]
+            },
+            {
+              "name": "Void",
+              "developer": "Void (YC-backed, OSS)",
+              "website": "https://voideditor.com",
+              "repository": "https://github.com/voideditor/void",
+              "download": "https://voideditor.com/download",
+              "base": "VS Code fork (official: \"open-source Cursor alternative\")",
+              "models": "Any LLM (local or cloud)",
+              "keyFeatures": [
+                "Privacy-first AI code editor",
+                "Fast performance",
+                "Local/cloud model flexibility",
+                "Checkpoints",
+                "Visualize changes",
+                "Agent runs on codebase"
+              ],
+              "subsections": {
+                "supportedProviders": {
+                  "title": "Supported Providers",
+                  "content": []
+                },
+                "ollamaIntegration": {
+                  "title": "Ollama Integration",
+                  "content": [
+                    "Auto-detects locally running models",
+                    "Enables them by default",
+                    "Custom endpoint configuration available"
+                  ]
+                }
+              },
+              "localSelfhosted": "Ollama (auto-detection), vLLM, LM Studio, LiteLLM",
+              "cloud": "Azure OpenAI, Google Vertex AI, AWS Bedrock, plus others (Claude, DeepSeek, OpenAI)",
+              "worksWith": [
+                "Ollama (primary local option)",
+                "vLLM (advanced/high-performance local)",
+                "All major cloud providers",
+                "Any OpenAI-compatible API"
+              ]
+            },
+            {
+              "name": "Kiro",
+              "developer": "Amazon Web Services",
+              "website": "https://aws.amazon.com/kiro (limited public info)",
+              "base": "Code OSS (\"Based on Code OSS ... import VS Code settings/plugins\")",
+              "type": "Agentic AI IDE",
+              "keyFeatures": [
+                "Spec-driven agent workflows",
+                "VS Code settings/plugin compatibility"
+              ],
+              "status": "Early coverage, details evolving (2025)",
+              "worksWith": [
+                "AWS infrastructure (likely)",
+                "VS Code ecosystem (settings, plugins)"
+              ]
+            },
+            {
+              "name": "Trae",
+              "developer": "ByteDance",
+              "base": "VS Code fork (\"ByteDance's customized fork\" - community research)",
+              "note": "Scrutiny over telemetry",
+              "features": "AI features added to VS Code base",
+              "worksWith": [
+                "ByteDance infrastructure",
+                "AI features (details limited)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "standalone-ai-ides-editors",
+          "name": "Standalone AI IDEs & Editors",
+          "tools": [
+            {
+              "name": "Zed",
+              "developer": "Creators of Atom and Tree-sitter",
+              "website": "https://zed.dev",
+              "download": "https://zed.dev/download",
+              "repository": "https://github.com/zed-industries/zed",
+              "type": "High-performance, multiplayer code editor",
+              "status": "World's fastest AI code editor (2025)",
+              "keyFeatures": [
+                "Open-source (including AI features)",
+                "Agentic Editing",
+                "Inline assistant",
+                "AI generation, transformation, analysis",
+                "MCP integration (working with protocol)"
+              ],
+              "worksWith": [
+                "Multiple AI providers",
+                "MCP servers",
+                "Multiplayer collaboration"
+              ]
+            },
+            {
+              "name": "Replit (with Ghostwriter)",
+              "type": "Browser-based IDE with AI",
+              "website": "https://replit.com",
+              "aiWebsite": "https://replit.com/ai",
+              "ai": "Ghostwriter AI assistant",
+              "keyFeatures": [
+                "Real-time assistance",
+                "Inline completions (Complete Code)",
+                "Code explanations (Explain Code)",
+                "Code transformation (Transform Code)",
+                "Code generation from natural language (Generate Code)",
+                "Browser-based (no local setup)",
+                "Collaboration features"
+              ],
+              "useCase": "Beginners, rapid prototyping, learning",
+              "worksWith": [
+                "Cloud infrastructure",
+                "Real-time collaboration",
+                "Multiple programming languages"
+              ]
+            },
+            {
+              "name": "Bolt.new (by StackBlitz)",
+              "type": "AI-powered web app builder",
+              "website": "https://bolt.new",
+              "developer": "StackBlitz",
+              "technology": "StackBlitz WebContainer (Node.js in browser)",
+              "models": "Anthropic Claude 3.5 Sonnet",
+              "keyFeatures": [
+                "Natural language → functional code",
+                "Full-stack development in browser",
+                "Complete Node.js environment (no local setup)",
+                "Automated package management",
+                "Test and deploy web applications",
+                "Modern framework support"
+              ],
+              "subsections": {
+                "pricing": {
+                  "title": "Pricing",
+                  "content": [
+                    "Free tier (basic features, limited AI)",
+                    "Pro: $20/month (10M tokens)",
+                    "Pro 50: $50/month (teamwork + deployment tools)"
+                  ]
+                },
+                "useCase": {
+                  "title": "Use Case",
+                  "content": [
+                    "Fast prototyping, full-stack developers"
+                  ]
+                }
+              },
+              "worksWith": [
+                "StackBlitz infrastructure",
+                "Modern web frameworks",
+                "Claude 3.5 Sonnet"
+              ]
+            },
+            {
+              "name": "Lovable",
+              "type": "AI web development platform",
+              "website": "https://lovable.dev",
+              "keyFeatures": [
+                "User-friendly chat interface",
+                "Version control",
+                "Backend support",
+                "Live rendering",
+                "Instant undo",
+                "Live collaboration",
+                "One-click deployment"
+              ],
+              "worksWith": [
+                "Web development workflows",
+                "Team collaboration"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "other-ides-platforms",
+          "name": "Other IDEs & Platforms",
+          "tools": [
+            {
+              "name": "v0 (by Vercel)",
+              "type": "Rapid UI component generator",
+              "website": "https://v0.dev",
+              "developer": "Vercel",
+              "focus": "Front-end development",
+              "keyFeatures": [
+                "Text prompts → UI components",
+                "Fast design iteration",
+                "Component library generation"
+              ],
+              "worksWith": [
+                "Vercel ecosystem",
+                "React/Next.js",
+                "Front-end workflows"
+              ]
+            },
+            {
+              "name": "Onlook",
+              "developer": "Onlook Dev",
+              "repository": "https://github.com/onlook-dev/onlook",
+              "type": "AI-First Design Tool for React Developers",
+              "tagline": "\"The Cursor for Designers\"",
+              "keyFeatures": [
+                "Visual builder for React applications",
+                "AI-powered styling and editing",
+                "Live preview and hot reload",
+                "Component-based design",
+                "Export to React code",
+                "Cross-platform (Windows, macOS, Linux)",
+                "Integration with AI models for design suggestions",
+                "Supports Next.js, Tailwind CSS"
+              ],
+              "worksWith": [
+                "React and React-based frameworks",
+                "Next.js applications",
+                "Tailwind CSS",
+                "Modern web development stack"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "code-review-security-tools",
+      "name": "Code Review & Security Tools",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "ai-powered-code-analysis",
+          "name": "AI-Powered Code Analysis",
+          "tools": [
+            {
+              "name": "Snyk (DeepCode AI)",
+              "type": "AI-powered security platform",
+              "technology": "DeepCode AI (symbolic + generative AI)",
+              "keyFeatures": [
+                "Code autofix solution",
+                "Self-hosted (data privacy)",
+                "Multiple models + security-specific training",
+                "25M+ data flow cases",
+                "19+ supported languages",
+                "Finds, autofixes, and prioritizes vulnerabilities",
+                "Manages tech debt",
+                "No hallucinations (ML + security researchers)"
+              ],
+              "performance": "84%+ reduction in MTTR (mean time to remediate)",
+              "worksWith": [
+                "CI/CD pipelines",
+                "Multiple languages",
+                "Enterprise security workflows",
+                "Developer productivity tools"
+              ]
+            },
+            {
+              "name": "SonarQube",
+              "type": "Code quality & technical debt platform",
+              "keyFeatures": [
+                "Comprehensive code quality assessment",
+                "Static analysis (bugs, vulnerabilities, code smells)",
+                "Duplication and coverage tracking",
+                "CI/CD automation",
+                "Customizable dashboards",
+                "Detailed reporting",
+                "Clean Code AI integration (2025)"
+              ],
+              "cleanCodeAI": "Suggests specific remediation approaches",
+              "worksWith": [
+                "CI/CD systems",
+                "Multiple languages",
+                "Enterprise workflows",
+                "Large-scale projects"
+              ]
+            },
+            {
+              "name": "Sourcery",
+              "type": "AI-powered code review tool",
+              "focus": "Python developers (primary)",
+              "integration": "GitHub, GitLab, VS Code, JetBrains",
+              "keyFeatures": [
+                "Analyzes pull requests",
+                "Catches bugs",
+                "Improves code quality",
+                "30+ languages supported",
+                "Real-time code improvement",
+                "Refactoring suggestions",
+                "Quality enhancement"
+              ],
+              "cLI": "sourcery-analytics (static analysis tool)",
+              "worksWith": [
+                "GitHub/GitLab (PR analysis)",
+                "VS Code, JetBrains IDEs",
+                "Python projects (primary focus)",
+                "30+ programming languages"
+              ]
+            },
+            {
+              "name": "Refact.ai",
+              "type": "AI coding agent for enterprise",
+              "deployment": "On-premise or cloud",
+              "status": "#1 open-source AI Agent in SWE-bench verified",
+              "keyFeatures": [
+                "End-to-end task handling",
+                "Deep codebase understanding",
+                "Tool integration (GitHub, Docker, PostgreSQL)",
+                "Automates complex, multi-step tasks",
+                "Self-hosted option",
+                "Open-source alternative to Cursor/Copilot"
+              ],
+              "worksWith": [
+                "GitHub, Docker, PostgreSQL (tool integrations)",
+                "Self-hosted or cloud deployments",
+                "Enterprise development environments",
+                "OpenAI-compatible APIs"
+              ]
+            },
+            {
+              "name": "AI Code Reviewer",
+              "developer": "villesau",
+              "repository": "https://github.com/villesau/ai-codereviewer",
+              "type": "GitHub Actions integration",
+              "keyFeatures": [
+                "AI-powered code review for pull requests",
+                "Uses OpenAI GPT-4 API for intelligent feedback",
+                "Provides suggestions to improve code quality",
+                "GitHub Actions workflow integration",
+                "Automated PR analysis",
+                "Saves developers time"
+              ],
+              "worksWith": [
+                "GitHub Actions",
+                "OpenAI GPT-4 API",
+                "Pull requests workflow"
+              ]
+            },
+            {
+              "name": "Claude Code Security Review",
+              "developer": "Anthropic",
+              "repository": "https://github.com/anthropics/claude-code-security-review",
+              "type": "AI-powered security review GitHub Action",
+              "keyFeatures": [
+                "Analyzes code changes for security vulnerabilities",
+                "Uses Claude AI model",
+                "Automated security scanning",
+                "GitHub Actions integration",
+                "Focus on security best practices"
+              ],
+              "worksWith": [
+                "GitHub Actions",
+                "Claude AI (Anthropic)",
+                "Security workflows"
+              ]
+            },
+            {
+              "name": "CodeGPT",
+              "developer": "appleboy",
+              "repository": "https://github.com/appleboy/CodeGPT",
+              "type": "CLI tool (Go)",
+              "keyFeatures": [
+                "Writes git commit messages using ChatGPT",
+                "Code review brief generation",
+                "Automatically installs git prepare-commit-msg hook",
+                "Uses GPT-4.1 and GPT-4o models",
+                "Command-line interface"
+              ],
+              "worksWith": [
+                "Git hooks",
+                "ChatGPT API (OpenAI)",
+                "Command-line workflows"
+              ]
+            },
+            {
+              "name": "CodeRabbit",
+              "type": "AI code review platform",
+              "website": "https://coderabbit.ai",
+              "cLITool": "https://coderabbit.ai/cli",
+              "vSCodeExtension": "https://coderabbit.ai/ide",
+              "funding": "$60M Series B (September 2025)",
+              "pricing": "Free tier, Lite ($12/month), Pro ($24/month)",
+              "keyFeatures": [
+                "Context-aware code reviews",
+                "40+ automated analysis tools (linters, security, performance)",
+                "Learns from team interactions and preferences",
+                "CLI tool for terminal reviews",
+                "VS Code extension (free)",
+                "PR summarization and analysis",
+                "Zero retention (in-memory only)",
+                "SOC 2 & GDPR compliant"
+              ],
+              "architecture": "Google Cloud Run infrastructure",
+              "cLI": "coderabbit (AI code reviews in terminal)",
+              "worksWith": [
+                "Company codebases",
+                "GitHub, Docker, PostgreSQL",
+                "Browser integration",
+                "Workflow automation tools"
+              ]
+            },
+            {
+              "name": "Graphite Diamond",
+              "type": "AI-powered PR review tool",
+              "developer": "Graphite",
+              "website": "https://graphite.dev/diamond",
+              "documentation": "https://graphite.dev/docs",
+              "keyFeatures": [
+                "Senior engineer-level code review",
+                "Analyzes PRs within seconds",
+                "Logic bugs and edge case detection",
+                "Performance issue identification",
+                "Security vulnerability detection",
+                "Contextual feedback on every pull request"
+              ],
+              "worksWith": [
+                "GitHub pull requests",
+                "GitLab merge requests",
+                "Development workflows",
+                "CI/CD pipelines"
+              ]
+            },
+            {
+              "name": "CodeAnt AI",
+              "type": "Code quality and security platform",
+              "website": "https://www.codeant.ai",
+              "keyFeatures": [
+                "Combined code quality and security",
+                "Automated code reviews",
+                "One platform for quality and security",
+                "AI-powered analysis",
+                "GitHub integration"
+              ],
+              "worksWith": [
+                "GitHub repositories",
+                "CI/CD pipelines",
+                "Security and quality workflows",
+                "Development teams"
+              ]
+            },
+            {
+              "name": "Codacy",
+              "type": "Code quality and security automation",
+              "website": "https://www.codacy.com",
+              "documentation": "https://docs.codacy.com",
+              "keyFeatures": [
+                "Developer-friendly quality and security tool",
+                "Supports 40+ programming languages",
+                "AI-driven code reviews",
+                "Consistent coding standards",
+                "Automated analysis",
+                "Languages: JavaScript, Python, Java, C#, PHP, and more"
+              ],
+              "worksWith": [
+                "40+ programming languages",
+                "GitHub, GitLab, Bitbucket",
+                "CI/CD pipelines",
+                "Development workflows"
+              ]
+            },
+            {
+              "name": "Semgrep",
+              "type": "Static analysis security tool",
+              "keyFeatures": "Pattern-based code scanning, custom rules",
+              "worksWith": [
+                "AI-generated code analysis",
+                "Security workflows"
+              ]
+            },
+            {
+              "name": "CodeQL",
+              "type": "Semantic code analysis",
+              "developer": "GitHub",
+              "keyFeatures": "Custom queries, security scanning",
+              "worksWith": [
+                "GitHub Advanced Security",
+                "AI-generated code analysis"
+              ]
+            },
+            {
+              "name": "Aikido Security",
+              "type": "AI-powered DevSecOps",
+              "useCase": "Vulnerability remediation",
+              "worksWith": [
+                "DevSecOps workflows",
+                "Security automation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing-qa-tools",
+      "name": "Testing & QA Tools",
+      "description": "AI-powered testing and quality assurance tools that automate test generation, execution, and maintenance using machine learning and generative AI.",
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "ai-testing-platforms",
+          "name": "AI Testing Platforms",
+          "tools": [
+            {
+              "name": "KaneAI (LambdaTest)",
+              "type": "GenAI native QA Agent-as-a-Service",
+              "developer": "LambdaTest",
+              "website": "https://www.lambdatest.com/kane-ai",
+              "documentation": "https://www.lambdatest.com/support/docs/kane-ai/",
+              "keyFeatures": [
+                "End-to-end test automation with natural language",
+                "Test creation, debugging, and evolution",
+                "Self-healing mechanisms",
+                "AI-powered test maintenance",
+                "GenAI native platform"
+              ],
+              "worksWith": [
+                "Natural language test creation",
+                "Multiple browsers and devices",
+                "CI/CD pipelines",
+                "LambdaTest platform"
+              ]
+            },
+            {
+              "name": "TestRigor",
+              "type": "AI-powered test automation platform",
+              "website": "https://testrigor.com",
+              "documentation": "https://testrigor.com/docs",
+              "keyFeatures": [
+                "Write tests in plain English",
+                "Generative AI for test creation",
+                "Dynamic element locators with self-healing",
+                "Reduces test maintenance",
+                "No programming required"
+              ],
+              "worksWith": [
+                "Plain English commands",
+                "Web, mobile, and API testing",
+                "CI/CD integration",
+                "Multiple platforms"
+              ]
+            },
+            {
+              "name": "Functionize",
+              "type": "AI-powered testing platform",
+              "website": "https://www.functionize.com",
+              "documentation": "https://www.functionize.com/resources",
+              "productOverview": "https://www.functionize.com/product",
+              "keyFeatures": [
+                "Automates entire QA lifecycle",
+                "Machine learning for adaptation",
+                "Generative AI techniques",
+                "Self-healing tests",
+                "Predictive analytics",
+                "AI-native with specialized agents"
+              ],
+              "worksWith": [
+                "Web and mobile applications",
+                "CI/CD pipelines",
+                "Enterprise QA workflows",
+                "Cloud testing"
+              ]
+            },
+            {
+              "name": "BrowserStack Test Observability",
+              "type": "AI-powered test observability platform",
+              "website": "https://www.browserstack.com/test-observability",
+              "documentation": "https://www.browserstack.com/docs/test-observability",
+              "keyFeatures": [
+                "AI insights for test failures",
+                "Identifies product bugs vs automation issues",
+                "Root cause analysis",
+                "Test debugging acceleration"
+              ],
+              "worksWith": [
+                "BrowserStack testing platform",
+                "CI/CD pipelines",
+                "Multiple test frameworks"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "api-testing-tools",
+      "name": "API Testing Tools",
+      "description": "AI-powered tools for testing, debugging, and managing APIs with intelligent test generation and automation.",
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "comprehensive-api-testing-platforms",
+          "name": "Comprehensive API Testing Platforms",
+          "tools": [
+            {
+              "name": "Katalon",
+              "type": "API test automation platform",
+              "website": "https://katalon.com",
+              "documentation": "https://docs.katalon.com",
+              "keyFeatures": [
+                "Codeless and code-driven test options",
+                "API test creation, management, execution",
+                "Wide integration support",
+                "Multiple protocol support (REST, SOAP, GraphQL)",
+                "Detailed reporting"
+              ],
+              "worksWith": [
+                "REST, SOAP, GraphQL APIs",
+                "CI/CD pipelines",
+                "Enterprise workflows",
+                "Multiple test frameworks"
+              ]
+            },
+            {
+              "name": "Testsigma",
+              "type": "End-to-end API testing platform",
+              "website": "https://testsigma.com",
+              "documentation": "https://testsigma.com/docs",
+              "keyFeatures": [
+                "No-code API testing",
+                "No framework setup required",
+                "AI-powered test generation",
+                "Natural language test creation"
+              ],
+              "worksWith": [
+                "REST, SOAP, GraphQL APIs",
+                "Web and mobile testing",
+                "CI/CD integration",
+                "Cloud and on-premise"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lightweight-open-source-api-tools",
+          "name": "Lightweight & Open-Source API Tools",
+          "tools": [
+            {
+              "name": "Insomnia",
+              "type": "API testing and debugging tool",
+              "website": "https://insomnia.rest",
+              "repository": "https://github.com/Kong/insomnia",
+              "keyFeatures": [
+                "REST, GraphQL, and gRPC support",
+                "User-friendly interface",
+                "Environment variables",
+                "Plugin system",
+                "Team collaboration"
+              ],
+              "worksWith": [
+                "REST, GraphQL, gRPC, WebSocket",
+                "OpenAPI/Swagger specs",
+                "Plugin ecosystem",
+                "Kong Gateway"
+              ]
+            },
+            {
+              "name": "Hoppscotch",
+              "type": "Open-source API testing tool",
+              "website": "https://hoppscotch.io",
+              "repository": "https://github.com/hoppscotch/hoppscotch",
+              "keyFeatures": [
+                "Web-based interface",
+                "REST, GraphQL, WebSocket, SSE support",
+                "Real-time collaboration",
+                "Open-source",
+                "Fast and lightweight"
+              ],
+              "worksWith": [
+                "REST, GraphQL, WebSocket, SSE, MQTT",
+                "Browser-based workflows",
+                "Self-hosted deployments",
+                "Team collaboration"
+              ]
+            },
+            {
+              "name": "Bruno",
+              "type": "Open-source API client",
+              "website": "https://www.usebruno.com",
+              "repository": "https://github.com/usebruno/bruno",
+              "keyFeatures": [
+                "Git-integrated API client",
+                "No cloud data sync (privacy-first)",
+                "Offline-first",
+                "Open-source",
+                "Collection versioning"
+              ],
+              "worksWith": [
+                "REST, GraphQL APIs",
+                "Git version control",
+                "Local-first workflows",
+                "Team collaboration via Git"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "enterprise-api-testing",
+          "name": "Enterprise API Testing",
+          "tools": [
+            {
+              "name": "SoapUI",
+              "type": "API testing tool for SOAP and REST",
+              "website": "https://www.soapui.org",
+              "documentation": "https://www.soapui.org/docs/",
+              "keyFeatures": [
+                "SOAP and REST testing",
+                "Functional, regression, and load testing",
+                "Security testing",
+                "Automated test execution",
+                "Enterprise features"
+              ],
+              "worksWith": [
+                "SOAP and REST APIs",
+                "Security testing",
+                "Load testing",
+                "CI/CD integration"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "documentation-code-explanation",
+      "name": "Documentation & Code Explanation",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "ai-documentation-tools",
+          "name": "AI Documentation Tools",
+          "tools": [
+            {
+              "name": "Mintlify",
+              "type": "AI-native documentation platform",
+              "tagline": "\"Beautiful out-of-the-box, built for developers\"",
+              "keyFeatures": [
+                "Context-aware agent (drafts, edits, maintains content)",
+                "AI assistant (guided conversations, context-aware)",
+                "Automatic documentation updates (PRs, Slack, links)",
+                "API documentation (OpenAPI specs → human-readable)",
+                "AI-powered content generation"
+              ],
+              "performance": "Part of 70% time savings in documentation (2025)",
+              "worksWith": [
+                "OpenAPI specifications",
+                "GitHub (PR integration)",
+                "Slack",
+                "Developer workflows"
+              ]
+            },
+            {
+              "name": "Swimm",
+              "type": "AI-powered documentation platform",
+              "technology": "AI-powered static analysis",
+              "keyFeatures": [
+                "Builds knowledge base from code",
+                "Reveals architecture, patterns, hidden logic",
+                "Helps understand big, complex codebases",
+                "Captures knowledge to fill documentation gaps",
+                "Auto-updates documentation when code changes",
+                "Eliminates \"stale docs\" problem"
+              ],
+              "worksWith": [
+                "Large codebases",
+                "Team knowledge sharing",
+                "Legacy code understanding",
+                "Documentation workflows"
+              ]
+            },
+            {
+              "name": "Docify AI",
+              "type": "Automated code comment and documentation generator",
+              "website": "https://docify.ai4code.io",
+              "keyFeatures": [
+                "Automated code comment generation",
+                "Improves code quality",
+                "Saves development time",
+                "Increases productivity",
+                "AI-powered documentation"
+              ],
+              "worksWith": [
+                "Multiple programming languages",
+                "Code documentation workflows",
+                "Development teams"
+              ]
+            },
+            {
+              "name": "DocuWriter.ai",
+              "type": "AI-powered documentation automation",
+              "website": "https://www.docuwriter.ai",
+              "keyFeatures": [
+                "Automates code and API documentation",
+                "Generates docs from source code",
+                "Auto-generated documentation",
+                "API documentation support"
+              ],
+              "worksWith": [
+                "Source code files",
+                "API documentation",
+                "Multiple programming languages"
+              ]
+            },
+            {
+              "name": "Bito AI Documentation Generator",
+              "type": "Multi-language documentation tool",
+              "website": "https://bito.ai",
+              "keyFeatures": [
+                "Supports many programming languages",
+                "Documentation in 50+ spoken languages",
+                "Python, JavaScript, Go, Rust, and more",
+                "Multi-lingual documentation support"
+              ],
+              "worksWith": [
+                "Python, JavaScript, Go, Rust, and more",
+                "50+ spoken languages",
+                "Global development teams"
+              ]
+            },
+            {
+              "name": "Workik",
+              "type": "Code documentation platform",
+              "website": "https://workik.com",
+              "keyFeatures": [
+                "Clear and comprehensive documentation",
+                "Consistent formatting and style",
+                "Automated documentation generation",
+                "Context-driven AI assistance"
+              ],
+              "worksWith": [
+                "Multiple programming languages",
+                "Enterprise documentation workflows",
+                "Team collaboration"
+              ]
+            },
+            {
+              "name": "Pieces for Developers",
+              "type": "AI-powered developer productivity tool",
+              "note": "Limited search results, may need further research",
+              "worksWith": [
+                "Developer workflows (likely)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "code-explanation-tools",
+          "name": "Code Explanation Tools",
+          "tools": [
+            {
+              "name": "Code Llama",
+              "type": "Advanced language model for code",
+              "developer": "Meta",
+              "base": "Built on Llama 2 architecture",
+              "license": "Free for research and commercial use",
+              "keyFeatures": [
+                "Code generation from text prompts",
+                "Leading publicly available coding model",
+                "Streamlines workflows",
+                "Aids beginners in learning"
+              ],
+              "useCase": "Code generation, learning assistance",
+              "worksWith": [
+                "Local deployment",
+                "Development workflows",
+                "Educational contexts"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "database-sql-tools",
+      "name": "Database & SQL Tools",
+      "description": "AI-powered tools for SQL generation, query optimization, and database management using natural language processing and machine learning.",
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "sql-generation-query-optimization",
+          "name": "SQL Generation & Query Optimization",
+          "tools": [
+            {
+              "name": "AI2SQL",
+              "type": "AI-powered SQL generator and optimizer",
+              "website": "https://ai2sql.io",
+              "documentation": "https://ai2sql.io/docs",
+              "keyFeatures": [
+                "Text2SQL natural language conversion",
+                "Query optimization (up to 10× faster performance)",
+                "SQL Bot for assistance",
+                "ERD AI for database design",
+                "Performance tuning",
+                "Instant query analysis"
+              ],
+              "worksWith": [
+                "SQL databases (MySQL, PostgreSQL, SQL Server)",
+                "NoSQL databases",
+                "Query optimization workflows",
+                "Database design"
+              ]
+            },
+            {
+              "name": "Chat2DB",
+              "type": "AI-powered SQL client",
+              "website": "https://chat2db.ai",
+              "repository": "https://github.com/chat2db/Chat2DB",
+              "keyFeatures": [
+                "Natural language to SQL",
+                "Visual database management",
+                "ER diagrams and dashboards",
+                "Multi-database support",
+                "Optimized query generation",
+                "Relational and non-relational databases"
+              ],
+              "worksWith": [
+                "MySQL, PostgreSQL, MongoDB, Redis",
+                "SQL and NoSQL databases",
+                "Visual database tools",
+                "Team collaboration"
+              ]
+            },
+            {
+              "name": "Text2SQL.ai",
+              "type": "Natural language to SQL platform",
+              "website": "https://text2sql.ai",
+              "keyFeatures": [
+                "Plain English to SQL queries",
+                "Query generation, optimization, explanation",
+                "Debugging assistance",
+                "Supports SQL and NoSQL databases",
+                "All technical levels",
+                "Multiple database support"
+              ],
+              "worksWith": [
+                "SQL databases",
+                "NoSQL databases",
+                "Query learning and debugging",
+                "Database optimization"
+              ]
+            },
+            {
+              "name": "SQLAI.ai",
+              "type": "Free SQL query generator",
+              "website": "https://www.sqlai.ai",
+              "keyFeatures": [
+                "Generate SQL queries in seconds",
+                "Free to use",
+                "AI-powered generation",
+                "Multiple database support",
+                "Quick query creation"
+              ],
+              "worksWith": [
+                "Multiple SQL databases",
+                "Query generation workflows",
+                "Free tier development"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "local-model-infrastructure",
+      "name": "Local Model Infrastructure",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "local-llm-platforms",
+          "name": "Local LLM Platforms",
+          "tools": [
+            {
+              "name": "Ollama",
+              "type": "Local LLM runtime",
+              "website": "https://ollama.com",
+              "download": "https://ollama.com/download",
+              "documentation": "https://github.com/ollama/ollama/blob/main/README.md",
+              "platform": "CLI tool (Windows, macOS, Linux)",
+              "installation": "`curl https://ollama.ai/install.sh | sh`",
+              "models": "Run any open-source model locally",
+              "api": "OpenAI-compatible endpoint (http://127.0.0.1:11434/v1)",
+              "worksWith": [
+                "Continue.dev (official guide)",
+                "Cline (OpenAI-compatible provider)",
+                "Void, PearAI (native local model support)",
+                "Roo Code, Kilo Code (Ollama provider)",
+                "JetBrains AI Assistant",
+                "Jan (can use Ollama as remote server)",
+                "Any tool supporting OpenAI-compatible APIs"
+              ]
+            },
+            {
+              "name": "LM Studio",
+              "type": "GUI-based local LLM platform",
+              "platform": "Windows, macOS, Linux",
+              "features": "Model discovery, download, chat interface, OpenAI-like local server",
+              "useCase": "Beginner-friendly, non-technical users",
+              "worksWith": [
+                "Cline (LM Studio provider)",
+                "Jan (can use as remote server)",
+                "Any tool with OpenAI-compatible API support",
+                "Local development without CLI"
+              ]
+            },
+            {
+              "name": "vLLM",
+              "type": "High-performance inference engine",
+              "focus": "Production deployments, batch processing",
+              "performance": "High throughput, low latency, GPU-optimized",
+              "installation": "Python virtual environment + pip",
+              "useCase": "Research labs, startups, production apps",
+              "worksWith": [
+                "Void Editor (advanced local setup option)",
+                "Custom production deployments",
+                "Research applications"
+              ]
+            },
+            {
+              "name": "GPT4All",
+              "developer": "Nomic AI",
+              "type": "Private AI chatbot for local LLMs",
+              "platform": "Desktop (Mac M Series, AMD, NVIDIA)",
+              "users": "250,000 monthly active users",
+              "keyFeatures": [
+                "Runs on everyday desktops & laptops",
+                "No API calls or GPUs required",
+                "1,000+ open-source models (LLaMa, Mistral)",
+                "No internet connection needed (offline)",
+                "LocalDocs (chat with your data privately)",
+                "Runs on standard consumer hardware"
+              ],
+              "license": "Free, open-source, commercial use",
+              "worksWith": [
+                "Local deployment",
+                "Offline environments",
+                "Privacy-focused workflows",
+                "Consumer hardware"
+              ]
+            },
+            {
+              "name": "Jan (Jan.ai)",
+              "type": "Open-source ChatGPT alternative (offline)",
+              "platform": "Mac, Windows, Linux",
+              "gPUSupport": "NVIDIA (CUDA), AMD (Vulkan), Intel Arc",
+              "models": "Llama 3, Gemma, Mistral (run on your own computer)",
+              "keyFeatures": [
+                "Completely offline",
+                "Free and open-source",
+                "Can integrate with Ollama and LM Studio (as remote servers)",
+                "Full privacy control"
+              ],
+              "worksWith": [
+                "Ollama (remote server integration)",
+                "LM Studio (remote server integration)",
+                "Local model deployment",
+                "Privacy-critical workflows"
+              ]
+            },
+            {
+              "name": "LocalAI",
+              "type": "Developer-focused local LLM platform",
+              "keyFeatures": [
+                "API compatibility",
+                "Application integration",
+                "Most versatile for developers"
+              ],
+              "worksWith": [
+                "Developer applications"
+              ]
+            },
+            {
+              "name": "oLLM",
+              "type": "Large-context LLM inference library",
+              "repository": "https://github.com/Mega4alik/ollm",
+              "technology": "Python library built on HuggingFace Transformers + PyTorch",
+              "release": "2025",
+              "hardware": "Runs on $200 consumer GPU (8GB VRAM)",
+              "keyFeatures": [
+                "100K context on 8GB consumer GPU",
+                "Supports 8B-80B parameter models (GPT-OSS-20B, Qwen3-Next-80B, Llama-3.1-8B)",
+                "FP16/BF16 weights (no quantization)",
+                "FlashAttention-2 integration",
+                "SSD-backed KV caching",
+                "NVMe-class storage optimization",
+                "GPUDirect Storage (KvikIO/cuFile) support"
+              ],
+              "performance": "~100-200 GB storage, sub-1 tok/s for large models",
+              "useCases": "Offline document analysis, compliance review, large-context summarization",
+              "worksWith": [
+                "Consumer GPUs (8GB VRAM minimum)",
+                "NVMe SSDs (high-speed storage required)",
+                "HuggingFace model ecosystem",
+                "Offline/local workflows",
+                "Privacy-focused deployments"
+              ]
+            },
+            {
+              "name": "Msty",
+              "type": "Unified AI interface for local & online models",
+              "website": "https://msty.ai",
+              "platform": "Windows, macOS, Linux (native desktop apps)",
+              "pricing": "Free + from $79/year",
+              "keyFeatures": [
+                "Unified interface for local and cloud models",
+                "Parallel multiverse chats (compare multiple AI responses)",
+                "Web search integration (live data)",
+                "Knowledge Stack (multi-source information)",
+                "Privacy-first design (offline capable)",
+                "No data leaves user machine",
+                "No subscriptions or complex setup"
+              ],
+              "supportedModels": "OpenAI, Deepseek, Claude, Ollama, Hugging Face",
+              "worksWith": [
+                "OpenAI, Anthropic, Deepseek (cloud providers)",
+                "Ollama (local models)",
+                "Hugging Face models",
+                "Offline/online hybrid workflows",
+                "Privacy-focused environments"
+              ]
+            },
+            {
+              "name": "Backyard.ai",
+              "type": "Private local AI character chat platform",
+              "website": "https://backyard.ai",
+              "platform": "Desktop (Mac, Windows, Linux), iOS, Android",
+              "keyFeatures": [
+                "100% local processing (zero external servers)",
+                "12+ top-tier AI models",
+                "Custom AI character creation",
+                "Extensive character memory",
+                "Works offline (zero configuration)",
+                "No censorship or filters",
+                "Character Hub (thousands of AI characters)",
+                "Mobile tethering (access home models remotely)",
+                "Lore books, author's note, background images"
+              ],
+              "pricing": "Free tier + paid cloud plans",
+              "useCases": "Role-play, creative writing, AI chat without restrictions",
+              "worksWith": [
+                "Local LLM models (12+ supported)",
+                "Offline environments",
+                "iOS/Android mobile apps",
+                "Privacy-focused creative workflows",
+                "Character-based AI interactions",
+                "API integrations",
+                "Local LLM workflows"
+              ]
+            },
+            {
+              "name": "Text Generation WebUI (Oobabooga)",
+              "type": "Web interface for local text generation models",
+              "repository": "https://github.com/oobabooga/text-generation-webui",
+              "platform": "Windows, macOS, Linux",
+              "keyFeatures": [
+                "Gradio-based web interface",
+                "Support for multiple model backends (llama.cpp, ExLlama, AutoGPTQ)",
+                "Chat and notebook modes",
+                "API server for model access",
+                "Extensions and plugins system",
+                "Model downloading and management",
+                "LoRA support"
+              ],
+              "useCases": "Running local LLMs with user-friendly interface",
+              "worksWith": [
+                "llama.cpp, ExLlama, AutoGPTQ backends",
+                "HuggingFace models",
+                "GPTQ, AWQ, GGUF quantized models",
+                "API-based integrations",
+                "Local development workflows"
+              ]
+            },
+            {
+              "name": "Llamafile",
+              "type": "Single-file LLM deployment",
+              "developer": "Mozilla",
+              "repository": "https://github.com/Mozilla-Ocho/llamafile",
+              "website": "https://llamafile.ai",
+              "platform": "Windows, macOS, Linux",
+              "keyFeatures": [
+                "Package models into single executable files",
+                "Revolutionary portability approach",
+                "No installation or dependencies required",
+                "Cross-platform compatibility",
+                "Ideal for distribution and edge deployment",
+                "Mozilla-backed project"
+              ],
+              "worksWith": [
+                "Any platform (portable executables)",
+                "Edge deployment scenarios",
+                "Offline environments",
+                "Simple distribution workflows"
+              ]
+            },
+            {
+              "name": "Nut Studio",
+              "type": "GUI-based local LLM platform (Windows)",
+              "developer": "iMyFone",
+              "website": "https://nutstudio.imyfone.com",
+              "platform": "Windows",
+              "keyFeatures": [
+                "No command line required",
+                "Full visual interface",
+                "No configuration needed",
+                "No setup complexity",
+                "Beginner-friendly alternative to Ollama",
+                "Windows-optimized"
+              ],
+              "worksWith": [
+                "Windows systems",
+                "Local model execution",
+                "Non-technical users",
+                "Visual workflow management"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "model-optimization-deployment",
+          "name": "Model Optimization & Deployment",
+          "tools": [
+            {
+              "name": "LiteLLM",
+              "type": "Multi-provider LLM proxy",
+              "keyFeatures": [
+                "Unified API for 100+ LLMs",
+                "Provider abstraction layer"
+              ],
+              "worksWith": [
+                "OpenHands CLI",
+                "Roo Code",
+                "Any tool needing multi-provider support"
+              ]
+            },
+            {
+              "name": "Transformers (Hugging Face)",
+              "type": "ML library for LLMs",
+              "keyFeatures": [
+                "Research and coding flexibility",
+                "Direct model access"
+              ],
+              "worksWith": [
+                "Custom development",
+                "Research applications"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-ml-libraries-frameworks",
+      "name": "AI/ML Libraries & Frameworks",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "python-libraries",
+          "name": "Python Libraries",
+          "tools": [
+            {
+              "name": "TensorFlow",
+              "developer": "Google",
+              "website": "https://www.tensorflow.org",
+              "repository": "https://github.com/tensorflow/tensorflow",
+              "type": "Open-source machine learning framework",
+              "language": "Python, JavaScript (TensorFlow.js)",
+              "keyFeatures": [
+                "Deep learning and neural networks",
+                "Production deployment",
+                "Mobile and edge devices (TensorFlow Lite)",
+                "Extensive ecosystem (Keras, TensorFlow Hub)"
+              ],
+              "useCases": "Model training, deployment, research",
+              "worksWith": [
+                "Python development environments",
+                "Jupyter notebooks",
+                "Cloud platforms (GCP, AWS, Azure)"
+              ]
+            },
+            {
+              "name": "PyTorch",
+              "developer": "Meta AI",
+              "website": "https://pytorch.org",
+              "repository": "https://github.com/pytorch/pytorch",
+              "type": "Open-source machine learning framework",
+              "language": "Python",
+              "keyFeatures": [
+                "Dynamic computational graphs",
+                "Strong GPU acceleration",
+                "Research-friendly API",
+                "Production deployment (TorchServe)"
+              ],
+              "useCases": "Deep learning research, model development",
+              "worksWith": [
+                "Python development environments",
+                "Jupyter notebooks",
+                "HuggingFace Transformers"
+              ]
+            },
+            {
+              "name": "LangChain",
+              "developer": "LangChain Inc.",
+              "website": "https://www.langchain.com",
+              "repository": "https://github.com/langchain-ai/langchain",
+              "type": "Framework for developing LLM applications",
+              "language": "Python, JavaScript/TypeScript",
+              "keyFeatures": [
+                "Chain composition for LLM workflows",
+                "Memory management",
+                "Agent systems",
+                "Vector store integrations",
+                "Document loaders and retrievers"
+              ],
+              "useCases": "RAG applications, chatbots, AI agents",
+              "worksWith": [
+                "OpenAI, Anthropic, Google, and other LLM providers",
+                "Vector databases (Pinecone, Weaviate, Chroma)",
+                "Document stores"
+              ]
+            },
+            {
+              "name": "LangGraph",
+              "developer": "LangChain Inc.",
+              "website": "https://www.langchain.com/langgraph",
+              "repository": "https://github.com/langchain-ai/langgraph",
+              "documentation": "https://langchain-ai.github.io/langgraph/",
+              "type": "Stateful agent framework built on LangChain",
+              "language": "Python, JavaScript/TypeScript",
+              "keyFeatures": [
+                "DAG-style workflow creation",
+                "Fine-grained control over agent behavior",
+                "Stateful multi-agent systems",
+                "Built on top of LangChain",
+                "Graph-based agent orchestration"
+              ],
+              "worksWith": [
+                "LangChain ecosystem",
+                "Multiple LLM providers",
+                "Complex agentic workflows"
+              ]
+            },
+            {
+              "name": "AutoGen",
+              "developer": "Microsoft",
+              "website": "https://microsoft.github.io/autogen/",
+              "repository": "https://github.com/microsoft/autogen",
+              "type": "Multi-agent conversation framework",
+              "language": "Python",
+              "keyFeatures": [
+                "Agents communicate in natural language",
+                "Define multiple specialized agents (Planner, Developer, Reviewer)",
+                "Collaborative multi-agent systems",
+                "Autonomous agent-to-agent communication"
+              ],
+              "worksWith": [
+                "Multiple LLM providers",
+                "Microsoft AI ecosystem",
+                "Complex multi-agent workflows"
+              ]
+            },
+            {
+              "name": "CrewAI",
+              "developer": "CrewAI Inc.",
+              "website": "https://www.crewai.com",
+              "repository": "https://github.com/joaomdmoura/crewAI",
+              "documentation": "https://docs.crewai.com",
+              "type": "Collaborative multi-agent framework",
+              "language": "Python",
+              "keyFeatures": [
+                "Assign distinct roles, goals, and tools to agents",
+                "Role-based agent collaboration",
+                "Open-source framework",
+                "Multi-agent orchestration"
+              ],
+              "worksWith": [
+                "Multiple LLM providers",
+                "Complex collaborative tasks",
+                "Agent-based development"
+              ]
+            },
+            {
+              "name": "OpenAI Agents SDK",
+              "developer": "OpenAI",
+              "website": "https://platform.openai.com/docs/agents",
+              "type": "Minimalist agent framework",
+              "language": "Python, TypeScript",
+              "keyFeatures": [
+                "Core primitives: agents, tools, handoffs, guardrails",
+                "Minimalist design philosophy",
+                "Structured workflows",
+                "Official OpenAI implementation"
+              ],
+              "worksWith": [
+                "OpenAI models",
+                "Structured agentic workflows",
+                "Enterprise applications"
+              ]
+            },
+            {
+              "name": "Semantic Kernel",
+              "developer": "Microsoft",
+              "website": "https://learn.microsoft.com/en-us/semantic-kernel/",
+              "repository": "https://github.com/microsoft/semantic-kernel",
+              "type": "AI integration framework",
+              "language": "C#, Python, Java",
+              "keyFeatures": [
+                "Integrate AI into traditional software development",
+                "Seamless integration with existing applications",
+                "Enterprise-grade framework",
+                "Multi-language support"
+              ],
+              "worksWith": [
+                "Microsoft ecosystem",
+                "Enterprise applications",
+                "Traditional software development workflows"
+              ]
+            },
+            {
+              "name": "Haystack",
+              "developer": "deepset",
+              "website": "https://haystack.deepset.ai",
+              "repository": "https://github.com/deepset-ai/haystack",
+              "type": "Open-source LLM framework",
+              "language": "Python",
+              "keyFeatures": [
+                "Production-ready NLP pipelines",
+                "RAG and search applications",
+                "Modular architecture",
+                "Document processing"
+              ],
+              "worksWith": [
+                "Multiple LLM providers",
+                "Vector databases",
+                "Search and RAG applications"
+              ]
+            },
+            {
+              "name": "LlamaIndex",
+              "developer": "LlamaIndex (formerly GPT Index)",
+              "website": "https://www.llamaindex.ai",
+              "repository": "https://github.com/run-llama/llama_index",
+              "type": "Data framework for LLM applications",
+              "language": "Python, TypeScript",
+              "keyFeatures": [
+                "Data ingestion and indexing",
+                "Query engines",
+                "Chat engines",
+                "Multi-document agents",
+                "RAG (Retrieval-Augmented Generation)"
+              ],
+              "useCases": "Knowledge bases, document Q&A, data-augmented LLM apps",
+              "worksWith": [
+                "OpenAI, Anthropic, HuggingFace models",
+                "Vector databases",
+                "Document stores"
+              ]
+            },
+            {
+              "name": "scikit-learn",
+              "developer": "scikit-learn developers",
+              "website": "https://scikit-learn.org",
+              "repository": "https://github.com/scikit-learn/scikit-learn",
+              "type": "Machine learning library",
+              "language": "Python",
+              "keyFeatures": [
+                "Classification, regression, clustering",
+                "Model selection and evaluation",
+                "Preprocessing and feature engineering",
+                "Integration with NumPy and Pandas"
+              ],
+              "useCases": "Traditional ML, data analysis, model building",
+              "worksWith": [
+                "NumPy, Pandas, Matplotlib",
+                "Jupyter notebooks",
+                "Python data science stack"
+              ]
+            },
+            {
+              "name": "NumPy",
+              "developer": "NumPy developers",
+              "website": "https://numpy.org",
+              "repository": "https://github.com/numpy/numpy",
+              "type": "Numerical computing library",
+              "language": "Python",
+              "keyFeatures": [
+                "Multi-dimensional arrays",
+                "Mathematical functions",
+                "Linear algebra operations",
+                "Foundation for scientific computing"
+              ],
+              "useCases": "Data manipulation, scientific computing, ML preprocessing",
+              "worksWith": [
+                "All Python ML/AI frameworks",
+                "Pandas, scikit-learn, TensorFlow, PyTorch"
+              ]
+            },
+            {
+              "name": "Pandas",
+              "developer": "Pandas development team",
+              "website": "https://pandas.pydata.org",
+              "repository": "https://github.com/pandas-dev/pandas",
+              "type": "Data analysis and manipulation library",
+              "language": "Python",
+              "keyFeatures": [
+                "DataFrames for structured data",
+                "Data cleaning and preprocessing",
+                "Time series analysis",
+                "SQL-like operations"
+              ],
+              "useCases": "Data preprocessing for ML, data analysis, ETL",
+              "worksWith": [
+                "NumPy, scikit-learn",
+                "Jupyter notebooks",
+                "ML pipelines"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "javascript-typescript-libraries",
+          "name": "JavaScript/TypeScript Libraries",
+          "tools": [
+            {
+              "name": "Vercel AI SDK",
+              "developer": "Vercel",
+              "website": "https://sdk.vercel.ai",
+              "repository": "https://github.com/vercel/ai",
+              "package": "https://www.npmjs.com/package/ai",
+              "type": "TypeScript toolkit for AI applications",
+              "keyFeatures": [
+                "Streaming AI responses",
+                "React hooks for AI UI",
+                "Multi-provider support",
+                "Edge runtime compatible"
+              ],
+              "useCases": "Building AI-powered web applications",
+              "worksWith": [
+                "OpenAI, Anthropic, Google, Mistral",
+                "Next.js, React, Vue",
+                "Edge functions"
+              ]
+            },
+            {
+              "name": "OpenAI Node.js SDK",
+              "developer": "OpenAI",
+              "website": "https://platform.openai.com",
+              "package": "https://www.npmjs.com/package/openai",
+              "repository": "https://github.com/openai/openai-node",
+              "type": "Official OpenAI API client",
+              "language": "TypeScript/JavaScript",
+              "keyFeatures": [
+                "Full API coverage",
+                "TypeScript types",
+                "Streaming support",
+                "Error handling"
+              ],
+              "useCases": "Integrating OpenAI models in Node.js apps",
+              "worksWith": [
+                "Node.js applications",
+                "Deno (via npm compatibility)",
+                "Edge runtimes"
+              ]
+            },
+            {
+              "name": "OpenAI Deno SDK",
+              "developer": "Deno + OpenAI community",
+              "website": "https://deno.com/blog/openai_sdk_deno",
+              "type": "OpenAI SDK for Deno runtime",
+              "language": "TypeScript",
+              "keyFeatures": [
+                "Native Deno compatibility",
+                "Secure by default",
+                "Modern TypeScript"
+              ],
+              "useCases": "Building OpenAI apps with Deno",
+              "worksWith": [
+                "Deno runtime",
+                "Deno Deploy",
+                "Fresh framework"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "browser-extensions",
+      "name": "Browser Extensions",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "ai-assistant-extensions",
+          "name": "AI Assistant Extensions",
+          "tools": [
+            {
+              "name": "WiseOne",
+              "developer": "WiseOne",
+              "website": "https://wiseone.io",
+              "type": "Browser extension for reading and research",
+              "platform": "Chrome, Firefox, Edge",
+              "keyFeatures": [
+                "AI-powered article summarization",
+                "Cross-reference checking",
+                "Fact verification",
+                "Research assistance"
+              ],
+              "useCases": "Research, reading comprehension, fact-checking",
+              "worksWith": [
+                "Web browsers",
+                "Online articles and documents"
+              ]
+            },
+            {
+              "name": "Merlin",
+              "developer": "Merlin AI",
+              "website": "https://www.getmerlin.in",
+              "type": "AI assistant browser extension",
+              "platform": "Chrome, Firefox, Edge",
+              "keyFeatures": [
+                "ChatGPT integration in browser",
+                "Email writing assistance",
+                "Content summarization",
+                "Multi-platform AI access"
+              ],
+              "useCases": "Productivity, content creation, research",
+              "worksWith": [
+                "Web browsers",
+                "Gmail, Twitter, LinkedIn",
+                "Various websites"
+              ]
+            },
+            {
+              "name": "Qodo Merge AI",
+              "developer": "Qodo (formerly Codium)",
+              "website": "https://www.qodo.ai/qodo-merge",
+              "type": "AI code review browser extension for GitHub",
+              "platform": "Chrome, Firefox, Edge",
+              "keyFeatures": [
+                "AI code reviews inside GitHub PRs",
+                "PR chat functionality",
+                "No need to switch tools",
+                "Works directly in GitHub interface",
+                "Best for GitHub PR reviews"
+              ],
+              "worksWith": [
+                "GitHub pull requests",
+                "Browser-based workflows",
+                "Code review processes"
+              ]
+            },
+            {
+              "name": "Octotree",
+              "developer": "Octotree",
+              "website": "https://www.octotree.io",
+              "repository": "https://github.com/ovity/octotree",
+              "type": "GitHub enhancement extension",
+              "platform": "Chrome, Firefox, Edge, Safari",
+              "keyFeatures": [
+                "IDE-like code tree in browser",
+                "Fast file exploration",
+                "Quick search functionality",
+                "PR review enhancement",
+                "Code bookmarking",
+                "No need to leave GitHub interface"
+              ],
+              "worksWith": [
+                "GitHub repositories",
+                "GitLab repositories",
+                "Browser-based development"
+              ]
+            },
+            {
+              "name": "daily.dev",
+              "developer": "daily.dev",
+              "website": "https://daily.dev",
+              "type": "Developer news aggregator",
+              "platform": "Chrome, Firefox, Edge",
+              "keyFeatures": [
+                "Personalized tech news feed",
+                "New tab replacement",
+                "1,300+ developer-focused sources",
+                "Tech articles and discussions",
+                "Developer community content"
+              ],
+              "worksWith": [
+                "Browser new tab",
+                "Tech news sources",
+                "Developer communities"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search-research-tools",
+      "name": "Search & Research Tools",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "ai-powered-search-engines",
+          "name": "AI-Powered Search Engines",
+          "tools": [
+            {
+              "name": "You.com",
+              "developer": "You.com",
+              "website": "https://you.com",
+              "type": "AI-powered search engine",
+              "keyFeatures": [
+                "AI-generated answers",
+                "Code search capabilities",
+                "Developer-friendly results",
+                "Privacy-focused"
+              ],
+              "useCases": "Code search, research, development queries",
+              "worksWith": [
+                "Web browsers",
+                "Developer workflows"
+              ]
+            },
+            {
+              "name": "DeepAI",
+              "developer": "DeepAI",
+              "website": "https://deepai.org",
+              "type": "AI research and tools platform",
+              "keyFeatures": [
+                "AI tools and APIs",
+                "Research resources",
+                "Model playground"
+              ],
+              "useCases": "AI experimentation, research, learning",
+              "worksWith": [
+                "Developer tools",
+                "Research workflows"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "other-tools-infrastructure",
+      "name": "Other Tools & Infrastructure",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "model-context-protocol-mcp-",
+          "name": "Model Context Protocol (MCP)",
+          "tools": [
+            {
+              "name": "Overview",
+              "developer": "Anthropic (November 2024)",
+              "type": "Open-source standard for AI-data integration",
+              "purpose": "Standardize how AI systems integrate with external tools and data sources",
+              "subsections": {
+                "architecture": {
+                  "title": "Architecture",
+                  "content": [
+                    "Client-server model",
+                    "JSON-RPC 2.0 transport",
+                    "Re-uses Language Server Protocol (LSP) concepts",
+                    "Real-time context provision to LLMs"
+                  ]
+                },
+                "sDKs": {
+                  "title": "SDKs",
+                  "content": [
+                    "Python, TypeScript, C# (Microsoft collaboration), Java, Kotlin"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "MCP Server Repository",
+              "maintainer": "Anthropic (official reference implementations)",
+              "availableServers": [
+                "Google Drive",
+                "Slack",
+                "GitHub",
+                "Git",
+                "Postgres",
+                "Puppeteer",
+                "Stripe",
+                "Azure DevOps",
+                "Databricks",
+                "Many others (community contributions)"
+              ],
+              "worksWith": [
+                "Claude Code (native)",
+                "Cline (MCP Marketplace, v3.4+)",
+                "Roo Code, Kilo Code (MCP integration)",
+                "Windsurf (MCP support)",
+                "Continue.dev (MCP tools)",
+                "Zed (MCP integration)"
+              ]
+            },
+            {
+              "name": "Industry Adoption (2025)",
+              "earlyAdopters": "Anthropic, OpenAI, Google DeepMind",
+              "iDEs": "Zed, Replit, Codeium, Sourcegraph",
+              "googleDeepMind": "Confirmed MCP support in Gemini models (April 2025, Demis Hassabis)",
+              "automation": "Microsoft Playwright MCP, Selenium, Appium integrations"
+            }
+          ]
+        },
+        {
+          "id": "generative-ui-frontend-infrastructure",
+          "name": "Generative UI & Frontend Infrastructure",
+          "tools": [
+            {
+              "name": "Thesys (C1 Generative UI API)",
+              "type": "Generative UI API for AI applications",
+              "website": "https://thesys.dev",
+              "product": "C1 Generative UI API",
+              "documentation": "https://docs.thesys.dev",
+              "launch": "2025 (Product Hunt launch)",
+              "adoption": "300+ teams using in production",
+              "keyFeatures": [
+                "Real-time UI generation (charts, forms, cards, interactive components)",
+                "Augments LLMs to respond with interactive UI instead of text",
+                "2-line code integration",
+                "Works with any LLM, framework, or MCP",
+                "Dynamic UI based on user interaction/state",
+                "Natural language to UI components",
+                "Contextually relevant generation",
+                "Custom design system support",
+                "Tool call integration (databases, documents, APIs)"
+              ],
+              "useCase": "Building adaptive AI interfaces that generate during runtime (vs pre-deployment mockups)",
+              "worksWith": [
+                "All leading LLMs (Anthropic, OpenAI, etc.)",
+                "Any framework (React, Vue, etc.)",
+                "Model Context Protocol (MCP)",
+                "Databases, documents, APIs (via tool calls)",
+                "Company design systems",
+                "Production AI applications"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "proxy-router-solutions",
+          "name": "Proxy & Router Solutions",
+          "tools": [
+            {
+              "name": "Claude Code Router",
+              "purpose": "Use Claude Code CLI with any model via OpenRouter",
+              "useCase": "Beyond Anthropic - access to 300+ models",
+              "integration": "Proxy layer between Claude Code and OpenRouter",
+              "worksWith": [
+                "Claude Code CLI",
+                "OpenRouter (model access)",
+                "Any OpenRouter-supported model"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "testing-automation-mcp-integrations",
+          "name": "Testing & Automation MCP Integrations",
+          "tools": [
+            {
+              "name": "Microsoft Playwright MCP",
+              "type": "Server-side enhancement to Playwright",
+              "purpose": "Structured browser interactions for LLMs",
+              "useCase": "Automated testing with AI",
+              "release": "Recent integration (2025)",
+              "worksWith": [
+                "Playwright automation framework",
+                "LLM-driven testing",
+                "Browser automation"
+              ]
+            },
+            {
+              "name": "Selenium & Appium MCP",
+              "type": "MCP integrations for testing frameworks",
+              "purpose": "AI-driven test automation",
+              "useCase": "Mobile and web testing",
+              "worksWith": [
+                "Selenium (web testing)",
+                "Appium (mobile testing)",
+                "AI-powered test generation"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "additional-platforms-notes",
+          "name": "Additional Platforms & Notes",
+          "tools": [
+            {
+              "name": "OpenSumi",
+              "developer": "Ant Group (Alibaba)",
+              "repository": "https://github.com/opensumi/core",
+              "type": "AI Native IDE Framework",
+              "keyFeatures": [
+                "Framework for building AI-first IDEs",
+                "MCP Client support (Model Context Protocol)",
+                "Electron-based architecture",
+                "TypeScript development",
+                "Web IDE capabilities",
+                "Highly extensible and customizable",
+                "Pre-built AI integration patterns",
+                "Support for MCP tools via MCP server"
+              ],
+              "worksWith": [
+                "Model Context Protocol (MCP)",
+                "Multiple AI model providers",
+                "Electron applications",
+                "Web-based IDEs",
+                "Custom development tools"
+              ],
+              "subsections": {
+                "useCases": {
+                  "title": "Use Cases",
+                  "content": [
+                    "Building custom AI-powered IDEs",
+                    "Internal development tools",
+                    "Specialized coding environments"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Visual Copilot (Builder.io)",
+              "developer": "Builder.io",
+              "website": "https://www.builder.io/blog/figma-to-code-visual-copilot",
+              "type": "Figma to code AI tool",
+              "keyFeatures": [
+                "Convert Figma designs to code",
+                "Multiple framework support",
+                "Component generation",
+                "Design system integration"
+              ],
+              "useCases": "Design-to-code workflow, rapid prototyping",
+              "worksWith": [
+                "Figma",
+                "React, Vue, Angular, HTML",
+                "Design systems"
+              ]
+            },
+            {
+              "name": "Supabase Assistant",
+              "developer": "Supabase",
+              "website": "https://supabase.com/blog/studio-introducing-assistant",
+              "type": "AI assistant for Supabase Studio",
+              "keyFeatures": [
+                "SQL query generation",
+                "Database schema assistance",
+                "API endpoint suggestions",
+                "Documentation help"
+              ],
+              "useCases": "Database development, API building",
+              "worksWith": [
+                "Supabase Studio",
+                "PostgreSQL",
+                "Supabase APIs"
+              ]
+            },
+            {
+              "name": "Civitai",
+              "developer": "Civitai",
+              "website": "https://civitai.com",
+              "type": "AI model sharing platform",
+              "keyFeatures": [
+                "Model sharing and discovery",
+                "Training resources",
+                "Community models",
+                "LoRA and checkpoint hosting"
+              ],
+              "useCases": "Model discovery, training, fine-tuning",
+              "worksWith": [
+                "Stable Diffusion",
+                "ComfyUI",
+                "Automatic1111",
+                "Training tools"
+              ]
+            },
+            {
+              "name": "SD Tools",
+              "website": "https://sdtools.org/",
+              "type": "Stable Diffusion tools and utilities",
+              "keyFeatures": [
+                "Stable Diffusion model utilities",
+                "Training and fine-tuning tools",
+                "LoRA support",
+                "Model management"
+              ],
+              "useCases": "Stable Diffusion workflow optimization, model training",
+              "worksWith": [
+                "Stable Diffusion",
+                "LoRA training",
+                "Model fine-tuning workflows",
+                "Image generation pipelines"
+              ]
+            },
+            {
+              "name": "Eclipse Theia",
+              "type": "VS Code-compatible (not a fork)",
+              "features": "Theia AI, Theia Coder",
+              "technology": "MCP support",
+              "note": "Architecturally independent from VS Code",
+              "status": "Worth tracking if broadening criteria",
+              "worksWith": [
+                "Model Context Protocol (MCP)",
+                "VS Code extensions (compatibility layer)",
+                "AI coding tools (Theia AI, Theia Coder)",
+                "Web-based and desktop environments"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "performance-comparison-context",
+      "name": "Performance Comparison Context",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "fastest-inference-providers-100-tokens-",
+          "name": "Fastest Inference Providers (100 tokens)",
+          "tools": []
+        },
+        {
+          "id": "cost-leaders",
+          "name": "Cost Leaders",
+          "tools": []
+        }
+      ]
+    },
+    {
+      "id": "integration-matrix-summary",
+      "name": "Integration Matrix Summary",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "universal-compatibility-openai-api-",
+          "name": "Universal Compatibility (OpenAI API)",
+          "tools": []
+        },
+        {
+          "id": "mcp-ecosystem",
+          "name": "MCP Ecosystem",
+          "tools": []
+        },
+        {
+          "id": "cloud-platform-integration",
+          "name": "Cloud Platform Integration",
+          "tools": []
+        },
+        {
+          "id": "local-first-options",
+          "name": "Local-First Options",
+          "tools": []
+        }
+      ]
+    },
+    {
+      "id": "recommendations-by-use-case",
+      "name": "Recommendations by Use Case",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "for-maximum-model-flexibility",
+          "name": "For Maximum Model Flexibility",
+          "tools": []
+        },
+        {
+          "id": "for-enterprise-cloud-integration",
+          "name": "For Enterprise/Cloud Integration",
+          "tools": []
+        },
+        {
+          "id": "for-privacy-local-development",
+          "name": "For Privacy/Local Development",
+          "tools": []
+        },
+        {
+          "id": "for-cost-optimization",
+          "name": "For Cost Optimization",
+          "tools": []
+        },
+        {
+          "id": "for-performance",
+          "name": "For Performance",
+          "tools": []
+        },
+        {
+          "id": "for-agentic-workflows",
+          "name": "For Agentic Workflows",
+          "tools": []
+        },
+        {
+          "id": "for-web-development",
+          "name": "For Web Development",
+          "tools": []
+        },
+        {
+          "id": "for-security-code-review",
+          "name": "For Security & Code Review",
+          "tools": []
+        },
+        {
+          "id": "for-documentation",
+          "name": "For Documentation",
+          "tools": []
+        },
+        {
+          "id": "for-learning-beginners",
+          "name": "For Learning & Beginners",
+          "tools": []
+        },
+        {
+          "id": "for-jetbrains-users",
+          "name": "For JetBrains Users",
+          "tools": []
+        },
+        {
+          "id": "for-open-source-self-hosted",
+          "name": "For Open-Source & Self-Hosted",
+          "tools": []
+        }
+      ]
+    },
+    {
+      "id": "tool-categories-summary",
+      "name": "Tool Categories Summary",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "by-deployment-type",
+          "name": "By Deployment Type",
+          "tools": []
+        },
+        {
+          "id": "by-ide-platform",
+          "name": "By IDE Platform",
+          "tools": []
+        },
+        {
+          "id": "by-specialization",
+          "name": "By Specialization",
+          "tools": []
+        },
+        {
+          "id": "by-license-type",
+          "name": "By License Type",
+          "tools": []
+        }
+      ]
+    },
+    {
+      "id": "additional-resources",
+      "name": "Additional Resources",
+      "description": null,
+      "tools": [],
+      "subcategories": [
+        {
+          "id": "related-awesome-lists",
+          "name": "Related Awesome Lists",
+          "tools": []
+        },
+        {
+          "id": "official-documentation-links",
+          "name": "Official Documentation Links",
+          "tools": []
+        },
+        {
+          "id": "community-resources",
+          "name": "Community Resources",
+          "tools": []
+        },
+        {
+          "id": "learning-resources",
+          "name": "Learning Resources",
+          "tools": [
+            {
+              "name": "Online Courses & Tracks"
+            },
+            {
+              "name": "YouTube Tutorials"
+            },
+            {
+              "name": "Technical Resources & Discussions"
+            },
+            {
+              "name": "Tools & Utilities"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "license",
+      "name": "License",
+      "description": "[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)",
+      "tools": []
+    }
+  ]
+}
