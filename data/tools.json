@@ -1310,6 +1310,27 @@
               ]
             },
             {
+              "name": "aichat",
+              "type": "All-in-one LLM CLI tool with shell assistance",
+              "developer": "Open Source",
+              "repository": "https://github.com/sigoden/aichat",
+              "installation": "`cargo install aichat`, `brew install aichat`, or package managers",
+              "models": "20+ providers including OpenAI, Claude, Gemini, Ollama, Groq, Azure-OpenAI",
+              "keyFeatures": [
+                "CMD mode for AI-assisted shell commands",
+                "REPL mode with interactive chat",
+                "RAG (Retrieval-Augmented Generation)",
+                "Function calling and AI agents",
+                "Session management",
+                "Built-in HTTP server with API endpoints"
+              ],
+              "worksWith": [
+                "20+ LLM providers",
+                "Shell environments",
+                "Custom AI agents and tools"
+              ]
+            },
+            {
               "name": "AICommits",
               "type": "Git commit message generator",
               "source": "OSS community",
@@ -1320,6 +1341,180 @@
               "worksWith": [
                 "Git workflows",
                 "Various LLM providers"
+              ]
+            },
+            {
+              "name": "ask (Kagi)",
+              "type": "Lightweight bash script for AI queries",
+              "developer": "Kagi Search",
+              "repository": "https://github.com/kagisearch/ask",
+              "installation": "Clone repo, make executable, copy to PATH",
+              "models": "Mercury Coder (default), Gemini 2.5 Flash, Claude Sonnet 4, Qwen3 235B, via OpenRouter",
+              "keyFeatures": [
+                "Multiple AI model support with shorthand flags",
+                "Provider routing with fallback",
+                "Streaming mode",
+                "Pipe input support",
+                "Performance metrics display"
+              ],
+              "worksWith": [
+                "OpenRouter API",
+                "Various LLM models",
+                "Unix pipes and scripts"
+              ]
+            },
+            {
+              "name": "ask & please",
+              "type": "Personal shell command assistant with memory",
+              "developer": "pmarreck (personal dotfiles)",
+              "repository": "https://github.com/pmarreck/dotfiles/blob/master/bin/ask",
+              "models": "OpenAI ChatGPT API",
+              "keyFeatures": [
+                "Conversation history persistence",
+                "Tool calling capabilities",
+                "Weather tools integration",
+                "Follow-up question support",
+                "Markdown output via glow"
+              ],
+              "worksWith": [
+                "OpenAI API",
+                "OpenWeatherMap API",
+                "Command-line workflows"
+              ]
+            },
+            {
+              "name": "ask_local",
+              "type": "Local AI assistant using Ollama",
+              "developer": "pmarreck (personal dotfiles)",
+              "repository": "https://github.com/pmarreck/dotfiles/blob/master/bin/ask_local",
+              "models": "Ollama-compatible local models (default: gpt-oss:20b)",
+              "keyFeatures": [
+                "Offline AI assistance",
+                "Local-first design",
+                "Configurable model selection",
+                "Extended timeout for local processing"
+              ],
+              "worksWith": [
+                "Ollama (localhost:11434)",
+                "Local LLM models",
+                "Command-line workflows"
+              ]
+            },
+            {
+              "name": "clai",
+              "type": "Command Line AI with Unix pipeline integration",
+              "developer": "Open Source",
+              "repository": "https://github.com/baalimago/clai",
+              "installation": "`go install github.com/baalimago/clai@latest`",
+              "models": "OpenAI, Anthropic, Mistral, Deepseek, Ollama, xAi, Google Gemini, Novita AI",
+              "keyFeatures": [
+                "MCP client support",
+                "Vendor-agnostic LLM compatibility",
+                "Conversation management",
+                "Automatic summarization for rate limit handling",
+                "Pre-prompted profiles",
+                "Unix philosophy alignment"
+              ],
+              "worksWith": [
+                "Multiple LLM vendors",
+                "Unix pipelines",
+                "MCP tools"
+              ]
+            },
+            {
+              "name": "FRIDAY",
+              "type": "Natural language Linux command assistant",
+              "developer": "Open Source",
+              "repository": "https://github.com/Jotalea/FRIDAY",
+              "installation": "Clone from GitHub",
+              "keyFeatures": [
+                "Natural language to command translation",
+                "Command explanation before execution",
+                "Safety-first with default Cancel",
+                "Interactive approval workflow"
+              ],
+              "worksWith": [
+                "Linux systems",
+                "Command-line environments"
+              ]
+            },
+            {
+              "name": "llm",
+              "type": "CLI tool and Python library for LLM access",
+              "developer": "Simon Willison",
+              "repository": "https://github.com/simonw/llm",
+              "website": "https://llm.datasette.io/",
+              "installation": "`pip install llm`, `brew install llm`, or `pipx install llm`",
+              "models": "OpenAI GPT, Anthropic Claude, Google Gemini, Meta Llama, Ollama, OpenAI-compatible",
+              "keyFeatures": [
+                "SQLite database for interaction storage",
+                "Embedding generation and management",
+                "Structured data extraction",
+                "Tool execution capabilities",
+                "Template system for reusable prompts",
+                "Multi-modal support (images, audio, video)"
+              ],
+              "worksWith": [
+                "OpenAI, Anthropic, Google, Meta",
+                "Local models via Ollama plugin",
+                "OpenAI-compatible APIs"
+              ]
+            },
+            {
+              "name": "llm-cmd-comp",
+              "type": "LLM-powered shell completion tool",
+              "developer": "Open Source",
+              "repository": "https://github.com/CGamesPlay/llm-cmd-comp",
+              "installation": "`llm install llm-cmd-comp` + shell config",
+              "models": "Works with LLM framework backends",
+              "keyFeatures": [
+                "Multi-shell support (Fish, Zsh, Bash)",
+                "Interactive feedback loop for refinement",
+                "Natural language to command conversion",
+                "Comment-based instruction enhancement",
+                "Alt-Backslash keybinding"
+              ],
+              "worksWith": [
+                "Simon Willison's llm framework",
+                "Fish, Zsh, Bash shells"
+              ]
+            },
+            {
+              "name": "lmsh",
+              "type": "Natural language shell (experimental)",
+              "developer": "Part of claude-code-tools",
+              "repository": "https://github.com/pchalasani/claude-code-tools",
+              "installation": "`uv tool install claude-code-tools`",
+              "keyFeatures": [
+                "Translates plain English to shell commands",
+                "Rust-based for fast startup (<1ms)",
+                "Edit commands before execution",
+                "Integration with Claude Code CLI"
+              ],
+              "worksWith": [
+                "Claude Code CLI (required)",
+                "Terminal environments"
+              ]
+            },
+            {
+              "name": "qqqa",
+              "type": "Fast stateless LLM shell assistant",
+              "developer": "Open Source",
+              "repository": "https://github.com/matisojka/qqqa",
+              "installation": "`brew tap iagooar/qqqa && brew install qqqa` (macOS) or download binaries",
+              "models": "OpenRouter, OpenAI, Groq, Ollama, Anthropic",
+              "keyFeatures": [
+                "Two tools: qq (questions) and qa (agent tasks)",
+                "Stateless single-shot workflow",
+                "Pipe and script compatible",
+                "Built-in safety rails for files and commands",
+                "Auto-copy to clipboard",
+                "Terminal history integration"
+              ],
+              "worksWith": [
+                "OpenRouter (default)",
+                "OpenAI, Groq, Ollama, Anthropic",
+                "Unix pipes and scripts"
               ]
             },
             {

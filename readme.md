@@ -1135,6 +1135,26 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 ---
 
+#### **aichat**
+- **Type**: All-in-one LLM CLI tool with shell assistance
+- **Developer**: Open Source
+- **Repository**: https://github.com/sigoden/aichat
+- **Installation**: `cargo install aichat`, `brew install aichat`, or package managers
+- **Models**: 20+ providers including OpenAI, Claude, Gemini, Ollama, Groq, Azure-OpenAI
+- **Key Features**:
+  - CMD mode for AI-assisted shell commands
+  - REPL mode with interactive chat
+  - RAG (Retrieval-Augmented Generation)
+  - Function calling and AI agents
+  - Session management
+  - Built-in HTTP server with API endpoints
+**Works with:**
+- 20+ LLM providers
+- Shell environments
+- Custom AI agents and tools
+
+---
+
 #### **AICommits**
 - **Type**: Git commit message generator
 - **Website**: https://github.com/Nutlope/aicommits#readme
@@ -1145,6 +1165,171 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 **Works with:**
 - Git workflows
 - Various LLM providers
+
+---
+
+#### **ask (Kagi)**
+- **Type**: Lightweight bash script for AI queries
+- **Developer**: Kagi Search
+- **Repository**: https://github.com/kagisearch/ask
+- **Installation**: Clone repo, make executable, copy to PATH
+- **Models**: Mercury Coder (default), Gemini 2.5 Flash, Claude Sonnet 4, Qwen3 235B, via OpenRouter
+- **Key Features**:
+  - Multiple AI model support with shorthand flags
+  - Provider routing with fallback
+  - Streaming mode
+  - Pipe input support
+  - Performance metrics display
+**Works with:**
+- OpenRouter API
+- Various LLM models
+- Unix pipes and scripts
+
+---
+
+#### **ask & please**
+- **Type**: Personal shell command assistant with memory
+- **Developer**: pmarreck (personal dotfiles)
+- **Repository**: https://github.com/pmarreck/dotfiles/blob/master/bin/ask
+- **Models**: OpenAI ChatGPT API
+- **Key Features**:
+  - Conversation history persistence
+  - Tool calling capabilities
+  - Weather tools integration
+  - Follow-up question support
+  - Markdown output via glow
+**Works with:**
+- OpenAI API
+- OpenWeatherMap API
+- Command-line workflows
+
+---
+
+#### **ask_local**
+- **Type**: Local AI assistant using Ollama
+- **Developer**: pmarreck (personal dotfiles)
+- **Repository**: https://github.com/pmarreck/dotfiles/blob/master/bin/ask_local
+- **Models**: Ollama-compatible local models (default: gpt-oss:20b)
+- **Key Features**:
+  - Offline AI assistance
+  - Local-first design
+  - Configurable model selection
+  - Extended timeout for local processing
+**Works with:**
+- Ollama (localhost:11434)
+- Local LLM models
+- Command-line workflows
+
+---
+
+#### **clai**
+- **Type**: Command Line AI with Unix pipeline integration
+- **Developer**: Open Source
+- **Repository**: https://github.com/baalimago/clai
+- **Installation**: `go install github.com/baalimago/clai@latest`
+- **Models**: OpenAI, Anthropic, Mistral, Deepseek, Ollama, xAi, Google Gemini, Novita AI
+- **Key Features**:
+  - MCP client support
+  - Vendor-agnostic LLM compatibility
+  - Conversation management
+  - Automatic summarization for rate limit handling
+  - Pre-prompted profiles
+  - Unix philosophy alignment
+**Works with:**
+- Multiple LLM vendors
+- Unix pipelines
+- MCP tools
+
+---
+
+#### **FRIDAY**
+- **Type**: Natural language Linux command assistant
+- **Developer**: Open Source
+- **Repository**: https://github.com/Jotalea/FRIDAY
+- **Installation**: Clone from GitHub
+- **Key Features**:
+  - Natural language to command translation
+  - Command explanation before execution
+  - Safety-first with default Cancel
+  - Interactive approval workflow
+**Works with:**
+- Linux systems
+- Command-line environments
+
+---
+
+#### **llm**
+- **Type**: CLI tool and Python library for LLM access
+- **Developer**: Simon Willison
+- **Website**: https://llm.datasette.io/
+- **Repository**: https://github.com/simonw/llm
+- **Installation**: `pip install llm`, `brew install llm`, or `pipx install llm`
+- **Models**: OpenAI GPT, Anthropic Claude, Google Gemini, Meta Llama, Ollama, OpenAI-compatible
+- **Key Features**:
+  - SQLite database for interaction storage
+  - Embedding generation and management
+  - Structured data extraction
+  - Tool execution capabilities
+  - Template system for reusable prompts
+  - Multi-modal support (images, audio, video)
+**Works with:**
+- OpenAI, Anthropic, Google, Meta
+- Local models via Ollama plugin
+- OpenAI-compatible APIs
+
+---
+
+#### **llm-cmd-comp**
+- **Type**: LLM-powered shell completion tool
+- **Developer**: Open Source
+- **Repository**: https://github.com/CGamesPlay/llm-cmd-comp
+- **Installation**: `llm install llm-cmd-comp` + shell config
+- **Models**: Works with LLM framework backends
+- **Key Features**:
+  - Multi-shell support (Fish, Zsh, Bash)
+  - Interactive feedback loop for refinement
+  - Natural language to command conversion
+  - Comment-based instruction enhancement
+  - Alt-Backslash keybinding
+**Works with:**
+- Simon Willison's llm framework
+- Fish, Zsh, Bash shells
+
+---
+
+#### **lmsh**
+- **Type**: Natural language shell (experimental)
+- **Developer**: Part of claude-code-tools
+- **Repository**: https://github.com/pchalasani/claude-code-tools
+- **Installation**: `uv tool install claude-code-tools`
+- **Key Features**:
+  - Translates plain English to shell commands
+  - Rust-based for fast startup (<1ms)
+  - Edit commands before execution
+  - Integration with Claude Code CLI
+**Works with:**
+- Claude Code CLI (required)
+- Terminal environments
+
+---
+
+#### **qqqa**
+- **Type**: Fast stateless LLM shell assistant
+- **Developer**: Open Source
+- **Repository**: https://github.com/matisojka/qqqa
+- **Installation**: `brew tap iagooar/qqqa && brew install qqqa` (macOS) or download binaries
+- **Models**: OpenRouter, OpenAI, Groq, Ollama, Anthropic
+- **Key Features**:
+  - Two tools: qq (questions) and qa (agent tasks)
+  - Stateless single-shot workflow
+  - Pipe and script compatible
+  - Built-in safety rails for files and commands
+  - Auto-copy to clipboard
+  - Terminal history integration
+**Works with:**
+- OpenRouter (default)
+- OpenAI, Groq, Ollama, Anthropic
+- Unix pipes and scripts
 
 ---
 
