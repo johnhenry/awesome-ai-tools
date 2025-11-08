@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import toolsData from '../tools.json';
+import PurposeList from '../components/PurposeList.astro';
+import type { ToolsData } from '../types';
+import toolsData from '@data/tools.json';
 
-const { meta } = toolsData;
+const { meta } = toolsData as ToolsData;
 ---
 
 <BaseLayout title="About - Awesome AI Tools" description="About this project">
@@ -16,17 +18,7 @@ const { meta } = toolsData;
 
     <section>
       <h3>Our Purpose</h3>
-      <ul class="purpose-list">
-        {meta.introduction.purpose.map((item: string) => {
-          const [title, ...description] = item.split('**: ');
-          const cleanTitle = title.replace('**', '');
-          return (
-            <li>
-              <strong>{cleanTitle}</strong>: {description.join('**: ')}
-            </li>
-          );
-        })}
-      </ul>
+      <PurposeList items={meta.introduction.purpose} variant="check" />
     </section>
 
     <section>
@@ -40,71 +32,58 @@ const { meta } = toolsData;
     </section>
 
     <div class="actions">
-      <a href="/" class="button">Browse Tools</a>
+      <a href="/awesome-ai-tools/" class="button">Browse Tools</a>
       <a href="https://github.com/johnhenry/awesome-ai-tools" class="button secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   </article>
 
   <style>
     .about {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
     .about h2 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
       color: var(--color-primary);
     }
 
     .about section {
-      margin-bottom: 2rem;
-      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding: 1.25rem;
       background: var(--color-hover);
       border: 1px solid var(--color-border);
-      border-radius: 8px;
+      border-radius: 6px;
     }
 
     .about h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
       color: var(--color-text);
     }
 
-    .purpose-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .purpose-list li {
-      margin-bottom: 1rem;
-      padding-left: 1.5rem;
-      position: relative;
-    }
-
-    .purpose-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: var(--color-primary);
-      font-weight: bold;
+    .about p {
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
     .actions {
       display: flex;
       gap: 1rem;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       flex-wrap: wrap;
     }
 
     .button {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
+      padding: 0.625rem 1.25rem;
       background: var(--color-primary);
       color: white;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
+      font-size: 0.9rem;
       transition: opacity 0.2s;
     }
 

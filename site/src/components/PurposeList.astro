@@ -1,0 +1,59 @@
+---
+interface Props {
+  items: string[];
+  variant?: 'arrow' | 'check';
+}
+
+const { items, variant = 'arrow' } = Astro.props;
+
+const icon = variant === 'arrow' ? '→' : '✓';
+
+const parsedItems = items.map((item) => {
+  const [title, ...description] = item.split('**: ');
+  const cleanTitle = title.replace('**', '');
+  return {
+    title: cleanTitle,
+    description: description.join('**: ')
+  };
+});
+---
+
+<ul class={`purpose-list purpose-list--${variant}`}>
+  {parsedItems.map(({ title, description }) => (
+    <li>
+      <strong>{title}</strong>: {description}
+    </li>
+  ))}
+</ul>
+
+<style>
+  .purpose-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .purpose-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .purpose-list--arrow li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+  }
+
+  .purpose-list--check li {
+    margin-bottom: 1rem;
+  }
+
+  .purpose-list--check li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+</style>

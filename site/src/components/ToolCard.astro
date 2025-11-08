@@ -1,0 +1,82 @@
+---
+import type { Tool } from '../types';
+
+interface Props {
+  tool: Tool;
+  headingLevel?: 'h4' | 'h5';
+}
+
+const { tool, headingLevel = 'h4' } = Astro.props;
+const HeadingTag = headingLevel;
+
+// Check all possible URL fields in priority order
+const primaryUrl = tool.website || tool.aiWebsite || tool.aiStudio || tool.apiPlatform || tool.apiConsole || tool.documentation || tool.repository;
+const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(tool.name)}`;
+const linkUrl = primaryUrl || searchUrl;
+
+// Determine link text based on which field we're using
+let linkText = 'Search Online →';
+if (tool.website || tool.aiWebsite || tool.aiStudio) {
+  linkText = 'Visit Website →';
+} else if (tool.apiPlatform || tool.apiConsole) {
+  linkText = 'API Console →';
+} else if (tool.documentation) {
+  linkText = 'View Docs →';
+} else if (tool.repository) {
+  linkText = 'View Repository →';
+}
+---
+
+<div class="tool-card">
+  <HeadingTag>{tool.name}</HeadingTag>
+  <a href={linkUrl} target="_blank" rel="noopener noreferrer" class={!primaryUrl ? 'search-link' : ''}>
+    {linkText}
+  </a>
+  {tool.description && <p>{tool.description}</p>}
+  {tool.models && <p><strong>Models:</strong> {tool.models}</p>}
+  {tool.pricing && <p><strong>Pricing:</strong> {tool.pricing}</p>}
+  {tool.specialFeatures && <p><strong>Special Features:</strong> {tool.specialFeatures}</p>}
+</div>
+
+<style>
+  .tool-card {
+    padding: 1rem;
+    background: var(--color-hover);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .tool-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .tool-card h4,
+  .tool-card h5 {
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+    font-size: 1.1rem;
+  }
+
+  .tool-card p {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .tool-card a {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .tool-card a.search-link {
+    opacity: 0.7;
+    font-style: italic;
+  }
+
+  .tool-card a.search-link:hover {
+    opacity: 1;
+  }
+</style>

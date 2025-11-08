@@ -104,7 +104,8 @@
                 "OpenRouter (cloud access)",
                 "Various CLI tools via OpenAI-compatible endpoints",
                 "JetBrains AI Assistant (local models)"
-              ]
+              ],
+              "website": "https://qwen.ai/"
             },
             {
               "name": "Mistral AI",
@@ -130,7 +131,8 @@
                 "AWS Bedrock",
                 "Enterprise deployments requiring data control",
                 "Multi-language applications"
-              ]
+              ],
+              "website": "https://cohere.com/"
             },
             {
               "name": "AI21 Labs",
@@ -141,7 +143,8 @@
                 "AWS Bedrock",
                 "Azure AI Foundry",
                 "Enterprise applications"
-              ]
+              ],
+              "website": "https://www.ai21.com/"
             },
             {
               "name": "Perplexity",
@@ -153,7 +156,8 @@
                 "Applications requiring live data (news, finance, trends)",
                 "REST API integrations",
                 "Research and Q&A systems"
-              ]
+              ],
+              "website": "https://www.perplexity.ai/"
             }
           ]
         },
@@ -178,7 +182,8 @@
                 "Cursor, Windsurf (custom API endpoint support)",
                 "Continue.dev, Roo Code, Kilo Code",
                 "Claude Code Router (proxy for Claude Code)"
-              ]
+              ],
+              "website": "https://openrouter.ai/"
             },
             {
               "name": "Hugging Face Inference",
@@ -191,7 +196,8 @@
                 "LiteLLM",
                 "Developer applications",
                 "Fine-tuning workflows (with Together AI, Replicate)"
-              ]
+              ],
+              "website": "https://huggingface.co/inference-api"
             },
             {
               "name": "ch.at",
@@ -221,7 +227,8 @@
                 "Hugging Face platform",
                 "API integrations",
                 "Development and prototyping"
-              ]
+              ],
+              "website": "https://replicate.com/"
             }
           ]
         },
@@ -240,7 +247,8 @@
                 "Sourcegraph Cody (BYOM)",
                 "Any tool with AWS authentication",
                 "OpenAI SDK (via compatibility layer)"
-              ]
+              ],
+              "website": "https://aws.amazon.com/bedrock/"
             },
             {
               "name": "Azure AI Foundry (Azure OpenAI)",
@@ -253,7 +261,8 @@
                 "GitHub Copilot (Microsoft integration)",
                 "Continue.dev (Azure provider support)",
                 "Any OpenAI-compatible tool (with Azure endpoints)"
-              ]
+              ],
+              "website": "https://ai.azure.com/"
             },
             {
               "name": "Google Vertex AI",
@@ -265,7 +274,8 @@
                 "Cline, Continue, Roo Code (GCP Vertex provider)",
                 "Google's native tools (Gemini CLI, Jules Tools)",
                 "Enterprise tools requiring Google Cloud integration"
-              ]
+              ],
+              "website": "https://cloud.google.com/vertex-ai"
             }
           ]
         },
@@ -284,7 +294,8 @@
                 "Hugging Face (serverless integration)",
                 "Any tool with custom API endpoint support",
                 "Developer-focused applications requiring speed"
-              ]
+              ],
+              "website": "https://www.together.ai/"
             },
             {
               "name": "Fireworks AI",
@@ -297,7 +308,8 @@
                 "Hugging Face platform",
                 "Custom integrations via API",
                 "Performance-critical applications"
-              ]
+              ],
+              "website": "https://fireworks.ai/"
             },
             {
               "name": "Groq",
@@ -310,7 +322,8 @@
                 "Cline, Continue (Groq provider support)",
                 "Low-latency applications",
                 "Enterprise on-prem deployments"
-              ]
+              ],
+              "website": "https://groq.com/"
             },
             {
               "name": "Cerebras",
@@ -420,7 +433,8 @@
                 "AWS Bedrock, Azure, Google Vertex AI",
                 "Ollama, LM Studio (local deployment)",
                 "Most AI coding tools (open model access)"
-              ]
+              ],
+              "website": "https://www.llama.com/"
             },
             {
               "name": "xAI",
@@ -2045,7 +2059,8 @@
               "worksWith": [
                 "Various LLM providers",
                 "Roo Code (documented integration)"
-              ]
+              ],
+              "website": "https://www.askcodi.com/"
             },
             {
               "name": "CodeGPT: Chat & AI Agents",
@@ -2061,7 +2076,8 @@
               "worksWith": [
                 "Multiple LLM providers",
                 "General assistance workflows"
-              ]
+              ],
+              "website": "https://www.codegpt.co/"
             },
             {
               "name": "Gemini Code Assist",
@@ -2076,7 +2092,8 @@
               "worksWith": [
                 "Google Gemini models",
                 "Google Cloud Platform"
-              ]
+              ],
+              "website": "https://codeassist.google/"
             }
           ]
         },
@@ -2099,7 +2116,8 @@
                 "Local deployment",
                 "Enterprise environments requiring data control",
                 "Privacy-focused workflows"
-              ]
+              ],
+              "website": "https://www.tabbyml.com/"
             },
             {
               "name": "FauxPilot",
@@ -2221,7 +2239,8 @@
                 "GitHub (native integration)",
                 "\"Sweep:\" issues → automated PRs",
                 "Follow-up from issue comments"
-              ]
+              ],
+              "website": "https://sweep.dev/"
             },
             {
               "name": "Bloop AI",
@@ -2237,7 +2256,8 @@
                 "Large, complex codebases",
                 "Team onboarding",
                 "Code exploration workflows"
-              ]
+              ],
+              "website": "https://bloop.ai/"
             },
             {
               "name": "Blackbox AI",
@@ -2258,7 +2278,8 @@
                 "VS Code (marketplace)",
                 "Browser integration",
                 "Multiple IDEs"
-              ]
+              ],
+              "website": "https://www.blackbox.ai/"
             }
           ]
         },
