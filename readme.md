@@ -214,6 +214,24 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ---
 
+#### **ch.at**
+- **Type**: Zero-setup OpenAI-compatible chat service
+- **Website**: https://ch.at
+- **Pricing**: Free service
+- **Key Features**:
+  - No accounts, no logs, no tracking
+  - Multiple access methods (HTTP, SSH, DNS)
+  - Single-binary service
+  - Streamed responses support
+  - IP-based rate limiting
+- **Endpoint**: https://ch.at/v1/chat/completions
+**Works with:**
+- qqqa (zero-setup backend)
+- Any OpenAI-compatible client
+- curl, SSH access available
+
+---
+
 #### **Replicate**
 - **Type**: Hosted open-source model inference
 - **Use Case**: Rapid model integration and testing
@@ -1242,6 +1260,23 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 
 ---
 
+#### **claude command**
+- **Type**: Command-line Claude chat wrapper
+- **Developer**: rbitr (GitHub gist)
+- **Repository**: https://gist.github.com/rbitr/bfbc43b806ac62a5230555582d63d4f7
+- **Models**: Claude Sonnet 4.5
+- **Key Features**:
+  - Multi-turn conversations with session persistence
+  - Local conversation caching (~/.chat/)
+  - Customizable system prompts and temperature
+  - SHA256-hashed session identifiers
+  - 16,384 token maximum
+**Works with:**
+- Anthropic Claude API
+- Terminal environments
+
+---
+
 #### **FRIDAY**
 - **Type**: Natural language Linux command assistant
 - **Developer**: Open Source
@@ -1255,6 +1290,24 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 **Works with:**
 - Linux systems
 - Command-line environments
+
+---
+
+#### **git_commit_ai**
+- **Type**: AI-powered git commit message generator
+- **Developer**: pmarreck (personal dotfiles)
+- **Repository**: https://github.com/pmarreck/dotfiles/blob/master/bin/git_commit_ai
+- **Models**: OpenAI gpt-5-mini (default), local models via localhost
+- **Key Features**:
+  - Generates commit messages from git diffs
+  - Supports both remote and local LLMs
+  - Automatic clipboard copying
+  - Customizable model, temperature, timeout
+  - Companion git_commit_ai_local for offline use
+**Works with:**
+- OpenAI API
+- Local LLMs (qwen2.5-coder:32b, etc.)
+- Git workflows
 
 ---
 
@@ -1310,6 +1363,25 @@ The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 
 **Works with:**
 - Claude Code CLI (required)
 - Terminal environments
+
+---
+
+#### **please**
+- **Type**: Natural language command generator with interactive execution
+- **Developer**: pmarreck (personal dotfiles)
+- **Repository**: https://github.com/pmarreck/dotfiles/blob/master/bin/please
+- **Models**: LLM via API (configurable)
+- **Key Features**:
+  - Natural language to shell command translation
+  - Platform-aware command generation (OS detection)
+  - Interactive execution menu (run/copy/cancel)
+  - Automatic shell history integration
+  - Visual feedback via gum spinner
+  - Clipboard copying support
+**Works with:**
+- LLM APIs (via curl)
+- Unix/Linux/macOS shells
+- gum for UI components
 
 ---
 
