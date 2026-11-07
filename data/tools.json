@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Awesome AI Tools",
-    "lastUpdated": "November 2025",
+    "lastUpdated": "September 2026",
     "subtitle": "A complete guide to AI-powered coding tools, from inference providers to IDEs, extensions, and specialized utilities.",
     "introduction": {
       "overview": "This repository serves as a comprehensive, curated list of AI-powered coding tools available as of October 2025. Our goal is to provide developers, teams, and organizations with a detailed overview of the AI coding landscape, helping them make informed decisions about which tools best fit their needs.",
@@ -3108,6 +3108,27 @@
           "id": "ai-testing-platforms",
           "name": "AI Testing Platforms",
           "tools": [
+            {
+              "name": "Agent QA",
+              "type": "CLI, dashboard, and MCP server for application testing.",
+              "developer": "Vostride",
+              "website": "https://vostride.com/docs/agent-qa",
+              "repository": "https://github.com/vostride/agent-qa",
+              "documentation": "https://vostride.com/docs/agent-qa",
+              "description": "Natural-language web, Android, and iOS application tests with persistent execution memory and UI recovery.",
+              "pricing": "No software fee for permitted use; configured model, browser, and device providers may charge separately.",
+              "specialFeatures": "Source-available under FSL-1.1-ALv2; each release converts to Apache-2.0 after two years.",
+              "keyFeatures": [
+                "Natural-language test authoring and execution",
+                "MCP tools for authoring, queuing runs, and inspecting results",
+                "Persistent execution memory and recovery from UI changes"
+              ],
+              "worksWith": [
+                "Web, Android, and iOS applications",
+                "MCP clients",
+                "CLI and dashboard workflows"
+              ]
+            },
             {
               "name": "KaneAI (LambdaTest)",
               "type": "GenAI native QA Agent-as-a-Service",

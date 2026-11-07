@@ -1,6 +1,6 @@
 # Awesome AI Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> **Last Updated:** November 2025
+> **Last Updated:** September 2026
 > A complete guide to AI-powered coding tools, from inference providers to IDEs, extensions, and specialized utilities.
 
 ## Introduction
@@ -2709,6 +2709,26 @@ Cloud-based AI coding platforms that remotely access repositories and execute de
 AI-powered testing and quality assurance tools that automate test generation, execution, and maintenance using machine learning and generative AI.
 
 ### AI Testing Platforms
+
+#### **Agent QA**
+- **Type**: CLI, dashboard, and MCP server for application testing.
+- **Developer**: Vostride
+- **Website**: https://vostride.com/docs/agent-qa
+- **Repository**: https://github.com/vostride/agent-qa
+- **Documentation**: https://vostride.com/docs/agent-qa
+- **Pricing**: No software fee for permitted use; configured model, browser, and device providers may charge separately.
+- **Special Features**: Source-available under FSL-1.1-ALv2; each release converts to Apache-2.0 after two years.
+- **Key Features**:
+  - Natural-language test authoring and execution
+  - MCP tools for authoring, queuing runs, and inspecting results
+  - Persistent execution memory and recovery from UI changes
+- **Description**: Natural-language web, Android, and iOS application tests with persistent execution memory and UI recovery.
+**Works with:**
+- Web, Android, and iOS applications
+- MCP clients
+- CLI and dashboard workflows
+
+---
 
 #### **KaneAI (LambdaTest)**
 - **Type**: GenAI native QA Agent-as-a-Service
